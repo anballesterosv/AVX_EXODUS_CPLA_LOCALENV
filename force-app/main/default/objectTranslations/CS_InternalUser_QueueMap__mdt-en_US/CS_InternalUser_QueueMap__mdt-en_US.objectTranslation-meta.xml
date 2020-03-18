@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CS_InternalUser_QueueMap</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CS_InternalUser_QueueMaps</value>
+    </caseValues>
+    <layouts>
+        <layout>CS_InternalUser_QueueMap Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

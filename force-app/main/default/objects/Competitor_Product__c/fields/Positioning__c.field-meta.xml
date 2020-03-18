@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Positioning__c</fullName>
+    <externalId>false</externalId>
+    <label>Positioning</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sustainability</fullName>
+                <default>false</default>
+                <label>Sustainability</label>
+            </value>
+            <value>
+                <fullName>GMO-free</fullName>
+                <default>false</default>
+                <label>GMO-free</label>
+            </value>
+            <value>
+                <fullName>Natural</fullName>
+                <default>false</default>
+                <label>Natural</label>
+            </value>
+            <value>
+                <fullName>Low Calorie</fullName>
+                <default>false</default>
+                <label>Low Calorie</label>
+            </value>
+            <value>
+                <fullName>Organic</fullName>
+                <default>false</default>
+                <label>Organic</label>
+            </value>
+            <value>
+                <fullName>Healthy</fullName>
+                <default>false</default>
+                <label>Healthy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

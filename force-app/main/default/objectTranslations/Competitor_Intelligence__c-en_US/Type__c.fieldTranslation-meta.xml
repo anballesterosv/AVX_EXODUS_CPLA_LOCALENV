@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Acquisitions / Joint Ventures</masterLabel>
+        <translation><!-- Acquisitions / Joint Ventures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Topic</masterLabel>
+        <translation><!-- Hot Topic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intelligence</masterLabel>
+        <translation><!-- Intelligence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Org Resources Change</masterLabel>
+        <translation><!-- Org Resources Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rumor</masterLabel>
+        <translation><!-- Rumor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technoology Trend / Capability</masterLabel>
+        <translation><!-- Technoology Trend / Capability --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

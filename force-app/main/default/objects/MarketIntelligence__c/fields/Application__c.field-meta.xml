@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application__c</fullName>
+    <externalId>false</externalId>
+    <label>Application</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Application</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Pharma</controllingFieldValue>
+            <valueName>Solid Dosage Forms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pharma</controllingFieldValue>
+            <valueName>Liquid Dosage Forms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pharma</controllingFieldValue>
+            <valueName>Nutritional Supplements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pharma</controllingFieldValue>
+            <valueName>Medicated Confectionery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pharma</controllingFieldValue>
+            <valueName>Parenteral Applications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>Chips/Crisps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>Extruded Snacks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>Tortilla / Corn Chips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>RTE/Breakfast Cereals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>Snack Bars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>Granola/Museli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>Breakfast/Cereal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Snacks &amp; Cereals</controllingFieldValue>
+            <valueName>Energy Snacks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Feed</controllingFieldValue>
+            <valueName>Feed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food ingredients</controllingFieldValue>
+            <valueName>Food Ingredients</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bakery</controllingFieldValue>
+            <valueName>Bread/ Bread Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bakery</controllingFieldValue>
+            <valueName>Sweet Biscuits/Cookies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bakery</controllingFieldValue>
+            <valueName>Savory Biscuits/Crackers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bakery</controllingFieldValue>
+            <valueName>Pastries/Sweet Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bakery</controllingFieldValue>
+            <valueName>Mixes &amp; Doughs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bakery</controllingFieldValue>
+            <valueName>Pasta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bakery</controllingFieldValue>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Dry Mixes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Carbonated Soft Drinks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Functional &amp; Flavored Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Juice, Juice Drinks, Nectars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Sports/Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>RTD Tea/Coffee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Powdered /Dry Mixes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Liquid Concentrates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Beer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beverage</controllingFieldValue>
+            <valueName>Wine, Spirits and Alc flavored drinks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Confectionery</controllingFieldValue>
+            <valueName>Sugar Confectionery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Confectionery</controllingFieldValue>
+            <valueName>Chewing Gums</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Confectionery</controllingFieldValue>
+            <valueName>Chocolate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Confectionery</controllingFieldValue>
+            <valueName>Fillings, Coatings, Toppings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convenience Foods</controllingFieldValue>
+            <valueName>Ready Meals/Kits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convenience Foods</controllingFieldValue>
+            <valueName>Soups</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convenience Foods</controllingFieldValue>
+            <valueName>Sauces, Dressings &amp; Condiments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convenience Foods</controllingFieldValue>
+            <valueName>Oils, Fats &amp; Spreads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convenience Foods</controllingFieldValue>
+            <valueName>Egg Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Cheese</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Creams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Liquid Creamers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Dairy Desserts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Dairy Drinks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Yogurt &amp; Quark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Specialty Dairy &amp; Non-Dairy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dairy</controllingFieldValue>
+            <valueName>Frozen Desserts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Fillings &amp; Toppings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Fruit Preparations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Fruit Sauces</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Glazings, Icings &amp; Pipings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Jams &amp; Jellies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Reformed Fruit &amp; Vegetables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Water Jellies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Fruit Desserts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fruit</controllingFieldValue>
+            <valueName>Syrups &amp; Ripples</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infant &amp; Baby Food</controllingFieldValue>
+            <valueName>Solid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infant &amp; Baby Food</controllingFieldValue>
+            <valueName>Liquid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infant &amp; Baby Food</controllingFieldValue>
+            <valueName>Dry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infant &amp; Baby Food</controllingFieldValue>
+            <valueName>Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meat</controllingFieldValue>
+            <valueName>Cooked Meats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meat</controllingFieldValue>
+            <valueName>Dry Meats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meat</controllingFieldValue>
+            <valueName>Fresh-frozen meats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Meat</controllingFieldValue>
+            <valueName>Specialty &amp; Meat Analogs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Care</controllingFieldValue>
+            <valueName>Oral Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Care</controllingFieldValue>
+            <valueName>Skin &amp; Sun Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Care</controllingFieldValue>
+            <valueName>Hair Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Care</controllingFieldValue>
+            <valueName>Bath &amp; Body Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Care</controllingFieldValue>
+            <valueName>Color Cosmetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pet Food</controllingFieldValue>
+            <valueName>Wet Pet Food</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pet Food</controllingFieldValue>
+            <valueName>Dry Pet Food</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pet Food</controllingFieldValue>
+            <valueName>Snack Pet Food</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

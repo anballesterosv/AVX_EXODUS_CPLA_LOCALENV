@@ -1,0 +1,421 @@
+<template>
+    <div class="slds-theme_default">
+        <template if:true={openmodel}>
+            <div class="demo-only" style="min-height: 80%!important;">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                    aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+
+                    <div class="slds-modal__container" style=" width:90% !important;">
+                        <!--HEADER-->
+                        <header class="slds-modal__header">
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                title="Close" onclick={closeModal}>
+                                <lightning-icon icon-name="utility:close" size="medium"></lightning-icon>
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                                {label.AVX_Telesales_Add_Edit_Client_to_Telesales_Plan}</h2>
+                        </header>
+                        <!--HEADER-->
+
+                        <!--add/edit from client list-->
+                        <template if:true={showFormNew}>
+
+                            <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1">
+                                <!--Modal content-->
+                                <div class="slds-grid slds-wrap" style="min-height: 400px!important;">
+                                    <div class="slds-col slds-size_12-of-12 slds-var-p-horizontal_small">
+                                        <p>{label.AVX_Telesales_Name}:&nbsp;<strong> {accountNameTitle}</strong></p>
+                                        <br />
+                                    </div>
+                                </div>
+
+                                <!--CONTAINER DETAILS-->
+                                <div class="slds-grid slds-wrap">
+
+                                    <!--DETAILS ADDED-->
+                                    <template if:true={lstTelesalesPlanDetails}>
+                                        <template for:each={lstTelesalesPlanDetails} for:item="p" for:index="index">
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_4-of-12 slds-var-p-horizontal_small">
+                                                <lightning-combobox name="comboDays" label={label.AVX_Telesales_Day} 
+                                                    onchange={handleEditDayClientList} data-index={index}
+                                                    value={p.DayOfTheWeek__c} placeholder={label.AVX_Telesales_Select} options={lstDays}>
+                                                </lightning-combobox>
+                                            </div>
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                                <lightning-input label={label.AVX_Telesales_Hour} type="time"
+                                                    onchange={handleEditHourClientList} data-index={index} 
+                                                    value={p.Hours__c} name="input1"></lightning-input>
+                                            </div>
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                                <lightning-combobox name="comboPriorities"
+                                                    label={label.AVX_Telesales_Priority} value={p.Priority__c}
+                                                    placeholder={label.AVX_Telesales_Select} options={lstPriorities}
+                                                    onchange={handleEditPriorityClientList} data-index={index} 
+                                                    > </lightning-combobox>
+                                            </div>
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_2-of-12 slds-var-p-horizontal_small">
+                                                <div class="slds-var-m-top_large">
+                                                    <lightning-icon title={label.AVX_Telesales_Delete}
+                                                        style="cursor: pointer;" size="small" id={index}
+                                                        icon-name="utility:delete" onclick={handleRemoveItemOfList}
+                                                        alternative-text={label.AVX_Telesales_Delete}></lightning-icon>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </template>
+
+                                    <!--NEW FORM-->
+                                    <div class="slds-col slds-size_4-of-12 slds-var-p-horizontal_small">
+                                        <lightning-combobox name="comboDays" label={label.AVX_Telesales_Day}
+                                            value={newPlanDaySelected} placeholder={label.AVX_Telesales_Select} options={lstDays}
+                                            onchange={handleNewPlanDaySelected}> </lightning-combobox>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                        <lightning-input label={label.AVX_Telesales_Hour} type="time"
+                                            onchange={handleNewHourPlanDetail} value={newHourPlanDetail} name="input1">
+                                        </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                        <lightning-combobox name="comboPriorities" label={label.AVX_Telesales_Priority}
+                                            value={newPlanPrioritySelected} placeholder={label.AVX_Telesales_Select} options={lstPriorities}
+                                            onchange={handleNewPlanPrioritySelected}></lightning-combobox>
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-12 slds-var-p-horizontal_small">
+                                        <div class="slds-var-m-top_large">
+                                            <lightning-icon title={label.AVX_Telesales_Add} style="cursor: pointer;"
+                                                onclick={handleAddClientToPlanDetail} icon-name="utility:add"
+                                                size='small' alternative-text={label.AVX_Telesales_Add}>
+                                            </lightning-icon>
+                                            
+                                            <lightning-icon class="slds-m-left_small" style="cursor: pointer;" size="small"
+                                                        icon-name="utility:refresh" onclick={resetNewPlanDetail}
+                                                        title={label.AVX_Telesales_Restart_values}
+                                                        alternative-text={label.AVX_Telesales_Restart_values}></lightning-icon>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--END CONTAINER DETAILS-->
+                                <br /><br /><br /><br /><br /><br />
+                            </div>
+                        </template>
+
+                        <!--edit from details-->
+                        <template if:true={showDetails}>
+
+                            <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-3">
+                                <div class="slds-grid slds-wrap">
+                                    <template if:true={openModalConfirmation}>
+                                        <div class=" slds-align_absolute-center slds-col slds-size_12-of-12 slds-var-p-horizontal_small">
+                                            <h4> ¿Esta seguro de eliminar el registro seleccionado?</h4>
+                                        </div>
+                                        <div
+                                            class=" slds-align_absolute-center slds-col slds-size_12-of-12 slds-var-p-horizontal_small slds-var-p-vertical_large">
+                                            <lightning-button label={label.AVX_Telesales_Yes} variant="brand"
+                                                onclick={handleYes}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <lightning-button label={label.AVX_Telesales_No} variant="neutral"
+                                                onclick={handleNo}></lightning-button>
+                                        </div>
+                                    </template>
+
+                                    <template if:true={lstTelesalesPlanDetailsEdit}>
+                                        <template for:each={lstTelesalesPlanDetailsEdit} for:item="p" for:index="index">
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                                <div class="slds-var-p-top_small">
+                                                    <p><strong>{label.AVX_Telesales_Name}</strong></p>
+                                                    <p>{p.telesalesPlanDetail.Ship_To__r.Name}</p>
+                                                </div>
+                                            </div>
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                                <lightning-combobox name="comboDays" label={label.AVX_Telesales_Day}
+                                                    onchange={handleEditDay} data-index={index}
+                                                    value={p.telesalesPlanDetail.DayOfTheWeek__c} placeholder={label.AVX_Telesales_Select} options={lstDays}>
+                                                </lightning-combobox>
+                                            </div>
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                                <lightning-input label={label.AVX_Telesales_Hour} type="time"
+                                                    onchange={handleEditHour} data-index={index} value={p.telesalesPlanDetail.Hours__c}
+                                                    name="input1"></lightning-input>
+                                            </div>
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_2-of-12 slds-var-p-horizontal_small">
+                                                <lightning-combobox name="comboPriorities"
+                                                    label={label.AVX_Telesales_Priority} data-index={index}
+                                                    value={p.telesalesPlanDetail.Priority__c} placeholder={label.AVX_Telesales_Select} options={lstPriorities}
+                                                    onchange={handleEditPriority}></lightning-combobox>
+                                            </div>
+                                            <div key={p.Id}
+                                                class="slds-col slds-size_1-of-12 slds-var-p-horizontal_small">
+                                                <div class="slds-var-m-top_large">
+                                                    <lightning-icon style="cursor: pointer;" size="small" id={index}
+                                                        icon-name="utility:delete" onclick={handleRemoveItemOfList}
+                                                        title={label.AVX_Telesales_Delete}
+                                                        alternative-text={label.AVX_Telesales_Delete}></lightning-icon>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </template>
+                                </div>
+                                
+                            <br /><br /><br /><br /><br />
+                            </div>
+                            
+                        </template>
+
+                        <footer class="slds-modal__footer">
+                            <lightning-button label={label.AVX_Telesales_Cancel} variant="neutral"
+                                onclick={closeModal}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <lightning-button label={label.AVX_Telesales_Save} variant="brand" onclick={saveMethod}>
+                            </lightning-button>
+                        </footer>
+
+                    </div>
+                    <!--container-->
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </div>
+
+        </template>
+    </div>
+
+
+    <!--contingency add modal-->
+    <div class="slds-theme_default">
+        <template if:true={openContingencyModal}>
+            <div class="demo-only" style="height: auto!important;">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                    aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+
+                    <div class="slds-modal__container" style=" width:90% !important;">
+                        <!--HEADER-->
+                        <header class="slds-modal__header">
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                title="Close" onclick={closeContingencyModal}>
+                                <lightning-icon icon-name="utility:close" size="medium"></lightning-icon>
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">
+                                {label.AVX_Telesales_Add_Edit_Client_to_Telesales_Plan}</h2>
+                        </header>
+                        <!--HEADER--> 
+
+                        <!--Modal content-->
+                        <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1211">
+                            <div class="slds-grid slds-wrap" style="min-height: 400px!important;">
+                                <div class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small"></div>
+                                <div class="slds-col slds-size_6-of-12 slds-var-p-horizontal_small">
+                                    <div onkeyup={handleTelemarketerToSearch}>
+                                        <lightning-input
+                                                    name="enter-search"
+                                                    label={label.AVX_telesales_Telemarketer}
+                                                    onchange={handleCleanTelemarketer}
+                                                    value={telemarketerToSearch}
+                                                    type="search"
+                                                ></lightning-input>
+                                    </div>
+                                    <template if:true={lstTelemarketers}>
+                                        <div class="slds-is-relative"> 
+                                            <div class="slds-grid slds-wrap" style="position:absolute;border:1px solid lightgray;background:white; z-index:7000">
+                                                <template for:each={lstTelemarketers} for:item="p">
+                                                            <div data-key={p.Id} key={p.Id}  style="cursor: pointer;"
+                                                            onclick={handleTelemarketerSelected} class="slds-col  slds-size_12-of-12">
+                                                                    <div  class="slds-col  slds-size_12-of-12">
+                                                                        <p  class="slds-var-p-left_x-small slds-var-p-vertical_x-small">{p.Name}</p>
+                                                                    </div>
+                                                            </div>
+                                                </template> 
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                                <div class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                                    <template if:true={warningTelemarketer}>
+                                        <div class="slds-m-top_large">
+                                            <lightning-icon title={warningTelemarketer} icon-name="utility:warning" alternative-text={warningTelemarketer} 
+                                         size="x-small" ></lightning-icon>
+                                        </div>
+                                    </template>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-var-p-horizontal_small">
+                                   
+                                        <template if:true={lstContingencyClients}>
+                                            <div class="slds-grid slds-wrap slds-var-m-top_small">
+                                                <table class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 45%;">{label.AVX_Telesales_Name}</th>
+                                                            <th style="width: 20%;">{label.AVX_Telesales_Day}</th>
+                                                            <th style="width: 15%;">{label.AVX_Telesales_Hour}</th>
+                                                            <th style="width: 20%;">{label.AVX_Telesales_Priority}</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>    
+                                            </div>
+                                            <div class="slds-grid slds-wrap " style="max-height: 220px;overflow: auto;">
+                                                <table class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 45%;"></th>
+                                                            <th style="width: 20%;"></th>
+                                                            <th style="width: 15%;"></th>
+                                                            <th style="width: 20%;"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <template if:true={lstContingencyClients}>
+                                                            <template for:each={lstContingencyClients} for:item="p">
+                                                                <tr key={p.keyForeach}>
+                                                                    <td><p class="slds-truncate">{p.telesalesPlanDetail.Ship_To__r.Name}</p></td>
+                                                                    <td><p class="slds-truncate">{p.day}</p></td>
+                                                                    <td><p class="slds-truncate">{p.hour}</p></td>
+                                                                    <td><p class="slds-truncate">{p.telesalesPlanDetail.Priority__c}</p></td>
+                                                                </tr>
+                                                            </template>
+                                                        </template>
+                                                    </tbody>
+                                                </table>  
+                                            </div>
+                                     </template>
+                                    
+                                </div>
+                            </div>
+                            <!--ok-->
+                            <!--DETAILS ADDED-->
+                        </div>
+                                <!--END CONTAINER DETAILS-->
+                          <footer class="slds-modal__footer">
+                            <lightning-button label={label.AVX_Telesales_Cancel} variant="neutral"
+                                onclick={closeContingencyModal}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <lightning-button label={label.AVX_Telesales_Save} variant="brand" onclick={saveDetailsContingency}>
+                            </lightning-button>
+                        </footer>
+                    </div>
+                
+                    <!--container-->
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </div>
+
+        </template>
+        <!--contingency modal-->
+    </div>
+
+    <!--modal: edit detail of a contingency plan-->
+    <div class="slds-theme_default">
+        <template if:true={openModalEditDetailContingency}>
+            <div class="demo-only" style="height: auto!important;">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01212" aria-modal="true"
+                    aria-describedby="modal-content-id-1231" class="slds-modal slds-fade-in-open">
+
+                    <div class="slds-modal__container" style=" width:90% !important;">
+                        <!--HEADER-->
+                        <header class="slds-modal__header">
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                title="Close" onclick={closeContingencyModal}>
+                                <lightning-icon icon-name="utility:close" size="medium"></lightning-icon>
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="modal-heading-02121" class="slds-text-heading_medium slds-hyphenate">
+                                {label.AVX_Telesales_Add_Edit_Client_to_Telesales_Plan}</h2>
+                        </header>
+                        <!--HEADER--> 
+
+                        <!--Modal content-->
+                        <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-12411">
+                            <div class="slds-grid slds-wrap" style="min-height: 400px!important;">
+                                <div class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small"></div>
+                                <div class="slds-col slds-size_6-of-12 slds-var-p-horizontal_small">
+                                    <div onkeyup={handleTelemarketerToSearch}>
+                                        <lightning-input
+                                                    name="enter-search"
+                                                    label={label.AVX_telesales_Telemarketer}
+                                                    onchange={handleCleanTelemarketer}
+                                                    value={telemarketerToSearch}
+                                                    type="search"
+                                                ></lightning-input>
+                                    </div>
+                                    <template if:true={lstTelemarketers}>
+                                        <div class="slds-is-relative"> 
+                                            <div class="slds-grid slds-wrap" style="position:absolute;border:1px solid lightgray;background:white; z-index:7000">
+                                                <template for:each={lstTelemarketers} for:item="p">
+                                                            <div data-key={p.Id} key={p.Id}  style="cursor: pointer;"
+                                                            onclick={handleTelemarketerSelected} class="slds-col  slds-size_12-of-12">
+                                                                    <div  class="slds-col  slds-size_12-of-12">
+                                                                        <p  class="slds-var-p-left_x-small slds-var-p-vertical_x-small">{p.Name}</p>
+                                                                    </div>
+                                                            </div>
+                                                </template> 
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                                <div class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small"></div>
+                                <div class="slds-col slds-size_12-of-12 slds-var-p-horizontal_small">
+                                   
+                                        <template if:true={lstContingencyClients}>
+                                            <div class="slds-grid slds-wrap slds-p-around_medium" style="max-height: 220px;overflow: auto;">
+                                                
+                                                <table class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 45%;">{label.AVX_Telesales_Name}</th>
+                                                            <th style="width: 20%;">{label.AVX_Telesales_Day}</th>
+                                                            <th style="width: 15%;">{label.AVX_Telesales_Hour}</th>
+                                                            <th style="width: 20%;">{label.AVX_Telesales_Priority}</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <template if:true={lstContingencyClients}>
+                                                            <template for:each={lstContingencyClients} for:item="p">
+                                                                <tr key={p.keyForeach}>
+                                                                    <td><p class="slds-truncate">{p.telesalesPlanDetail.Ship_To__r.Name}</p></td>
+                                                                    <td><p class="slds-truncate">{p.dayTraslated}</p></td>
+                                                                    <td><p class="slds-truncate">{p.hour}</p></td>
+                                                                    <td><p class="slds-truncate">{p.telesalesPlanDetail.Priority__c}</p></td>
+                                                                </tr>
+                                                            </template>
+                                                        </template>
+                                                    </tbody>
+                                                </table>  
+                                            </div>
+                                     </template>
+                                    
+                                </div>
+                            </div>
+                            <!--ok-->
+                            <!--DETAILS ADDED-->
+                        </div>
+                                <!--END CONTAINER DETAILS-->
+                          <footer class="slds-modal__footer">
+                            <lightning-button label={label.AVX_Telesales_Cancel} variant="neutral"
+                                onclick={closeContingencyModal}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <lightning-button label={label.AVX_Telesales_Save} variant="brand" onclick={updateDetailContingency}>
+                            </lightning-button>
+                        </footer>
+                    </div>
+                
+                    <!--container-->
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </div>
+
+        </template>
+        <!--contingency modal-->
+    </div>
+
+    <!--spinner-->
+    <div if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+    </div>
+
+</template>

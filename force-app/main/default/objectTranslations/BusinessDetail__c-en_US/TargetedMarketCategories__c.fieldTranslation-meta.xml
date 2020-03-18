@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Targeted Market Categories --></label>
+    <name>TargetedMarketCategories__c</name>
+    <picklistValues>
+        <masterLabel>Baby food</masterLabel>
+        <translation><!-- Baby food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bakery</masterLabel>
+        <translation><!-- Bakery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beer, other alcoholic beverages</masterLabel>
+        <translation><!-- Beer, other alcoholic beverages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bio-chemical industry</masterLabel>
+        <translation><!-- Bio-chemical industry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbonated soft drinks</masterLabel>
+        <translation><!-- Carbonated soft drinks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chocolate confectionery</masterLabel>
+        <translation><!-- Chocolate confectionery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction materials</masterLabel>
+        <translation><!-- Construction materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Convenience/Instant Food</masterLabel>
+        <translation><!-- Convenience/Instant Food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corrugated board</masterLabel>
+        <translation><!-- Corrugated board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dairy</masterLabel>
+        <translation><!-- Dairy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor / co-packer</masterLabel>
+        <translation><!-- Distributor / co-packer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feed</masterLabel>
+        <translation><!-- Feed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frozen desserts</masterLabel>
+        <translation><!-- Frozen desserts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HoReCa</masterLabel>
+        <translation><!-- HoReCa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jams, fruit preps</masterLabel>
+        <translation><!-- Jams, fruit preps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juice, drinks, nectars</masterLabel>
+        <translation><!-- Juice, drinks, nectars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Margarine</masterLabel>
+        <translation><!-- Margarine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mayonnaise and sauces</masterLabel>
+        <translation><!-- Mayonnaise and sauces --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other food</masterLabel>
+        <translation><!-- Other food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other non-food</masterLabel>
+        <translation><!-- Other non-food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paper</masterLabel>
+        <translation><!-- Paper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal care and cosmetics</masterLabel>
+        <translation><!-- Personal care and cosmetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petfood</masterLabel>
+        <translation><!-- Petfood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharma</masterLabel>
+        <translation><!-- Pharma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processed meat products</masterLabel>
+        <translation><!-- Processed meat products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snacks</masterLabel>
+        <translation><!-- Snacks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sugar confectionery</masterLabel>
+        <translation><!-- Sugar confectionery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical oils and lubricants</masterLabel>
+        <translation><!-- Technical oils and lubricants --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

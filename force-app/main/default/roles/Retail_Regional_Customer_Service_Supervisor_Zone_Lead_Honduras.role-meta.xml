@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Retail Regional Customer Service Supervisor Zone Lead - Honduras</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Retail Regional Customer Service Supervisor Zone Lead - Honduras</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Retail_Regional_Customer_Service_Supervisor_Manager_Honduras</parentRole>
+</Role>

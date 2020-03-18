@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Cargill PROS SmartCPQ Quote Beef Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Approval --></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargill PROS SmartCPQ Quote Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Approval --></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargill PROS SmartCPQ Quote Non-Editable Beef Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Approval --></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargill PROS SmartCPQ Quote Non-Editable Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Approval --></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Editable --></description>
+        <label><!-- Editable --></label>
+        <name>Editable</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Editable Beef Specific Quotes --></description>
+        <label><!-- Editable Beef --></label>
+        <name>Editable_Beef</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Non-Editable --></description>
+        <label><!-- Non-Editable --></label>
+        <name>Non_Editable</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Non-Editable Beef Specific Quotes --></description>
+        <label><!-- Non-Editable Beef --></label>
+        <name>Non_Editable_Beef</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Invalid Formula Type, acceptable Formula Types per Pricing Type are the following: Fixed (N/A, PRICE_LIST), Formula (USDA, PRICE_LIST,FIXED) and N/A only for all other pricing type. --></errorMessage>
+        <name>Check_Formula_Type_Validity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expiration Date is locked and cannot be edited. --></errorMessage>
+        <name>NOF_PPP_ExpirationDate_Locked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pricing End Date Cannot be greater than 90 days from today for NOF quotes. --></errorMessage>
+        <name>NOF_PricingEndDate_Maximum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pricing Start Date Cannot be less than 3 weeks from today for NOF quotes. --></errorMessage>
+        <name>NOF_PricingStartDate_Minimum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot update Quote Expiration Date if status is not &apos;Needs Review&apos; or &apos;Approved&apos;. --></errorMessage>
+        <name>No_Expiration_Date_Update_On_Draft</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot create a new quote on a closed opportunity. --></errorMessage>
+        <name>No_Quote_Creation_On_Closed_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quote is locked. Those Fields cannot be edited. --></errorMessage>
+        <name>Non_Edition_OnLocked_Quote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pricing End Date Cannot be greater than PPP Duration. --></errorMessage>
+        <name>PPP_PricingEndDate_Maximum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pricing Start Date Cannot be less than 60 days from today for PPP quotes. --></errorMessage>
+        <name>PPP_PricingStartDate_Minimum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot change Pricing Type after Quote creation.  Create new primary quote to change Pricing Type. --></errorMessage>
+        <name>PricingType_Cannot_Change_After_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pricing End Date must be after Pricing Start Date --></errorMessage>
+        <name>Pricing_End_Date_Greater_Than_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

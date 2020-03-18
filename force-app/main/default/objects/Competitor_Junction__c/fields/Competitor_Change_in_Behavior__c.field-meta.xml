@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Change_in_Behavior__c</fullName>
+    <externalId>false</externalId>
+    <label>Competitor Change in Behavior</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Disciplined</fullName>
+                <default>false</default>
+                <label>Disciplined</label>
+            </value>
+            <value>
+                <fullName>More Aggressive</fullName>
+                <default>false</default>
+                <label>More Aggressive</label>
+            </value>
+            <value>
+                <fullName>Out of Position</fullName>
+                <default>false</default>
+                <label>Out of Position</label>
+            </value>
+            <value>
+                <fullName>Stepping back</fullName>
+                <default>false</default>
+                <label>Stepping back</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

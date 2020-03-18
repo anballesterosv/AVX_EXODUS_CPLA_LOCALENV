@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product GLOBAL SKU DESC --></label>
+    <name>Product_GLOBAL_SKU_DESC__c</name>
+</CustomFieldTranslation>

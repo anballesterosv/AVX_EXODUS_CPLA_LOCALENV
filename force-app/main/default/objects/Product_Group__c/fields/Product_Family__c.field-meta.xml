@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Family__c</fullName>
+    <description>Product Family</description>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Protein_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Casing cooked</fullName>
+                <default>false</default>
+                <label>Casing cooked</label>
+            </value>
+            <value>
+                <fullName>Chub</fullName>
+                <default>false</default>
+                <label>Chub</label>
+            </value>
+            <value>
+                <fullName>Diced</fullName>
+                <default>false</default>
+                <label>Diced</label>
+            </value>
+            <value>
+                <fullName>Fry</fullName>
+                <default>false</default>
+                <label>Fry</label>
+            </value>
+            <value>
+                <fullName>Liquid Egg</fullName>
+                <default>false</default>
+                <label>Liquid Egg</label>
+            </value>
+            <value>
+                <fullName>Loaf</fullName>
+                <default>false</default>
+                <label>Loaf</label>
+            </value>
+            <value>
+                <fullName>Marinated</fullName>
+                <default>false</default>
+                <label>Marinated</label>
+            </value>
+            <value>
+                <fullName>Patty</fullName>
+                <default>false</default>
+                <label>Patty</label>
+            </value>
+            <value>
+                <fullName>Prepared Egg</fullName>
+                <default>false</default>
+                <label>Prepared Egg</label>
+            </value>
+            <value>
+                <fullName>Rib</fullName>
+                <default>false</default>
+                <label>Rib</label>
+            </value>
+            <value>
+                <fullName>Shell Egg</fullName>
+                <default>false</default>
+                <label>Shell Egg</label>
+            </value>
+            <value>
+                <fullName>Strip</fullName>
+                <default>false</default>
+                <label>Strip</label>
+            </value>
+            <value>
+                <fullName>65% - 75%</fullName>
+                <default>false</default>
+                <label>65% - 75%</label>
+            </value>
+            <value>
+                <fullName>76% - 83%</fullName>
+                <default>false</default>
+                <label>76% - 83%</label>
+            </value>
+            <value>
+                <fullName>84% - 89%</fullName>
+                <default>false</default>
+                <label>84% - 89%</label>
+            </value>
+            <value>
+                <fullName>90% +</fullName>
+                <default>false</default>
+                <label>90% +</label>
+            </value>
+            <value>
+                <fullName>Assorted</fullName>
+                <default>false</default>
+                <label>Assorted</label>
+            </value>
+            <value>
+                <fullName>Block</fullName>
+                <default>false</default>
+                <label>Block</label>
+            </value>
+            <value>
+                <fullName>Bone in Breast</fullName>
+                <default>false</default>
+                <label>Bone in Breast</label>
+            </value>
+            <value>
+                <fullName>Bone-in</fullName>
+                <default>false</default>
+                <label>Bone-in</label>
+            </value>
+            <value>
+                <fullName>Boneless</fullName>
+                <default>false</default>
+                <label>Boneless</label>
+            </value>
+            <value>
+                <fullName>Bones</fullName>
+                <default>false</default>
+                <label>Bones</label>
+            </value>
+            <value>
+                <fullName>Breaded</fullName>
+                <default>false</default>
+                <label>Breaded</label>
+            </value>
+            <value>
+                <fullName>Breakfast</fullName>
+                <default>false</default>
+                <label>Breakfast</label>
+            </value>
+            <value>
+                <fullName>Breast</fullName>
+                <default>false</default>
+                <label>Breast</label>
+            </value>
+            <value>
+                <fullName>Brisket</fullName>
+                <default>false</default>
+                <label>Brisket</label>
+            </value>
+            <value>
+                <fullName>BTFT</fullName>
+                <default>false</default>
+                <label>BTFT</label>
+            </value>
+            <value>
+                <fullName>Bulk</fullName>
+                <default>false</default>
+                <label>Bulk</label>
+            </value>
+            <value>
+                <fullName>Butterfly</fullName>
+                <default>false</default>
+                <label>Butterfly</label>
+            </value>
+            <value>
+                <fullName>Carne</fullName>
+                <default>false</default>
+                <label>Carne</label>
+            </value>
+            <value>
+                <fullName>Center</fullName>
+                <default>false</default>
+                <label>Center</label>
+            </value>
+            <value>
+                <fullName>Cheese</fullName>
+                <default>false</default>
+                <label>Cheese</label>
+            </value>
+            <value>
+                <fullName>Chew</fullName>
+                <default>false</default>
+                <label>Chew</label>
+            </value>
+            <value>
+                <fullName>Chop</fullName>
+                <default>false</default>
+                <label>Chop</label>
+            </value>
+            <value>
+                <fullName>Chuck</fullName>
+                <default>false</default>
+                <label>Chuck</label>
+            </value>
+            <value>
+                <fullName>Chunked</fullName>
+                <default>false</default>
+                <label>Chunked</label>
+            </value>
+            <value>
+                <fullName>Clod</fullName>
+                <default>false</default>
+                <label>Clod</label>
+            </value>
+            <value>
+                <fullName>Combo</fullName>
+                <default>false</default>
+                <label>Combo</label>
+            </value>
+            <value>
+                <fullName>Combos</fullName>
+                <default>false</default>
+                <label>Combos</label>
+            </value>
+            <value>
+                <fullName>Continuous Line</fullName>
+                <default>false</default>
+                <label>Continuous Line</label>
+            </value>
+            <value>
+                <fullName>Co-Pack</fullName>
+                <default>false</default>
+                <label>Co-Pack</label>
+            </value>
+            <value>
+                <fullName>Cross Dock</fullName>
+                <default>false</default>
+                <label>Cross Dock</label>
+            </value>
+            <value>
+                <fullName>CS Rib</fullName>
+                <default>false</default>
+                <label>CS Rib</label>
+            </value>
+            <value>
+                <fullName>Cube</fullName>
+                <default>false</default>
+                <label>Cube</label>
+            </value>
+            <value>
+                <fullName>Cutler</fullName>
+                <default>false</default>
+                <label>Cutler</label>
+            </value>
+            <value>
+                <fullName>Dinner</fullName>
+                <default>false</default>
+                <label>Dinner</label>
+            </value>
+            <value>
+                <fullName>Distribution</fullName>
+                <default>false</default>
+                <label>Distribution</label>
+            </value>
+            <value>
+                <fullName>Extruded</fullName>
+                <default>false</default>
+                <label>Extruded</label>
+            </value>
+            <value>
+                <fullName>Eye</fullName>
+                <default>false</default>
+                <label>Eye</label>
+            </value>
+            <value>
+                <fullName>Fat and Bone</fullName>
+                <default>false</default>
+                <label>Fat and Bone</label>
+            </value>
+            <value>
+                <fullName>Flat</fullName>
+                <default>false</default>
+                <label>Flat</label>
+            </value>
+            <value>
+                <fullName>Freight Services</fullName>
+                <default>false</default>
+                <label>Freight Services</label>
+            </value>
+            <value>
+                <fullName>Inclusion Patty</fullName>
+                <default>false</default>
+                <label>Inclusion Patty</label>
+            </value>
+            <value>
+                <fullName>IQF Patty</fullName>
+                <default>false</default>
+                <label>IQF Patty</label>
+            </value>
+            <value>
+                <fullName>Jerky</fullName>
+                <default>false</default>
+                <label>Jerky</label>
+            </value>
+            <value>
+                <fullName>Jobber</fullName>
+                <default>false</default>
+                <label>Jobber</label>
+            </value>
+            <value>
+                <fullName>Kettle</fullName>
+                <default>false</default>
+                <label>Kettle</label>
+            </value>
+            <value>
+                <fullName>Knuckle</fullName>
+                <default>false</default>
+                <label>Knuckle</label>
+            </value>
+            <value>
+                <fullName>Leg</fullName>
+                <default>false</default>
+                <label>Leg</label>
+            </value>
+            <value>
+                <fullName>Liquid Egg - Conagra</fullName>
+                <default>false</default>
+                <label>Liquid Egg - Conagra</label>
+            </value>
+            <value>
+                <fullName>Loin</fullName>
+                <default>false</default>
+                <label>Loin</label>
+            </value>
+            <value>
+                <fullName>Meatball</fullName>
+                <default>false</default>
+                <label>Meatball</label>
+            </value>
+            <value>
+                <fullName>Navel</fullName>
+                <default>false</default>
+                <label>Navel</label>
+            </value>
+            <value>
+                <fullName>Offal</fullName>
+                <default>false</default>
+                <label>Offal</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Packing</fullName>
+                <default>false</default>
+                <label>Packing</label>
+            </value>
+            <value>
+                <fullName>Pallets</fullName>
+                <default>false</default>
+                <label>Pallets</label>
+            </value>
+            <value>
+                <fullName>Pellet</fullName>
+                <default>false</default>
+                <label>Pellet</label>
+            </value>
+            <value>
+                <fullName>Primal</fullName>
+                <default>false</default>
+                <label>Primal</label>
+            </value>
+            <value>
+                <fullName>Raw Material &amp; WIP</fullName>
+                <default>false</default>
+                <label>Raw Material &amp; WIP</label>
+            </value>
+            <value>
+                <fullName>Raw Roast</fullName>
+                <default>false</default>
+                <label>Raw Roast</label>
+            </value>
+            <value>
+                <fullName>Rib End</fullName>
+                <default>false</default>
+                <label>Rib End</label>
+            </value>
+            <value>
+                <fullName>Roast</fullName>
+                <default>false</default>
+                <label>Roast</label>
+            </value>
+            <value>
+                <fullName>Round</fullName>
+                <default>false</default>
+                <label>Round</label>
+            </value>
+            <value>
+                <fullName>RTC</fullName>
+                <default>false</default>
+                <label>RTC</label>
+            </value>
+            <value>
+                <fullName>RTC Breast</fullName>
+                <default>false</default>
+                <label>RTC Breast</label>
+            </value>
+            <value>
+                <fullName>Sauce</fullName>
+                <default>false</default>
+                <label>Sauce</label>
+            </value>
+            <value>
+                <fullName>Sauce/Soup</fullName>
+                <default>false</default>
+                <label>Sauce/Soup</label>
+            </value>
+            <value>
+                <fullName>Short Rib</fullName>
+                <default>false</default>
+                <label>Short Rib</label>
+            </value>
+            <value>
+                <fullName>Sirloin</fullName>
+                <default>false</default>
+                <label>Sirloin</label>
+            </value>
+            <value>
+                <fullName>Sliced</fullName>
+                <default>false</default>
+                <label>Sliced</label>
+            </value>
+            <value>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+                <label>Specialty</label>
+            </value>
+            <value>
+                <fullName>Steak</fullName>
+                <default>false</default>
+                <label>Steak</label>
+            </value>
+            <value>
+                <fullName>Stew</fullName>
+                <default>false</default>
+                <label>Stew</label>
+            </value>
+            <value>
+                <fullName>Stir</fullName>
+                <default>false</default>
+                <label>Stir</label>
+            </value>
+            <value>
+                <fullName>Tender</fullName>
+                <default>false</default>
+                <label>Tender</label>
+            </value>
+            <value>
+                <fullName>Thin Cut</fullName>
+                <default>false</default>
+                <label>Thin Cut</label>
+            </value>
+            <value>
+                <fullName>Top Butt</fullName>
+                <default>false</default>
+                <label>Top Butt</label>
+            </value>
+            <value>
+                <fullName>Tray Pack</fullName>
+                <default>false</default>
+                <label>Tray Pack</label>
+            </value>
+            <value>
+                <fullName>Tri Tip</fullName>
+                <default>false</default>
+                <label>Tri Tip</label>
+            </value>
+            <value>
+                <fullName>Under 65%</fullName>
+                <default>false</default>
+                <label>Under 65%</label>
+            </value>
+            <value>
+                <fullName>Warehouse Service</fullName>
+                <default>false</default>
+                <label>Warehouse Service</label>
+            </value>
+            <value>
+                <fullName>Whole Bird</fullName>
+                <default>false</default>
+                <label>Whole Bird</label>
+            </value>
+            <value>
+                <fullName>Wing</fullName>
+                <default>false</default>
+                <label>Wing</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Pork-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Beef-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Chicken-Cooked Batch</controllingFieldValue>
+            <valueName>Diced</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Turkey-Case Ready Muscle</controllingFieldValue>
+            <valueName>Bone in Breast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Pork-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Beef-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Chicken-Cooked Batch</controllingFieldValue>
+            <valueName>Bulk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Pork-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Beef-Cooked Batch</controllingFieldValue>
+            <controllingFieldValue>Chicken-Cooked Batch</controllingFieldValue>
+            <valueName>Sliced</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Cooked Batch</controllingFieldValue>
+            <valueName>Whole Bird</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Other</controllingFieldValue>
+            <controllingFieldValue>Turkey-Other</controllingFieldValue>
+            <controllingFieldValue>Beef-Other</controllingFieldValue>
+            <controllingFieldValue>Pork-Other</controllingFieldValue>
+            <valueName>Co-Pack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Other</controllingFieldValue>
+            <controllingFieldValue>Turkey-Other</controllingFieldValue>
+            <controllingFieldValue>Beef-Other</controllingFieldValue>
+            <controllingFieldValue>Pork-Other</controllingFieldValue>
+            <valueName>Raw Material &amp; WIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Other</controllingFieldValue>
+            <controllingFieldValue>Pork-Other</controllingFieldValue>
+            <valueName>Sauce/Soup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-FP Raw</controllingFieldValue>
+            <controllingFieldValue>Beef-FP Roast</controllingFieldValue>
+            <valueName>Marinated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-FP Raw</controllingFieldValue>
+            <controllingFieldValue>Beef-FP Roast</controllingFieldValue>
+            <valueName>Raw Roast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-FP Raw</controllingFieldValue>
+            <valueName>RTC Breast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Egg-Secondary Other-Egg Processed</controllingFieldValue>
+            <valueName>Liquid Egg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Egg-Secondary Other-Egg Processed</controllingFieldValue>
+            <controllingFieldValue>Egg-Value Added Cooked-Egg Processed</controllingFieldValue>
+            <valueName>Prepared Egg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Egg-Secondary Other-Egg Processed</controllingFieldValue>
+            <valueName>Shell Egg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Other</controllingFieldValue>
+            <valueName>Sauce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Pet Products</controllingFieldValue>
+            <controllingFieldValue>Turkey-Whole Bird</controllingFieldValue>
+            <valueName>Bones</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Pet Products</controllingFieldValue>
+            <controllingFieldValue>Turkey-Whole Bird</controllingFieldValue>
+            <valueName>Chew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Pet Products</controllingFieldValue>
+            <controllingFieldValue>Turkey-Whole Bird</controllingFieldValue>
+            <valueName>Jerky</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Egg-Value Added-Egg Processed</controllingFieldValue>
+            <valueName>Liquid Egg - Conagra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Services</controllingFieldValue>
+            <valueName>Freight Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Services</controllingFieldValue>
+            <valueName>Packing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Services</controllingFieldValue>
+            <valueName>Pallets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Services</controllingFieldValue>
+            <valueName>Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Services</controllingFieldValue>
+            <valueName>Warehouse Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Specialty</controllingFieldValue>
+            <valueName>Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Specialty</controllingFieldValue>
+            <controllingFieldValue>Pork-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Rendered</controllingFieldValue>
+            <controllingFieldValue>Beef-Value Added Muscle</controllingFieldValue>
+            <controllingFieldValue>Chicken-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Grind</controllingFieldValue>
+            <controllingFieldValue>Chicken-Case Ready Grind</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Grinds</controllingFieldValue>
+            <valueName>Loaf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Grind</controllingFieldValue>
+            <controllingFieldValue>Turkey-Case Ready Grind</controllingFieldValue>
+            <controllingFieldValue>Chicken-Case Ready Grind</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Grinds</controllingFieldValue>
+            <controllingFieldValue>Beef-Commodity Grind</controllingFieldValue>
+            <valueName>Patty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <controllingFieldValue>Pork-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Rib</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Strip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Brisket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Chuck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Clod</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Eye</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Flat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Knuckle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Navel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Round</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Short Rib</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Tender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Top Butt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Muscle Meat</controllingFieldValue>
+            <valueName>Tri Tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Chop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Loin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Steak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Stew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Thin Cut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Sausage</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Sausage</controllingFieldValue>
+            <controllingFieldValue>Turkey-Case Ready Sausage</controllingFieldValue>
+            <valueName>Breakfast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready Sausage</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Sausage</controllingFieldValue>
+            <controllingFieldValue>Turkey-Case Ready Sausage</controllingFieldValue>
+            <valueName>Dinner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Rendered</controllingFieldValue>
+            <valueName>Fat and Bone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Beef-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Chicken-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Turkey-Continuous</controllingFieldValue>
+            <valueName>Casing cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Beef-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Chicken-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Turkey-Continuous</controllingFieldValue>
+            <valueName>Fry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Beef-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Chicken-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Turkey-Continuous</controllingFieldValue>
+            <valueName>Continuous Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Beef-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Chicken-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Turkey-Continuous</controllingFieldValue>
+            <valueName>Extruded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Beef-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Chicken-Continuous Cooked</controllingFieldValue>
+            <controllingFieldValue>Turkey-Continuous</controllingFieldValue>
+            <valueName>Kettle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Trim</controllingFieldValue>
+            <valueName>65% - 75%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Trim</controllingFieldValue>
+            <valueName>76% - 83%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Trim</controllingFieldValue>
+            <valueName>84% - 89%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Trim</controllingFieldValue>
+            <valueName>90% +</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Trim</controllingFieldValue>
+            <valueName>BTFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Trim</controllingFieldValue>
+            <valueName>Under 65%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added Muscle</controllingFieldValue>
+            <valueName>Breaded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added Muscle</controllingFieldValue>
+            <valueName>Jobber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added Muscle</controllingFieldValue>
+            <valueName>RTC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Add Grind</controllingFieldValue>
+            <valueName>Chunked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Add Grind</controllingFieldValue>
+            <valueName>Inclusion Patty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Add Grind</controllingFieldValue>
+            <controllingFieldValue>Beef-Commodity Grind</controllingFieldValue>
+            <controllingFieldValue>Turkey-Commodity</controllingFieldValue>
+            <valueName>IQF Patty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Add Grind</controllingFieldValue>
+            <valueName>Meatball</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Case Ready Grind</controllingFieldValue>
+            <valueName>Tray Pack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Case Ready Muscle</controllingFieldValue>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Breast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Case Ready Muscle</controllingFieldValue>
+            <valueName>Leg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Case Ready Muscle</controllingFieldValue>
+            <valueName>Wing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Assorted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Butterfly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Carne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Cross Dock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>CS Rib</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Cube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Cutler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Offal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Primal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Rib End</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Roast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Sirloin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready Muscle</controllingFieldValue>
+            <valueName>Stir</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Commodity Grind</controllingFieldValue>
+            <controllingFieldValue>Turkey-Commodity</controllingFieldValue>
+            <valueName>Chub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Commodity Grind</controllingFieldValue>
+            <valueName>Combos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-FTB</controllingFieldValue>
+            <valueName>Block</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-FTB</controllingFieldValue>
+            <valueName>Pellet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Case Ready Muscle</controllingFieldValue>
+            <valueName>Bone-in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Case Ready Muscle</controllingFieldValue>
+            <valueName>Boneless</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Commodity</controllingFieldValue>
+            <valueName>Combo</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

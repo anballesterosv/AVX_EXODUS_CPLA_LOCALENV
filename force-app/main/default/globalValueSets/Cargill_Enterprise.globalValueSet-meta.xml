@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FoodIngredientsBioIndustrialFIBI</fullName>
+        <default>false</default>
+        <label>Food Ingredients &amp; Bio Industrial (FIBI)</label>
+    </customValue>
+    <customValue>
+        <fullName>Animal Proteins &amp; Salt (APS)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Animal Proteins &amp; Salt (APS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Cargill Enterprise</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

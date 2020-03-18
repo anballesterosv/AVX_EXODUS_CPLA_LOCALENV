@@ -1,0 +1,21 @@
+<aura:component controller="Protein_SampleRequestController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="excelData" type="string" />
+    <aura:attribute name="modifiedexcelData" type="string" />
+    <ltng:require scripts="{!$Resource.OpenXMLSDK}"/> 
+    <ltng:require scripts="{!$Resource.FileSaver}"/> 
+    <aura:attribute name="sampleRequestData" type="sObject"/>
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="sampleProdList" type="List" default="[]"/>
+    <force:recordData recordId="{!$SObjectType.CurrentUser.Id}"
+                      layoutType="FULL"
+                      targetFields="{!v.record}" />
+	<p id="jsdownload"></p>   
+    <div>
+        <p >Press Save to Download the Sample Request form.</p>
+        <p >Once the form is saved, it can be emailed or printed.</p>
+        <p >If you have any questions, contact Josh Jenkins.</p>
+    </div>
+    
+</aura:component>

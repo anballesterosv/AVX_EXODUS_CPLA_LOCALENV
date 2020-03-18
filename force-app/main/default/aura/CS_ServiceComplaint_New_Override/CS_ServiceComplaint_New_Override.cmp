@@ -1,0 +1,11 @@
+<aura:component controller="CS_OverrideCntrl"
+	implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName,lightning:isUrlAddressable,force:lightningQuickAction"
+	access="global">
+	<lightning:workspaceAPI aura:id="workspace" />
+	<aura:handler event="lightning:tabFocused" action="{! c.onTabFocused }" />
+	<aura:attribute name="recordId" type="String" />
+	<aura:attribute name="additionalParams" type="String" />
+	<aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+	<aura:handler event="force:showToast" action="{!c.afterSave}" />
+	<div id="div1"></div>
+</aura:component>

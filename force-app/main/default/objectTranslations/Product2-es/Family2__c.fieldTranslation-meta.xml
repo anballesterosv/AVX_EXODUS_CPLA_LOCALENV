@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Sub Familia</label>
+    <name>Family2__c</name>
+    <picklistValues>
+        <masterLabel>ADOBADOS</masterLabel>
+        <translation><!-- ADOBADOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALA</masterLabel>
+        <translation><!-- ALA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMBOS</masterLabel>
+        <translation><!-- COMBOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMBUTIDOS</masterLabel>
+        <translation><!-- EMBUTIDOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENTERO/PARTIDO</masterLabel>
+        <translation><!-- ENTERO/PARTIDO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESPECIALIDADES</masterLabel>
+        <translation><!-- ESPECIALIDADES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FORMADOS/PREFORMADOS</masterLabel>
+        <translation><!-- FORMADOS/PREFORMADOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PECHUGAS</masterLabel>
+        <translation><!-- PECHUGAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PERNIL</masterLabel>
+        <translation><!-- PERNIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POLLO S/VISCERA</masterLabel>
+        <translation><!-- POLLO S/VISCERA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QUESOS</masterLabel>
+        <translation><!-- QUESOS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

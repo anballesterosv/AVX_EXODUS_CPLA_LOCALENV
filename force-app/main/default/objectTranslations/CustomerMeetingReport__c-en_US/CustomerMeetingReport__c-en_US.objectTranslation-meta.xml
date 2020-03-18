@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Meeting Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Meeting Reports</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Meeting Report Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Post Meeting Details --></label>
+            <section>Post Meeting Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Effectiveness Planning Details --></label>
+            <section>Sales Effectiveness Planning Details</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Account Team --></label>
+        <name>Account_Team</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Meeting Date is required to advance Status to &quot;Complete&quot; or  &quot;Closed&quot; --></errorMessage>
+        <name>Customer_Meeting_Date_Blank_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Descriptive Name cannot be blank. --></errorMessage>
+        <name>Descriptive_Name_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Meeting Report Name cannot be changed. --></errorMessage>
+        <name>RestrictCustomerMeetingReportNameUpdate</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>40.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>Add Ship-To(s) from Account to the quote</description>
+    <label>CPG_AddShipTo2Quote</label>
+    <packageVersions>
+        <majorNumber>8</majorNumber>
+        <minorNumber>22</minorNumber>
+        <namespace>CameleonCPQ</namespace>
+    </packageVersions>
+</ApexPage>

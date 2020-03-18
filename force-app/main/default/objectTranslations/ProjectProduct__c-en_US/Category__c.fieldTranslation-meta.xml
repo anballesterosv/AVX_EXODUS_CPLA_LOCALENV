@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Bakery</masterLabel>
+        <translation><!-- Bakery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beverage</masterLabel>
+        <translation><!-- Beverage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confectionery</masterLabel>
+        <translation><!-- Confectionery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Convenience foods</masterLabel>
+        <translation><!-- Convenience foods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dairy</masterLabel>
+        <translation><!-- Dairy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feed</masterLabel>
+        <translation><!-- Feed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food ingredients</masterLabel>
+        <translation><!-- Food ingredients --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fruit</masterLabel>
+        <translation><!-- Fruit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial</masterLabel>
+        <translation><!-- Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infant &amp; baby food</masterLabel>
+        <translation><!-- Infant &amp; baby food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meat</masterLabel>
+        <translation><!-- Meat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal care</masterLabel>
+        <translation><!-- Personal care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pet food</masterLabel>
+        <translation><!-- Pet food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharma</masterLabel>
+        <translation><!-- Pharma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snacks &amp; cereals</masterLabel>
+        <translation><!-- Snacks &amp; cereals --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

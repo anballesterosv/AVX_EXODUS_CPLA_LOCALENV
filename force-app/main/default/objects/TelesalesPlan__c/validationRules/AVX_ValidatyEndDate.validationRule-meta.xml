@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVX_ValidatyEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND(OR( ISNEW(),ISCHANGED(EndDate__c)),
+OR(EndDate__c &lt; TODAY(),EndDate__c &lt; StartDate__c  )
+),true,false)</errorConditionFormula>
+    <errorMessage>The end date cannot be less than today&#39;s date or less than the start date.</errorMessage>
+</ValidationRule>

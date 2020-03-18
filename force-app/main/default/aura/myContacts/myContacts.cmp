@@ -1,0 +1,32 @@
+<aura:component controller="CPG_AddChildController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+ 
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <aura:attribute name="contacts" type="List" />
+ 
+  <table class="slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout">
+    <thead>
+      <tr class="slds-text-heading--label">
+        <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+        <th scope="col"><div class="slds-truncate" title="Email">Email</div></th>
+          <th scope="col"><div class="slds-truncate" title="Title">Title</div></th>
+        <th scope="col"><div class="slds-truncate" title="Delete">Delete</div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Use the Apex model and controller to fetch server side data -->
+      <aura:iteration items="{!v.contacts}" var="rec">
+        <tr>
+          
+          <td><div class="slds-truncate" title="{!rec.Contact__r.Name}"><a target="_blank" href="{!'/one/one.app?#/sObject/'+ rec.Contact__c + '/view'}">{!rec.Contact__r.Name}</a></div></td>
+          <td><div class="slds-truncate" title="{!rec.Contact__r.Email}">{!rec.Contact__r.Email}</div></td>
+          <td><div class="slds-truncate" title="{!rec.Contact__r.Title}">{!rec.Contact__r.Title}</div></td>
+          <td>
+            <div class="slds-truncate">
+                <button class="slds-truncate slds-button--brand" onclick="{!c.deleteContact}" text="Delete Contact" id="{!rec.Contact__c}">Remove</button>
+        	</div>
+          </td>
+        </tr>
+      </aura:iteration>
+    </tbody>
+  </table>	
+</aura:component>

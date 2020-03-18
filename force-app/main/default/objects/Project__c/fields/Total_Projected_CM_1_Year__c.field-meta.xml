@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Projected_CM_1_Year__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Projected CM (1-Year)</label>
+    <summarizedField>ProjectProduct__c.Projected_CM_1_Year__c</summarizedField>
+    <summaryForeignKey>ProjectProduct__c.Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

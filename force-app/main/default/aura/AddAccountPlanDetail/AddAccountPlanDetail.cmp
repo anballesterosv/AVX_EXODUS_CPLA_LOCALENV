@@ -1,0 +1,99 @@
+<aura:component controller="CPG_AddAccountPlanDetailController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global">
+	<aura:attribute name="StratObjList" type="List" />
+    <aura:attribute name="StratIdList" type="List" />
+    <aura:attribute name="OppList" type="List" />
+    <aura:attribute name="hasOpp" type="boolean" default="false"/>
+    <aura:attribute name="showSaveButton" type="boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div class="slds-page-header">
+        <div class="slds-media__body">
+      <h1 class="slds-page-header__title slds-truncate slds-align-middle" title="Add Account Plan Details">Add Account Plan Details</h1>
+     </div>
+  	</div>
+    <div class="slds-m-around--x-small">
+        <aura:if isTrue="{!!(v.hasOpp)}" >
+        <table class="slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="width:15%" >
+                        <div class="slds-truncate" title="Select">Select</div>
+                    </th>
+                    <th scope="col">
+                        <div  class="slds-truncate" title="Strategic Objective">Strategic Objective</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="End Date">End Date</div>
+                    </th>
+                </tr>
+            </thead>
+ 
+            <tbody>
+               <!-- Iterate all child record list in table format -->  
+                <aura:iteration items="{!v.StratObjList}" var="rec">
+                    <tr>
+                        <td>
+                            <ui:inputCheckbox aura:id="checkBox" text="{!rec.Id}" />
+                        </td>
+                        <td>
+                            <div class="slds-cell-wrap" title="{!rec.Name}">{!rec.Name}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="{!rec.EndDate__c }">{!rec.EndDate__c }</div>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+        </aura:if>
+    </div>
+    <aura:if isTrue="{!v.hasOpp}" >
+    	<table class="slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout">
+            <thead>
+                <tr class="slds-text-title_caps">
+                    <th scope="col" style="width:15%" >
+                        <div class="slds-truncate" title="Select">Select</div>
+                    </th>
+                    <th scope="col">
+                        <div  class="slds-truncate" title="Oppotunity">Opportunity</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Account">Account</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Close Date">Close Date</div>
+                    </th>
+                </tr>
+            </thead>
+ 
+            <tbody>
+               <!-- Iterate all child record list in table format -->  
+                <aura:iteration items="{!v.OppList}" var="rec">
+                    <tr>
+                        <td>
+                            <ui:inputCheckbox aura:id="checkBoxOpp" text="{!rec.Id}" />
+                        </td>
+                        <td>
+                            <div class="slds-cell-wrap" title="{!rec.Name}">{!rec.Name}</div>
+                        </td>
+                        <td>
+                            <div cclass="slds-cell-wrap" title="{!rec.Account.Name}">{!rec.Account.Name}</div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="{!rec.CloseDate}">{!rec.ECloseDate}</div>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>    
+    </aura:if>
+    <div>
+      <div class="slds-grid slds-grid--align-end slds-m-around--x-small">
+        <aura:if isTrue="{!!(v.hasOpp)}" >
+          <button class="slds-button slds-button_neutral" onclick="{!c.addSelectedStrat}">Save n Next</button>  
+        </aura:if>
+        <aura:if isTrue="{!v.hasOpp}">
+        	<ui:button label="Save" press="{!c.saveSelected}" aura:id="myButton"/>
+        </aura:if>
+      </div>
+    </div>    
+</aura:component>

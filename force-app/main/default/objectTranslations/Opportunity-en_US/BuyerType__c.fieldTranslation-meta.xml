@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Buyer Type --></label>
+    <name>BuyerType__c</name>
+    <picklistValues>
+        <masterLabel>Poker Player</masterLabel>
+        <translation><!-- Poker Player --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price Buyer</masterLabel>
+        <translation><!-- Price Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relationship Buyer</masterLabel>
+        <translation><!-- Relationship Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Buyer</masterLabel>
+        <translation><!-- Value Buyer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

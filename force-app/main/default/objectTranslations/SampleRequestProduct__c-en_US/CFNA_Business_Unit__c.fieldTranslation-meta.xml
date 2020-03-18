@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Unit --></label>
+    <name>CFNA_Business_Unit__c</name>
+    <picklistValues>
+        <masterLabel>CVAP-Beef (Burgers)</masterLabel>
+        <translation><!-- CVAP-Beef (Burgers) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CVAP-Poultry (Eggs)</masterLabel>
+        <translation><!-- CVAP-Poultry (Eggs) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargill Beef</masterLabel>
+        <translation><!-- Cargill Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Ready</masterLabel>
+        <translation><!-- Case Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cocoa &amp; Chocolate</masterLabel>
+        <translation><!-- Cocoa &amp; Chocolate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foodservice Oils</masterLabel>
+        <translation><!-- Foodservice Oils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salt</masterLabel>
+        <translation><!-- Salt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sugar</masterLabel>
+        <translation><!-- Sugar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truvia</masterLabel>
+        <translation><!-- Truvia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey &amp; Cooked Meats</masterLabel>
+        <translation><!-- Turkey &amp; Cooked Meats --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

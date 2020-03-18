@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Grade --></label>
+    <name>Grade__c</name>
+    <picklistValues>
+        <masterLabel>A Canadian</masterLabel>
+        <translation><!-- A Canadian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A Whole Birds</masterLabel>
+        <translation><!-- A Whole Birds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AA Canadian</masterLabel>
+        <translation><!-- AA Canadian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AAA Canadian</masterLabel>
+        <translation><!-- AAA Canadian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Angus</masterLabel>
+        <translation><!-- Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B Whole Birds/Plant Grade</masterLabel>
+        <translation><!-- B Whole Birds/Plant Grade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blended Gr Beef</masterLabel>
+        <translation><!-- Blended Gr Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boner</masterLabel>
+        <translation><!-- Boner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Angus Beef</masterLabel>
+        <translation><!-- Certified Angus Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Choice</masterLabel>
+        <translation><!-- Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cutter/Canner</masterLabel>
+        <translation><!-- Cutter/Canner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Genuine Texas Beef</masterLabel>
+        <translation><!-- Genuine Texas Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Roll</masterLabel>
+        <translation><!-- No Roll --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prime</masterLabel>
+        <translation><!-- Prime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prime Canadian</masterLabel>
+        <translation><!-- Prime Canadian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rancher&#39;s Registry</masterLabel>
+        <translation><!-- Rancher&apos;s Registry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Select</masterLabel>
+        <translation><!-- Select --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sterling Silver</masterLabel>
+        <translation><!-- Sterling Silver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trim</masterLabel>
+        <translation><!-- Trim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility</masterLabel>
+        <translation><!-- Utility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White cow</masterLabel>
+        <translation><!-- White cow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

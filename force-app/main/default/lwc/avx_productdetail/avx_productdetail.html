@@ -1,0 +1,90 @@
+<template>
+    <div>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" >{objpricebookentry.name}</h2>
+                </header>
+                <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-3">
+                            <span>
+                                <template if:true={showdefaultimage}>
+                                        <lightning-carousel disable-auto-scroll>
+                                            <lightning-carousel-image key={objpricebookentry.urlImage} src={objpricebookentry.urlImage} header={objpricebookentry.name}></lightning-carousel-image>
+                                        </lightning-carousel>
+                                </template>
+                                <template if:false={showdefaultimage}>
+                                        <lightning-carousel disable-auto-scroll>
+                                            <template for:each={objpricebookentry.urlLst} for:item="productImage">
+                                                <lightning-carousel-image class="carousel_image_custom" key={productImage.imageUrl} src={productImage.imageUrl} header={objpricebookentry.name}></lightning-carousel-image>
+                                            </template>
+                                        </lightning-carousel>
+                                </template>
+                            </span> 
+                        </div>
+                        <div class="slds-col slds-size_2-of-3">
+                            <span>
+                                <lightning-tabset variant="scoped">
+                                    <lightning-tab label={label.AVX_ProductDetails}>
+                                        <div class="slds-grid slds-gutters"> 
+                                            <div class="slds-col">
+                                                <span><b>{label.AVX_ProductCode}:</b></span></br>
+												<label>{objpricebookentry.productCode}</label></br>
+												<b>{label.AVX_Family}:</b> </br>
+												<label>{objpricebookentry.family}</label></br>
+												<b>{label.AVX_Family2}:</b></br>
+												<label>{objpricebookentry.family2}</label></br>
+												<b>{label.AVX_Brand}:</b></br>
+												<label>{objpricebookentry.brand}</label></br>
+												<b>{label.AVX_StorageCode}:</b> </br>
+												<label>{objpricebookentry.storageCode}</label></br>
+												<b>{label.AVX_GrossWeight}:</b></br>
+												<label>{objpricebookentry.grossWeight}</label></br>
+												<b>{label.AVX_NetWeight}:</b></br>
+                                                <label>{objpricebookentry.netWeight}</label></br>
+                                            </div>
+                                            <div class="slds-col">
+                                                <span><b>{label.AVX_DefaultUom}:</b></span></br>
+                                                <label>{objpricebookentry.defaultUom}</label></br>
+                                                <b>{label.AVX_DefaultPricingUOM}:</b></br>
+                                                <label>{objpricebookentry.defaultPricingUom}</label></br>
+                                                <b>{label.AVX_Business}:</b></br>
+                                                <label>{objpricebookentry.business}</label></br>
+                                                <b>{label.AVX_MaterialType}:</b></br>
+                                                <label>{objpricebookentry.materialType}</label></br>
+                                                <b>{label.AVX_Taxed}:</b></br>
+                                                <template if:true={taxedyesorno}>
+                                                    <label>{label.AVX_Yes}</label></br>
+                                                </template>
+                                                <template if:false={taxedyesorno}>
+                                                    <label>{label.AVX_No}</label></br>
+                                                </template>
+                                                <b>{label.AVX_DurationOfConservation}:</b></br>
+                                                <label>{objpricebookentry.durationOfConservation}</label></br>
+                                                <b>{label.AVX_PackType}</b></br>
+                                                <label>{objpricebookentry.packType}</label></br>
+                                            </div>
+                                        </div>
+                                        <b>{label.AVX_Description}:</b>
+                                        <p>{objpricebookentry.description}</p>
+                                    </lightning-tab>
+                                    <!-- <lightning-tab label="Transportation details">
+                                        Two Content !
+                                    </lightning-tab>
+                                    <lightning-tab label="More information">
+                                        Three Content !
+                                    </lightning-tab> -->
+                                </lightning-tabset>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button label={label.AVX_Close} variant="neutral" onclick={closeModal}></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+</template>

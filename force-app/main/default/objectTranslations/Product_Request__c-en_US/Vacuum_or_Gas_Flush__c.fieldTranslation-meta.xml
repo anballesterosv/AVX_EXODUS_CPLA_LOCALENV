@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vacuum or Gas Flush? --></label>
+    <name>Vacuum_or_Gas_Flush__c</name>
+    <picklistValues>
+        <masterLabel>Gas Flush</masterLabel>
+        <translation><!-- Gas Flush --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacuum</masterLabel>
+        <translation><!-- Vacuum --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Add the Customer meeting participants after you save the report in the Customer Meeting Representatives panel on the right of the Customer Meeting Report screen. --></help>
+    <label><!-- Customer Attendees --></label>
+    <name>Customer_Attendees__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please include a Date when updating this field with new information on Plant capital improvements. --></help>
+    <label><!-- Capital Improvement --></label>
+    <name>Capital_Improvement__c</name>
+</CustomFieldTranslation>

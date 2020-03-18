@@ -1,0 +1,213 @@
+<apex:page standardController="AccountPlan__c" extensions="AccountPlanPDFGenerate_Extension" renderAs="PDF" applyBodyTag="false">
+  
+   <head>
+      <style type="text/css" media="print">
+          
+          
+          @page :first{
+                
+             margin-top: 50px;
+             margin-bottom: 100px;
+                
+             
+          }
+          @page{      
+                margin-top: 180px;
+                margin-bottom: 100px;
+                
+                @top-center {
+                    content: element(header);
+                }
+                @bottom-right{
+                    content: element(footer);
+                }  
+               
+            }
+          div.header {
+                background: url("{!$Resource.CargillLeap_Logo}") no-repeat ;   
+                margin-top: 70px;
+                height: 130px;
+                width: 715px;
+                text-align: left;
+                position: running(header);
+            }
+            
+          table {
+                width: 100%;
+                
+                word-wrap:break-word;
+            }
+            
+          .centered {
+                text-align: center;
+            }
+            
+          .right {
+                text-align: right;
+            }
+          .tableHeader {
+                border-width: 0px 0px 1px 0px;
+                border-color: #000;
+                border-style: solid;
+            }
+          .sectionHeader {
+                width: 100%;
+                background-color: #eee;
+                font-size: 15pt;
+                padding: 5px;
+                margin: 20px 0px;
+                font-weight: bold;
+            }
+            
+            div.footer {
+                display: block;
+                padding: 10px;
+                position: running(footer);
+                margin-botton: 50px;
+               
+            }
+            
+            div.subfooter {
+                display: inline-block;
+            }
+            
+            div.right {
+                float: right;
+            }
+             
+            .pagenumber:before {
+                content: counter(page);
+            }
+            
+            .pagecount:before {
+                content: counter(pages);
+            } 
+            .italics{
+                font-style: italic;
+            }
+            .greencolor{
+                color:green;
+            }
+            .fontbold{
+                font-weight: bold;
+            }
+            
+      </style>
+  </head>
+  <div class="subfooter right">
+  <apex:outputText value="{!estDate}"/>
+               
+  
+  </div>
+  <br/>
+     <hr/>
+ <br/>
+ 
+    <div class="header"></div> 
+    <div class="footer">  
+      <div class=" subfooter right">Page <span class="pagenumber"/> of <span class="pagecount"/></div>
+      </div>
+    <apex:form >  
+      <apex:pageblock >
+      <br/>
+      <br/><br/><br/>
+      
+          <div class="sectionHeader">Customer Profiles</div>
+          
+          <apex:pageBlockSection >
+            <apex:outputText value="No Custom Profile Available" rendered="{!accPlanCustomerProfile.size==0}"/>
+          </apex:pageBlockSection> 
+         
+          <div style="page-break-inside: avoid;">
+          <apex:pageblockSection columns="1" rendered="{!accPlanCustomerProfile.size!=0}">
+          <apex:pageBlockTable value="{!accPlanCustomerProfile}" var="prof" border="1px">
+              <apex:column value="{!prof.Customer_Profile__r.CustomerDescription__c}" />
+              <apex:column value="{!prof.Customer_Profile__r.Brands__c}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!prof.Customer_Profile__r.Business__c}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!prof.Customer_Profile__r.ProductLines__c}" headerClass="centered"/>
+          </apex:pageBlockTable>
+          </apex:pageblockSection>
+          </div>
+          <br></br>
+          <br></br>
+         
+          <div style="page-break-inside: avoid;">
+          <div class="sectionHeader">Customer Team</div> 
+          <apex:pageblockSection columns="1" >
+          <apex:pageBlockTable value="{!teams}" var="mem" border="1px" rendered="{!teams.size!=0}">
+              <apex:column value="{!mem.User.Name}"/>  
+              <apex:column value="{!mem.TeamMemberRole}" headerClass="centered" styleClass="centered" headerValue="Account Team Member Role"/>
+              <apex:column value="{!mem.User.Cargill_Business_Unit__c}" headerClass="centered" styleClass="centered" headerValue="Business Unit"/>  
+         
+
+          </apex:pageBlockTable> 
+          </apex:pageblockSection>
+          </div>
+        
+        
+          <br></br>
+          <br></br>
+         
+          <div style="page-break-inside: avoid;">
+          <div class="sectionHeader">Contacts</div> 
+          <apex:pageblockSection columns="1" rendered="{!apdcontact.size!=0}">
+          <apex:pageBlockTable value="{!apdcontact}" var="con" border="1px">
+              <apex:column value="{!con.Contact__r.Name}"/>
+              <apex:column value="{!con.Contact__r.Title}" headerClass="centered" styleClass="centered" width="30px"/>
+              <apex:column value="{!con.Contact__r.Owner.Name}" headerClass="centered" styleClass="centered" headerValue="Owner"/>
+              <apex:column value="{!con.Contact__r.Role__c}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!con.Contact__r.ReportsTo.Name}" headerValue="Reports To" headerClass="centered" styleClass="right"/>  
+          </apex:pageBlockTable> 
+          </apex:pageblockSection>
+          </div>
+          <br></br>
+          <br></br>
+     
+          <div style="page-break-inside: avoid;">
+          <div class="sectionHeader">Opportunities</div>
+          <apex:pageblockSection columns="1" rendered="{!apdOpp.size!=0}">
+          <apex:pageBlockTable value="{!apdOpp}" var="opp"  border="1px">
+              <apex:column value="{!opp.Opportunity__r.Name}"/>
+              <apex:column value="{!opp.Opportunity__r.StageName}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!opp.Opportunity__r.Probability}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!opp.Opportunity__r.Amount}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!opp.Opportunity__r.CloseDate}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!opp.Opportunity__r.Description}" headerClass="centered" styleClass="right"/>
+          </apex:pageBlockTable>
+          </apex:pageblockSection>
+          </div>
+          <br></br>
+          <br></br>
+      
+          <div style="page-break-inside: avoid;">
+          <div class="sectionHeader">Projects</div>
+          <apex:pageblockSection columns="1" rendered="{!apdProjects.size!=0}">
+          <apex:pageblockTable value="{!apdProjects}" var="proj" border="1px">
+              <apex:column value="{!proj.Project__r.Name}"/>
+              <apex:column value="{!proj.Project__r.RecordType.Name}" headerClass="centered" styleClass="centered" headerValue="RecordType"/>
+              <apex:column value="{!proj.Project__r.Stage__c}" headerClass="centered" styleClass="centered" />
+              <apex:column value="{!proj.Project__r.Phase__c}" headerClass="centered" styleClass="right"/>
+          </apex:pageblockTable>
+          </apex:pageblockSection>
+          </div>
+          <br></br>
+       
+          <br></br>
+          <div style="page-break-inside: avoid;">
+          <div class="sectionHeader">Strategic Objects</div>
+          <apex:pageblockSection columns="1" rendered="{!apdSO.size!=0}">
+          <apex:pageblockTable value="{!apdSO}" var="strobj" border="1px">
+              <apex:column value="{!strobj.Strategic_Objective__r.CustomerProfile__r.Name}"/>
+              <apex:column value="{!strobj.Strategic_Objective__r.Status__c}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!strobj.Strategic_Objective__r.StartDate__c}" headerClass="centered" styleClass="centered"/>
+              <apex:column value="{!strobj.Strategic_Objective__r.EndDate__c}" headerClass="centered" styleClass="right"/>
+          </apex:pageblockTable>
+          </apex:pageblockSection>
+          </div>
+         
+      </apex:pageblock>
+      
+     
+  </apex:form>
+ 
+</apex:page>

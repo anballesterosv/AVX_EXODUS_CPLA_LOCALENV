@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Plans</value>
+    </caseValues>
+    <layouts>
+        <layout>Account Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Account Team --></label>
+        <name>Account_Team</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Account Plan Name cannot be changed. --></errorMessage>
+        <name>RestrictAccountPlanNameUpdate</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone_Account_Plan --></label>
+        <name>Clone_Account_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generated_Account_Plan_PDF --></label>
+        <name>Generated_Account_Plan_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

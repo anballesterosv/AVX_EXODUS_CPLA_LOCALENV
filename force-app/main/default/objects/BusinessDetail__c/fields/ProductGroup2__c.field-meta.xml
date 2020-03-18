@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductGroup2__c</fullName>
+    <description>Created for GEOS on 4/18/2017 Sprint1</description>
+    <externalId>false</externalId>
+    <label>Product Group 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sunflower oil</fullName>
+                <default>false</default>
+                <label>Sunflower oil</label>
+            </value>
+            <value>
+                <fullName>Commodity tropical oils</fullName>
+                <default>false</default>
+                <label>Commodity tropical oils</label>
+            </value>
+            <value>
+                <fullName>Value-Added Functional fats</fullName>
+                <default>false</default>
+                <label>Value-Added Functional fats</label>
+            </value>
+            <value>
+                <fullName>HORECA oils</fullName>
+                <default>false</default>
+                <label>HORECA oils</label>
+            </value>
+            <value>
+                <fullName>Bottled oil</fullName>
+                <default>false</default>
+                <label>Bottled oil</label>
+            </value>
+            <value>
+                <fullName>Malt</fullName>
+                <default>false</default>
+                <label>Malt</label>
+            </value>
+            <value>
+                <fullName>Syrups</fullName>
+                <default>false</default>
+                <label>Syrups</label>
+            </value>
+            <value>
+                <fullName>Native starch</fullName>
+                <default>false</default>
+                <label>Native starch</label>
+            </value>
+            <value>
+                <fullName>Modified starch</fullName>
+                <default>false</default>
+                <label>Modified starch</label>
+            </value>
+            <value>
+                <fullName>Corn gluten meal</fullName>
+                <default>false</default>
+                <label>Corn gluten meal</label>
+            </value>
+            <value>
+                <fullName>Vital wheat gluten</fullName>
+                <default>false</default>
+                <label>Vital wheat gluten</label>
+            </value>
+            <value>
+                <fullName>Other PFLs</fullName>
+                <default>false</default>
+                <label>Other PFLs</label>
+            </value>
+            <value>
+                <fullName>Hydrocolloids</fullName>
+                <default>false</default>
+                <label>Hydrocolloids</label>
+            </value>
+            <value>
+                <fullName>Polyols</fullName>
+                <default>false</default>
+                <label>Polyols</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

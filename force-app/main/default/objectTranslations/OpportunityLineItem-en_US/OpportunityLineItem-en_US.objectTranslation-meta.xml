@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Price Guidance --></label>
+            <section>Price Guidance</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Closed Won Opportunities not eligible for EDIT of Opportunity Products. --></errorMessage>
+        <name>Opp_Product_LOCKED_on_Closed_Won_Opps</name>
+    </validationRules>
+</CustomObjectTranslation>

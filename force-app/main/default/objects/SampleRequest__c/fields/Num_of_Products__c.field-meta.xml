@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Num_of_Products__c</fullName>
+    <description>Number of products on the request (unfiltered)</description>
+    <externalId>false</externalId>
+    <label># of Products</label>
+    <summaryForeignKey>SampleRequestProduct__c.SampleRequest__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

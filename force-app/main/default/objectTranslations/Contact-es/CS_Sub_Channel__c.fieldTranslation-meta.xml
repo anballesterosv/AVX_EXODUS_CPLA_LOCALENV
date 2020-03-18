@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Service Sub-Channel --></label>
+    <name>CS_Sub_Channel__c</name>
+    <picklistValues>
+        <masterLabel>Aldi</masterLabel>
+        <translation><!-- Aldi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frozen Whole Birds</masterLabel>
+        <translation><!-- Frozen Whole Birds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Protean</masterLabel>
+        <translation><!-- General Protean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General SAP</masterLabel>
+        <translation><!-- General SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Syspro</masterLabel>
+        <translation><!-- General Syspro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General XLDM</masterLabel>
+        <translation><!-- General XLDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General XLGO</masterLabel>
+        <translation><!-- General XLGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K-12</masterLabel>
+        <translation><!-- K-12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kroger</masterLabel>
+        <translation><!-- Kroger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>McDonalds</masterLabel>
+        <translation><!-- McDonalds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sysco Protean/XLDM</masterLabel>
+        <translation><!-- Sysco Protean/XLDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sysco SAP/Syspro</masterLabel>
+        <translation><!-- Sysco SAP/Syspro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USDA</masterLabel>
+        <translation><!-- USDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walmart</masterLabel>
+        <translation><!-- Walmart --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

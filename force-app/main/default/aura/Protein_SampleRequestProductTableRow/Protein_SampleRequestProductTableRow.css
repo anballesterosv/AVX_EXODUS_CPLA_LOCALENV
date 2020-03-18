@@ -1,0 +1,12 @@
+.THIS .slds-select {
+    width:120px;
+}
+.THIS .mediumSized{
+     width:80px;
+}
+.THIS .largeSized{
+     width:110px;
+}
+.THIS .slds-form-element__label{
+    display:none;
+}

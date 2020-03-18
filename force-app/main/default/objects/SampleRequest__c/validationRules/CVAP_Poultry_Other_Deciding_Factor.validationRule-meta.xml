@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CVAP_Poultry_Other_Deciding_Factor</fullName>
+    <active>true</active>
+    <description>If Other is picked for Deciding Factor then something needs to entered in the text field.</description>
+    <errorConditionFormula>$Setup.Bus_Logic_Settings__c.Run_Validation__c 
+&amp;&amp; 
+Text(What_was_the_deciding_factor__c) = &quot;Other&quot; 
+&amp;&amp; 
+ISBLANK(Other_Deciding_Factor__c)</errorConditionFormula>
+    <errorDisplayField>Other_Deciding_Factor__c</errorDisplayField>
+    <errorMessage>If Other is picked for &quot;What was the Deciding Factor&quot;, then something needs to entered in the &quot;Other Deciding Factor&quot; field.</errorMessage>
+</ValidationRule>

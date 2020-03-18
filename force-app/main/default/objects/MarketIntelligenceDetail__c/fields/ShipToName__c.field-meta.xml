@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShipToName__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Created by EB for CCC &amp; GEOS as on 19-Apr-17</description>
+    <externalId>false</externalId>
+    <label>Ship To Name</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Market Intelligence Details (Ship To Name)</relationshipLabel>
+    <relationshipName>Market_Intelligence_Details1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

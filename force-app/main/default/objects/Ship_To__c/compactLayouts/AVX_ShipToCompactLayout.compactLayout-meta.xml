@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVX_ShipToCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>ERP_Number__c</fields>
+    <fields>PlantRoute__c</fields>
+    <fields>PlantRouteDescription__c</fields>
+    <fields>DEFAULT_INCO_TERMS__c</fields>
+    <fields>Country__c</fields>
+    <fields>CountyCode__c</fields>
+    <fields>Status__c</fields>
+    <label>AVX_ShipToCompactLayout</label>
+</CompactLayout>

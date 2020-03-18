@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protein_Sample_Request_Fulfillment</fullName>
+    <active>true</active>
+    <description>Record Type for all Protein requests (Cargill Beef, Case Ready, CVAP-Beef(Burgers), CVAP Poultry(Eggs), Turkey &amp; Cooked Meats)</description>
+    <label>Protein Sample Request Fulfillment</label>
+    <picklistValues>
+        <picklist>Is_Product_being_pulled_from_distributio__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sample_Status_Denied_Reason__c</picklist>
+        <values>
+            <fullName>Sample Product Code has been discontinued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample above business thresholds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample out of stock</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Company__c</picklist>
+        <values>
+            <fullName>DHL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FedEx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USPS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

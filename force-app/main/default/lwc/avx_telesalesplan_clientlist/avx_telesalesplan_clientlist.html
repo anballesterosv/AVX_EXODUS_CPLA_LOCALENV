@@ -1,0 +1,155 @@
+<template>
+    <lightning-card  title={label.AVX_Telesales_Clients_to_assign}>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col  slds-size_4-of-12  slds-var-p-horizontal_small">
+                <lightning-combobox
+                    name="selectshowimage"
+                    label={label.AVX_Telesales_Order_by}
+                    value={orderBySelected}
+                    placeholder="Select"
+                    options={orderClientsByoptions}
+                    onchange={handleorderClientsByoptions} >
+                </lightning-combobox>
+            </div>
+            <template if:true={isContingency}>
+                <div class="slds-col  slds-size_4-of-12  slds-var-p-horizontal_small">
+                    <lightning-combobox name="comboDays" label={label.AVX_Telesales_Filter_By_day} 
+                            value={daySelected} placeholder="Select" options={lstDays} onchange={handleDaySelected}>
+                    </lightning-combobox>
+                </div>
+            </template>
+            <template if:true={isWorkPlan}>
+                <div class="slds-col  slds-size_4-of-12  slds-var-p-horizontal_small">
+                    <lightning-combobox
+                        name="selectshowimage"
+                        label={label.AVX_Telesales_Items_to_show}
+                        value={itemToShowSelected}
+                        placeholder="Items to show"
+                        options={itemsToShowOptions}
+                        onchange={handlerItemsToShowOptions} >
+                    </lightning-combobox>
+                </div>
+            </template>
+            <div class="slds-col  slds-size_4-of-12  slds-var-p-horizontal_small">
+                <div onkeyup={handleclientToSearch}>
+                    <lightning-input
+                        name="enter-search"
+                        label={label.AVX_Telesales_Filter}
+                        type="search"
+                        onchange={handleCleanClientToSearch}                        
+                        value={clientToSearch}
+                    ></lightning-input>
+                </div>
+            </div>
+        </div>
+        <span>&nbsp;</span>   
+        
+        <template if:true={isContingency}>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col  slds-size_4-of-12">
+                    <div class=" slds-var-m-left_x-large">
+                        <div class="slds-checkbox" onclick={handleCheckAll}  >
+                            <input type="checkbox" checked={checkAll} />
+                            <label class="slds-checkbox__label" for="checkbox-unique-id-72">
+                                <span class="slds-checkbox_faux"></span>
+                                <span class="slds-form-element__label">&nbsp; {label.AVX_Telesales_Select_all}</span>
+                            </label>
+                        </div> 
+                    </div> 
+                </div>
+                <div class="slds-col  slds-size_8-of-12  slds-var-p-horizontal_small">
+                    <div  class="slds-float_right">
+                        <div class="slds-m-right_medium">
+                            <lightning-button  label={label.AVX_Telesales_Add} onclick={handleOpenModalContingency}  title={label.AVX_Telesales_Add} class="slds-var-m-right_x-small"></lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+       
+        <div class="slds-grid slds-wrap  slds-var-p-horizontal_medium"  onscroll={handleScrollClients} style="max-height: 400px;overflow: auto;">
+            <template if:true={isContingency}>
+                <div class="slds-text-color_error">{noRecordsFound}</div>
+                <template if:true={lstContingencyClients}>
+                    <template for:each={lstContingencyClients} for:item="c" for:index="index">
+                        <div key={c.keyForeach}  class="slds-col  slds-size_12-of-12 slds-var-m-top_xx-small">
+                            <div class="slds-grid slds-wrap slds-border_top slds-border_right slds-border_bottom slds-border_left slds-var-p-vertical_small ">                            
+                                <div class="slds-col  slds-size_1-of-12">
+                                    <div class="slds-text-align_center slds-var-m-left_small">
+                                        <div class="slds-checkbox" data-key={index} key={index} data-index={index} 
+                                        onclick={handleClientChecked}  >
+                                            <input type="checkbox" value={c.telesalesPlanDetail.Id} checked={c.checked} />
+                                            <label class="slds-checkbox__label" for="checkbox-unique-id-72">
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-form-element__label">&nbsp;</span>
+                                            </label>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                
+                                <div class="slds-col  slds-size_11-of-12">
+                                    <p class="slds-var-p-horizontal_small slds-truncate"><strong>{label.AVX_Telesales_Name}:</strong> &nbsp;{c.telesalesPlanDetail.Ship_To__r.Name}</p>
+                                    <p class="slds-var-p-horizontal_small slds-truncate"><strong>{label.AVX_Telesales_ERP_Number}:</strong>&nbsp; {c.telesalesPlanDetail.Ship_To__r.ERP_Number__c}</p>
+                                    <p class="slds-var-p-horizontal_small "><strong>{label.AVX_Telesales_Day}:</strong>&nbsp; {c.day} | <strong> {label.AVX_Telesales_Hour}: </strong>&nbsp; {c.hour} </p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </template>
+
+            <template if:true={isWorkPlan}>
+                <div class="slds-text-color_error">{noRecordsFound}</div>
+                <template if:true={lstClients}>
+                    <template for:each={lstClients} for:item="c" for:index="index">
+                        <!--ITEM TEMPLATE-->
+                        <div key={c.keyForeach}  class="slds-col  slds-size_12-of-12 slds-var-m-top_xx-small">
+                            <div class="slds-grid slds-wrap slds-border_top slds-border_right slds-border_bottom slds-border_left slds-var-p-vertical_small ">
+                                
+                            
+                            
+                                <div class="slds-col  slds-size_9-of-12">
+                                    <p class="slds-var-p-horizontal_small slds-truncate"><strong>{label.AVX_Telesales_Name}:</strong> &nbsp;{c.client.Name}</p>
+                                    <p class="slds-var-p-horizontal_small slds-truncate"><strong>{label.AVX_Telesales_ERP_Number}:</strong>&nbsp; {c.client.ERP_Number__c}</p>
+                                    <template if:true={c.inOther}>
+                                        <template if:true={c.telesalesPlan.Telemarketer__r}>
+                                            <p class="slds-var-p-horizontal_small slds-truncate"><strong>{label.AVX_telesales_Telemarketer}:</strong>&nbsp; {c.telesalesPlan.Telemarketer__r.Name}</p>
+                                        </template>
+                                        <p class="slds-var-p-horizontal_small slds-truncate"><strong> {label.AVX_Telesales_Plan}:</strong> &nbsp;<span class="slds-button" data-key={c.telesalesPlan.Id}  key={c.telesalesPlan.Id} onclick={navigateToRecordViewPage}> {c.telesalesPlan.Name}</span></p>
+                                    </template>
+                                </div>
+                                <div class="slds-col  slds-size_3-of-12">
+                                    <template if:true={canEdit}>
+                                        <template if:true={c.added}>
+                                            <div class="slds-checkbox" data-key={c.client.Id} key={c.client.Id}  onclick={handleModalAddEditClient}  >
+                                                <lightning-button  label={label.AVX_Telesales_Edit} title={label.AVX_Telesales_Edit} class="slds-var-m-right_x-small"></lightning-button>
+                                            </div>
+                                        </template>
+                                        <template if:true={c.nonAdded}>
+                                            <div class="slds-checkbox" data-key={c.client.Id} key={c.client.Id}  onclick={handleModalAddEditClient}  >
+                                                <lightning-button  label={label.AVX_Telesales_Add} title={label.AVX_Telesales_Add} class="slds-var-m-right_x-small"></lightning-button>
+                                            </div>
+                                        </template>
+                                        <template if:true={c.inOther}>
+                                            <div class="slds-checkbox" data-key={c.client.Id}  key={c.client.Id}  onclick={handleModalAddEditClient}  >
+                                                <lightning-button  label={label.AVX_Telesales_Edit} disabled="disabled" title={label.AVX_Telesales_Edit} class="slds-var-m-right_x-small"></lightning-button>
+                                            </div>
+                                        </template>
+                                    </template>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </template>
+        </div>
+
+        
+    <!--spinner-->
+    <div if:true={showSpinner}><lightning-spinner alternative-text="Loading..."></lightning-spinner></div>
+
+    </lightning-card>
+    
+</template>

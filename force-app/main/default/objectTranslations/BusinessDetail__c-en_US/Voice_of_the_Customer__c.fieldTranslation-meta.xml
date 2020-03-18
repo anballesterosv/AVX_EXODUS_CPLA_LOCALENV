@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Allows the users to enter description or details about how Cargill is performing with the customer and any performance feedback that has been received. --></help>
+    <label><!-- Voice of the Customer --></label>
+    <name>Voice_of_the_Customer__c</name>
+</CustomFieldTranslation>

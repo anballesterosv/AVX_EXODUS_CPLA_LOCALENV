@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Motivo de No Contestó</label>
+    <name>NotAnswerReason__c</name>
+    <picklistValues>
+        <masterLabel>No Time</masterLabel>
+        <translation>Sin Tiempo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Answer</masterLabel>
+        <translation>No Contestó</translation>
+    </picklistValues>
+</CustomFieldTranslation>

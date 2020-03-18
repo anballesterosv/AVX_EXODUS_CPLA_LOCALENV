@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartnerAccountRole__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Account Role</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cargill Distributor</fullName>
+                <default>false</default>
+                <label>Cargill Distributor</label>
+            </value>
+            <value>
+                <fullName>Distributor Customer</fullName>
+                <default>false</default>
+                <label>Distributor Customer</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Advertiser</fullName>
+                <default>false</default>
+                <label>Advertiser</label>
+            </value>
+            <value>
+                <fullName>Agency</fullName>
+                <default>false</default>
+                <label>Agency</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+                <label>Dealer</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Institution</fullName>
+                <default>false</default>
+                <label>Institution</label>
+            </value>
+            <value>
+                <fullName>System Integrator</fullName>
+                <default>false</default>
+                <label>System Integrator</label>
+            </value>
+            <value>
+                <fullName>VAR/Reseller</fullName>
+                <default>false</default>
+                <label>VAR/Reseller</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

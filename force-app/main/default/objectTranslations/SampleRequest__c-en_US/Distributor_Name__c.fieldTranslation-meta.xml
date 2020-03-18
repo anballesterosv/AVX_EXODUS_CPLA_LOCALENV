@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Distributor Name --></label>
+    <name>Distributor_Name__c</name>
+    <picklistValues>
+        <masterLabel>Ben E. Keith</masterLabel>
+        <translation><!-- Ben E. Keith --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dot</masterLabel>
+        <translation><!-- Dot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFS</masterLabel>
+        <translation><!-- GFS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PFG</masterLabel>
+        <translation><!-- PFG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sysco</masterLabel>
+        <translation><!-- Sysco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Foods</masterLabel>
+        <translation><!-- US Foods --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

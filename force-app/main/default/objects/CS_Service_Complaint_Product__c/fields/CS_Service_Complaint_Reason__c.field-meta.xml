@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Service_Complaint_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Complaint Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Appointment Assistance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Appointment Assistance</label>
+            </value>
+            <value>
+                <fullName>BOL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BOL</label>
+            </value>
+            <value>
+                <fullName>COA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>COA</label>
+            </value>
+            <value>
+                <fullName>CPU Versus Delivery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CPU Versus Delivery</label>
+            </value>
+            <value>
+                <fullName>CPU Versus Delivery Change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CPU Versus Delivery Change</label>
+            </value>
+            <value>
+                <fullName>CTL - Appointment Assistance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CTL - Appointment Assistance</label>
+            </value>
+            <value>
+                <fullName>CTL - General Inquiry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CTL - General Inquiry</label>
+            </value>
+            <value>
+                <fullName>CTL - Late Delivery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CTL - Late Delivery</label>
+            </value>
+            <value>
+                <fullName>CTL - Order Date Change</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CTL - Order Date Change</label>
+            </value>
+            <value>
+                <fullName>Customer Service Error</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Service Error</label>
+            </value>
+            <value>
+                <fullName>Damaged</fullName>
+                <default>false</default>
+                <label>Damaged</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>General Inquiry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Inquiry</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Late Delivery</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Order Confirmation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Order Confirmation</label>
+            </value>
+            <value>
+                <fullName>Order Date Change - CTL Request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Order Date Change - CTL Request</label>
+            </value>
+            <value>
+                <fullName>Order Date Change - Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Order Date Change - Customer</label>
+            </value>
+            <value>
+                <fullName>Order Date Change - Customer Request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Order Date Change - Customer Request</label>
+            </value>
+            <value>
+                <fullName>Order Handling</fullName>
+                <default>false</default>
+                <label>Order Handling</label>
+            </value>
+            <value>
+                <fullName>OSD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSD</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>POD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>POD</label>
+            </value>
+            <value>
+                <fullName>Product Handling</fullName>
+                <default>false</default>
+                <label>Product Handling</label>
+            </value>
+            <value>
+                <fullName>Product Spec</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product Spec</label>
+            </value>
+            <value>
+                <fullName>Products Specs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Products Specs</label>
+            </value>
+            <value>
+                <fullName>Quantity Change - Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quantity Change - Customer</label>
+            </value>
+            <value>
+                <fullName>Quantity Change - Customer Request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quantity Change - Customer Request</label>
+            </value>
+            <value>
+                <fullName>Supply Chain</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Supply Chain</label>
+            </value>
+            <value>
+                <fullName>Supply Chain Related</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Supply Chain Related</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

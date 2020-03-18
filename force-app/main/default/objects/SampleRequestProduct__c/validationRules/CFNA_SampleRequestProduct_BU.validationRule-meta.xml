@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFNA_SampleRequestProduct_BU</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(CFNA_Business_Unit__c) != TEXT(SampleRequest__r.CFNA_Business_Unit__c)</errorConditionFormula>
+    <errorDisplayField>CFNA_Business_Unit__c</errorDisplayField>
+    <errorMessage>Business unit does not match that of the Sample Request</errorMessage>
+</ValidationRule>

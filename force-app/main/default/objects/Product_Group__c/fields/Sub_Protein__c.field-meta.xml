@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Protein__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Protein</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Protein__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beef-Case Ready</fullName>
+                <default>false</default>
+                <label>Beef-Case Ready</label>
+            </value>
+            <value>
+                <fullName>Beef-Grinds</fullName>
+                <default>false</default>
+                <label>Beef-Grinds</label>
+            </value>
+            <value>
+                <fullName>Beef-Primary Beef</fullName>
+                <default>false</default>
+                <label>Beef-Primary Beef</label>
+            </value>
+            <value>
+                <fullName>Beef-Secondary Other</fullName>
+                <default>false</default>
+                <label>Beef-Secondary Other</label>
+            </value>
+            <value>
+                <fullName>Beef-Specialty</fullName>
+                <default>false</default>
+                <label>Beef-Specialty</label>
+            </value>
+            <value>
+                <fullName>Beef-Value Added</fullName>
+                <default>false</default>
+                <label>Beef-Value Added</label>
+            </value>
+            <value>
+                <fullName>Beef-Value Added Cooked</fullName>
+                <default>false</default>
+                <label>Beef-Value Added Cooked</label>
+            </value>
+            <value>
+                <fullName>CFD - All-Distribution</fullName>
+                <default>false</default>
+                <label>CFD - All-Distribution</label>
+            </value>
+            <value>
+                <fullName>Chicken-Primary</fullName>
+                <default>false</default>
+                <label>Chicken-Primary</label>
+            </value>
+            <value>
+                <fullName>Chicken-Case Ready</fullName>
+                <default>false</default>
+                <label>Chicken-Case Ready</label>
+            </value>
+            <value>
+                <fullName>Chicken-Value Added Cooked</fullName>
+                <default>false</default>
+                <label>Chicken-Value Added Cooked</label>
+            </value>
+            <value>
+                <fullName>Chicken-Specialty</fullName>
+                <default>false</default>
+                <label>Chicken-Specialty</label>
+            </value>
+            <value>
+                <fullName>Egg-Secondary Other</fullName>
+                <default>false</default>
+                <label>Egg-Secondary Other</label>
+            </value>
+            <value>
+                <fullName>Egg-Value Added</fullName>
+                <default>false</default>
+                <label>Egg-Value Added</label>
+            </value>
+            <value>
+                <fullName>Egg-Value Added Cooked</fullName>
+                <default>false</default>
+                <label>Egg-Value Added Cooked</label>
+            </value>
+            <value>
+                <fullName>Other-Seafood</fullName>
+                <default>false</default>
+                <label>Other-Seafood</label>
+            </value>
+            <value>
+                <fullName>Other-Dairy</fullName>
+                <default>false</default>
+                <label>Other-Dairy</label>
+            </value>
+            <value>
+                <fullName>Other-Lamb</fullName>
+                <default>false</default>
+                <label>Other-Lamb</label>
+            </value>
+            <value>
+                <fullName>Other-Mixed</fullName>
+                <default>false</default>
+                <label>Other-Mixed</label>
+            </value>
+            <value>
+                <fullName>Other-Other</fullName>
+                <default>false</default>
+                <label>Other-Other</label>
+            </value>
+            <value>
+                <fullName>Other-Veal</fullName>
+                <default>false</default>
+                <label>Other-Veal</label>
+            </value>
+            <value>
+                <fullName>Pork-Case Ready</fullName>
+                <default>false</default>
+                <label>Pork-Case Ready</label>
+            </value>
+            <value>
+                <fullName>Pork-Specialty</fullName>
+                <default>false</default>
+                <label>Pork-Specialty</label>
+            </value>
+            <value>
+                <fullName>Pork-Value Added Cooked</fullName>
+                <default>false</default>
+                <label>Pork-Value Added Cooked</label>
+            </value>
+            <value>
+                <fullName>Turkey-Case Ready</fullName>
+                <default>false</default>
+                <label>Turkey-Case Ready</label>
+            </value>
+            <value>
+                <fullName>Turkey-Grinds</fullName>
+                <default>false</default>
+                <label>Turkey-Grinds</label>
+            </value>
+            <value>
+                <fullName>Turkey-Primary Turkey</fullName>
+                <default>false</default>
+                <label>Turkey-Primary Turkey</label>
+            </value>
+            <value>
+                <fullName>Turkey-Specialty</fullName>
+                <default>false</default>
+                <label>Turkey-Specialty</label>
+            </value>
+            <value>
+                <fullName>Turkey-Value Added</fullName>
+                <default>false</default>
+                <label>Turkey-Value Added</label>
+            </value>
+            <value>
+                <fullName>Turkey-Value Added Cooked</fullName>
+                <default>false</default>
+                <label>Turkey-Value Added Cooked</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Turkey</controllingFieldValue>
+            <valueName>Turkey-Case Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey</controllingFieldValue>
+            <valueName>Turkey-Grinds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey</controllingFieldValue>
+            <valueName>Turkey-Primary Turkey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey</controllingFieldValue>
+            <valueName>Turkey-Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey</controllingFieldValue>
+            <valueName>Turkey-Value Added</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey</controllingFieldValue>
+            <valueName>Turkey-Value Added Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef</controllingFieldValue>
+            <valueName>Beef-Case Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef</controllingFieldValue>
+            <valueName>Beef-Grinds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef</controllingFieldValue>
+            <valueName>Beef-Primary Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef</controllingFieldValue>
+            <valueName>Beef-Secondary Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef</controllingFieldValue>
+            <valueName>Beef-Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef</controllingFieldValue>
+            <valueName>Beef-Value Added</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef</controllingFieldValue>
+            <valueName>Beef-Value Added Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken</controllingFieldValue>
+            <valueName>Chicken-Primary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken</controllingFieldValue>
+            <valueName>Chicken-Case Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken</controllingFieldValue>
+            <valueName>Chicken-Value Added Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken</controllingFieldValue>
+            <valueName>Chicken-Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork</controllingFieldValue>
+            <valueName>Pork-Case Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork</controllingFieldValue>
+            <valueName>Pork-Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork</controllingFieldValue>
+            <valueName>Pork-Value Added Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eggs</controllingFieldValue>
+            <valueName>Egg-Secondary Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eggs</controllingFieldValue>
+            <valueName>Egg-Value Added</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eggs</controllingFieldValue>
+            <valueName>Egg-Value Added Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Other-Seafood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Other-Dairy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Other-Lamb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Other-Mixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Other-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Other-Veal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CFD - All</controllingFieldValue>
+            <valueName>CFD - All-Distribution</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

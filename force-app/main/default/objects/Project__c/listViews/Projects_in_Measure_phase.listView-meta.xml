@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projects_in_Measure_phase</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Phase__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>Measure</value>
+    </filters>
+    <label>Projects in &quot;Measure&quot; phase</label>
+</ListView>

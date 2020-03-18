@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phase__c</fullName>
+    <externalId>false</externalId>
+    <label>Phase</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Stage__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ideation</fullName>
+                <default>false</default>
+                <label>Ideation</label>
+            </value>
+            <value>
+                <fullName>Explore</fullName>
+                <default>false</default>
+                <label>Explore</label>
+            </value>
+            <value>
+                <fullName>Feasibility</fullName>
+                <default>false</default>
+                <label>Feasibility</label>
+            </value>
+            <value>
+                <fullName>Develop</fullName>
+                <default>false</default>
+                <label>Develop</label>
+            </value>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>Implement</fullName>
+                <default>false</default>
+                <label>Implement</label>
+            </value>
+            <value>
+                <fullName>Measure</fullName>
+                <default>false</default>
+                <label>Measure</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Draft</controllingFieldValue>
+            <controllingFieldValue>Go</controllingFieldValue>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Submitted for Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Ideation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Draft</controllingFieldValue>
+            <controllingFieldValue>Go</controllingFieldValue>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Submitted for Approval</controllingFieldValue>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Explore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Go</controllingFieldValue>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Feasibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Go</controllingFieldValue>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Develop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Go</controllingFieldValue>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Go</controllingFieldValue>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Implement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Go</controllingFieldValue>
+            <valueName>Measure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complete</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

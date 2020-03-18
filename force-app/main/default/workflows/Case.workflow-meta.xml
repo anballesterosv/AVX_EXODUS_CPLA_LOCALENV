@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CS_NotifyParentCaseOwner</fullName>
+        <description>CS_NotifyParentCaseOwner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>customerservice_protein@cargill.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CS_Protein_Service_Folder/CS_NotifyParentCase_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>CS_Notify_Prior_Case_Owner</fullName>
+        <description>CS Notify Prior Case Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CS_Prior_Case_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CS_Protein_Service_Folder/CS_Protein_Service_Case_Prior_Owner_Response</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CS_Update_Market_Channel</fullName>
+        <description>Update the Market Channel field of Protein Case with that of associated account&#39;s market channel value. If there is no account associated with case the update with value blank(&#39;&#39;).</description>
+        <field>CS_Market_Channel__c</field>
+        <formula>IF(ISBLANK(AccountId),IF( CS_is_Owner_Agent__c , TRIM(LEFT( Owner:User.UserRole.Name ,FIND(&quot; Customer&quot;, Owner:User.UserRole.Name) - 1)) ,&quot;&quot;),TEXT(Account.Market_Channel__c))</formula>
+        <name>CS Update Market Channel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>CS_Market_Channel_Update</fullName>
+        <actions>
+            <name>CS_Update_Market_Channel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Protein Case</value>
+        </criteriaItems>
+        <description>This workflow will update Market Channel field of protein case if the case is created or associated account of the case is changed.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CS_NotifyPriorCaseOwner</fullName>
+        <actions>
+            <name>CS_Notify_Prior_Case_Owner</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify prior owner when reassign case to new user</description>
+        <formula>AND( NOT(ISNEW()), RecordType.DeveloperName = &#39;CS_Protein_Case&#39;,  ISCHANGED(CS_Prior_Case_Owner__c),  NOT(ISNULL(CS_Prior_Case_Owner__c)),  CS_Prior_Case_Owner__r.Id &lt;&gt; OwnerId, NOT(ISCHANGED((ParentId)))  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

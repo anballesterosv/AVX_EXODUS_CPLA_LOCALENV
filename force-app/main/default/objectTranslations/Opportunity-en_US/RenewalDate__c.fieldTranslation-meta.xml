@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date when a Closed Won opportunity will be renewed. (A new active opportunity will be recreated in the system 60 days prior to this date) --></help>
+    <label><!-- Renewal Date --></label>
+    <name>RenewalDate__c</name>
+</CustomFieldTranslation>

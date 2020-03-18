@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Account Role --></label>
+    <name>PartnerAccountRole__c</name>
+    <picklistValues>
+        <masterLabel>Advertiser</masterLabel>
+        <translation><!-- Advertiser --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agency</masterLabel>
+        <translation><!-- Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker</masterLabel>
+        <translation><!-- Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargill Distributor</masterLabel>
+        <translation><!-- Cargill Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor</masterLabel>
+        <translation><!-- Competitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultant</masterLabel>
+        <translation><!-- Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dealer</masterLabel>
+        <translation><!-- Dealer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developer</masterLabel>
+        <translation><!-- Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor Customer</masterLabel>
+        <translation><!-- Distributor Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Institution</masterLabel>
+        <translation><!-- Institution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Integrator</masterLabel>
+        <translation><!-- System Integrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAR/Reseller</masterLabel>
+        <translation><!-- VAR/Reseller --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

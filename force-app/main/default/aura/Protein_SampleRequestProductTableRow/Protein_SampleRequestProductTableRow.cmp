@@ -1,0 +1,122 @@
+<aura:component controller="Protein_SampleRequestProductController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="productWrapper" type="sobject" default="{}"/>
+    <aura:attribute name="rowIndex" type="String"/>
+    <aura:attribute name="sampleBU" type="String"/>
+    <aura:attribute name="sampleRecType" type="String"/>
+    
+    <!--Aura attributes for capturing and displaying dependent field c=values based on controlling field values -->
+    <aura:attribute name="listControllingValues" type="list" default="[]" description="to store controller field values"/>
+    <aura:attribute name="listDependingValues" type="list" description="to store dependent field values"/>
+    <aura:attribute name="dependentFieldMap" type="map" description="map to store dependent values with controlling value"/>
+    <aura:attribute name="objDetail" type="SampleRequestProduct__c" default="{'sobjectType' : 'SampleRequestProduct__c'}"/>
+    <aura:attribute name="controllingFieldAPI" type="string" default="CFNA_Business_Unit__c" description="Field API name of Controller field"/>
+    <aura:attribute name="dependingFieldAPI" type="string" default="CFNA_Type__c" description="Field API name of Dependent field"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="isEditable" type="Boolean" default="false"/>
+    <aura:registerEvent name="deleteEvent" type="c:rowEvent"/>
+    <aura:attribute name="selectedProductLookUpRecord" type="Product2" default="{}" description="Product Name"/> 
+    
+    <tr class="slds-hint-parent">
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap slds-cell-buffer_left" role="gridcell">
+            <aura:if isTrue="{!or(v.productWrapper.isNew,v.isEditable)}">
+            	<b><ui:outputText aura:id="name" value="{!v.productWrapper.srProduct.Name}"/></b> 
+                <aura:set attribute="else">
+                    {!v.productWrapper.srProduct.Name}
+                </aura:set>
+            </aura:if>
+        </td>
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap" role="gridcell">
+            <aura:if isTrue="{!v.sampleRecType == 'Protein_Sample_Request'}">
+                <aura:if isTrue="{!or(v.productWrapper.isNew,v.isEditable)}">
+                    <div style="width:100%">
+                        <c:customLookupPage objectAPIName="Product2"  isSelected="{!if(v.productWrapper.relatedProduct.Id,true,false)}" selectedRecord="{!v.productWrapper.relatedProduct}" selectedRecordId="{!v.productWrapper.relatedProductId}"/>	                
+                    </div>
+                    <aura:set attribute="else">
+                        {!v.productWrapper.relatedProduct.Name}
+                    </aura:set>
+                </aura:if>
+            </aura:if>
+            <aura:if isTrue="{!v.sampleRecType != 'Protein_Sample_Request'}">
+                <aura:if isTrue="{!or(v.productWrapper.isNew,v.isEditable)}">
+                    <b><ui:inputText aura:id="cfnaProductDesc" value="{!v.productWrapper.srProduct.CFNA_Product_Desc__c}"/></b>
+                    <aura:set attribute="else">
+                        {!v.productWrapper.srProduct.CFNA_Product_Desc__c}    
+                    </aura:set>
+                </aura:if>
+            </aura:if>
+        </td>
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap" role="gridcell">
+            <aura:if isTrue="{!v.sampleRecType == 'Protein_Sample_Request'}">
+                {!v.productWrapper.srProduct.Product_Description__c}
+            </aura:if>
+            <aura:if isTrue="{!v.sampleRecType != 'Protein_Sample_Request'}">
+                <aura:if isTrue="{!or(v.productWrapper.isNew,v.isEditable)}">
+                    <b><ui:inputText aura:id="productCode" value="{!v.productWrapper.srProduct.Product_Code__c}"/></b>
+                    <aura:set attribute="else">
+                        {!v.productWrapper.srProduct.Product_Code__c}    
+                    </aura:set>
+                </aura:if>
+            </aura:if>
+        </td>
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap" role="gridcell">
+            <aura:if isTrue="{!or(v.productWrapper.isNew,v.isEditable)}">    
+            	<b><ui:inputNumber aura:id="productCost1" class="largeSized" value="{!v.productWrapper.srProduct.Product_Cost__c}"/></b> 
+                <aura:set attribute="else">
+                    {!v.productWrapper.srProduct.Product_Cost__c}    
+                </aura:set>
+            </aura:if>
+        </td>
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap" role="gridcell">
+            <aura:if isTrue="{!or(v.productWrapper.isNew,v.isEditable)}">    
+            	<b><ui:inputNumber aura:id="quantity" class="largeSized" value="{!v.productWrapper.srProduct.Quantity__c}"/></b> 
+                <aura:set attribute="else">
+                    {!v.productWrapper.srProduct.Quantity__c}    
+                </aura:set>
+            </aura:if>
+        </td>
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap" role="gridcell">
+            <aura:if isTrue="{!v.productWrapper.isNew}">
+                {!v.sampleBU}
+                <aura:set attribute="else">
+                    {!v.productWrapper.srProduct.CFNA_Business_Unit__c}
+                </aura:set>
+            </aura:if>
+        </td>
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap" role="gridcell">
+            <aura:if isTrue="{!or(v.productWrapper.isNew, v.isEditable)}">              	
+        		<ui:inputSelect class="slds-select" aura:id="cfnaType" value="{!v.productWrapper.srProduct.CFNA_Type__c}">
+                	<aura:iteration items="{!v.listDependingValues}" var="val"> 
+                        <ui:inputSelectOption text="{!val}"></ui:inputSelectOption>
+           			</aura:iteration>
+                </ui:inputSelect>
+                <aura:set attribute="else">
+                    {!v.productWrapper.srProduct.CFNA_Type__c}
+                </aura:set>
+            </aura:if>
+        </td>
+        <td class="slds-cell-error slds-cell-edit slds-cell-wrap" role="gridcell">
+            <aura:if isTrue="{!or(v.productWrapper.isNew,v.isEditable)}">    
+            	<b><ui:inputText aura:id="otherType" class="largeSized" value="{!v.productWrapper.srProduct.CFNA_Other_Type__c}"/></b> 
+                <aura:set attribute="else">
+                    {!v.productWrapper.srProduct.CFNA_Other_Type__c}    
+                </aura:set>
+            </aura:if>
+        </td>
+        <td>
+            
+            <aura:if isTrue="{!!v.productWrapper.isNew}">
+                <lightning:buttonicon iconName="utility:edit" alternativeText="Edit" onclick="{!c.setEditable}"/>
+                <aura:set attribute="else">
+                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                </aura:set>
+                <lightning:buttonicon iconName="utility:delete" alternativeText="Delete" onclick="{!c.deleteRow}"/>
+            </aura:if>
+            <aura:if isTrue="{!v.productWrapper.isNew}">
+                <lightning:buttonicon iconName="utility:delete" alternativeText="Delete" onclick="{!c.deleteRow}"/>
+            </aura:if>
+        </td>
+    </tr>
+    
+	
+</aura:component>

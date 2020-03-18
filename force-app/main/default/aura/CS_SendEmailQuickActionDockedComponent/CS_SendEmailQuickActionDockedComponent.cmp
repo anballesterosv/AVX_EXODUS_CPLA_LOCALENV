@@ -1,0 +1,51 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+	<aura:attribute name="isOpen" type="boolean" default="false"/>
+	<lightning:button label="New Email" variant="brand" iconName="utility:email" iconPosition="left" onclick="{!c.openModel}"/>  
+	<aura:if isTrue="{!v.isOpen}">
+        <div style="height: 300px; min-width: 615px; overflow-x: auto;">
+            <div>
+                <section aura:id="emailDockedOuterSection" class="slds-modal slds-fade-in-open slds-docked-composer-modal slds-modal_medium" >
+                    <div aura:id="emailDockedOuterContainer" class="slds-modal__container email-popout-container">
+                        <div aura:id="emailDockedInnerContainer" class="slds-modal__content">
+                            <section aura:id="emailDockedSection" class="slds-docked-composer slds-grid slds-grid_vertical email-docked-section" role="dialog" aria-labelledby="dialog-heading-id-1" aria-describedby="dialog-content-id-1">
+                                <header class="slds-docked-composer__header slds-grid slds-shrink-none" aria-live="assertive">
+                                    <div class="slds-media slds-media_center slds-no-space">
+                                        <div class="slds-media__figure slds-m-right_x-small">
+                                            <span class="slds-icon_container">
+                                                <lightning:icon iconName="standard:email" size="x-small"/>
+                                            </span>
+                                        </div>
+                                        <div class="slds-media__body">
+                                            <h2 class="slds-truncate" id="dialog-heading-id-1" title="Header">Email</h2>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col_bump-left slds-shrink-none">
+                                        <button onclick="{!c.toggleModel}" class="slds-button slds-button_icon slds-button_icon" title="Minimize window">
+                                            <lightning:icon iconName="utility:minimize_window" size="x-small"/>
+                                            <span class="slds-assistive-text">Minimize Composer Panel</span>
+                                        </button>
+                                        <button onclick="{!c.switchView}" class="slds-button slds-button_icon slds-button_icon" title="Expand Composer">
+                                            <lightning:icon iconName="utility:expand_alt" size="x-small"/>
+                                            <span class="slds-assistive-text">Expand Composer Panel</span>
+                                        </button>
+                                        <button onclick="{!c.closeModel}" class="slds-button slds-button_icon slds-button_icon" title="Close">
+                                            <lightning:icon iconName="utility:close" size="x-small"/>
+                                            <span class="slds-assistive-text">Close Composer Panel</span>
+                                        </button>
+                                    </div>
+                                </header>
+                                <div class="slds-docked-composer__body email-component-body" id="dialog-content-id-1">
+                                    <div class="slds-align_absolute-center email-docked-composer-body">
+                                        <forceChatter:publisher context="RECORD" recordId="{!v.recordId}"/>
+                                    </div>
+                                </div>                            
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <div aura:id="backgroundContainer" class="slds-backdrop slds-backdrop_open"></div>
+            </div>
+        </div>
+        
+	</aura:if>
+</aura:component>

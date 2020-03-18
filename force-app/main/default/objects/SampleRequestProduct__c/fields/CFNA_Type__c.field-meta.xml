@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFNA_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CFNA_Business_Unit__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 LB Bag</fullName>
+                <default>true</default>
+                <label>1 LB Bag</label>
+            </value>
+            <value>
+                <fullName>25 LB Bag</fullName>
+                <default>false</default>
+                <label>25 LB Bag</label>
+            </value>
+            <value>
+                <fullName>2LB Bag</fullName>
+                <default>false</default>
+                <label>2LB Bag</label>
+            </value>
+            <value>
+                <fullName>50LB Bag</fullName>
+                <default>false</default>
+                <label>50LB Bag</label>
+            </value>
+            <value>
+                <fullName>5 LBS</fullName>
+                <default>false</default>
+                <label>5 LBS</label>
+            </value>
+            <value>
+                <fullName>Bag</fullName>
+                <default>false</default>
+                <label>Bag</label>
+            </value>
+            <value>
+                <fullName>Box</fullName>
+                <default>false</default>
+                <label>Box</label>
+            </value>
+            <value>
+                <fullName>Can</fullName>
+                <default>false</default>
+                <label>Can</label>
+            </value>
+            <value>
+                <fullName>Carton</fullName>
+                <default>false</default>
+                <label>Carton</label>
+            </value>
+            <value>
+                <fullName>Case</fullName>
+                <default>false</default>
+                <label>Case</label>
+            </value>
+            <value>
+                <fullName>Chub</fullName>
+                <default>false</default>
+                <label>Chub</label>
+            </value>
+            <value>
+                <fullName>JIB</fullName>
+                <default>false</default>
+                <label>JIB</label>
+            </value>
+            <value>
+                <fullName>Kit</fullName>
+                <default>false</default>
+                <label>Kit</label>
+            </value>
+            <value>
+                <fullName>LBS</fullName>
+                <default>false</default>
+                <label>LBS</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Piece</fullName>
+                <default>false</default>
+                <label>Piece</label>
+            </value>
+            <value>
+                <fullName>8 OZ JAR</fullName>
+                <default>false</default>
+                <label>8 OZ JAR</label>
+            </value>
+            <value>
+                <fullName>1 Tray</fullName>
+                <default>false</default>
+                <label>1 Tray</label>
+            </value>
+            <value>
+                <fullName>Crumbles</fullName>
+                <default>false</default>
+                <label>Crumbles</label>
+            </value>
+            <value>
+                <fullName>Package</fullName>
+                <default>false</default>
+                <label>Package</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cargill Beef</controllingFieldValue>
+            <controllingFieldValue>Case Ready</controllingFieldValue>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <valueName>Bag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargill Beef</controllingFieldValue>
+            <controllingFieldValue>Case Ready</controllingFieldValue>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <controllingFieldValue>Salt</controllingFieldValue>
+            <controllingFieldValue>Turkey &amp; Cooked Meats</controllingFieldValue>
+            <valueName>Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargill Beef</controllingFieldValue>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <valueName>Chub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargill Beef</controllingFieldValue>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <controllingFieldValue>Turkey &amp; Cooked Meats</controllingFieldValue>
+            <valueName>LBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargill Beef</controllingFieldValue>
+            <controllingFieldValue>Case Ready</controllingFieldValue>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <valueName>Piece</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargill Beef</controllingFieldValue>
+            <controllingFieldValue>Case Ready</controllingFieldValue>
+            <controllingFieldValue>Cocoa &amp; Chocolate</controllingFieldValue>
+            <valueName>1 Tray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cargill Beef</controllingFieldValue>
+            <valueName>Package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case Ready</controllingFieldValue>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <controllingFieldValue>Foodservice Oils</controllingFieldValue>
+            <controllingFieldValue>Salt</controllingFieldValue>
+            <controllingFieldValue>Truvia</controllingFieldValue>
+            <controllingFieldValue>Turkey &amp; Cooked Meats</controllingFieldValue>
+            <valueName>Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case Ready</controllingFieldValue>
+            <valueName>Crumbles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cocoa &amp; Chocolate</controllingFieldValue>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <controllingFieldValue>Salt</controllingFieldValue>
+            <valueName>1 LB Bag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cocoa &amp; Chocolate</controllingFieldValue>
+            <controllingFieldValue>Sugar</controllingFieldValue>
+            <valueName>2LB Bag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cocoa &amp; Chocolate</controllingFieldValue>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <valueName>5 LBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cocoa &amp; Chocolate</controllingFieldValue>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <controllingFieldValue>Foodservice Oils</controllingFieldValue>
+            <controllingFieldValue>Salt</controllingFieldValue>
+            <controllingFieldValue>Sugar</controllingFieldValue>
+            <controllingFieldValue>Truvia</controllingFieldValue>
+            <controllingFieldValue>Turkey &amp; Cooked Meats</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cocoa &amp; Chocolate</controllingFieldValue>
+            <valueName>8 OZ JAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <controllingFieldValue>Salt</controllingFieldValue>
+            <controllingFieldValue>Sugar</controllingFieldValue>
+            <valueName>25 LB Bag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CVAP-Beef (Burgers)</controllingFieldValue>
+            <controllingFieldValue>Salt</controllingFieldValue>
+            <valueName>Can</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <valueName>Carton</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CVAP-Poultry (Eggs)</controllingFieldValue>
+            <valueName>Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foodservice Oils</controllingFieldValue>
+            <valueName>JIB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sugar</controllingFieldValue>
+            <valueName>50LB Bag</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

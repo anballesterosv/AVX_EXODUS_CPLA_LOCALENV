@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ship To</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ship To&#39;s</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Service Ship To Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ship To Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Retail Geolocation --></label>
+            <section>Retail Geolocation</section>
+        </sections>
+        <sections>
+            <label><!-- Retail Information --></label>
+            <section>Retail Information</section>
+        </sections>
+        <sections>
+            <label><!-- Retail Sales Area --></label>
+            <section>Retail Sales Area</section>
+        </sections>
+        <sections>
+            <label><!-- Retail Segmentation --></label>
+            <section>Retail Segmentation</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

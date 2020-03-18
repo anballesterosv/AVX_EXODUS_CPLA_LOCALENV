@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TelesalesWorkPlan__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Telesales Work Plan</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>TelesalesPlan__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>WorkPlan</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>TelesalesPlan__c</referenceTo>
+    <relationshipLabel>Telesales Work Plans</relationshipLabel>
+    <relationshipName>TelesalesWorkPlans</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

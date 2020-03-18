@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vacuum_or_Gas_Flush__c</fullName>
+    <externalId>false</externalId>
+    <label>Vacuum or Gas Flush?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vacuum</fullName>
+                <default>false</default>
+                <label>Vacuum</label>
+            </value>
+            <value>
+                <fullName>Gas Flush</fullName>
+                <default>false</default>
+                <label>Gas Flush</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

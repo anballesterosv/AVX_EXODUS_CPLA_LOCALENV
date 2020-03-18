@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protein_SampleRequest_Distributor_Req</fullName>
+    <active>true</active>
+    <description>Distributor field becomes required when Is the product being pulled from a distributor is marked Yes</description>
+    <errorConditionFormula>$Setup.Bus_Logic_Settings__c.Run_Validation__c
+&amp;&amp;
+ISPICKVAL(Pull_Product_From_Distributor__c,&#39;Yes&#39;)
+&amp;&amp;
+(ISBLANK(TEXT(Distributor_Name__c)) || ISBLANK(Distributor_Location__c))</errorConditionFormula>
+    <errorDisplayField>Distributor_Name__c</errorDisplayField>
+    <errorMessage>Distributor information is required when &quot;Is Product Being Pulled From Distributor&quot; is marked Yes. 
+Distributor Name and Distributor Location are required.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,30 @@
+.THIS .email-docked-container{
+    z-index: 9
+}
+
+.THIS .email-popout-container{
+    top: 121px;
+    height: 500px;
+}
+
+.THIS .email-docked-container .email-docked-section {
+    overflow: auto;
+    bottom: 37px;
+}
+
+.THIS .email-docked-composer-body {
+    padding: 10px;
+    margin: 0px;
+}
+
+.THIS .email-docked-composer-body .forceChatterPublisher {
+    width: 100%;
+}
+
+.THIS .show {
+    display: block !important;
+}
+
+.THIS .hide {
+    display: none !important;
+}

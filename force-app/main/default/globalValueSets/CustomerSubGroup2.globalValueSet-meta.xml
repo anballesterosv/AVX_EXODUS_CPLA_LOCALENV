@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>301</fullName>
+        <default>false</default>
+        <label>Hotel Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>302</fullName>
+        <default>false</default>
+        <label>Local, 4 stars or more</label>
+    </customValue>
+    <customValue>
+        <fullName>303</fullName>
+        <default>false</default>
+        <label>Local, until 3 stars</label>
+    </customValue>
+    <customValue>
+        <fullName>304</fullName>
+        <default>false</default>
+        <label>High Profile(Average plate of X)</label>
+    </customValue>
+    <customValue>
+        <fullName>305</fullName>
+        <default>false</default>
+        <label>Casual(Average Plate X)</label>
+    </customValue>
+    <customValue>
+        <fullName>306</fullName>
+        <default>false</default>
+        <label>Fast Food 1(More than X LB)</label>
+    </customValue>
+    <customValue>
+        <fullName>307</fullName>
+        <default>false</default>
+        <label>Fast Food 2(Between X and Y LB)</label>
+    </customValue>
+    <customValue>
+        <fullName>308</fullName>
+        <default>false</default>
+        <label>Fast Food 3(Less than X LB)</label>
+    </customValue>
+    <customValue>
+        <fullName>309</fullName>
+        <default>false</default>
+        <label>Roast Chicken 1(Volume more than X)</label>
+    </customValue>
+    <customValue>
+        <fullName>310</fullName>
+        <default>false</default>
+        <label>Roast Chicken 2(Volume between X and Y)</label>
+    </customValue>
+    <customValue>
+        <fullName>311</fullName>
+        <default>false</default>
+        <label>Roast Chicken 3(Volume less than X)</label>
+    </customValue>
+    <customValue>
+        <fullName>312</fullName>
+        <default>false</default>
+        <label>Fried Chicken 1(Volume more than X)</label>
+    </customValue>
+    <customValue>
+        <fullName>313</fullName>
+        <default>false</default>
+        <label>Fried Chicken(Volume between X and Y)</label>
+    </customValue>
+    <customValue>
+        <fullName>314</fullName>
+        <default>false</default>
+        <label>Fried Chicken 3(Volume less than X)</label>
+    </customValue>
+    <customValue>
+        <fullName>315</fullName>
+        <default>false</default>
+        <label>Independent Convenience</label>
+    </customValue>
+    <customValue>
+        <fullName>316</fullName>
+        <default>false</default>
+        <label>Restaurant Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>317</fullName>
+        <default>false</default>
+        <label>Poulterer Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>318</fullName>
+        <default>false</default>
+        <label>Convenience Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>319</fullName>
+        <default>false</default>
+        <label>Radar</label>
+    </customValue>
+    <description>Used in the CPLA Project</description>
+    <masterLabel>Customer Sub Group 2</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

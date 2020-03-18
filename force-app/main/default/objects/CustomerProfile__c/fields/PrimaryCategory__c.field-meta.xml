@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimaryCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Category</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>M1 Product experience/High Vertical Integration</fullName>
+                <default>false</default>
+                <label>M1 Product experience/High Vertical Integration</label>
+            </value>
+            <value>
+                <fullName>M2 Value – Product Innovation &amp; Supply Chain/ High Vertical Integration</fullName>
+                <default>false</default>
+                <label>M2 Value – Product Innovation &amp; Supply Chain/ High Vertical Integration</label>
+            </value>
+            <value>
+                <fullName>M3 Low vertical B2C</fullName>
+                <default>false</default>
+                <label>M3 Low vertical B2C</label>
+            </value>
+            <value>
+                <fullName>M4 Low Vertical integration B2B</fullName>
+                <default>false</default>
+                <label>M4 Low Vertical integration B2B</label>
+            </value>
+            <value>
+                <fullName>F1 Product Experience &amp; Value Differentiation/B2C – Scratch</fullName>
+                <default>false</default>
+                <label>F1 Product Experience &amp; Value Differentiation/B2C – Scratch</label>
+            </value>
+            <value>
+                <fullName>F2 Product Experience /B2C – Assembly &amp; B2C – Heat and Serve</fullName>
+                <default>false</default>
+                <label>F2 Product Experience /B2C – Assembly &amp; B2C – Heat and Serve</label>
+            </value>
+            <value>
+                <fullName>F3 Value Differentiation/ B2C – Assembly &amp; B2C – Heat and Serve</fullName>
+                <default>false</default>
+                <label>F3 Value Differentiation/ B2C – Assembly &amp; B2C – Heat and Serve</label>
+            </value>
+            <value>
+                <fullName>F4 Product Experience/B2B – Move Product</fullName>
+                <default>false</default>
+                <label>F4 Product Experience/B2B – Move Product</label>
+            </value>
+            <value>
+                <fullName>F5 Value Differentiation/ B2B – Move Product</fullName>
+                <default>false</default>
+                <label>F5 Value Differentiation/ B2B – Move Product</label>
+            </value>
+            <value>
+                <fullName>F6 Product Experience &amp; Value Differentiation/B2B – Manage Product</fullName>
+                <default>false</default>
+                <label>F6 Product Experience &amp; Value Differentiation/B2B – Manage Product</label>
+            </value>
+            <value>
+                <fullName>F7 Product Experience &amp; Value Differentiation/Institution</fullName>
+                <default>false</default>
+                <label>F7 Product Experience &amp; Value Differentiation/Institution</label>
+            </value>
+            <value>
+                <fullName>R1  Product experience/High &amp; Medium In-house</fullName>
+                <default>false</default>
+                <label>R1  Product experience/High &amp; Medium In-house</label>
+            </value>
+            <value>
+                <fullName>R2 Value – Product Innovation/High In-House</fullName>
+                <default>false</default>
+                <label>R2 Value – Product Innovation/High In-House</label>
+            </value>
+            <value>
+                <fullName>R3 Value – Product Innovation/Medium In-House</fullName>
+                <default>false</default>
+                <label>R3 Value – Product Innovation/Medium In-House</label>
+            </value>
+            <value>
+                <fullName>R4 Product experience &amp; Value – Product Innovation/Low In-House</fullName>
+                <default>false</default>
+                <label>R4 Product experience &amp; Value – Product Innovation/Low In-House</label>
+            </value>
+            <value>
+                <fullName>R5 Value – Supply Chain Innovation</fullName>
+                <default>false</default>
+                <label>R5 Value – Supply Chain Innovation</label>
+            </value>
+            <value>
+                <fullName>T Trade</fullName>
+                <default>false</default>
+                <label>T Trade</label>
+            </value>
+            <value>
+                <fullName>Bakery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bakery</label>
+            </value>
+            <value>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Beverage</label>
+            </value>
+            <value>
+                <fullName>Confectionery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Confectionery</label>
+            </value>
+            <value>
+                <fullName>Convenience foods</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Convenience foods</label>
+            </value>
+            <value>
+                <fullName>Dairy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dairy</label>
+            </value>
+            <value>
+                <fullName>Feed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Feed</label>
+            </value>
+            <value>
+                <fullName>Food ingredients</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Food ingredients</label>
+            </value>
+            <value>
+                <fullName>Fruit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fruit</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Infant &amp; baby food</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Infant &amp; baby food</label>
+            </value>
+            <value>
+                <fullName>Meat</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Meat</label>
+            </value>
+            <value>
+                <fullName>Personal care</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Personal care</label>
+            </value>
+            <value>
+                <fullName>Pet food</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pet food</label>
+            </value>
+            <value>
+                <fullName>Pharma</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pharma</label>
+            </value>
+            <value>
+                <fullName>Snacks &amp; cereals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Snacks &amp; cereals</label>
+            </value>
+            <value>
+                <fullName>Value1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Value1</label>
+            </value>
+            <value>
+                <fullName>Value2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Value2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

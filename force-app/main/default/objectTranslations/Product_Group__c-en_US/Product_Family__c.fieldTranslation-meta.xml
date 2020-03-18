@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Family --></label>
+    <name>Product_Family__c</name>
+    <picklistValues>
+        <masterLabel>65% - 75%</masterLabel>
+        <translation><!-- 65% - 75% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>76% - 83%</masterLabel>
+        <translation><!-- 76% - 83% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>84% - 89%</masterLabel>
+        <translation><!-- 84% - 89% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>90% +</masterLabel>
+        <translation><!-- 90% + --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assorted</masterLabel>
+        <translation><!-- Assorted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BTFT</masterLabel>
+        <translation><!-- BTFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Block</masterLabel>
+        <translation><!-- Block --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bone in Breast</masterLabel>
+        <translation><!-- Bone in Breast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bone-in</masterLabel>
+        <translation><!-- Bone-in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boneless</masterLabel>
+        <translation><!-- Boneless --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bones</masterLabel>
+        <translation><!-- Bones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breaded</masterLabel>
+        <translation><!-- Breaded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breakfast</masterLabel>
+        <translation><!-- Breakfast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breast</masterLabel>
+        <translation><!-- Breast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brisket</masterLabel>
+        <translation><!-- Brisket --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bulk</masterLabel>
+        <translation><!-- Bulk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Butterfly</masterLabel>
+        <translation><!-- Butterfly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS Rib</masterLabel>
+        <translation><!-- CS Rib --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carne</masterLabel>
+        <translation><!-- Carne --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casing cooked</masterLabel>
+        <translation><!-- Casing cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Center</masterLabel>
+        <translation><!-- Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheese</masterLabel>
+        <translation><!-- Cheese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chew</masterLabel>
+        <translation><!-- Chew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chop</masterLabel>
+        <translation><!-- Chop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chub</masterLabel>
+        <translation><!-- Chub --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chuck</masterLabel>
+        <translation><!-- Chuck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chunked</masterLabel>
+        <translation><!-- Chunked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clod</masterLabel>
+        <translation><!-- Clod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Co-Pack</masterLabel>
+        <translation><!-- Co-Pack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combo</masterLabel>
+        <translation><!-- Combo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combos</masterLabel>
+        <translation><!-- Combos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuous Line</masterLabel>
+        <translation><!-- Continuous Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross Dock</masterLabel>
+        <translation><!-- Cross Dock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cube</masterLabel>
+        <translation><!-- Cube --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cutler</masterLabel>
+        <translation><!-- Cutler --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diced</masterLabel>
+        <translation><!-- Diced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dinner</masterLabel>
+        <translation><!-- Dinner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution</masterLabel>
+        <translation><!-- Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extruded</masterLabel>
+        <translation><!-- Extruded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eye</masterLabel>
+        <translation><!-- Eye --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fat and Bone</masterLabel>
+        <translation><!-- Fat and Bone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat</masterLabel>
+        <translation><!-- Flat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight Services</masterLabel>
+        <translation><!-- Freight Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fry</masterLabel>
+        <translation><!-- Fry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IQF Patty</masterLabel>
+        <translation><!-- IQF Patty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inclusion Patty</masterLabel>
+        <translation><!-- Inclusion Patty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jerky</masterLabel>
+        <translation><!-- Jerky --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jobber</masterLabel>
+        <translation><!-- Jobber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kettle</masterLabel>
+        <translation><!-- Kettle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knuckle</masterLabel>
+        <translation><!-- Knuckle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leg</masterLabel>
+        <translation><!-- Leg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquid Egg</masterLabel>
+        <translation><!-- Liquid Egg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquid Egg - Conagra</masterLabel>
+        <translation><!-- Liquid Egg - Conagra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loaf</masterLabel>
+        <translation><!-- Loaf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loin</masterLabel>
+        <translation><!-- Loin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marinated</masterLabel>
+        <translation><!-- Marinated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meatball</masterLabel>
+        <translation><!-- Meatball --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navel</masterLabel>
+        <translation><!-- Navel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offal</masterLabel>
+        <translation><!-- Offal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packing</masterLabel>
+        <translation><!-- Packing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pallets</masterLabel>
+        <translation><!-- Pallets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patty</masterLabel>
+        <translation><!-- Patty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pellet</masterLabel>
+        <translation><!-- Pellet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prepared Egg</masterLabel>
+        <translation><!-- Prepared Egg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primal</masterLabel>
+        <translation><!-- Primal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTC</masterLabel>
+        <translation><!-- RTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTC Breast</masterLabel>
+        <translation><!-- RTC Breast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material &amp; WIP</masterLabel>
+        <translation><!-- Raw Material &amp; WIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Roast</masterLabel>
+        <translation><!-- Raw Roast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rib</masterLabel>
+        <translation><!-- Rib --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rib End</masterLabel>
+        <translation><!-- Rib End --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roast</masterLabel>
+        <translation><!-- Roast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Round</masterLabel>
+        <translation><!-- Round --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sauce</masterLabel>
+        <translation><!-- Sauce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sauce/Soup</masterLabel>
+        <translation><!-- Sauce/Soup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shell Egg</masterLabel>
+        <translation><!-- Shell Egg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Rib</masterLabel>
+        <translation><!-- Short Rib --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sirloin</masterLabel>
+        <translation><!-- Sirloin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sliced</masterLabel>
+        <translation><!-- Sliced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialty</masterLabel>
+        <translation><!-- Specialty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steak</masterLabel>
+        <translation><!-- Steak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stew</masterLabel>
+        <translation><!-- Stew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stir</masterLabel>
+        <translation><!-- Stir --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strip</masterLabel>
+        <translation><!-- Strip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tender</masterLabel>
+        <translation><!-- Tender --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thin Cut</masterLabel>
+        <translation><!-- Thin Cut --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top Butt</masterLabel>
+        <translation><!-- Top Butt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tray Pack</masterLabel>
+        <translation><!-- Tray Pack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tri Tip</masterLabel>
+        <translation><!-- Tri Tip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under 65%</masterLabel>
+        <translation><!-- Under 65% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse Service</masterLabel>
+        <translation><!-- Warehouse Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Whole Bird</masterLabel>
+        <translation><!-- Whole Bird --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wing</masterLabel>
+        <translation><!-- Wing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

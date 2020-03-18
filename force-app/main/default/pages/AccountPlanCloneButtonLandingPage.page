@@ -1,0 +1,17 @@
+<apex:page standardController="AccountPlan__c" extensions="AccountPlanCloneButtonClass"  >
+  
+    
+    <flow:interview name="AccountPlanRecordClone" interview="{!myFlow}">
+        <apex:param name="AccountPlanId" value="{!AccountPlan__c.Id}"/>
+        
+        
+    </flow:interview>
+   
+     <apex:form >
+     <!--redirection button-->
+   <!--  <apex:detail subject="{!recordId}"/>-->
+    <apex:commandButton action="{!getUrl}" value="Cancel" />
+    <apex:commandButton action="{!getNewAbsenceId}" value="Confirm to Clone" />
+    
+   </apex:form>
+</apex:page>

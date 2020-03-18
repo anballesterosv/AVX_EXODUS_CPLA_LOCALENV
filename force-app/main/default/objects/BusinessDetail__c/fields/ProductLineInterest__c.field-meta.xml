@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductLineInterest__c</fullName>
+    <description>This Product Line Interest Field contains the following picklist values,
+==&gt;CCC
+Chocolate
+Coatings &amp; Fillings
+Cocoa Butter
+Cocoa Liquor
+Cocoa Powder
+==&gt;GEOS
+Blends
+Hosun
+Hydro
+Ines
+Laurics
+other
+Palm
+Palm Fractions
+Rape
+Soy
+Specialities
+Sun
+
+Created by EB on 4/10/2017 for GEOS Sprint1
+Created by EB on 4/10/2017 for CCC Sprint1</description>
+    <externalId>false</externalId>
+    <label>Product Line Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chocolate</fullName>
+                <default>false</default>
+                <label>Chocolate</label>
+            </value>
+            <value>
+                <fullName>Coatings &amp; Fillings</fullName>
+                <default>false</default>
+                <label>Coatings &amp; Fillings</label>
+            </value>
+            <value>
+                <fullName>Cocoa Butter</fullName>
+                <default>false</default>
+                <label>Cocoa Butter</label>
+            </value>
+            <value>
+                <fullName>Cocoa Liquor</fullName>
+                <default>false</default>
+                <label>Cocoa Liquor</label>
+            </value>
+            <value>
+                <fullName>Cocoa Powder</fullName>
+                <default>false</default>
+                <label>Cocoa Powder</label>
+            </value>
+            <value>
+                <fullName>Blends</fullName>
+                <default>false</default>
+                <label>Blends</label>
+            </value>
+            <value>
+                <fullName>Hosun</fullName>
+                <default>false</default>
+                <label>Hosun</label>
+            </value>
+            <value>
+                <fullName>Hydro</fullName>
+                <default>false</default>
+                <label>Hydro</label>
+            </value>
+            <value>
+                <fullName>Ines</fullName>
+                <default>false</default>
+                <label>Ines</label>
+            </value>
+            <value>
+                <fullName>Laurics</fullName>
+                <default>false</default>
+                <label>Laurics</label>
+            </value>
+            <value>
+                <fullName>other</fullName>
+                <default>false</default>
+                <label>other</label>
+            </value>
+            <value>
+                <fullName>Palm</fullName>
+                <default>false</default>
+                <label>Palm</label>
+            </value>
+            <value>
+                <fullName>Palm Fractions</fullName>
+                <default>false</default>
+                <label>Palm Fractions</label>
+            </value>
+            <value>
+                <fullName>Rape</fullName>
+                <default>false</default>
+                <label>Rape</label>
+            </value>
+            <value>
+                <fullName>Soy</fullName>
+                <default>false</default>
+                <label>Soy</label>
+            </value>
+            <value>
+                <fullName>Specialities</fullName>
+                <default>false</default>
+                <label>Specialities</label>
+            </value>
+            <value>
+                <fullName>Sun</fullName>
+                <default>false</default>
+                <label>Sun</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,52 @@
+<template>
+    <template if:true={responseFilterData}>
+        <!-- <template if:true={showFilter}> -->
+            <section role="dialog" tabindex="-1" class={openContainer} aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container slds-float_left openContainer" >
+                    <lightning-card title={label.AVX_SearchFilters} style="background-color: white;" class="slds-text-heading_small slds-card_boundary" variant="Narrow" icon-name="action:filter" footer=""> 
+                        <lightning-icon class="slds-float_right closeChevron" icon-name="utility:chevronleft" onclick={closeModal}></lightning-icon>               
+                        <div class="slds-scrollable_x" >
+                            <template for:each={responseFilterData} for:item="filterData">
+                                <template if:true={filterData.isUnique} >
+                                    <div key={filterData}>
+                                        <lightning-checkbox-group 
+                                            name={filterData.Type}
+                                            class="slds-text-title_caps"
+                                            data-id="checkGroupFilter"
+                                            label={filterData.Type}
+                                            options={filterData.Keyword}
+                                            value={filterData.Field}
+                                            onchange={selectChkField}>
+                                        </lightning-checkbox-group>
+                                    </div>                            
+                                </template>
+                                <template if:false={filterData.isUnique}>
+                                    <lightning-vertical-navigation-section label={filterData.Type}  key={filterData}>
+                                        <lightning-vertical-navigation-overflow>
+                                            <lightning-checkbox-group 
+                                                name={filterData.Field}
+                                                class="slds-var-p-left_x-large"
+                                                data-id="checkGroupFilter"
+                                                label={filterData.Type}
+                                                options={filterData.Keyword}
+                                                value={filterData.Field}
+                                                onchange={selectChkField}>
+                                            </lightning-checkbox-group>
+                                        </lightning-vertical-navigation-overflow>
+                                    </lightning-vertical-navigation-section>
+                                </template>
+                            </template>
+                        </div>
+                    </lightning-card>                
+                </div>
+            </section>
+        <!-- </template> -->
+        <!-- <template if:false={showFilter}> -->
+            <section role="dialog" tabindex="-1" class={closedContainer} aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container slds-float_left closedContainer"  >
+                    <lightning-icon class="openChevron" icon-name="utility:chevronright" title='' onclick={openModal}></lightning-icon>    
+                </div>
+            </section>
+        <!-- </template> -->
+    </template>
+</template>

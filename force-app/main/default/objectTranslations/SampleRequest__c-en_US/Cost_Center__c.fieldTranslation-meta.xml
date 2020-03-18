@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cost Center --></label>
+    <name>Cost_Center__c</name>
+    <picklistValues>
+        <masterLabel>610911 - Engineering</masterLabel>
+        <translation><!-- 610911 - Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>611609 - CIC Retail</masterLabel>
+        <translation><!-- 611609 - CIC Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>611676 – Retail</masterLabel>
+        <translation><!-- 611676 – Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>612609 - CIC Foodservice</masterLabel>
+        <translation><!-- 612609 - CIC Foodservice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>612676 – Foodservice</masterLabel>
+        <translation><!-- 612676 – Foodservice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>613609 - CIC Protein Ingredients</masterLabel>
+        <translation><!-- 613609 - CIC Protein Ingredients --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>613676 – Protein Ingredients</masterLabel>
+        <translation><!-- 613676 – Protein Ingredients --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

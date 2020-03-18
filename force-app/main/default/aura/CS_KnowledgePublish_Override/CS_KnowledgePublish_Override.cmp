@@ -1,0 +1,20 @@
+<aura:component controller="CS_OverrideCntrl" implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName,lightning:isUrlAddressable,force:lightningQuickActionWithoutHeader"
+                access="global">
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.reInit}" />
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"  access="global"/>
+    <aura:attribute name="validated" type="Boolean"/>
+    <div id="parentDIV" style="overflow:hidden">
+   <aura:if isTrue="{!(v.validated == 'BeforeSubmit')}">
+       {!$Label.c.CS_Knowledge_Publish_Before_Submit}
+    </aura:if>    
+    <aura:if isTrue="{!(v.validated == 'AfterSubmit')}">
+          {!$Label.c.CS_Knowledge_Publish_After_Submit}
+    </aura:if> 
+    <aura:if isTrue="{!(v.validated == 'AlreadySubmitted')}">
+          {!$Label.c.CS_Knowledge_Publish_already_Submit}
+    </aura:if> 
+         <aura:if isTrue="{!(v.validated == 'RecordLocked')}">
+          {!$Label.c.CS_Knowledge_Publish_Record_Lock}
+    </aura:if> 
+    </div>
+</aura:component>

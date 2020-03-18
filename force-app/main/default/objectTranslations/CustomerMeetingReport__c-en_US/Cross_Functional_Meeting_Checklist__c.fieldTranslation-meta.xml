@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Any meeting requiring individuals from multiple disciplines requires completion of the Cross Functional Meeting Checklist.  (Disciplines: plant persons, marketing, managers) --></help>
+    <label><!-- Cross Functional Meeting Checklist --></label>
+    <name>Cross_Functional_Meeting_Checklist__c</name>
+</CustomFieldTranslation>

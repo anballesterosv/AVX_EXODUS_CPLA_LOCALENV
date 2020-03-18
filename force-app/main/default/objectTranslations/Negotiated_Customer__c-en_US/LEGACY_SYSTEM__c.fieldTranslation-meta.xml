@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LEGACY_SYSTEM --></label>
+    <name>LEGACY_SYSTEM__c</name>
+    <picklistValues>
+        <masterLabel>PROTEAN</masterLabel>
+        <translation><!-- PROTEAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP - EGGS</masterLabel>
+        <translation><!-- SAP - EGGS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XLDM</masterLabel>
+        <translation><!-- XLDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XLGO</masterLabel>
+        <translation><!-- XLGO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

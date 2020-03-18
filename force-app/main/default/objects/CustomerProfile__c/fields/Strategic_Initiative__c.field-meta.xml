@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategic_Initiative__c</fullName>
+    <description>Strategic Initiative</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Customers stated key drivers for the fiscal year. These are usually high level and apply across the business. 
+ Examples would be Grow Food service market space by 5 points, Reduce procurement costs by 10%.</inlineHelpText>
+    <label>Strategic Initiative</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

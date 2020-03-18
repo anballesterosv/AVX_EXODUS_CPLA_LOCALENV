@@ -1,0 +1,131 @@
+<template >
+    <template if:true={loading}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+    <template if:true={priceBookListResponse}>
+        <template if:false={loading}>
+            <c-avx_catalogfilter></c-avx_catalogfilter>
+            <lightning-card title="Product Catalog" style="z-index: unset !important;">
+                
+                <lightning-layout multiple-rows="true" vertical-align="end">
+                    
+                    <lightning-layout-item size="12" small-device-size="8" medium-device-size="6" large-device-size="3" padding="around-small">
+                        <div class="slds-form-element">
+                            <div class="slds-form-element__control">
+                                <lightning-input 
+                                    type="search" 
+                                    value={searchValueTrack}
+                                    label={label.AVX_EnterSearch} 
+                                    onchange={handleSearchText} 
+                                    onkeypress={handleKeyPress}
+                                    >
+                                </lightning-input>
+                            </div>
+                        </div> 
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="2" medium-device-size="2" large-device-size="2" padding="around-small">
+                        <lightning-button 
+                            label={label.AVX_Search} 
+                            variant="brand" 
+                            onclick={handleSearch} > 
+                        </lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="4" medium-device-size="4" large-device-size="4"></lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="8" medium-device-size="6" large-device-size="3" padding="around-small">
+                        <div class="slds-form-element">
+                            <div class="slds-form-element__control">
+                                <lightning-combobox
+                                    id='comboboxShowImage'
+                                    class='value'
+                                    name="selectshowimage"
+                                    label={label.AVX_ShowImageOrNot}
+                                    value={showvalue}
+                                    options={optionsShowImage}
+                                    onchange={handleChangeImg} >
+                                </lightning-combobox>
+                            </div>
+                        </div> 
+                    </lightning-layout-item>
+                </lightning-layout>
+                <div if:true={showErrorMsg} style="margin-left: 3%;">
+                    <p style="color: red;">{errorMsg}</p>
+                </div>
+                <span>&nbsp;</span>
+
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-max-medium-table_stacked-horizontal tableDesktopFunction" role="grid">
+                    <thead>
+                        <tr class="slds-text-heading_label">
+                            <template if:true={showimage}>
+                                <th class="slds-text-align_center slds-text-align_center slds-is-sortable columns_title" scope="col">
+                                    <a class="slds-text-align_center slds-text-align_center slds-th__action slds-text-link_reset columns_title" href="javascript:void(0);"  role="button" tabindex="0">
+                                        <div class="slds-text-align_center slds-text-align_center slds-truncate columns_title" title="Product Image">
+                                            <span class="slds-text-align_center slds-text-align_center columns_title" title=''>&nbsp;</span>
+                                        </div>
+                                    </a>
+                                </th>        
+                            </template>
+                            <template for:each={columnsData} for:item="column">
+                                <th aria-label={column.name} aria-sort="ASC" class={column.classString} scope="col" id={column.name} onclick={sortBy} key={column}>
+                                    <a class="slds-text-align_center slds-text-align_center slds-th__action slds-text-link_reset columns_title" href="javascript:void(0);"  role="button" tabindex={column.order}>
+                                        <div class="slds-text-align_center slds-text-align_center slds-truncate columns_title">
+                                            <span class="slds-text-align_center slds-text-align_center columns_title" title={column.stringTitle}>{column.stringTitle}</span>
+                                        </div>
+                                    </a>
+                                </th>                          
+                            </template>
+                        </tr>
+                    </thead>
+                    
+                    <tbody >
+                        <template if:true={msgnoData}>
+                            <tr>
+                                <td role="gridcell" colspan={msgnoDataSize}>
+                                    <div class="slds-truncate slds-text-align_center" title='No records found'>{label.AVX_NoRecordsFound}</div>
+                                </td>
+                            </tr>
+                        </template>
+
+                        <template for:each={priceBookListResponse} for:item="productData">
+                            <c-avx_productitem itemproduct={productData} showimage={showimage} key={productData.Id} onopenmodal={openModal} currentproduct={currentObject}></c-avx_productitem>        
+                        </template>
+                    </tbody>
+                </table>
+                <span>&nbsp;</span>
+                <div class="slds-col  slds-size_12-of-12  slds-var-p-horizontal_small slds-align_absolute-center" >
+                    <lightning-layout>
+                        <lightning-layout-item>
+                            <lightning-button label={label.AVX_Previous} disabled={disabledPrevious} icon-name="utility:chevronleft" onclick={doPagination}></lightning-button>
+                        </lightning-layout-item>
+                        <lightning-layout-item>
+                            <lightning-button label={label.AVX_FirstPage} disabled={disabledFirstPage}  icon-name="utility:chevronleft"  onclick={doPagination}></lightning-button>
+                        </lightning-layout-item>
+                        <lightning-layout-item>
+                            <lightning-button label={pageShow}  onclick={doPagination}></lightning-button>                        
+                        </lightning-layout-item>    
+                        <lightning-layout-item>
+                            <lightning-button label={label.AVX_LastPage} disabled={disabledLastPage}  icon-name="utility:chevronright"  icon-position="right" onclick={doPagination}></lightning-button>
+                        </lightning-layout-item>
+                        <lightning-layout-item>
+                            <lightning-button label={label.AVX_Next} disabled={disabledNext} icon-name="utility:chevronright"  icon-position="right" onclick={doPagination}></lightning-button>
+                        </lightning-layout-item>
+                        <lightning-layout-item flexibility="grow"></lightning-layout-item>
+                    </lightning-layout>  
+                    <lightning-layout>
+                        <lightning-layout-item>
+                            <select class="slds-select slds-text-color_success" name = "optionSelect" onchange={handleChangeQTYPag} >
+                                <option value="">{label.AVX_PageSize}</option>
+                                <option value="8">8</option>
+                                <option value="16">16</option>
+                                <option value="24">24</option>
+                                <option value="32">32</option>
+                            </select> 
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div> 
+            </lightning-card>
+        </template>
+    </template>
+    <template if:true={openProductDetailModal}>
+        <c-avx_productdetail onclosemodal={closeModal} objpricebookentry={detailObject} showdefaultimage={showDefaultImage} taxedyesorno={taxedYesOrNo}></c-avx_productdetail>        
+    </template>
+</template>

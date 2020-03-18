@@ -1,0 +1,5 @@
+<design:component >
+    <!-- Component attributes -to set dynamically -->
+	<design:attribute name="appLabel" label="Application Name" description="Application name to be displayed." required="true"/>
+    <design:attribute name="labelName" label="Label Name" description="Label information that contains complete URL (including http(s)) of the Application" required="true"/>
+</design:component>

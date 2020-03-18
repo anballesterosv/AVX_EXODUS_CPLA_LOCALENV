@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nutrition Facts Panel Selection --></label>
+    <name>Nutrition_Facts_Panel_Selection__c</name>
+    <picklistValues>
+        <masterLabel>NFP 2016</masterLabel>
+        <translation><!-- NFP 2016 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFP 2018</masterLabel>
+        <translation><!-- NFP 2018 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

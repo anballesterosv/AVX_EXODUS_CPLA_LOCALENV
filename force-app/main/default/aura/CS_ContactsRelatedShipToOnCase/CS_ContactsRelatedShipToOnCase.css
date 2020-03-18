@@ -1,0 +1,14 @@
+.THIS .eachField.narrowRegion{
+    width:100%;
+}
+
+.THIS .tabset{
+    
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+.THIS .eachField{
+    width:50%;
+    display:inline-block;
+}

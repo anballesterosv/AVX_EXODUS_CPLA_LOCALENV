@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="CloneOpportunityProducts">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="hasInactiveProduct" type="Boolean"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+        <h1>Cloning Opportunity...</h1>
+</aura:component>

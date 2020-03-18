@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label><!-- AVX Brand --></label>
+        <name>AVX_Brand</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Business --></label>
+        <name>AVX_Business</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX CallTo --></label>
+        <name>AVX_CallTo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_Catalog --></label>
+        <name>AVX_Catalog</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Close --></label>
+        <name>AVX_Close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_CloseTaskReasonComments --></label>
+        <name>AVX_CloseTaskReasonComments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_CloseTaskReason_NT --></label>
+        <name>AVX_CloseTaskReason_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_CloseTaskStatus_NT --></label>
+        <name>AVX_CloseTaskStatus_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Default Pricing UOM --></label>
+        <name>AVX_DefaultPricingUOM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Default UOM --></label>
+        <name>AVX_DefaultUom</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Description --></label>
+        <name>AVX_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_Detail --></label>
+        <name>AVX_Detail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_DontShowImage --></label>
+        <name>AVX_DontShowImage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Duration of Conservation --></label>
+        <name>AVX_DurationOfConservation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX EnterSearch --></label>
+        <name>AVX_EnterSearch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Family --></label>
+        <name>AVX_Family</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Family 2 --></label>
+        <name>AVX_Family2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_FirstPage --></label>
+        <name>AVX_FirstPage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Gross Weight --></label>
+        <name>AVX_GrossWeight</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconAttention_NT --></label>
+        <name>AVX_IconAttention_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconBlue_NT --></label>
+        <name>AVX_IconBlue_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconGreen_NT --></label>
+        <name>AVX_IconGreen_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconGrey_NT --></label>
+        <name>AVX_IconGrey_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconInactive_NT --></label>
+        <name>AVX_IconInactive_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconOrange_NT --></label>
+        <name>AVX_IconOrange_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconPurple_NT --></label>
+        <name>AVX_IconPurple_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconRed_NT --></label>
+        <name>AVX_IconRed_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconSales_NT --></label>
+        <name>AVX_IconSales_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconService_NT --></label>
+        <name>AVX_IconService_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconSuccess_NT --></label>
+        <name>AVX_IconSuccess_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_IconYellow_NT --></label>
+        <name>AVX_IconYellow_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_LastPage --></label>
+        <name>AVX_LastPage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Material Type --></label>
+        <name>AVX_MaterialType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Net Weight --></label>
+        <name>AVX_NetWeight</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_Next --></label>
+        <name>AVX_Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX No --></label>
+        <name>AVX_No</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX NoRecordsFound --></label>
+        <name>AVX_NoRecordsFound</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX PackType --></label>
+        <name>AVX_PackType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_PageSize --></label>
+        <name>AVX_PageSize</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_Previous --></label>
+        <name>AVX_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX ProductCode --></label>
+        <name>AVX_ProductCode</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Product Details --></label>
+        <name>AVX_ProductDetails</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_ProductName --></label>
+        <name>AVX_ProductName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX SalesOrg --></label>
+        <name>AVX_SalesOrg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Search --></label>
+        <name>AVX_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_SearchFilters --></label>
+        <name>AVX_SearchFilters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_ServletShepherd --></label>
+        <name>AVX_ServletShepherd</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_ShowImage --></label>
+        <name>AVX_ShowImage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX ShowImagerOrNot --></label>
+        <name>AVX_ShowImageOrNot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_ShowLess --></label>
+        <name>AVX_ShowLess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_ShowMore --></label>
+        <name>AVX_ShowMore</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX SomethingToSearch --></label>
+        <name>AVX_SomethingToSearch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Storage Code --></label>
+        <name>AVX_StorageCode</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_TaskScheduled --></label>
+        <name>AVX_TaskScheduled</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_TaskStatus_NT --></label>
+        <name>AVX_TaskStatus_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX_TaskType_NT --></label>
+        <name>AVX_TaskType_NT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Taxed --></label>
+        <name>AVX_Taxed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Actions --></label>
+        <name>AVX_Telesales_Actions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Add --></label>
+        <name>AVX_Telesales_Add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Add/Edit Client to Telesales Plan --></label>
+        <name>AVX_Telesales_Add_Edit_Client_to_Telesales_Plan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Added --></label>
+        <name>AVX_Telesales_Added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales All --></label>
+        <name>AVX_Telesales_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Cancel --></label>
+        <name>AVX_Telesales_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Client no country --></label>
+        <name>AVX_Telesales_Client_no_country</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Clients no selected --></label>
+        <name>AVX_Telesales_Clients_no_selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Clients to assign --></label>
+        <name>AVX_Telesales_Clients_to_assign</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Close --></label>
+        <name>AVX_Telesales_Close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Day --></label>
+        <name>AVX_Telesales_Day</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Delete --></label>
+        <name>AVX_Telesales_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales ERP Number --></label>
+        <name>AVX_Telesales_ERP_Number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales ERP Number asc --></label>
+        <name>AVX_Telesales_ERP_Number_asc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales ERP Number desc --></label>
+        <name>AVX_Telesales_ERP_Number_desc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Edit --></label>
+        <name>AVX_Telesales_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Error same client/day/hour --></label>
+        <name>AVX_Telesales_Error_same_client_day_hour</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Filter --></label>
+        <name>AVX_Telesales_Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Filter By day --></label>
+        <name>AVX_Telesales_Filter_By_day</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Hour --></label>
+        <name>AVX_Telesales_Hour</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Hour asc --></label>
+        <name>AVX_Telesales_Hour_asc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Hour desc --></label>
+        <name>AVX_Telesales_Hour_desc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Identification Number --></label>
+        <name>AVX_Telesales_Identification_Number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Items to show --></label>
+        <name>AVX_Telesales_Items_to_show</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Message confirm delete --></label>
+        <name>AVX_Telesales_Message_confirm_delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Name --></label>
+        <name>AVX_Telesales_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Name asc --></label>
+        <name>AVX_Telesales_Name_asc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Name desc --></label>
+        <name>AVX_Telesales_Name_desc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales No --></label>
+        <name>AVX_Telesales_No</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales No records found --></label>
+        <name>AVX_Telesales_No_records_found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales No sales script --></label>
+        <name>AVX_Telesales_No_sales_script</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Non added --></label>
+        <name>AVX_Telesales_Non_added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Order by --></label>
+        <name>AVX_Telesales_Order_by</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Plan --></label>
+        <name>AVX_Telesales_Plan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Priority --></label>
+        <name>AVX_Telesales_Priority</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Record updated --></label>
+        <name>AVX_Telesales_Record_updated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Records added --></label>
+        <name>AVX_Telesales_Records_added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Records deleted --></label>
+        <name>AVX_Telesales_Records_deleted</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Restart values --></label>
+        <name>AVX_Telesales_Restart_values</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Save --></label>
+        <name>AVX_Telesales_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Select --></label>
+        <name>AVX_Telesales_Select</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Select all --></label>
+        <name>AVX_Telesales_Select_all</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Status --></label>
+        <name>AVX_Telesales_Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Telemerketer no selected --></label>
+        <name>AVX_Telesales_Telemerketer_no_selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Validation error --></label>
+        <name>AVX_Telesales_Validation_error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales Yes --></label>
+        <name>AVX_Telesales_Yes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales telemarketer witout workplan --></label>
+        <name>AVX_Telesales_telemarketer_witout_workplan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Telesales there is a plan active --></label>
+        <name>AVX_Telesales_there_is_a_plan_active</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX Yes --></label>
+        <name>AVX_Yes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AVX telesales Telemarketer --></label>
+        <name>AVX_telesales_Telemarketer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Account Team Param --></label>
+        <name>Account_Team_Param</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS_AgentResponseTimeMilestoneId --></label>
+        <name>CS_AgentResponseTimeMilestoneId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS_BlueJayApp --></label>
+        <name>CS_BlueJayApp</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- For Domain Bypassing For External &amp; NoContactQueue usecase --></label>
+        <name>CS_ByPass_Domains_For_NoContactQueue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Products --></label>
+        <name>CS_C5_Products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS_DeletedEmailList --></label>
+        <name>CS_DeletedEmailList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Holiday Label --></label>
+        <name>CS_Holiday_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value &apos;true&apos; is used to bypass certain logics in trigger dynamically --></label>
+        <name>CS_Is_Execute_Trigger</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Knowledge Banner 1 --></label>
+        <name>CS_Knowledge_Banner_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Knowledge Banner 2 --></label>
+        <name>CS_Knowledge_Banner_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Knowledge Publish After Submit --></label>
+        <name>CS_Knowledge_Publish_After_Submit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Knowledge Publish Before Submit --></label>
+        <name>CS_Knowledge_Publish_Before_Submit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Knowledge Publish Record Lock --></label>
+        <name>CS_Knowledge_Publish_Record_Lock</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Knowledge Publish already Submit --></label>
+        <name>CS_Knowledge_Publish_already_Submit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Protein Custom service Queue Id --></label>
+        <name>CS_Protein_Custom_service_Queue_Id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Protein Customer Service Lightning URL --></label>
+        <name>CS_Protein_Customer_Service_Lightning_URL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS Protein service Queue Id --></label>
+        <name>CS_Protein_service_Queue_Id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Used to display the Column Headers of Ship to in Case Page --></label>
+        <name>CS_ShipToHeaders</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ship To Contact Relation Error Message --></label>
+        <name>CS_Ship_To_Contact_Relation_Error_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CS_batchClassResultsReceivedEmailID --></label>
+        <name>CS_batchClassResultsReceivedEmailID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add an object --></label>
+        <name>CameleonCPQ__BTN_ADD_OBJECT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel Button --></label>
+        <name>CameleonCPQ__BTN_CANCEL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clone Button --></label>
+        <name>CameleonCPQ__BTN_CLONE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete Button --></label>
+        <name>CameleonCPQ__BTN_DELETE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export Mapping Set --></label>
+        <name>CameleonCPQ__BTN_EXPORT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Full Screen Button --></label>
+        <name>CameleonCPQ__BTN_FULL_SCREEN</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Import Mapping Set --></label>
+        <name>CameleonCPQ__BTN_IMPORT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Minimized Screen Button --></label>
+        <name>CameleonCPQ__BTN_MINIMIZED_SCREEN</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Display More Fields --></label>
+        <name>CameleonCPQ__BTN_MORE_FIELDS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View More Objects --></label>
+        <name>CameleonCPQ__BTN_MORE_OBJECTS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ok Button --></label>
+        <name>CameleonCPQ__BTN_OK</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove an object --></label>
+        <name>CameleonCPQ__BTN_REMOVE_OBJECT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save Button --></label>
+        <name>CameleonCPQ__BTN_SAVE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select All --></label>
+        <name>CameleonCPQ__BTN_SELECT_ALL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unselect All --></label>
+        <name>CameleonCPQ__BTN_UNSELECT_ALL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Upload Mapping Set --></label>
+        <name>CameleonCPQ__BTN_UPLOAD_MAPSET</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract End Date --></label>
+        <name>CameleonCPQ__CLM_CONTRACT_END_DATE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract Start Date --></label>
+        <name>CameleonCPQ__CLM_CONTRACT_START_DATE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract Type --></label>
+        <name>CameleonCPQ__CLM_CONTRACT_TYPE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create Contract --></label>
+        <name>CameleonCPQ__CLM_CREATE_CONTRACT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mapping Type &lt;OUT&gt; --></label>
+        <name>CameleonCPQ__MP_CONTRACT_OUT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQ Column --></label>
+        <name>CameleonCPQ__MP_CPQ_COLUMN</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQ Field --></label>
+        <name>CameleonCPQ__MP_CPQ_FIELD</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mapping Type &lt;IN&gt; --></label>
+        <name>CameleonCPQ__MP_IN</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mapped fields only --></label>
+        <name>CameleonCPQ__MP_MAPPED_ONLY</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mapping Type &lt;OUT&gt; --></label>
+        <name>CameleonCPQ__MP_OUT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select Object --></label>
+        <name>CameleonCPQ__MP_SELECT_OBJ</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SFDC Field --></label>
+        <name>CameleonCPQ__MP_SFDC_FIELD</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mapping Builder SubTitle --></label>
+        <name>CameleonCPQ__MP_SUBTITLE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Synchronization column --></label>
+        <name>CameleonCPQ__MP_SYNC_COLUMN</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Sync OUT Delete Mode --></label>
+        <name>CameleonCPQ__MP_SYNC_DEL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Sync OUT Update Mode --></label>
+        <name>CameleonCPQ__MP_SYNC_UPD</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Sync OUT Update/Delete Mode --></label>
+        <name>CameleonCPQ__MP_SYNC_UPDDEL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CLM error during contract creation --></label>
+        <name>CameleonCPQ__MSG_CLM_CFQ_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract end date &lt; Contract start date --></label>
+        <name>CameleonCPQ__MSG_CLM_INVALID_DATES</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error --></label>
+        <name>CameleonCPQ__MSG_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid Device --></label>
+        <name>CameleonCPQ__MSG_INVALID_DEVICE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- License --></label>
+        <name>CameleonCPQ__MSG_LICENSE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Maintenance --></label>
+        <name>CameleonCPQ__MSG_MAINT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add Object Not Allowed --></label>
+        <name>CameleonCPQ__MSG_MP_NOADDOBJ</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete Object Not Allowed --></label>
+        <name>CameleonCPQ__MSG_MP_NODELOBJ</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_NO_CUSTOM_SETTINGS --></label>
+        <name>CameleonCPQ__MSG_NO_CUSTOM_SETTINGS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Read-Only content --></label>
+        <name>CameleonCPQ__MSG_READ_ONLY_CONTENT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_SPRINGCM_ERROR --></label>
+        <name>CameleonCPQ__MSG_SPRINGCM_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unable to unlock quote --></label>
+        <name>CameleonCPQ__MSG_UNLOCK_FAIL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Wait for synchronization --></label>
+        <name>CameleonCPQ__MSG_WAIT_SYNCHRONIZATION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create New Release Forbidden --></label>
+        <name>CameleonCPQ__NO_QR_CREATION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Release Deletion Forbidden --></label>
+        <name>CameleonCPQ__NO_QR_DELETION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clone Quote Error --></label>
+        <name>CameleonCPQ__QX_CLONE_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cloned quote label prefix --></label>
+        <name>CameleonCPQ__QX_CLONE_LABEL_PREFIX</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cloned quote label suffix --></label>
+        <name>CameleonCPQ__QX_CLONE_LABEL_SUFFIX</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQx Error Description --></label>
+        <name>CameleonCPQ__QX_ERROR_DESCR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQx Error --></label>
+        <name>CameleonCPQ__QX_ERROR_MSG</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQx Error Title --></label>
+        <name>CameleonCPQ__QX_ERROR_TITLE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error Notification --></label>
+        <name>CameleonCPQ__QX_NOTIFICATION_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Information Notification --></label>
+        <name>CameleonCPQ__QX_NOTIFICATION_INFO</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Warning Notification --></label>
+        <name>CameleonCPQ__QX_NOTIFICATION_WARNING</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Synchro Error Notification --></label>
+        <name>CameleonCPQ__QX_NOTIF_SYNC_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Synchro OK Notification --></label>
+        <name>CameleonCPQ__QX_NOTIF_SYNC_OK</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Synchro Timeout Notification --></label>
+        <name>CameleonCPQ__QX_NOTIF_SYNC_TIMEOUT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QX_OPENQUOTE_ERROR --></label>
+        <name>CameleonCPQ__QX_OPENQUOTE_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QX_OPENQUOTE_MIGRATING --></label>
+        <name>CameleonCPQ__QX_OPENQUOTE_MIGRATING</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QX_OPENQUOTE_OPENING --></label>
+        <name>CameleonCPQ__QX_OPENQUOTE_OPENING</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Refresh Quote Error --></label>
+        <name>CameleonCPQ__QX_REFRESH_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQx Report Generation Error --></label>
+        <name>CameleonCPQ__QX_REPORT_GENERATION_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQx Report Generation Success --></label>
+        <name>CameleonCPQ__QX_REPORT_GENERATION_OK</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQx Report Generation timeout --></label>
+        <name>CameleonCPQ__QX_REPORT_GENERATION_TIMEOUT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CPQx server unreachable --></label>
+        <name>CameleonCPQ__QX_SERVER_UNREACHABLE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Steps Selector Help Message --></label>
+        <name>CameleonCPQ__QX_STEPS_HELP_MSG</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Steps Selector Title --></label>
+        <name>CameleonCPQ__QX_STEPS_TITLE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Single release selection --></label>
+        <name>CameleonCPQ__SINGLE_QR_SELECTION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Content to Overview Synchronization --></label>
+        <name>CameleonCPQ__SYNCHRONIZATION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quote Panel Content Tab --></label>
+        <name>CameleonCPQ__TAB_CONTENT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quote Panel Content2 Tab --></label>
+        <name>CameleonCPQ__TAB_CONTENT2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TAB_CONTRACT --></label>
+        <name>CameleonCPQ__TAB_CONTRACT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Quote Panel Overview Tab --></label>
+        <name>CameleonCPQ__TAB_OVERVIEW</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Is Cloned --></label>
+        <name>Is_Cloned</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewOppName --></label>
+        <name>NewOppName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OpportunityStage --></label>
+        <name>OpportunityStage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OpportunityTypeRenewal --></label>
+        <name>OpportunityTypeRenewal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Protein_SentPricerStatus --></label>
+        <name>Protein_SentPricerStatus</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Protein_ Standard Price Book Entry ID --></label>
+        <name>Protein_Standard_Price_Book_Entry_ID</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Query --></label>
+        <name>Query</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SyncProjectMem1 --></label>
+        <name>SyncProjectMem1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SyncProjectMem2 --></label>
+        <name>SyncProjectMem2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SyncProjectMem3 --></label>
+        <name>SyncProjectMem3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Trade Sales Roles Opp Exception --></label>
+        <name>Trade_Sales_Roles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Trade Sales Roles2 --></label>
+        <name>Trade_Sales_Roles2</name>
+    </customLabels>
+    <flowDefinitions>
+        <flows>
+            <fullName>UpdateProductCode_With_Product-1</fullName>
+        </flows>
+        <fullName>UpdateProductCode_With_Product</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>UpdateProductInQuoteLineItem-2</fullName>
+        </flows>
+        <fullName>UpdateProductInQuoteLineItem</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_UpdateCaseAccount-3</fullName>
+        </flows>
+        <fullName>CS_UpdateCaseAccount</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>AccountPlanRecordClone-1</fullName>
+            <screens>
+                <fields>
+                    <name>Click</name>
+                </fields>
+                <name>Final</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>clickRecord</name>
+                </fields>
+                <name>FinalScreen</name>
+            </screens>
+        </flows>
+        <fullName>AccountPlanRecordClone</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Chatter_Post_on_the_Customer_Meeting_Report-1</fullName>
+        </flows>
+        <fullName>Chatter_Post_on_the_Customer_Meeting_Report</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_ResetAgentResponseTimeCaseMilestone-1</fullName>
+        </flows>
+        <fullName>CS_ResetAgentResponseTimeCaseMilestone</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_UpdateCaseFirstResponseTime-1</fullName>
+        </flows>
+        <fullName>CS_UpdateCaseFirstResponseTime</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Chatter_Post_on_the_Customer_Meeting_Reports_when_record_is_created-1</fullName>
+        </flows>
+        <fullName>Chatter_Post_on_the_Customer_Meeting_Reports_when_record_is_created</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_UpdateCaseOnAgentWork-2</fullName>
+        </flows>
+        <fullName>CS_UpdateCaseOnAgentWork</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>ParentAccountForStrategicObjective-1</fullName>
+        </flows>
+        <fullName>ParentAccountForStrategicObjective</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Chatter_Post_to_Customer_Meeting_Report_when_Status_is_Completed-1</fullName>
+        </flows>
+        <fullName>Chatter_Post_to_Customer_Meeting_Report_when_Status_is_Completed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Post_New_Related_Enterprise_Record_to_Account_Feed-1</fullName>
+        </flows>
+        <fullName>Post_New_Related_Enterprise_Record_to_Account_Feed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>ProjectsAccountUpdate-1</fullName>
+        </flows>
+        <fullName>ProjectsAccountUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Trigger_project_product_workflow-2</fullName>
+        </flows>
+        <fullName>Trigger_project_product_workflow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_CompleteCaseMilestone-1</fullName>
+        </flows>
+        <fullName>CS_CompleteCaseMilestone</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Opportunity_Chatter_Feed_when_an_Opportunity_Product_becomes_INACTIVE-1</fullName>
+        </flows>
+        <fullName>Update_Opportunity_Chatter_Feed_when_an_Opportunity_Product_becomes_INACTIVE</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_Protein_Email_to_Case_Assignment_Process-8</fullName>
+        </flows>
+        <fullName>CS_Protein_Email_to_Case_Assignment_Process</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Opprtunity_closed_own-1</fullName>
+        </flows>
+        <fullName>Update_Opprtunity_closed_own</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_Protein_Internal_Case_Assignment_Process-4</fullName>
+        </flows>
+        <fullName>CS_Protein_Internal_Case_Assignment_Process</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Opportunity_Renewal-4</fullName>
+        </flows>
+        <fullName>Opportunity_Renewal</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_StrategicObjective_Naming-1</fullName>
+        </flows>
+        <fullName>Update_StrategicObjective_Naming</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Sync_NOF_PPP_Quote_Status-2</fullName>
+        </flows>
+        <fullName>Sync_NOF_PPP_Quote_Status</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Primary_Quote-3</fullName>
+        </flows>
+        <fullName>Update_Primary_Quote</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>NOF_PPP_Priced_Notification-1</fullName>
+        </flows>
+        <fullName>NOF_PPP_Priced_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CS_ParentCaseUpdate-2</fullName>
+        </flows>
+        <fullName>CS_ParentCaseUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>PPP_Quote_Approved_Notification-1</fullName>
+        </flows>
+        <fullName>PPP_Quote_Approved_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>NOF_PPP_Pricing_Notification-1</fullName>
+        </flows>
+        <fullName>NOF_PPP_Pricing_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Account_Customer_Profile_Flag-1</fullName>
+        </flows>
+        <fullName>Update_Account_Customer_Profile_Flag</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>CVAP_Poultry_Set_Sample_Product_BU-1</fullName>
+        </flows>
+        <fullName>CVAP_Poultry_Set_Sample_Product_BU</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Sample_Request_Product_BU_based_upon_Parent_request-1</fullName>
+        </flows>
+        <fullName>Default_Sample_Request_Product_BU_based_upon_Parent_request</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Automatic_creation_of_Price_Book_Entry_on_Product_creation-1</fullName>
+        </flows>
+        <fullName>Automatic_creation_of_Price_Book_Entry_on_Product_creation</fullName>
+    </flowDefinitions>
+    <reportTypes>
+        <description><!-- Account With Contact With Ship To Relation --></description>
+        <label><!-- Account With Contact With Ship To Relation --></label>
+        <name>Account_With_Contact_With_Ship_To_Relation</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Related Ship To&apos;s --></label>
+            <name>Related Ship To&#39;s</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Customer Profiles --></description>
+        <label><!-- Accounts with Customer Profiles --></label>
+        <name>Accounts_with_Customer_Profiles</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Profiles --></label>
+            <name>Customer Profiles</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Entitlements with Contacts --></description>
+        <label><!-- Accounts with Entitlements with Contacts --></label>
+        <name>Accounts_with_Entitlements_with_Contacts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- All users --></description>
+        <label><!-- All users --></label>
+        <name>All_users</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases with Service Complaints &amp; Product &amp; Ship To --></description>
+        <label><!-- Cases with Service Complaints &amp; Product &amp; Ship To --></label>
+        <name>Cases_with_Service_Complaints_Product_Ship_To</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Service Complaints --></label>
+            <name>Service Complaints</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Competitor Product --></description>
+        <label><!-- Competitor Product --></label>
+        <name>Competitor_Product</name>
+        <sections>
+            <label><!-- Competitor Products --></label>
+            <name>Competitor Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Custom User Report --></description>
+        <label><!-- Custom User Report --></label>
+        <name>Custom_User_Report</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Omni-Channel Reporting --></description>
+        <label><!-- Omni-Channel Reporting --></label>
+        <name>Omni_Channel_Reporting</name>
+        <sections>
+            <label><!-- Agent Work --></label>
+            <name>Agent Work</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities/Customer Meeting Report --></description>
+        <label><!-- Opportunities/Customer Meeting Report --></label>
+        <name>Opportunities_Accounts_Customer_Meeting_Report</name>
+        <sections>
+            <label><!-- Customer Meeting Report --></label>
+            <name>Customer Meeting Report</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities and Opportunity Team? --></description>
+        <label><!-- Opportunities and Opportunity Team? --></label>
+        <name>Opportunities_and_Opportunity_Team</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Team --></label>
+            <name>Opportunity Team</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities and Product Collection Forms --></description>
+        <label><!-- Opportunities and Product Collection Forms --></label>
+        <name>Opportunities_and_Product_Collection_Forms</name>
+        <sections>
+            <label><!-- New Product Collection Forms --></label>
+            <name>New Product Collection Forms</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Customer Meeting Reports --></description>
+        <label><!-- Opportunities with Customer Meeting Reports --></label>
+        <name>Opportunities_with_Customer_Meeting_Reports</name>
+        <sections>
+            <label><!-- Customer Meeting Report --></label>
+            <name>Customer Meeting Report</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with PROS Quote --></description>
+        <label><!-- Opportunities with PROS Quote --></label>
+        <name>Opportunities_with_PROS_Quote</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- PROS Quotes --></label>
+            <name>PROS Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with PROS Quote and PROS Quote Lines --></description>
+        <label><!-- Opportunities with PROS Quote and PROS Quote Lines --></label>
+        <name>Opportunities_with_PROS_Quote_and_PROS_Quote_Lines</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- PROS Quotes --></label>
+            <name>PROS Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Project --></description>
+        <label><!-- Opportunities with Project --></label>
+        <name>Opportunities_with_Project</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Projects --></label>
+            <name>Projects</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunity Competitor Products --></description>
+        <label><!-- Opportunity Competitor Products --></label>
+        <name>Opportunity_Competitor_Products</name>
+        <sections>
+            <label><!-- Opportunity Competitor Products --></label>
+            <name>Opportunity Competitor Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunity with Projects with Project Team Member --></description>
+        <label><!-- Opportunity with Projects with Project Team Member --></label>
+        <name>Opportunity_with_Projects_with_Project_Team_Member</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Project Team Members --></label>
+            <name>Project Team Members</name>
+        </sections>
+        <sections>
+            <label><!-- Projects --></label>
+            <name>Projects</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opps and CMR --></description>
+        <label><!-- Opps and CMR --></label>
+        <name>Opps_and_CMR</name>
+        <sections>
+            <label><!-- Customer Meeting Report --></label>
+            <name>Customer Meeting Report</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Oppty Oppty Team 2 --></description>
+        <label><!-- Oppty Oppty Team 2 --></label>
+        <name>Oppty_Oppty_Team_2</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Team --></label>
+            <name>Opportunity Team</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- PROS Quote --></description>
+        <label><!-- PROS Quote --></label>
+        <name>PROS_Quote</name>
+        <sections>
+            <label><!-- PROS Quotes --></label>
+            <name>PROS Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Plant Locations --></description>
+        <label><!-- Plant Locations --></label>
+        <name>Plant_Locations</name>
+        <sections>
+            <label><!-- Plant Locations --></label>
+            <name>Plant Locations</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Project --></description>
+        <label><!-- Project --></label>
+        <name>Project</name>
+        <sections>
+            <label><!-- Projects --></label>
+            <name>Projects</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Projects with Opportunities and their Campaigns --></description>
+        <label><!-- Projects with Opportunities and their Campaigns --></label>
+        <name>Projects_with_Opportunities_and_Campaigns</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Project Opportunities --></label>
+            <name>Project Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Projects with related Project Opps --></description>
+        <label><!-- Projects with related Project Opps --></label>
+        <name>Projects_with_related_Project_Opps</name>
+        <sections>
+            <label><!-- ProjectOpportunities --></label>
+            <name>ProjectOpportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Projects --></label>
+            <name>Projects</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Contract Line Items --></description>
+        <label><!-- Service Contracts with Contract Line Items --></label>
+        <name>Service_Contracts_with_Contract_Line_Items</name>
+        <sections>
+            <label><!-- Contract Line Items --></label>
+            <name>Contract Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Entitlements --></description>
+        <label><!-- Service Contracts with Entitlements --></label>
+        <name>Service_Contracts_with_Entitlements</name>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- ShipTo with Activities --></description>
+        <label><!-- ShipTo with Activities --></label>
+        <name>ShipTo_with_Activities</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Ship To&apos;s --></label>
+            <name>Ship To&#39;s</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Ship To --></description>
+        <label><!-- Ship To --></label>
+        <name>Ship_To</name>
+        <sections>
+            <label><!-- Bill To&apos;s --></label>
+            <name>Bill To&#39;s</name>
+        </sections>
+        <sections>
+            <label><!-- Commercial Account --></label>
+            <name>Commercial Account</name>
+        </sections>
+        <sections>
+            <label><!-- Retail Information --></label>
+            <name>Retail Information</name>
+        </sections>
+        <sections>
+            <label><!-- Ship To&apos;s --></label>
+            <name>Ship To&#39;s</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User And opportunity --></description>
+        <label><!-- User And opportunity --></label>
+        <name>User_And_opportunity</name>
+        <sections>
+            <label><!-- Opportunities (Last Modified By) --></label>
+            <name>Opportunities (Last Modified By)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Presence --></description>
+        <label><!-- User Presence --></label>
+        <name>User_Presence</name>
+        <sections>
+            <label><!-- User Presences --></label>
+            <name>User Presences</name>
+        </sections>
+    </reportTypes>
+</Translations>

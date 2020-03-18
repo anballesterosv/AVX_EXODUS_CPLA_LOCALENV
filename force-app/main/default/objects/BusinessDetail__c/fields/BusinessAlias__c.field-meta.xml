@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BusinessAlias__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( BusinessUnit__r.Name , 
+&quot;Go To Market Corporate Accounts&quot;,&quot;GTM Corp Accts&quot;, 
+&quot;Go To Market Shared Sales North America&quot;,&quot;GTM SS NA&quot;, 
+&quot;Go To Market Shared Sales EMEA&quot;,&quot;GTM SS EMEA&quot;, 
+&quot;Global Edible Oil Solutions North America&quot;,&quot;GEOS NA&quot;, 
+&quot;Global Edible Oil Solutions Europe&quot;,&quot;GEOS Europe&quot;, 
+&quot;Cargill Industrial Specialties&quot;,&quot;CIS&quot;, 
+&quot;Global Edible Oil Solutions Mexico&quot;,&quot;GEOS Mexico&quot;, 
+&quot;Global Edible Oil Solutions South America&quot;,&quot;GEOS SA&quot;, 
+&quot;Global Edible Oil Solutions Venezuela&quot;,&quot;GEOS Venezuela&quot;, 
+&quot;Edible Oil Solutions India&quot;,&quot;GEOS India&quot;, 
+&quot;Global Edible Oil Solutions Asia Pacific&quot;,&quot;GEOS AP&quot;, 
+&quot;Foods Brazil&quot;,&quot;Foods Brazil&quot;, 
+&quot;Starches &amp; Sweeteners North America&quot;,&quot;SSNA&quot;, 
+&quot;Starches &amp; Sweeteners Europe&quot;,&quot;SSE&quot;, 
+&quot;Cargill Texturizing Solutions&quot;,&quot;CTS&quot;, 
+&quot;Starches &amp; Sweeteners South America&quot;,&quot;SSSA&quot;, 
+&quot;Foods Middle East, Turkey, and North Africa&quot;,&quot;CF METNA&quot;, 
+&quot;Cargill Cocoa &amp; Chocolate&quot;,&quot;CCC&quot;, 
+&quot;Cocoa &amp; Chocolate North America&quot;,&quot;CCCNA&quot;, 
+&quot;Cocoa &amp; Chocolate Brazil&quot;,&quot;CCC Brazil&quot;, 
+&quot;Refined Oils Asia Pacific&quot;,&quot;ROAP&quot;, 
+&quot;Starches &amp; Sweeteners China&quot;,&quot;S&amp;S China&quot;, 
+&quot;Starches &amp; Sweeteners Southeast Asia&quot;,&quot;S&amp;S SE Asia&quot;, 
+&quot;Toshoku&quot;,&quot;Toshoku&quot;, 
+&quot;Foods India&quot;,&quot;Foods India&quot;, 
+&quot;Cargill Deicing Technology&quot;,&quot;GTM Corp Accts&quot;,
+&quot;Food Argentina&quot;,&quot;GTM Corp Accts&quot;,
+&quot;Malt&quot;,&quot;Malt&quot;, 
+&quot;Commercial Excellence NA&quot;,&quot;CE NA&quot;,
+&quot;Commerical Excellence NA - Shared Sales&quot;,&quot;CE NA SS&quot;,
+&quot;Global Edible Oil Solutions India&quot;,&quot;GEOS India&quot;,
+&quot;Haribo CTS&quot;,&quot;GTM Corp Accts&quot;,
+&quot;Commercial Excellence EMEA&quot;,&quot;CE EMEA&quot;,
+&quot;Commercial Excellence - Inside Sales&quot;,&quot;CE EMEA IS&quot;,
+&quot;&quot;)</formula>
+    <label>Business Alias</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

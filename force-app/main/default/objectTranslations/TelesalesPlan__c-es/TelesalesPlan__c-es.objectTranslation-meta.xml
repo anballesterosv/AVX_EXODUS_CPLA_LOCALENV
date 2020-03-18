@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan de Televentas</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Planes de Televentas</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Telesales Contingency Plan Layout</layout>
+        <sections>
+            <label>Enlaces Personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Nota</label>
+            <section>Note</section>
+        </sections>
+        <sections>
+            <label>Período</label>
+            <section>Period</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Telesales Work Plan Layout</layout>
+        <sections>
+            <label>Enlaces Personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Período</label>
+            <section>Period</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número del Plan de Televentas</nameFieldLabel>
+    <recordTypes>
+        <label>Plan de Contingencia Televentas</label>
+        <name>ContingencyPlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Plan de Televentas</label>
+        <name>WorkPlan</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot create a Contingency Plan to this Work Plan, because the work plan doesn&apos;t has an client assigned. --></errorMessage>
+        <name>AVX_ContingencyPlan</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The End Date cannot be greater than the end date of Work Plan. --></errorMessage>
+        <name>AVX_ContingencyPlanDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the seller, because there are customers signed up for the same. --></errorMessage>
+        <name>AVX_NotChangeTeleSales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The end date cannot be less than today&apos;s date or less than the start date. --></errorMessage>
+        <name>AVX_ValidatyEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The start date cannot be less than today&apos;s date or greater than the end date. --></errorMessage>
+        <name>AVX_ValidatyStartDate</name>
+    </validationRules>
+</CustomObjectTranslation>

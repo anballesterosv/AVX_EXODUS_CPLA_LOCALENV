@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_sector_segment_application__c</fullName>
+    <description>What particular sub sector/segment/application are they focusing on?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What particular sub sector/segment/application are they focusing on?</inlineHelpText>
+    <label>Sub sector/segment/application</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bakery</fullName>
+                <default>false</default>
+                <label>Bakery</label>
+            </value>
+            <value>
+                <fullName>Snacks &amp; cereals</fullName>
+                <default>false</default>
+                <label>Snacks &amp; cereals</label>
+            </value>
+            <value>
+                <fullName>Beverages</fullName>
+                <default>false</default>
+                <label>Beverages</label>
+            </value>
+            <value>
+                <fullName>Confection</fullName>
+                <default>false</default>
+                <label>Confection</label>
+            </value>
+            <value>
+                <fullName>Convenience Foods</fullName>
+                <default>false</default>
+                <label>Convenience Foods</label>
+            </value>
+            <value>
+                <fullName>Infant and Baby Food</fullName>
+                <default>false</default>
+                <label>Infant and Baby Food</label>
+            </value>
+            <value>
+                <fullName>Dairy</fullName>
+                <default>false</default>
+                <label>Dairy</label>
+            </value>
+            <value>
+                <fullName>Fruit</fullName>
+                <default>false</default>
+                <label>Fruit</label>
+            </value>
+            <value>
+                <fullName>Meat</fullName>
+                <default>false</default>
+                <label>Meat</label>
+            </value>
+            <value>
+                <fullName>Pharma</fullName>
+                <default>false</default>
+                <label>Pharma</label>
+            </value>
+            <value>
+                <fullName>Personal Care</fullName>
+                <default>false</default>
+                <label>Personal Care</label>
+            </value>
+            <value>
+                <fullName>Pet Food</fullName>
+                <default>false</default>
+                <label>Pet Food</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

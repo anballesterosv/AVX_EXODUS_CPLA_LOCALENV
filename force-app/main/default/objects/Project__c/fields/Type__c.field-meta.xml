@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NPSS New</fullName>
+                <default>false</default>
+                <label>NPSS New</label>
+            </value>
+            <value>
+                <fullName>NPSS Matching</fullName>
+                <default>false</default>
+                <label>NPSS Matching</label>
+            </value>
+            <value>
+                <fullName>NBD CTS</fullName>
+                <default>false</default>
+                <label>NBD CTS</label>
+            </value>
+            <value>
+                <fullName>NBD Matching</fullName>
+                <default>false</default>
+                <label>NBD Matching</label>
+            </value>
+            <value>
+                <fullName>IO PPD</fullName>
+                <default>false</default>
+                <label>IO PPD</label>
+            </value>
+            <value>
+                <fullName>IO Ingredient</fullName>
+                <default>false</default>
+                <label>IO Ingredient</label>
+            </value>
+            <value>
+                <fullName>IO Out of Spec</fullName>
+                <default>false</default>
+                <label>IO Out of Spec</label>
+            </value>
+            <value>
+                <fullName>IO Shelf Life</fullName>
+                <default>false</default>
+                <label>IO Shelf Life</label>
+            </value>
+            <value>
+                <fullName>IO Knowledge</fullName>
+                <default>false</default>
+                <label>IO Knowledge</label>
+            </value>
+            <value>
+                <fullName>IO Competitor Analysis</fullName>
+                <default>false</default>
+                <label>IO Competitor Analysis</label>
+            </value>
+            <value>
+                <fullName>IO Capacity</fullName>
+                <default>false</default>
+                <label>IO Capacity</label>
+            </value>
+            <value>
+                <fullName>D Support</fullName>
+                <default>false</default>
+                <label>D Support</label>
+            </value>
+            <value>
+                <fullName>D Problem</fullName>
+                <default>false</default>
+                <label>D Problem</label>
+            </value>
+            <value>
+                <fullName>D Proactive</fullName>
+                <default>false</default>
+                <label>D Proactive</label>
+            </value>
+            <value>
+                <fullName>D Complaint/IMPASS</fullName>
+                <default>false</default>
+                <label>D Complaint/IMPASS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

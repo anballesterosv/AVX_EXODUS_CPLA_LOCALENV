@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <layouts>
+        <layout>Project Layout Approved</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Dates --></label>
+            <section>Project Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Projected Volume &amp; Margins --></label>
+            <section>Projected Volume &amp; Margins</section>
+        </sections>
+        <sections>
+            <label><!-- Source Opportunity --></label>
+            <section>Source Opportunity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Layout Draft</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Dates --></label>
+            <section>Project Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Projected Volume &amp; Margins --></label>
+            <section>Projected Volume &amp; Margins</section>
+        </sections>
+        <sections>
+            <label><!-- Source Opportunity --></label>
+            <section>Source Opportunity</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record Type after a Project is approved --></description>
+        <label><!-- Project (Approved) --></label>
+        <name>Project_Approved</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Initial Record Type when creating a Project --></description>
+        <label><!-- Project (Draft) --></label>
+        <name>Project_Draft</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type when a Project is submitted waiting for Approval --></description>
+        <label><!-- Project (Submitted) --></label>
+        <name>Project_Submitted</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Opportunity Team Member --></label>
+        <name>Opportunity_Team_Member</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Project Team Member --></label>
+        <name>Project_Team_Member</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If the related Opportunity is in Closed Won stage, then no update is allowed --></errorMessage>
+        <name>ProjectWithOpportunityStageClosedWon</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the opportunity which has products associated with it. --></errorMessage>
+        <name>Project_with_Opportunit_with_no_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Project Validation Error: Project Approval is required to advance Stage. --></errorMessage>
+        <name>Require_Approval_to_Advance_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Projects can only be created if the Opportunity ACCOUNT is a Prospect or Global Account or Regional Account Group Account Record Type. --></errorMessage>
+        <name>RestrictProjectCreationOnOppAccRecType</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_New_Project --></label>
+        <name>Create_New_Project</name>
+    </webLinks>
+</CustomObjectTranslation>

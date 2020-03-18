@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Approved</fullName>
+    <active>true</active>
+    <description>Record Type after a Project is approved</description>
+    <label>Project (Approved)</label>
+    <picklistValues>
+        <picklist>Phase__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Develop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Explore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feasibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ideation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Measure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>D Complaint%2FIMPASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D Proactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Competitor Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Ingredient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Out of Spec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO PPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Shelf Life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBD CTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBD Matching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPSS Matching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPSS New</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

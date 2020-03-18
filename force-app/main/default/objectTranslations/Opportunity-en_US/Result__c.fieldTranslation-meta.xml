@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Result --></label>
+    <name>Result__c</name>
+    <picklistValues>
+        <masterLabel>Gain</masterLabel>
+        <translation><!-- Gain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incremental Gain</masterLabel>
+        <translation><!-- Incremental Gain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incremental Loss</masterLabel>
+        <translation><!-- Incremental Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss</masterLabel>
+        <translation><!-- Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintained</masterLabel>
+        <translation><!-- Maintained --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunity Loss</masterLabel>
+        <translation><!-- Opportunity Loss --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

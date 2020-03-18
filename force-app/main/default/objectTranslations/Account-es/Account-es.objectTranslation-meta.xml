@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Read Only Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Distribution Details --></label>
+            <section>Distribution Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Admin</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Distribution Details --></label>
+            <section>Distribution Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Broker Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Commercial Account</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Distribution Details --></label>
+            <section>Distribution Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Service Account Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Global Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Distribution Details --></label>
+            <section>Distribution Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payer Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Prospect Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Distribution Details --></label>
+            <section>Distribution Details</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Broker Account --></label>
+        <name>Broker_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commercial Account --></label>
+        <name>CommercialAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Global Account --></label>
+        <name>GlobalAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payer --></label>
+        <name>Payer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect --></label>
+        <name>Prospect</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Billing City is required for Prospect accounts. --></errorMessage>
+        <name>Billing_City_is_required_for_Prospects</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing State is required for Prospect accounts. --></errorMessage>
+        <name>Billing_State_is_required_for_Prospects</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Market Channel for existing Account cannot be modified. --></errorMessage>
+        <name>LegacyAccount_MarketChannelReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name for existing Account cannot be modified. --></errorMessage>
+        <name>LegacyAccount_NameReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Prospect Accounts can be created in CRM. --></errorMessage>
+        <name>Prospect_Account_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Category --></label>
+    <name>PrimaryCategory__c</name>
+    <picklistValues>
+        <masterLabel>Category1</masterLabel>
+        <translation><!-- Category1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Category2</masterLabel>
+        <translation><!-- Category2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

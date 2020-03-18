@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>D Complaint/IMPASS</masterLabel>
+        <translation><!-- D Complaint/IMPASS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D Proactive</masterLabel>
+        <translation><!-- D Proactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D Problem</masterLabel>
+        <translation><!-- D Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D Support</masterLabel>
+        <translation><!-- D Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO Capacity</masterLabel>
+        <translation><!-- IO Capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO Competitor Analysis</masterLabel>
+        <translation><!-- IO Competitor Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO Ingredient</masterLabel>
+        <translation><!-- IO Ingredient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO Knowledge</masterLabel>
+        <translation><!-- IO Knowledge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO Out of Spec</masterLabel>
+        <translation><!-- IO Out of Spec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO PPD</masterLabel>
+        <translation><!-- IO PPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO Shelf Life</masterLabel>
+        <translation><!-- IO Shelf Life --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NBD CTS</masterLabel>
+        <translation><!-- NBD CTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NBD Matching</masterLabel>
+        <translation><!-- NBD Matching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPSS Matching</masterLabel>
+        <translation><!-- NPSS Matching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPSS New</masterLabel>
+        <translation><!-- NPSS New --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

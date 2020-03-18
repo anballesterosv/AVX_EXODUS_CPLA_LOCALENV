@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Motivo de la pérdida</label>
+    <name>ClosedLostReason__c</name>
+    <picklistValues>
+        <masterLabel>Business closed</masterLabel>
+        <translation>Negocio Cerrado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call later (f7)</masterLabel>
+        <translation>Llamar despues (f7)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed for vacations</masterLabel>
+        <translation>Cerrado por Vacaciones</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cold problems</masterLabel>
+        <translation>Problemas de Frio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collection</masterLabel>
+        <translation>Recaudo </translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Does not market</masterLabel>
+        <translation>No comercializa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I already bought the competition</masterLabel>
+        <translation>Ya compro a la competencia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>It has no dinero</masterLabel>
+        <translation>No tiene dinero</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>It has stock</masterLabel>
+        <translation>Tiene Stock</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager is not</masterLabel>
+        <translation>Encargado no esta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N. Wrong</masterLabel>
+        <translation>N° Equivocado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Otro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portfolio Issues</masterLabel>
+        <translation>Problemas de Cartera</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tel F.S</masterLabel>
+        <translation>Tel F.S</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unhappy customer product quality</masterLabel>
+        <translation>Cliente inconforme calidad de producto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unhappy customer service quality</masterLabel>
+        <translation>Cliente inconforme calidad de servcio</translation>
+    </picklistValues>
+</CustomFieldTranslation>

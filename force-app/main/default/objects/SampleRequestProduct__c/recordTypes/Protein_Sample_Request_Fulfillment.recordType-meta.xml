@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protein_Sample_Request_Fulfillment</fullName>
+    <active>true</active>
+    <description>Record Type for all Protein requests (Cargill Beef, Case Ready, CVAP-Beef(Burgers), CVAP Poultry(Eggs), Turkey &amp; Cooked Meats)</description>
+    <label>Protein Sample Request Fulfillment</label>
+    <picklistValues>
+        <picklist>CFNA_Business_Unit__c</picklist>
+        <values>
+            <fullName>CVAP-Beef %28Burgers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CVAP-Poultry %28Eggs%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargill Beef</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkey %26 Cooked Meats</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CFNA_Type__c</picklist>
+        <values>
+            <fullName>1 LB Bag</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 Tray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25 LB Bag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2LB Bag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 LBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50LB Bag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 OZ JAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crumbles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piece</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fulfillment_Status__c</picklist>
+        <values>
+            <fullName>Fulfilled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Product Code has been discontinued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample above business thresholds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample out of stock</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

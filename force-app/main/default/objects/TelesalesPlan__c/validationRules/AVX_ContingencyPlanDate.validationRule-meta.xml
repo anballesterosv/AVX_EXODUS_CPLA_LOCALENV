@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVX_ContingencyPlanDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &#39;ContingencyPlan&#39;,
+NOT(ISBLANK(TelesalesWorkPlan__c)),
+EndDate__c &gt; TelesalesWorkPlan__r.EndDate__c)</errorConditionFormula>
+    <errorMessage>The End Date cannot be greater than the end date of Work Plan.</errorMessage>
+</ValidationRule>

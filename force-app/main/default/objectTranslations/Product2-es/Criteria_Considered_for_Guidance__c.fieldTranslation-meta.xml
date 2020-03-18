@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Criteria Considered for Guidance --></label>
+    <name>Criteria_Considered_for_Guidance__c</name>
+    <picklistValues>
+        <masterLabel>Customer Classification</masterLabel>
+        <translation><!-- Customer Classification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Level</masterLabel>
+        <translation><!-- Customer Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Name</masterLabel>
+        <translation><!-- Customer Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunity Amount</masterLabel>
+        <translation><!-- Opportunity Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Region</masterLabel>
+        <translation><!-- Region --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

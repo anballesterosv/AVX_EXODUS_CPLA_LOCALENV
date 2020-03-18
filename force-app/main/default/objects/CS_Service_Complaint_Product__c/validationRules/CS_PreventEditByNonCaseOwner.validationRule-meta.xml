@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_PreventEditByNonCaseOwner</fullName>
+    <active>true</active>
+    <description>This rule will not allow users (other than system administrator), who are not owner of the case, to make any modification to Service Complaint record related to that case.</description>
+    <errorConditionFormula>AND (
+	NOT( ISNEW() ),
+	NOT( $Profile.Name == &#39;System Administrator&#39; ), 
+	$User.Id &lt;&gt;  CS_Case__r.OwnerId 
+)</errorConditionFormula>
+    <errorMessage>You are not authorized to modify the Service Complaint details. Please take the Ownership of related Case to modify Service Complaint detail.</errorMessage>
+</ValidationRule>

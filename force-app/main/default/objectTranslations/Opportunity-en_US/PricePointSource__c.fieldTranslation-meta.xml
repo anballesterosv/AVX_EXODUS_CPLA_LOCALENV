@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Price Point Source --></label>
+    <name>PricePointSource__c</name>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Estimate</masterLabel>
+        <translation><!-- Internal Estimate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail/consumer</masterLabel>
+        <translation><!-- Retail/consumer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor</masterLabel>
+        <translation><!-- Vendor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

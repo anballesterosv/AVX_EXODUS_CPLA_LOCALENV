@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Setting that are used in business logic (Validation Rules, Work Flows, Triggers, Lookup Filters, etc.)</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Business Logic Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

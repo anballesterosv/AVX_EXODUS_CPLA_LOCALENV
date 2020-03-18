@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grade__c</fullName>
+    <description>Grade Description - LOV</description>
+    <externalId>false</externalId>
+    <label>Grade</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A Canadian</fullName>
+                <default>false</default>
+                <label>A Canadian</label>
+            </value>
+            <value>
+                <fullName>A Grade Whole Birds</fullName>
+                <default>false</default>
+                <label>A Grade Whole Birds</label>
+            </value>
+            <value>
+                <fullName>AA Canadian</fullName>
+                <default>false</default>
+                <label>AA Canadian</label>
+            </value>
+            <value>
+                <fullName>AAA Canadian</fullName>
+                <default>false</default>
+                <label>AAA Canadian</label>
+            </value>
+            <value>
+                <fullName>Angus</fullName>
+                <default>false</default>
+                <label>Angus</label>
+            </value>
+            <value>
+                <fullName>B Grade Whole Birds/Plant Grade</fullName>
+                <default>false</default>
+                <label>B Grade Whole Birds/Plant Grade</label>
+            </value>
+            <value>
+                <fullName>Blended Gr Beef</fullName>
+                <default>false</default>
+                <label>Blended Gr Beef</label>
+            </value>
+            <value>
+                <fullName>Boner</fullName>
+                <default>false</default>
+                <label>Boner</label>
+            </value>
+            <value>
+                <fullName>Certified Angus Beef</fullName>
+                <default>false</default>
+                <label>Certified Angus Beef</label>
+            </value>
+            <value>
+                <fullName>Choice</fullName>
+                <default>false</default>
+                <label>Choice</label>
+            </value>
+            <value>
+                <fullName>Cutter/Canner</fullName>
+                <default>false</default>
+                <label>Cutter/Canner</label>
+            </value>
+            <value>
+                <fullName>Down Grade</fullName>
+                <default>false</default>
+                <label>Down Grade</label>
+            </value>
+            <value>
+                <fullName>FSO Pricing System</fullName>
+                <default>false</default>
+                <label>FSO Pricing System</label>
+            </value>
+            <value>
+                <fullName>Genuine Texas Beef</fullName>
+                <default>false</default>
+                <label>Genuine Texas Beef</label>
+            </value>
+            <value>
+                <fullName>Ground Beef</fullName>
+                <default>false</default>
+                <label>Ground Beef</label>
+            </value>
+            <value>
+                <fullName>Import</fullName>
+                <default>false</default>
+                <label>Import</label>
+            </value>
+            <value>
+                <fullName>Line Run</fullName>
+                <default>false</default>
+                <label>Line Run</label>
+            </value>
+            <value>
+                <fullName>No Grade</fullName>
+                <default>false</default>
+                <label>No Grade</label>
+            </value>
+            <value>
+                <fullName>No Roll</fullName>
+                <default>false</default>
+                <label>No Roll</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Prime</fullName>
+                <default>false</default>
+                <label>Prime</label>
+            </value>
+            <value>
+                <fullName>Prime Canadian</fullName>
+                <default>false</default>
+                <label>Prime Canadian</label>
+            </value>
+            <value>
+                <fullName>Rancher&#39;s Registery</fullName>
+                <default>false</default>
+                <label>Rancher&#39;s Registery</label>
+            </value>
+            <value>
+                <fullName>Select</fullName>
+                <default>false</default>
+                <label>Select</label>
+            </value>
+            <value>
+                <fullName>Sterling Silver</fullName>
+                <default>false</default>
+                <label>Sterling Silver</label>
+            </value>
+            <value>
+                <fullName>Trim</fullName>
+                <default>false</default>
+                <label>Trim</label>
+            </value>
+            <value>
+                <fullName>Undergrade</fullName>
+                <default>false</default>
+                <label>Undergrade</label>
+            </value>
+            <value>
+                <fullName>Undergrade Canadian</fullName>
+                <default>false</default>
+                <label>Undergrade Canadian</label>
+            </value>
+            <value>
+                <fullName>Utility</fullName>
+                <default>false</default>
+                <label>Utility</label>
+            </value>
+            <value>
+                <fullName>White cow</fullName>
+                <default>false</default>
+                <label>White cow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,66 @@
+<!--Child-->
+        <aura:component controller="Protein_SampleRequestFulfillmentCtlr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >   
+            <aura:attribute name="SampleProductChild" type="SampleRequestProduct__c"/>
+            <aura:attribute name="rowIndex" type="String"/>
+            <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+            <aura:registerEvent name="AddRowEvent1" type="c:AddRowEvent1"/> 
+            <aura:attribute name="DisclaimerValue" type="Boolean" default="True" />
+            <aura:attribute name="srpBUs" type="List" default="[]"/>
+            <aura:attribute name="sampleRequestProductWrapper" type="List" default="[]"/>
+            <aura:attribute name="item" type="sObject" default="{}"/>
+            <aura:attribute name="recordId" type="String"/>
+            <aura:attribute name="IsSRFOnComplete" type="Boolean" default="false" /> 
+            
+            <aura:if isTrue="{!v.DisclaimerValue}">
+                <tr class="slds-text-title_caps ">
+                   
+                    <aura:if isTrue="{!v.IsSRFOnComplete == false}">
+                        <td>
+                            <lightning:buttonicon iconName="utility:close"  alternativeText="close" aura:id="UncheckProduct"  value="{!v.item.prdId}" onclick="{!c.Remove}"/>  
+                        </td>
+                        <aura:set attribute="else">
+                            <td></td>
+                        </aura:set>
+                    </aura:if>     
+                    <td>
+                        <ui:outputText value="{!v.item.prdName}"/> 
+                    </td>
+                    <td>
+                        <ui:outputText value="{!v.item.prdProductDescription}"/>
+                    </td>    
+                    <td>
+                        <ui:inputText class="slds-input" value="{!v.item.prdJulianProductionDate}"/>
+                    </td>     
+                    <td>
+                        <ui:inputText class="slds-input" value="{!v.item.prdShippedWeight}"/>
+                    </td>    
+                    <td>
+                        <ui:outputText value="{!v.item.prdProductCost}"/>
+                        <ui:outputText value="{!v.item.prdQuantity}"/>
+                    </td>
+                    <td>
+                        <ui:inputText class="slds-input" value="{!v.item.prdSequence}"/>
+                    </td>  
+                    <td>
+                        <ui:outputText value="{!v.item.prdQuantity}"/>
+                    </td>
+                    <td>
+                        <ui:inputText class="slds-input" value="{!v.item.prdType}"/>
+                    </td>    
+                    <td>
+                        <ui:outputText value="{!v.item.prdOtherType}"/>
+                    </td>  
+                    <td>
+                        <ui:inputSelect class="slds-select " value="{!v.item.prdFulfillmentStatus}">
+                            <aura:iteration items="{!v.srpBUs}" var="s">
+                                <ui:inputSelectOption text="{!s.label}"></ui:inputSelectOption>
+                            </aura:iteration>
+                        </ui:inputSelect>                
+                        <aura:set attribute="else">
+                            {!v.item.prdFulfillmentStatus}    
+                        </aura:set>
+                        
+                    </td>   
+                </tr>
+            </aura:if>
+        </aura:component>

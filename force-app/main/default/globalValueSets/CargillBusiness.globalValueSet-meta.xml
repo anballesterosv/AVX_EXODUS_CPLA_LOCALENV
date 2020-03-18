@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Food Service</fullName>
+        <default>false</default>
+        <label>Food Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Growth Ventures</fullName>
+        <default>false</default>
+        <label>Growth Ventures</label>
+    </customValue>
+    <customValue>
+        <fullName>Protein Ingredients</fullName>
+        <default>false</default>
+        <label>Protein Ingredients</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade</fullName>
+        <default>false</default>
+        <label>Trade</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Edible Oil Solutions South America</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions South America</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Edible Oil Solutions Venezuela</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions Venezuela</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Edible Oil Solutions Asia Pacific</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions Asia Pacific</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Edible Oil Solutions India</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions India</label>
+    </customValue>
+    <customValue>
+        <fullName>Cargill Industrial Specialties</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cargill Industrial Specialties</label>
+    </customValue>
+    <customValue>
+        <fullName>Foods Brazil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Foods Brazil</label>
+    </customValue>
+    <customValue>
+        <fullName>Starches &amp; Sweeteners North America</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Starches &amp; Sweeteners North America</label>
+    </customValue>
+    <customValue>
+        <fullName>Starches &amp; Sweeteners Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Starches &amp; Sweeteners Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Starches &amp; Sweeteners South America</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Starches &amp; Sweeteners South America</label>
+    </customValue>
+    <customValue>
+        <fullName>Cargill Texturizing Solutions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cargill Texturizing Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Foods Middle East, Turkey, and North Africa</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Foods Middle East, Turkey, and North Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>Cargill Cocoa &amp; Chocolate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cargill Cocoa &amp; Chocolate</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa &amp; Chocolate North America</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cocoa &amp; Chocolate North America</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa &amp; Chocolate Brazil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cocoa &amp; Chocolate Brazil</label>
+    </customValue>
+    <customValue>
+        <fullName>Refined Oils Asia Pacific</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Refined Oils Asia Pacific</label>
+    </customValue>
+    <customValue>
+        <fullName>Starches &amp; Sweeteners China</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Starches &amp; Sweeteners China</label>
+    </customValue>
+    <customValue>
+        <fullName>Starches &amp; Sweeteners Southeast Asia</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Starches &amp; Sweeteners Southeast Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Toshoku</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Toshoku</label>
+    </customValue>
+    <customValue>
+        <fullName>Foods India</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Foods India</label>
+    </customValue>
+    <customValue>
+        <fullName>Malt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Malt</label>
+    </customValue>
+    <customValue>
+        <fullName>New - Commercial Excellence EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>New - Commercial Excellence EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Excellence - Inside Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Commercial Excellence - Inside Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Ground Beef</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ground Beef</label>
+    </customValue>
+    <customValue>
+        <fullName>Boxed Beef</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Boxed Beef</label>
+    </customValue>
+    <customValue>
+        <fullName>Case Ready</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Case Ready</label>
+    </customValue>
+    <customValue>
+        <fullName>CVAP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CVAP</label>
+    </customValue>
+    <customValue>
+        <fullName>FIVESTAR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FIVESTAR</label>
+    </customValue>
+    <customValue>
+        <fullName>CFD</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CFD</label>
+    </customValue>
+    <customValue>
+        <fullName>NGB</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NGB</label>
+    </customValue>
+    <customValue>
+        <fullName>CTCM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CTCM</label>
+    </customValue>
+    <customValue>
+        <fullName>GB</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GB</label>
+    </customValue>
+    <customValue>
+        <fullName>GB_CaseReady</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GB_CaseReady</label>
+    </customValue>
+    <customValue>
+        <fullName>CaseReady</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CaseReady</label>
+    </customValue>
+    <customValue>
+        <fullName>NGB_CaseReady</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NGB_CaseReady</label>
+    </customValue>
+    <customValue>
+        <fullName>CKS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CKS</label>
+    </customValue>
+    <customValue>
+        <fullName>GB_CVAP_CaseReady</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GB_CVAP_CaseReady</label>
+    </customValue>
+    <customValue>
+        <fullName>NGB_CVAP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NGB_CVAP</label>
+    </customValue>
+    <customValue>
+        <fullName>GB_CVAP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GB_CVAP</label>
+    </customValue>
+    <customValue>
+        <fullName>CVAP_CaseReady</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CVAP_CaseReady</label>
+    </customValue>
+    <customValue>
+        <fullName>CFD_CKS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CFD_CKS</label>
+    </customValue>
+    <customValue>
+        <fullName>Go To Market Shared Sales North America</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Go To Market Shared Sales North America</label>
+    </customValue>
+    <customValue>
+        <fullName>Go To Market Corporate Accounts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Go To Market Corporate Accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Edible Oil Solutions Mexico</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions Mexico</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Edible Oil Solutions Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Edible Oil Solutions North America</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions North America</label>
+    </customValue>
+    <customValue>
+        <fullName>Go To Market Shared Shares EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Go To Market Shared Shares EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Excellence NA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Commercial Excellence NA</label>
+    </customValue>
+    <customValue>
+        <fullName>Commerical Excellence NA - Shared Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Commerical Excellence NA - Shared Sales</label>
+    </customValue>
+    <masterLabel>Cargill Business</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

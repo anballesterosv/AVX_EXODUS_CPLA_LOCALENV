@@ -1,0 +1,17 @@
+<apex:page standardController="AccountPlan__c" extensions="CreateNewAccountPlan">
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+    <script>
+         var AccountId = "{!parentId}";
+        $Lightning.use("c:CreateAccountPlanApp", function() {
+          $Lightning.createComponent("c:CreateAccountPlan",
+          {"AccountId": AccountId},
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+</apex:page>

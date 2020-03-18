@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Location Type --></label>
+    <name>Location_Type__c</name>
+    <picklistValues>
+        <masterLabel>F</masterLabel>
+        <translation><!-- F --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P</masterLabel>
+        <translation><!-- P --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X</masterLabel>
+        <translation><!-- X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y</masterLabel>
+        <translation><!-- Y --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z</masterLabel>
+        <translation><!-- Z --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

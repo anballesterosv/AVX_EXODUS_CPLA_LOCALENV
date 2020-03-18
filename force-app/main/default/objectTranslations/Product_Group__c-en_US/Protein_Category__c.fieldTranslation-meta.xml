@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Protein Category --></label>
+    <name>Protein_Category__c</name>
+    <picklistValues>
+        <masterLabel>Beef-Case Ready Grinds</masterLabel>
+        <translation><!-- Beef-Case Ready Grinds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Case Ready Muscle</masterLabel>
+        <translation><!-- Beef-Case Ready Muscle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Case Ready Sausage</masterLabel>
+        <translation><!-- Beef-Case Ready Sausage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Commodity Grind</masterLabel>
+        <translation><!-- Beef-Commodity Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Continuous Cooked</masterLabel>
+        <translation><!-- Beef-Continuous Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Cooked Batch</masterLabel>
+        <translation><!-- Beef-Cooked Batch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-FP Roast</masterLabel>
+        <translation><!-- Beef-FP Roast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-FTB</masterLabel>
+        <translation><!-- Beef-FTB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Hides</masterLabel>
+        <translation><!-- Beef-Hides --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Muscle Meat</masterLabel>
+        <translation><!-- Beef-Muscle Meat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Other</masterLabel>
+        <translation><!-- Beef-Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Rendered</masterLabel>
+        <translation><!-- Beef-Rendered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Trim</masterLabel>
+        <translation><!-- Beef-Trim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Value Add Grind</masterLabel>
+        <translation><!-- Beef-Value Add Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Value Added Muscle</masterLabel>
+        <translation><!-- Beef-Value Added Muscle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Variety Meat</masterLabel>
+        <translation><!-- Beef-Variety Meat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Canadian Poultry</masterLabel>
+        <translation><!-- Chicken-Canadian Poultry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Case Ready Grind</masterLabel>
+        <translation><!-- Chicken-Case Ready Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Case Ready Muscle</masterLabel>
+        <translation><!-- Chicken-Case Ready Muscle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Continuous Cooked</masterLabel>
+        <translation><!-- Chicken-Continuous Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Cooked Batch</masterLabel>
+        <translation><!-- Chicken-Cooked Batch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Mechanically Separated</masterLabel>
+        <translation><!-- Chicken-Mechanically Separated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Other</masterLabel>
+        <translation><!-- Chicken-Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg-Secondary Other-Egg Processed</masterLabel>
+        <translation><!-- Egg-Secondary Other-Egg Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg-Value Added Cooked-Egg Processed</masterLabel>
+        <translation><!-- Egg-Value Added Cooked-Egg Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg-Value Added-Egg Processed</masterLabel>
+        <translation><!-- Egg-Value Added-Egg Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Case Ready</masterLabel>
+        <translation><!-- Other-Case Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Services</masterLabel>
+        <translation><!-- Other-Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Specialty</masterLabel>
+        <translation><!-- Other-Specialty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Value Added</masterLabel>
+        <translation><!-- Other-Value Added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Case Ready Grind</masterLabel>
+        <translation><!-- Pork-Case Ready Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Case Ready Muscle</masterLabel>
+        <translation><!-- Pork-Case Ready Muscle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Case Ready Sausage</masterLabel>
+        <translation><!-- Pork-Case Ready Sausage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Continuous Cooked</masterLabel>
+        <translation><!-- Pork-Continuous Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Cooked Batch</masterLabel>
+        <translation><!-- Pork-Cooked Batch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Other</masterLabel>
+        <translation><!-- Pork-Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-</masterLabel>
+        <translation><!-- Turkey- --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Bone in Breast</masterLabel>
+        <translation><!-- Turkey-Bone in Breast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Case Ready Grind</masterLabel>
+        <translation><!-- Turkey-Case Ready Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Case Ready Muscle</masterLabel>
+        <translation><!-- Turkey-Case Ready Muscle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Case Ready Sausage</masterLabel>
+        <translation><!-- Turkey-Case Ready Sausage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Commodity</masterLabel>
+        <translation><!-- Turkey-Commodity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Continuous</masterLabel>
+        <translation><!-- Turkey-Continuous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Cooked Batch</masterLabel>
+        <translation><!-- Turkey-Cooked Batch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-FP Raw</masterLabel>
+        <translation><!-- Turkey-FP Raw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Other</masterLabel>
+        <translation><!-- Turkey-Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Pet Products</masterLabel>
+        <translation><!-- Turkey-Pet Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Whole Bird</masterLabel>
+        <translation><!-- Turkey-Whole Bird --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

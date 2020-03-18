@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_must_be_complete_with_tracking_no</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(Tracking__c))
+&amp;&amp;
+NOT(ISPICKVAL(Status__c, &#39;Complete&#39;))</errorConditionFormula>
+    <errorMessage>Status must be &#39;Complete&#39; when Tracking # is entered.</errorMessage>
+</ValidationRule>

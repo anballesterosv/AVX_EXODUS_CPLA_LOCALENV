@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Customers stated key drivers for the fiscal year. These are usually high level and apply across the business. 
+ Examples would be Grow Food service market space by 5 points, Reduce procurement costs by 10%. --></help>
+    <label><!-- Strategic Initiative --></label>
+    <name>Strategic_Initiative__c</name>
+</CustomFieldTranslation>

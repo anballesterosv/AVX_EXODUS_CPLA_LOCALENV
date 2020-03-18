@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Moneda Predeterminada</label>
+    <name>Default_Currency__c</name>
+    <picklistValues>
+        <masterLabel>CAD</masterLabel>
+        <translation><!-- CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COP</masterLabel>
+        <translation><!-- COP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRC</masterLabel>
+        <translation><!-- CRC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTQ</masterLabel>
+        <translation><!-- GTQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HNL</masterLabel>
+        <translation><!-- HNL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MXP</masterLabel>
+        <translation><!-- MXP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NIO</masterLabel>
+        <translation><!-- NIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USD</masterLabel>
+        <translation><!-- USD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

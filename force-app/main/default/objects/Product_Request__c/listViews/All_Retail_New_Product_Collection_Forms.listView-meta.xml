@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Retail_New_Product_Collection_Forms</fullName>
+    <columns>NAME</columns>
+    <columns>Business_Manager__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market_Channel__c</field>
+        <operation>equals</operation>
+        <value>Retail</value>
+    </filters>
+    <label>All Retail New Product Collection Forms</label>
+</ListView>

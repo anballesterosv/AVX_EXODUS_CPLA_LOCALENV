@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Ship_To_s_Team</fullName>
+    <columns>NAME</columns>
+    <columns>ERP_Number__c</columns>
+    <columns>Commercial_Account__c</columns>
+    <columns>Payer__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>My Ship To&#39;s Team</label>
+    <language>en_US</language>
+</ListView>

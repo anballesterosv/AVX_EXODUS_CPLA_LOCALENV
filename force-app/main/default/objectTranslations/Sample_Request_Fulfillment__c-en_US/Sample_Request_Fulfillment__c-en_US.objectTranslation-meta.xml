@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample Fulfillment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample Fulfillments</value>
+    </caseValues>
+    <layouts>
+        <layout>Sample Fulfillment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record Type for all Protein requests (Cargill Beef, Case Ready, CVAP-Beef(Burgers), CVAP Poultry(Eggs), Turkey &amp; Cooked Meats) --></description>
+        <label><!-- Protein Sample Request Fulfillment --></label>
+        <name>Protein_Sample_Request_Fulfillment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Sample Status Denied Reason is required when Not Approved --></errorMessage>
+        <name>CFNA_Require_Reason_When_Not_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sample Ship Date is required when Complete --></errorMessage>
+        <name>CFNA_Require_Ship_Date_When_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tracking # is required when Status is Complete and Shipping Company is not &apos;Metro&apos; or &apos;Pick Up&apos;. --></errorMessage>
+        <name>CFNA_Require_Tracking_When_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Company is required when Tracking # entered --></errorMessage>
+        <name>CVAP_Shipping_Comp_Reqd_with_Tracking_No</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status must be &apos;Complete&apos; when Tracking # is entered. --></errorMessage>
+        <name>Status_must_be_complete_with_tracking_no</name>
+    </validationRules>
+</CustomObjectTranslation>

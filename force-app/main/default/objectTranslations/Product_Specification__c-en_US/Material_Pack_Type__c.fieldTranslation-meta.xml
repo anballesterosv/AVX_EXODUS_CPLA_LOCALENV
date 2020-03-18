@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material Pack Type --></label>
+    <name>Material_Pack_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bag</masterLabel>
+        <translation><!-- Bag --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bib</masterLabel>
+        <translation><!-- Bib --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bulk</masterLabel>
+        <translation><!-- Bulk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carton</masterLabel>
+        <translation><!-- Carton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Individually Wrapped</masterLabel>
+        <translation><!-- Individually Wrapped --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pail</masterLabel>
+        <translation><!-- Pail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penny Stacked</masterLabel>
+        <translation><!-- Penny Stacked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pillow Pak</masterLabel>
+        <translation><!-- Pillow Pak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tote</masterLabel>
+        <translation><!-- Tote --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

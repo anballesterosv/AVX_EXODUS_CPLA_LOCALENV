@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What was the deciding factor? --></label>
+    <name>What_was_the_deciding_factor__c</name>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pack Size</masterLabel>
+        <translation><!-- Pack Size --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality</masterLabel>
+        <translation><!-- Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taste</masterLabel>
+        <translation><!-- Taste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Texture</masterLabel>
+        <translation><!-- Texture --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RestrictStrategicObjectiveNameUpdate</fullName>
+    <active>true</active>
+    <description>Strategic Objective Name cannot be updated. It can be editable only at the time of creation.</description>
+    <errorConditionFormula>AND( 
+NOT(ISNEW()), 
+ISCHANGED(Name), 
+$Profile.Name &lt;&gt; &#39;System Administrator&#39; 
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Strategic Objective Name cannot be changed.</errorMessage>
+</ValidationRule>

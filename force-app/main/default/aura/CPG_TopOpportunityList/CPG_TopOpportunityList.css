@@ -1,0 +1,23 @@
+.THIS {
+    background-color: white; 
+    list-style-type: none;
+    padding: 2;
+    margin: 2;
+    
+}
+.THIS thead {
+    text-align: left;
+    background-color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.THIS td { 
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: .8125rem;
+}
+.THIS table { 
+    border-spacing: 10px;
+    border-collapse: separate;
+}

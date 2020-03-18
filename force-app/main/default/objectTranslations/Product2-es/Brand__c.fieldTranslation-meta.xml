@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Marca</label>
+    <name>Brand__c</name>
+    <picklistValues>
+        <masterLabel>BUCANERO</masterLabel>
+        <translation><!-- BUCANERO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMPOLLO</masterLabel>
+        <translation><!-- CAMPOLLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELICIA</masterLabel>
+        <translation><!-- DELICIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PERRY</masterLabel>
+        <translation><!-- PERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIO LINDO</masterLabel>
+        <translation><!-- PIO LINDO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POLLO NORTEÑO</masterLabel>
+        <translation><!-- POLLO NORTEÑO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SULA</masterLabel>
+        <translation><!-- SULA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

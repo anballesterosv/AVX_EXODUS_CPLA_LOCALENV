@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductLines__c</fullName>
+    <description>This may be defined as Picklist or Lookup based on Cargill discussion around Product Hierarachy.</description>
+    <externalId>false</externalId>
+    <label>ProductLines</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

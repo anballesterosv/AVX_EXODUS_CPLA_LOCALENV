@@ -1,0 +1,26 @@
+<aura:component controller="Protein_SampleRequestController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="EmailBody" type="String"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.fetchSampleRequestInfo}"/>
+    <aura:attribute name="wrapper" type="sObject"/>
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="isSamProductsAdded" type="boolean" default="false"/>
+    
+    <div class="slds-grid" style="padding-top: 0px;">
+        <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+            Send To:
+        </div>
+        <div class="slds-col slds-size_6-of-7" style="padding-bottom: 0px;">
+            <lightning:input type="text" name="input5" label="" required="" value="{!v.wrapper.emailTo}" variant="label-hidden"/>
+        </div>
+    </div>
+    <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-7" style="padding-top: 15px;">
+            Email Content:  
+        </div>
+        <div class="slds-col slds-size_6-of-7">
+            <lightning:inputRichText aura:id="comments" label="Send Sample Request Form"  value="{!v.wrapper.emailBody}" />
+        </div>
+    </div>
+    
+</aura:component>

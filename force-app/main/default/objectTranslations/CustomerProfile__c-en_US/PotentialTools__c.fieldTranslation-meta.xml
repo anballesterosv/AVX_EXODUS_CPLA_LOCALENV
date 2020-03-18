@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Potential Tools --></label>
+    <name>PotentialTools__c</name>
+    <picklistValues>
+        <masterLabel>Cargill Optimizing Services</masterLabel>
+        <translation><!-- Cargill Optimizing Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Risk Managment</masterLabel>
+        <translation><!-- Customer Risk Managment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade &amp; Structured Finance</masterLabel>
+        <translation><!-- Trade &amp; Structured Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Management</masterLabel>
+        <translation><!-- Waste Management --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

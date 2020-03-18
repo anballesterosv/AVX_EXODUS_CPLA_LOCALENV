@@ -1,0 +1,86 @@
+<!--Parent-->
+<aura:component controller="Protein_SampleRequestFulfillmentCtlr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="SampleProductParent" type="SampleRequestProduct__c[]" default=""/> 
+    <aura:attribute name="sampleRequestProductWrapper" type="List" default="[]"/>
+    <aura:attribute name="item" type="sObject" default="{}"/>
+    <aura:attribute name="selectedCount" type="integer" default="0" description="selected Records Count"/>
+    <aura:attribute name="isSelectAll" type="boolean" default="false"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="spinner" type="boolean" default="false"/>
+    <aura:registerEvent name="sampleCmpEvent" type="c:AddRowEvent" />
+    <aura:attribute name="IsSRFOnComplete" type="Boolean" default="false" /> 
+    
+    <div class="slds-page-header slds-list_horizontal slds-size_12-of-12 ">
+        <div class="slds-col slds-size_5-of-12">
+            <h1 class="slds-page-header__title"><b>Products Remaining to be Processed:</b></h1>
+        </div>
+    </div>
+    
+    <div class="slds-scrollable_x" style="height:100%;">
+        <div class="">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer backgcolors"> 
+                <thead class="backgcolors">
+                    <tr class="slds-text-title_caps ">
+                        
+                        <aura:if isTrue="{!v.IsSRFOnComplete==false}">
+                            <th scope="col" class="headerstyle">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <label class="slds-checkbox">
+                                            <ui:inputCheckbox disabled="{!v.totalRecordsCount == 0}" value="{!v.selectAllId}" aura:id="selectAllId" change="{!c.selectAllCheckbox}"/>
+                                            <span class="slds-checkbox_faux"></span>
+                                            <span class="slds-form-element__label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </th>
+                        </aura:if>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate slds-border_right" title="Product" styleclass="colour">Product</div>
+                        </th>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate slds-border_right" title="Product Description">Product Description</div>
+                        </th>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate slds-border_right" title="Julian/Production Date">Julian/Production Date</div>
+                        </th>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate slds-border_right" title="Shipped Weight">Shipped Weight</div>
+                        </th>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate slds-border_right" title="Product Cost">Product Cost</div>
+                        </th>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate slds-border_right" title="Quantity">Quantity</div>
+                        </th>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate slds-border_right" title="Type">Type</div>
+                        </th>
+                        
+                        <th scope="col" class="headerstyle">
+                            <div class="slds-truncate " title="Other Type">Other Type</div>
+                        </th>
+                        
+                    </tr>
+                </thead> 
+                
+                <tbody>
+                    <aura:iteration items="{!v.sampleRequestProductWrapper}" var="item" indexVar="index">
+                        <c:protein_productsRemainingToprocessRow item="{!item}" rowIndex="{!index}" recordId="{!v.recordId}" sampleRequestProductWrapper="{!v.sampleRequestProductWrapper}" IsSRFOnComplete="{!v.IsSRFOnComplete}"/>
+                    </aura:iteration>
+                </tbody>
+                
+            </table>
+        </div>
+    </div>       
+    <br/>
+    
+</aura:component>

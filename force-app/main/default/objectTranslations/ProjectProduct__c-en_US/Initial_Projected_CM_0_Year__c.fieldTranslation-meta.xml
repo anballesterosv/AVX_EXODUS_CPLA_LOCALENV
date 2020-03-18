@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Initial Projected CM (0-Year) --></label>
+    <name>Initial_Projected_CM_0_Year__c</name>
+</CustomFieldTranslation>

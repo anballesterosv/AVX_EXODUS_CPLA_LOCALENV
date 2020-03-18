@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TargetedMarketCategories__c</fullName>
+    <description>Created for GEOS on 4/18/2017 Sprint1</description>
+    <externalId>false</externalId>
+    <label>Targeted Market Categories</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chocolate confectionery</fullName>
+                <default>false</default>
+                <label>Chocolate confectionery</label>
+            </value>
+            <value>
+                <fullName>Sugar confectionery</fullName>
+                <default>false</default>
+                <label>Sugar confectionery</label>
+            </value>
+            <value>
+                <fullName>Dairy</fullName>
+                <default>false</default>
+                <label>Dairy</label>
+            </value>
+            <value>
+                <fullName>Frozen desserts</fullName>
+                <default>false</default>
+                <label>Frozen desserts</label>
+            </value>
+            <value>
+                <fullName>Margarine</fullName>
+                <default>false</default>
+                <label>Margarine</label>
+            </value>
+            <value>
+                <fullName>Mayonnaise and sauces</fullName>
+                <default>false</default>
+                <label>Mayonnaise and sauces</label>
+            </value>
+            <value>
+                <fullName>Bakery</fullName>
+                <default>false</default>
+                <label>Bakery</label>
+            </value>
+            <value>
+                <fullName>Convenience/Instant Food</fullName>
+                <default>false</default>
+                <label>Convenience/Instant Food</label>
+            </value>
+            <value>
+                <fullName>Snacks</fullName>
+                <default>false</default>
+                <label>Snacks</label>
+            </value>
+            <value>
+                <fullName>Jams, fruit preps</fullName>
+                <default>false</default>
+                <label>Jams, fruit preps</label>
+            </value>
+            <value>
+                <fullName>Baby food</fullName>
+                <default>false</default>
+                <label>Baby food</label>
+            </value>
+            <value>
+                <fullName>Beer, other alcoholic beverages</fullName>
+                <default>false</default>
+                <label>Beer, other alcoholic beverages</label>
+            </value>
+            <value>
+                <fullName>Carbonated soft drinks</fullName>
+                <default>false</default>
+                <label>Carbonated soft drinks</label>
+            </value>
+            <value>
+                <fullName>Juice, drinks, nectars</fullName>
+                <default>false</default>
+                <label>Juice, drinks, nectars</label>
+            </value>
+            <value>
+                <fullName>Processed meat products</fullName>
+                <default>false</default>
+                <label>Processed meat products</label>
+            </value>
+            <value>
+                <fullName>HoReCa</fullName>
+                <default>false</default>
+                <label>HoReCa</label>
+            </value>
+            <value>
+                <fullName>Distributor / co-packer</fullName>
+                <default>false</default>
+                <label>Distributor / co-packer</label>
+            </value>
+            <value>
+                <fullName>Other food</fullName>
+                <default>false</default>
+                <label>Other food</label>
+            </value>
+            <value>
+                <fullName>Petfood</fullName>
+                <default>false</default>
+                <label>Petfood</label>
+            </value>
+            <value>
+                <fullName>Feed</fullName>
+                <default>false</default>
+                <label>Feed</label>
+            </value>
+            <value>
+                <fullName>Pharma</fullName>
+                <default>false</default>
+                <label>Pharma</label>
+            </value>
+            <value>
+                <fullName>Personal care and cosmetics</fullName>
+                <default>false</default>
+                <label>Personal care and cosmetics</label>
+            </value>
+            <value>
+                <fullName>Paper</fullName>
+                <default>false</default>
+                <label>Paper</label>
+            </value>
+            <value>
+                <fullName>Corrugated board</fullName>
+                <default>false</default>
+                <label>Corrugated board</label>
+            </value>
+            <value>
+                <fullName>Construction materials</fullName>
+                <default>false</default>
+                <label>Construction materials</label>
+            </value>
+            <value>
+                <fullName>Technical oils and lubricants</fullName>
+                <default>false</default>
+                <label>Technical oils and lubricants</label>
+            </value>
+            <value>
+                <fullName>Bio-chemical industry</fullName>
+                <default>false</default>
+                <label>Bio-chemical industry</label>
+            </value>
+            <value>
+                <fullName>Other non-food</fullName>
+                <default>false</default>
+                <label>Other non-food</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

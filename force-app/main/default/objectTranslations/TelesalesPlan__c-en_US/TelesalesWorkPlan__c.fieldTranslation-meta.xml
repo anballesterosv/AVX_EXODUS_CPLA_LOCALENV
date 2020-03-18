@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Telesales Work Plan --></label>
+    <name>TelesalesWorkPlan__c</name>
+    <relationshipLabel><!-- Telesales Work Plans --></relationshipLabel>
+</CustomFieldTranslation>

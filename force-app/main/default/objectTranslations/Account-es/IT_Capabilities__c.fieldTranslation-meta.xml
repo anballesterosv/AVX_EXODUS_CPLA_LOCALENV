@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- IT Capabilities --></label>
+    <name>IT_Capabilities__c</name>
+    <picklistValues>
+        <masterLabel>Customer Self Serve Portal</masterLabel>
+        <translation><!-- Customer Self Serve Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital store front</masterLabel>
+        <translation><!-- Digital store front --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook page</masterLabel>
+        <translation><!-- Facebook page --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPS tracking transportation</masterLabel>
+        <translation><!-- GPS tracking transportation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Automation</masterLabel>
+        <translation><!-- Marketing Automation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile Apps</masterLabel>
+        <translation><!-- Mobile Apps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offering E Commerce solutions like Ariba</masterLabel>
+        <translation><!-- Offering E Commerce solutions like Ariba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product value calculators</masterLabel>
+        <translation><!-- Product value calculators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RFID in packaging</masterLabel>
+        <translation><!-- RFID in packaging --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

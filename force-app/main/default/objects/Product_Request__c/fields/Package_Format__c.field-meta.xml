@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Package_Format__c</fullName>
+    <externalId>false</externalId>
+    <label>Package Format</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Market_Channel__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bag in Combo</fullName>
+                <default>false</default>
+                <label>Bag in Combo</label>
+            </value>
+            <value>
+                <fullName>Box</fullName>
+                <default>false</default>
+                <label>Box</label>
+            </value>
+            <value>
+                <fullName>Combo</fullName>
+                <default>false</default>
+                <label>Combo</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Bags in Box</fullName>
+                <default>false</default>
+                <label>Bags in Box</label>
+            </value>
+            <value>
+                <fullName>Chub Clear</fullName>
+                <default>false</default>
+                <label>Chub Clear</label>
+            </value>
+            <value>
+                <fullName>Chub Pre-Printed</fullName>
+                <default>false</default>
+                <label>Chub Pre-Printed</label>
+            </value>
+            <value>
+                <fullName>Kit (combination of different packaging formats per unit)</fullName>
+                <default>false</default>
+                <label>Kit (combination of different packaging formats per unit)</label>
+            </value>
+            <value>
+                <fullName>MAP Tray Lid stock Hi Ox</fullName>
+                <default>false</default>
+                <label>MAP Tray Lid stock Hi Ox</label>
+            </value>
+            <value>
+                <fullName>MAP Tray Low Ox</fullName>
+                <default>false</default>
+                <label>MAP Tray Low Ox</label>
+            </value>
+            <value>
+                <fullName>Overwrap Hi Ox</fullName>
+                <default>false</default>
+                <label>Overwrap Hi Ox</label>
+            </value>
+            <value>
+                <fullName>Overwrap Low Ox</fullName>
+                <default>false</default>
+                <label>Overwrap Low Ox</label>
+            </value>
+            <value>
+                <fullName>Sliced Semi Rigid Tray</fullName>
+                <default>false</default>
+                <label>Sliced Semi Rigid Tray</label>
+            </value>
+            <value>
+                <fullName>VSP tray</fullName>
+                <default>false</default>
+                <label>VSP tray</label>
+            </value>
+            <value>
+                <fullName>Tray Overwrap</fullName>
+                <default>false</default>
+                <label>Tray Overwrap</label>
+            </value>
+            <value>
+                <fullName>Vacuum Preprinted film</fullName>
+                <default>false</default>
+                <label>Vacuum Preprinted film</label>
+            </value>
+            <value>
+                <fullName>Vacuum Clear Film</fullName>
+                <default>false</default>
+                <label>Vacuum Clear Film</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Bag in Combo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Combo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Bags in Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Chub Clear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Chub Pre-Printed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Kit (combination of different packaging formats per unit)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>MAP Tray Lid stock Hi Ox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>MAP Tray Low Ox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Overwrap Hi Ox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Overwrap Low Ox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Sliced Semi Rigid Tray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>VSP tray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Tray Overwrap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Vacuum Preprinted film</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Vacuum Clear Film</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

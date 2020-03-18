@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <externalId>false</externalId>
+    <label>Brand</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Branded__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>7-ELEVEN</fullName>
+                <default>false</default>
+                <label>7-ELEVEN</label>
+            </value>
+            <value>
+                <fullName>Advance Pierre</fullName>
+                <default>false</default>
+                <label>Advance Pierre</label>
+            </value>
+            <value>
+                <fullName>Ahold</fullName>
+                <default>false</default>
+                <label>Ahold</label>
+            </value>
+            <value>
+                <fullName>Aldi</fullName>
+                <default>false</default>
+                <label>Aldi</label>
+            </value>
+            <value>
+                <fullName>Allen Brothers Angus</fullName>
+                <default>false</default>
+                <label>Allen Brothers Angus</label>
+            </value>
+            <value>
+                <fullName>Angus Pride</fullName>
+                <default>false</default>
+                <label>Angus Pride</label>
+            </value>
+            <value>
+                <fullName>Applebee&#39;s</fullName>
+                <default>false</default>
+                <label>Applebee&#39;s</label>
+            </value>
+            <value>
+                <fullName>Arby&#39;s</fullName>
+                <default>false</default>
+                <label>Arby&#39;s</label>
+            </value>
+            <value>
+                <fullName>Archer Farms</fullName>
+                <default>false</default>
+                <label>Archer Farms</label>
+            </value>
+            <value>
+                <fullName>Bachoco</fullName>
+                <default>false</default>
+                <label>Bachoco</label>
+            </value>
+            <value>
+                <fullName>Bakers &amp; Chef</fullName>
+                <default>false</default>
+                <label>Bakers &amp; Chef</label>
+            </value>
+            <value>
+                <fullName>Beef O&#39; Brady</fullName>
+                <default>false</default>
+                <label>Beef O&#39; Brady</label>
+            </value>
+            <value>
+                <fullName>Best Choice</fullName>
+                <default>false</default>
+                <label>Best Choice</label>
+            </value>
+            <value>
+                <fullName>Blackwell Angus</fullName>
+                <default>false</default>
+                <label>Blackwell Angus</label>
+            </value>
+            <value>
+                <fullName>Bob Evan&#39;s</fullName>
+                <default>false</default>
+                <label>Bob Evan&#39;s</label>
+            </value>
+            <value>
+                <fullName>Boston Market</fullName>
+                <default>false</default>
+                <label>Boston Market</label>
+            </value>
+            <value>
+                <fullName>Breeder</fullName>
+                <default>false</default>
+                <label>Breeder</label>
+            </value>
+            <value>
+                <fullName>Brinker</fullName>
+                <default>false</default>
+                <label>Brinker</label>
+            </value>
+            <value>
+                <fullName>Brookshires Grocery</fullName>
+                <default>false</default>
+                <label>Brookshires Grocery</label>
+            </value>
+            <value>
+                <fullName>Butcher Block Reserve Ang</fullName>
+                <default>false</default>
+                <label>Butcher Block Reserve Ang</label>
+            </value>
+            <value>
+                <fullName>C/R INGREDIENTS FOR VA</fullName>
+                <default>false</default>
+                <label>C/R INGREDIENTS FOR VA</label>
+            </value>
+            <value>
+                <fullName>Campbell&#39;s</fullName>
+                <default>false</default>
+                <label>Campbell&#39;s</label>
+            </value>
+            <value>
+                <fullName>Cargill Premium Beef</fullName>
+                <default>false</default>
+                <label>Cargill Premium Beef</label>
+            </value>
+            <value>
+                <fullName>Cargill Value Added Meats</fullName>
+                <default>false</default>
+                <label>Cargill Value Added Meats</label>
+            </value>
+            <value>
+                <fullName>Case Ready Grind Patties</fullName>
+                <default>false</default>
+                <label>Case Ready Grind Patties</label>
+            </value>
+            <value>
+                <fullName>Castle Wood Reserve</fullName>
+                <default>false</default>
+                <label>Castle Wood Reserve</label>
+            </value>
+            <value>
+                <fullName>CC</fullName>
+                <default>false</default>
+                <label>CC</label>
+            </value>
+            <value>
+                <fullName>Cert Angus Bf Path Proven</fullName>
+                <default>false</default>
+                <label>Cert Angus Bf Path Proven</label>
+            </value>
+            <value>
+                <fullName>Certified Angus Beef</fullName>
+                <default>false</default>
+                <label>Certified Angus Beef</label>
+            </value>
+            <value>
+                <fullName>Charter Reserve</fullName>
+                <default>false</default>
+                <label>Charter Reserve</label>
+            </value>
+            <value>
+                <fullName>Con Agra</fullName>
+                <default>false</default>
+                <label>Con Agra</label>
+            </value>
+            <value>
+                <fullName>Consumer Packaged Beef</fullName>
+                <default>false</default>
+                <label>Consumer Packaged Beef</label>
+            </value>
+            <value>
+                <fullName>Consumer Pack Variety Mts</fullName>
+                <default>false</default>
+                <label>Consumer Pack Variety Mts</label>
+            </value>
+            <value>
+                <fullName>Costco</fullName>
+                <default>false</default>
+                <label>Costco</label>
+            </value>
+            <value>
+                <fullName>Cracker Barrel</fullName>
+                <default>false</default>
+                <label>Cracker Barrel</label>
+            </value>
+            <value>
+                <fullName>CVAM</fullName>
+                <default>false</default>
+                <label>CVAM</label>
+            </value>
+            <value>
+                <fullName>DNA Traceable</fullName>
+                <default>false</default>
+                <label>DNA Traceable</label>
+            </value>
+            <value>
+                <fullName>Domestic</fullName>
+                <default>false</default>
+                <label>Domestic</label>
+            </value>
+            <value>
+                <fullName>Emmber</fullName>
+                <default>false</default>
+                <label>Emmber</label>
+            </value>
+            <value>
+                <fullName>Excel</fullName>
+                <default>false</default>
+                <label>Excel</label>
+            </value>
+            <value>
+                <fullName>Excel Choice Market Style</fullName>
+                <default>false</default>
+                <label>Excel Choice Market Style</label>
+            </value>
+            <value>
+                <fullName>Excel Premium Beef</fullName>
+                <default>false</default>
+                <label>Excel Premium Beef</label>
+            </value>
+            <value>
+                <fullName>Export &lt;20MO Japan</fullName>
+                <default>false</default>
+                <label>Export &lt;20MO Japan</label>
+            </value>
+            <value>
+                <fullName>Export Beta Agonist Free</fullName>
+                <default>false</default>
+                <label>Export Beta Agonist Free</label>
+            </value>
+            <value>
+                <fullName>Fit and Active</fullName>
+                <default>false</default>
+                <label>Fit and Active</label>
+            </value>
+            <value>
+                <fullName>Food Service of America</fullName>
+                <default>false</default>
+                <label>Food Service of America</label>
+            </value>
+            <value>
+                <fullName>Food Town</fullName>
+                <default>false</default>
+                <label>Food Town</label>
+            </value>
+            <value>
+                <fullName>Four Winds Farm</fullName>
+                <default>false</default>
+                <label>Four Winds Farm</label>
+            </value>
+            <value>
+                <fullName>Fresh Thyme</fullName>
+                <default>false</default>
+                <label>Fresh Thyme</label>
+            </value>
+            <value>
+                <fullName>General Mills</fullName>
+                <default>false</default>
+                <label>General Mills</label>
+            </value>
+            <value>
+                <fullName>Genuine Texas Beef</fullName>
+                <default>false</default>
+                <label>Genuine Texas Beef</label>
+            </value>
+            <value>
+                <fullName>Genuine Texas Beef Angus</fullName>
+                <default>false</default>
+                <label>Genuine Texas Beef Angus</label>
+            </value>
+            <value>
+                <fullName>GFS SE Private Label</fullName>
+                <default>false</default>
+                <label>GFS SE Private Label</label>
+            </value>
+            <value>
+                <fullName>Giant Eagle</fullName>
+                <default>false</default>
+                <label>Giant Eagle</label>
+            </value>
+            <value>
+                <fullName>Godshall&#39;s</fullName>
+                <default>false</default>
+                <label>Godshall&#39;s</label>
+            </value>
+            <value>
+                <fullName>Gordon Food Service</fullName>
+                <default>false</default>
+                <label>Gordon Food Service</label>
+            </value>
+            <value>
+                <fullName>Great Value</fullName>
+                <default>false</default>
+                <label>Great Value</label>
+            </value>
+            <value>
+                <fullName>GreenWise</fullName>
+                <default>false</default>
+                <label>GreenWise</label>
+            </value>
+            <value>
+                <fullName>Groucho&#39;s Deli</fullName>
+                <default>false</default>
+                <label>Groucho&#39;s Deli</label>
+            </value>
+            <value>
+                <fullName>Ground Beef Private Label</fullName>
+                <default>false</default>
+                <label>Ground Beef Private Label</label>
+            </value>
+            <value>
+                <fullName>Halal Beef</fullName>
+                <default>false</default>
+                <label>Halal Beef</label>
+            </value>
+            <value>
+                <fullName>Hannaford</fullName>
+                <default>false</default>
+                <label>Hannaford</label>
+            </value>
+            <value>
+                <fullName>Harris Teeter</fullName>
+                <default>false</default>
+                <label>Harris Teeter</label>
+            </value>
+            <value>
+                <fullName>Harvest Provisions</fullName>
+                <default>false</default>
+                <label>Harvest Provisions</label>
+            </value>
+            <value>
+                <fullName>HEB</fullName>
+                <default>false</default>
+                <label>HEB</label>
+            </value>
+            <value>
+                <fullName>H E Butt</fullName>
+                <default>false</default>
+                <label>H E Butt</label>
+            </value>
+            <value>
+                <fullName>Heritage Farms</fullName>
+                <default>false</default>
+                <label>Heritage Farms</label>
+            </value>
+            <value>
+                <fullName>Hill Country Fare</fullName>
+                <default>false</default>
+                <label>Hill Country Fare</label>
+            </value>
+            <value>
+                <fullName>Honest Turkey</fullName>
+                <default>false</default>
+                <label>Honest Turkey</label>
+            </value>
+            <value>
+                <fullName>Honeysuckle White</fullName>
+                <default>false</default>
+                <label>Honeysuckle White</label>
+            </value>
+            <value>
+                <fullName>Hormel</fullName>
+                <default>false</default>
+                <label>Hormel</label>
+            </value>
+            <value>
+                <fullName>Hy Vee</fullName>
+                <default>false</default>
+                <label>Hy Vee</label>
+            </value>
+            <value>
+                <fullName>Jack In The Box</fullName>
+                <default>false</default>
+                <label>Jack In The Box</label>
+            </value>
+            <value>
+                <fullName>Jason Deli</fullName>
+                <default>false</default>
+                <label>Jason Deli</label>
+            </value>
+            <value>
+                <fullName>Key Foods</fullName>
+                <default>false</default>
+                <label>Key Foods</label>
+            </value>
+            <value>
+                <fullName>King Kullen</fullName>
+                <default>false</default>
+                <label>King Kullen</label>
+            </value>
+            <value>
+                <fullName>Kirkland Signature</fullName>
+                <default>false</default>
+                <label>Kirkland Signature</label>
+            </value>
+            <value>
+                <fullName>Kroger</fullName>
+                <default>false</default>
+                <label>Kroger</label>
+            </value>
+            <value>
+                <fullName>Kroger Wholesome @ Home</fullName>
+                <default>false</default>
+                <label>Kroger Wholesome @ Home</label>
+            </value>
+            <value>
+                <fullName>Laura&#39;s Lean</fullName>
+                <default>false</default>
+                <label>Laura&#39;s Lean</label>
+            </value>
+            <value>
+                <fullName>Leon&#39;s Texas Cuisine</fullName>
+                <default>false</default>
+                <label>Leon&#39;s Texas Cuisine</label>
+            </value>
+            <value>
+                <fullName>Marble Rich</fullName>
+                <default>false</default>
+                <label>Marble Rich</label>
+            </value>
+            <value>
+                <fullName>Market Basket</fullName>
+                <default>false</default>
+                <label>Market Basket</label>
+            </value>
+            <value>
+                <fullName>Marval</fullName>
+                <default>false</default>
+                <label>Marval</label>
+            </value>
+            <value>
+                <fullName>Meijer</fullName>
+                <default>false</default>
+                <label>Meijer</label>
+            </value>
+            <value>
+                <fullName>Member&#39;s Mark</fullName>
+                <default>false</default>
+                <label>Member&#39;s Mark</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Morton&#39;s</fullName>
+                <default>false</default>
+                <label>Morton&#39;s</label>
+            </value>
+            <value>
+                <fullName>Nature&#39;s Place</fullName>
+                <default>false</default>
+                <label>Nature&#39;s Place</label>
+            </value>
+            <value>
+                <fullName>Nestle</fullName>
+                <default>false</default>
+                <label>Nestle</label>
+            </value>
+            <value>
+                <fullName>Newk&#39;s Deli</fullName>
+                <default>false</default>
+                <label>Newk&#39;s Deli</label>
+            </value>
+            <value>
+                <fullName>Northridge Farm Angus</fullName>
+                <default>false</default>
+                <label>Northridge Farm Angus</label>
+            </value>
+            <value>
+                <fullName>Ontario Corn Fed AA</fullName>
+                <default>false</default>
+                <label>Ontario Corn Fed AA</label>
+            </value>
+            <value>
+                <fullName>Ontario Corn Fed AAA</fullName>
+                <default>false</default>
+                <label>Ontario Corn Fed AAA</label>
+            </value>
+            <value>
+                <fullName>Ontario Corn Fed Platinum</fullName>
+                <default>false</default>
+                <label>Ontario Corn Fed Platinum</label>
+            </value>
+            <value>
+                <fullName>Outside Purchase</fullName>
+                <default>false</default>
+                <label>Outside Purchase</label>
+            </value>
+            <value>
+                <fullName>Panera</fullName>
+                <default>false</default>
+                <label>Panera</label>
+            </value>
+            <value>
+                <fullName>Plantation</fullName>
+                <default>false</default>
+                <label>Plantation</label>
+            </value>
+            <value>
+                <fullName>Pot Belly</fullName>
+                <default>false</default>
+                <label>Pot Belly</label>
+            </value>
+            <value>
+                <fullName>Premium Signature Angus</fullName>
+                <default>false</default>
+                <label>Premium Signature Angus</label>
+            </value>
+            <value>
+                <fullName>Pride of The Farm</fullName>
+                <default>false</default>
+                <label>Pride of The Farm</label>
+            </value>
+            <value>
+                <fullName>Prima Della</fullName>
+                <default>false</default>
+                <label>Prima Della</label>
+            </value>
+            <value>
+                <fullName>Private Selection</fullName>
+                <default>false</default>
+                <label>Private Selection</label>
+            </value>
+            <value>
+                <fullName>Private Selection Angus</fullName>
+                <default>false</default>
+                <label>Private Selection Angus</label>
+            </value>
+            <value>
+                <fullName>Publix</fullName>
+                <default>false</default>
+                <label>Publix</label>
+            </value>
+            <value>
+                <fullName>Quiznos</fullName>
+                <default>false</default>
+                <label>Quiznos</label>
+            </value>
+            <value>
+                <fullName>Rancher&#39;s Reserve</fullName>
+                <default>false</default>
+                <label>Rancher&#39;s Reserve</label>
+            </value>
+            <value>
+                <fullName>Ranchers Reg Angus Choice</fullName>
+                <default>false</default>
+                <label>Ranchers Reg Angus Choice</label>
+            </value>
+            <value>
+                <fullName>Ranchers Reg Angus GB/TR</fullName>
+                <default>false</default>
+                <label>Ranchers Reg Angus GB/TR</label>
+            </value>
+            <value>
+                <fullName>Ranchers Reg Angus Select</fullName>
+                <default>false</default>
+                <label>Ranchers Reg Angus Select</label>
+            </value>
+            <value>
+                <fullName>Ranchers Registry Choice</fullName>
+                <default>false</default>
+                <label>Ranchers Registry Choice</label>
+            </value>
+            <value>
+                <fullName>Ranchers Registry GB/TR</fullName>
+                <default>false</default>
+                <label>Ranchers Registry GB/TR</label>
+            </value>
+            <value>
+                <fullName>Ranchers Registry Select</fullName>
+                <default>false</default>
+                <label>Ranchers Registry Select</label>
+            </value>
+            <value>
+                <fullName>Red Bird</fullName>
+                <default>false</default>
+                <label>Red Bird</label>
+            </value>
+            <value>
+                <fullName>Redi-Roast</fullName>
+                <default>false</default>
+                <label>Redi-Roast</label>
+            </value>
+            <value>
+                <fullName>Riverside</fullName>
+                <default>false</default>
+                <label>Riverside</label>
+            </value>
+            <value>
+                <fullName>RUMBA Beef</fullName>
+                <default>false</default>
+                <label>RUMBA Beef</label>
+            </value>
+            <value>
+                <fullName>RUMBA Variety Meats</fullName>
+                <default>false</default>
+                <label>RUMBA Variety Meats</label>
+            </value>
+            <value>
+                <fullName>Safeway</fullName>
+                <default>false</default>
+                <label>Safeway</label>
+            </value>
+            <value>
+                <fullName>Sara Lee</fullName>
+                <default>false</default>
+                <label>Sara Lee</label>
+            </value>
+            <value>
+                <fullName>Schnucks Meat-M</fullName>
+                <default>false</default>
+                <label>Schnucks Meat-M</label>
+            </value>
+            <value>
+                <fullName>Schweigert</fullName>
+                <default>false</default>
+                <label>Schweigert</label>
+            </value>
+            <value>
+                <fullName>Seconds</fullName>
+                <default>false</default>
+                <label>Seconds</label>
+            </value>
+            <value>
+                <fullName>Shady Brook Farms</fullName>
+                <default>false</default>
+                <label>Shady Brook Farms</label>
+            </value>
+            <value>
+                <fullName>Shop Rite</fullName>
+                <default>false</default>
+                <label>Shop Rite</label>
+            </value>
+            <value>
+                <fullName>Shurfine</fullName>
+                <default>false</default>
+                <label>Shurfine</label>
+            </value>
+            <value>
+                <fullName>Signature Cafe</fullName>
+                <default>false</default>
+                <label>Signature Cafe</label>
+            </value>
+            <value>
+                <fullName>Signature Farms</fullName>
+                <default>false</default>
+                <label>Signature Farms</label>
+            </value>
+            <value>
+                <fullName>Simple Truth</fullName>
+                <default>false</default>
+                <label>Simple Truth</label>
+            </value>
+            <value>
+                <fullName>SIMPLY ESSENTIALS</fullName>
+                <default>false</default>
+                <label>SIMPLY ESSENTIALS</label>
+            </value>
+            <value>
+                <fullName>Sodexo</fullName>
+                <default>false</default>
+                <label>Sodexo</label>
+            </value>
+            <value>
+                <fullName>Sonic</fullName>
+                <default>false</default>
+                <label>Sonic</label>
+            </value>
+            <value>
+                <fullName>SPENCER Brand</fullName>
+                <default>false</default>
+                <label>SPENCER Brand</label>
+            </value>
+            <value>
+                <fullName>Sprouts</fullName>
+                <default>false</default>
+                <label>Sprouts</label>
+            </value>
+            <value>
+                <fullName>Sterling Silver</fullName>
+                <default>false</default>
+                <label>Sterling Silver</label>
+            </value>
+            <value>
+                <fullName>Stew Leonard</fullName>
+                <default>false</default>
+                <label>Stew Leonard</label>
+            </value>
+            <value>
+                <fullName>Stockyards Angus</fullName>
+                <default>false</default>
+                <label>Stockyards Angus</label>
+            </value>
+            <value>
+                <fullName>Superior Angus Beef</fullName>
+                <default>false</default>
+                <label>Superior Angus Beef</label>
+            </value>
+            <value>
+                <fullName>Supremas</fullName>
+                <default>false</default>
+                <label>Supremas</label>
+            </value>
+            <value>
+                <fullName>Sysco</fullName>
+                <default>false</default>
+                <label>Sysco</label>
+            </value>
+            <value>
+                <fullName>Sysco Choice</fullName>
+                <default>false</default>
+                <label>Sysco Choice</label>
+            </value>
+            <value>
+                <fullName>Sysco Select</fullName>
+                <default>false</default>
+                <label>Sysco Select</label>
+            </value>
+            <value>
+                <fullName>Taco Bell</fullName>
+                <default>false</default>
+                <label>Taco Bell</label>
+            </value>
+            <value>
+                <fullName>Target</fullName>
+                <default>false</default>
+                <label>Target</label>
+            </value>
+            <value>
+                <fullName>TNT</fullName>
+                <default>false</default>
+                <label>TNT</label>
+            </value>
+            <value>
+                <fullName>Today&#39;s Kitchen</fullName>
+                <default>false</default>
+                <label>Today&#39;s Kitchen</label>
+            </value>
+            <value>
+                <fullName>TVN</fullName>
+                <default>false</default>
+                <label>TVN</label>
+            </value>
+            <value>
+                <fullName>US Foods</fullName>
+                <default>false</default>
+                <label>US Foods</label>
+            </value>
+            <value>
+                <fullName>Walnut Creek Foods</fullName>
+                <default>false</default>
+                <label>Walnut Creek Foods</label>
+            </value>
+            <value>
+                <fullName>Weight Watchers</fullName>
+                <default>false</default>
+                <label>Weight Watchers</label>
+            </value>
+            <value>
+                <fullName>Wholesome Pantry</fullName>
+                <default>false</default>
+                <label>Wholesome Pantry</label>
+            </value>
+            <value>
+                <fullName>Wienerschnitzel</fullName>
+                <default>false</default>
+                <label>Wienerschnitzel</label>
+            </value>
+            <value>
+                <fullName>Willow Brook Farms</fullName>
+                <default>false</default>
+                <label>Willow Brook Farms</label>
+            </value>
+            <value>
+                <fullName>Willow Brook Foods</fullName>
+                <default>false</default>
+                <label>Willow Brook Foods</label>
+            </value>
+            <value>
+                <fullName>World Classics</fullName>
+                <default>false</default>
+                <label>World Classics</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>7-ELEVEN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Advance Pierre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ahold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Aldi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Allen Brothers Angus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Angus Pride</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Applebee&#39;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Arby&#39;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Archer Farms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Bachoco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Bakers &amp; Chef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Beef O&#39; Brady</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Best Choice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Blackwell Angus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Bob Evan&#39;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Boston Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Breeder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Brinker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Brookshires Grocery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Butcher Block Reserve Ang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>C/R INGREDIENTS FOR VA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Campbell&#39;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Cargill Premium Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Cargill Value Added Meats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Case Ready Grind Patties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Castle Wood Reserve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>CC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Cert Angus Bf Path Proven</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Certified Angus Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Charter Reserve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Con Agra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Consumer Packaged Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Consumer Pack Variety Mts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Costco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Cracker Barrel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>CVAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>DNA Traceable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Domestic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Emmber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Excel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Excel Choice Market Style</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Excel Premium Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Export &lt;20MO Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Export Beta Agonist Free</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Fit and Active</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Food Service of America</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Food Town</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Four Winds Farm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Fresh Thyme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>General Mills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Genuine Texas Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Genuine Texas Beef Angus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>GFS SE Private Label</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Giant Eagle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Godshall&#39;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Gordon Food Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Great Value</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>GreenWise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Groucho&#39;s Deli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ground Beef Private Label</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Halal Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Hannaford</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Harris Teeter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Harvest Provisions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>HEB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>H E Butt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Heritage Farms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Hill Country Fare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Honest Turkey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Honeysuckle White</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Hormel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Hy Vee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Jack In The Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Jason Deli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Key Foods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>King Kullen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Kirkland Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Kroger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Kroger Wholesome @ Home</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Laura&#39;s Lean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Leon&#39;s Texas Cuisine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Marble Rich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Market Basket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Marval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Meijer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Member&#39;s Mark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Miscellaneous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Morton&#39;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Nature&#39;s Place</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Nestle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Newk&#39;s Deli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Northridge Farm Angus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ontario Corn Fed AA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ontario Corn Fed AAA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ontario Corn Fed Platinum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Outside Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Panera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Plantation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Pot Belly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Premium Signature Angus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Pride of The Farm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Prima Della</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Private Selection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Private Selection Angus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Publix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Quiznos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Rancher&#39;s Reserve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ranchers Reg Angus Choice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ranchers Reg Angus GB/TR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ranchers Reg Angus Select</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ranchers Registry Choice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ranchers Registry GB/TR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Ranchers Registry Select</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Red Bird</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Redi-Roast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Riverside</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>RUMBA Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>RUMBA Variety Meats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Safeway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sara Lee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Schnucks Meat-M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Schweigert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Seconds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Shady Brook Farms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Shop Rite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Shurfine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Signature Cafe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Signature Farms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Simple Truth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>SIMPLY ESSENTIALS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sodexo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sonic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>SPENCER Brand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sprouts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sterling Silver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Stew Leonard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Stockyards Angus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Superior Angus Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Supremas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sysco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sysco Choice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Sysco Select</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Taco Bell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Target</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>TNT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Today&#39;s Kitchen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>TVN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>US Foods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Walnut Creek Foods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Weight Watchers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Wholesome Pantry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Wienerschnitzel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Willow Brook Farms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>Willow Brook Foods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Branded</controllingFieldValue>
+            <valueName>World Classics</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

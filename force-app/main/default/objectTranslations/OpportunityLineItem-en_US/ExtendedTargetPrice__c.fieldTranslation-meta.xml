@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pricing Guidance Target Price * Quantity --></help>
+    <label><!-- Extended Target Price --></label>
+    <name>ExtendedTargetPrice__c</name>
+</CustomFieldTranslation>

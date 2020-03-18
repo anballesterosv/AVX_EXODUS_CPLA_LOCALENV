@@ -1,0 +1,37 @@
+<aura:component controller="CPG_OpportunityListClass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="Opporunities" type="Opportunity[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+        <p style="background-color:white;" >
+         <!--<div>Top 5 Opportunities</div>-->
+        <table style="background-color:white;" cellspacing="1" cellpadding="1">
+            <thead>
+                  <tr>
+                     <th>Top 5 Opportunities</th>
+                  </tr>
+             </thead>
+            <tbody>
+            <aura:iteration items="{!v.Opporunities}" var="opp">
+                <li style="background-color:white;">
+                    <ol>
+                    <TR>
+                        <td>
+                            <a href="{!'/one/one.app?#/sObject/'+ opp.Id + '/view'}" target="_blank">{!opp.Name }</a>
+                            
+                        </td>
+                        <td>
+                             {!opp.Account.name}
+                        </td>
+                        <td>
+                            {!opp.recordType.name}
+                        </td>
+                        <td>
+                            {!opp.Closedate}
+                        </td>
+                    </TR>
+                    </ol>
+                 </li>
+            </aura:iteration>
+            </tbody>
+        </table>
+        </p>
+ </aura:component>

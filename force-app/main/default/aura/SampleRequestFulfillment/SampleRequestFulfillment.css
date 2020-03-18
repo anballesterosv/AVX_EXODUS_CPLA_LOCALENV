@@ -1,0 +1,15 @@
+.THIS {
+    
+}
+.THIS .hideDiv .slds-form-element .slds-form-element__label{
+    display:none;      
+}
+.THIS .colour {
+    background-color:Orange;
+}
+.THIS .colour1 {
+    background-color:LightGrey;
+}
+.THIS .colour2 table th span {
+    background-color:PaleGreen;
+}

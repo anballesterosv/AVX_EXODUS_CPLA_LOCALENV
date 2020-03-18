@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Email__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(Sales_Channel__c,
+  &#39;Foodservice&#39;, 
+    If (ISPICKVAL(CFNA_Business_Unit__c, &#39;Cargill Beef&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;Case Ready&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;CVAP-Beef (Burgers)&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;CVAP-Poultry (Eggs)&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;Turkey &amp; Cooked Meats&#39;), 
+    &#39;foodservice_samples@cargill.com&#39;, &#39;&#39;),
+  &#39;Retail&#39;,     
+    &#39;retail_samples@cargill.com&#39;,
+  &#39;Ingredient&#39;,
+    &#39;Prot_Ing_samples@cargill.com&#39;, &#39;&#39;)
+
+
+/*Case(Sales_Channel__c,
+  &#39;Foodservice&#39;, 
+    If (ISPICKVAL(CFNA_Business_Unit__c, &#39;Cargill Beef&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;Case Ready&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;CVAP-Beef (Burgers)&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;CVAP-Poultry (Eggs)&#39;)
+     || ISPICKVAL(CFNA_Business_Unit__c, &#39;Turkey &amp; Cooked Meats&#39;), 
+    &#39;foodservice_samples@cargill.com&#39;, &#39;&#39;),
+  &#39;Retail&#39;,
+    If (NOT(ISPICKVAL(CFNA_Business_Unit__c, &#39;Cargill Beef&#39;))
+	 &amp;&amp; NOT(ISPICKVAL(CFNA_Business_Unit__c, &#39;Case Ready&#39;)), 
+    &#39;retail_samples@cargill.com&#39;,&#39;&#39;),
+  &#39;Ingredient&#39;,
+    If (NOT(ISPICKVAL(CFNA_Business_Unit__c, &#39;Cargill Beef&#39;))
+	 &amp;&amp; NOT(ISPICKVAL(CFNA_Business_Unit__c, &#39;Case Ready&#39;)), 
+    &#39;Prot_Ing_samples@cargill.com&#39;,&#39;&#39;), &#39;&#39;) */</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Channel Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

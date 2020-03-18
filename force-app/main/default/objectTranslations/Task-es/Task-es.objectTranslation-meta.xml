@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Task Layout</layout>
+        <sections>
+            <label>Motivo de la pérdida</label>
+            <section>Closed Lost Retail</section>
+        </sections>
+        <sections>
+            <label>No Constetó</label>
+            <section>Not Contacted Retail</section>
+        </sections>
+        <sections>
+            <label><!-- Related To --></label>
+            <section>Related To</section>
+        </sections>
+        <sections>
+            <label>Tarea programada</label>
+            <section>Scheduled Retail</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Please fill in the comments field. --></errorMessage>
+        <name>AVX_ClosedComments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change this task for this status. Please verify. --></errorMessage>
+        <name>AVX_ClosedCompleted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To close a task as lost, please use the &quot;Close Task Lost&quot; button. --></errorMessage>
+        <name>AVX_ClosedLost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To close a task as not answer, please use the &quot;No Answer&quot; button. --></errorMessage>
+        <name>AVX_ClosedNotAnswer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change a closed task. --></errorMessage>
+        <name>AVX_ClosedTask</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change any task information. Only the Status can be changed. --></errorMessage>
+        <name>AVX_NotChangeTask</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot reschedule a task for the same time and date. Please verify. - - - - - - - - - - - - - - - - - --></errorMessage>
+        <name>AVX_ScheduleTaskSameDateTime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot reschedule a task to a time less than the current date on the same day. - - - - - - - - - - - --></errorMessage>
+        <name>AVX_ScheduleTaskTime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check the fields &apos;Time To Call&apos; and &apos;Due Date&apos;. They must be filled. --></errorMessage>
+        <name>AVX_TaskFillFields</name>
+    </validationRules>
+</CustomObjectTranslation>

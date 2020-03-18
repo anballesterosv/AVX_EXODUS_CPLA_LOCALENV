@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidateContactParentAccount</fullName>
+    <active>true</active>
+    <description>Contact Account should be same as Account Plan Account</description>
+    <errorConditionFormula>Account_Plan__r.Account__r.Id  &lt;&gt;  Contact__r.AccountId</errorConditionFormula>
+    <errorMessage>Contact  parent Account should be same as Account Plan&#39;s parent  Account</errorMessage>
+</ValidationRule>

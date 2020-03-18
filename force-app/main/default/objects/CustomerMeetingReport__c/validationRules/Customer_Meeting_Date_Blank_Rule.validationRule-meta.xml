@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Meeting_Date_Blank_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(ISPICKVAL(Status__c, &quot;Closed&quot;),
+   ISPICKVAL(Status__c, &quot;Complete&quot;)
+), 
+ISNULL(MeetingDate__c) 
+)</errorConditionFormula>
+    <errorMessage>Meeting Date is required to advance Status to &quot;Complete&quot; or  &quot;Closed&quot;</errorMessage>
+</ValidationRule>

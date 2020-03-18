@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Team Region --></label>
+    <name>SalesTeamRegion__c</name>
+    <picklistValues>
+        <masterLabel>BE / FR</masterLabel>
+        <translation><!-- BE / FR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bio-Energy</masterLabel>
+        <translation><!-- Bio-Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danone</masterLabel>
+        <translation><!-- Danone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES Team</masterLabel>
+        <translation><!-- ES Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS France</masterLabel>
+        <translation><!-- FS France --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS Iberia</masterLabel>
+        <translation><!-- FS Iberia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feed</masterLabel>
+        <translation><!-- Feed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL Team</masterLabel>
+        <translation><!-- NL Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLM</masterLabel>
+        <translation><!-- PLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pepsico</masterLabel>
+        <translation><!-- Pepsico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RFS Germany &amp; East EU</masterLabel>
+        <translation><!-- RFS Germany &amp; East EU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RFS Key Account</masterLabel>
+        <translation><!-- RFS Key Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RFs West EU</masterLabel>
+        <translation><!-- RFs West EU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team 21</masterLabel>
+        <translation><!-- Team 21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Applications</masterLabel>
+        <translation><!-- Technical Applications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uk / Ireland</masterLabel>
+        <translation><!-- Uk / Ireland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unilever</masterLabel>
+        <translation><!-- Unilever --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample Products</value>
+    </caseValues>
+    <layouts>
+        <layout>CFNA Sample Request Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Fulfillment --></label>
+            <section>Fulfillment</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record Type for all Protein requests (Cargill Beef, Case Ready, CVAP-Beef(Burgers), CVAP Poultry(Eggs), Turkey &amp; Cooked Meats) --></description>
+        <label><!-- Protein Sample Request Fulfillment --></label>
+        <name>Protein_Sample_Request_Fulfillment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot add more than 10 products to a Sample Request --></errorMessage>
+        <name>CFNA_Max_10_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify &quot;Other Type&quot; --></errorMessage>
+        <name>CFNA_Other_Type_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Business unit does not match that of the Sample Request --></errorMessage>
+        <name>CFNA_SampleRequestProduct_BU</name>
+    </validationRules>
+</CustomObjectTranslation>

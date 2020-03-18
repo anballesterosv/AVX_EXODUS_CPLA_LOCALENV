@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Are there any ex-Cargill employees working there? --></help>
+    <label><!-- Ex-Cargill Employees Working Here? --></label>
+    <name>Ex_Cargill_Employees_Working_Here__c</name>
+</CustomFieldTranslation>

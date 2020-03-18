@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Frozen or Refrigerated --></label>
+    <name>Frozen_or_Refridgerated__c</name>
+    <picklistValues>
+        <masterLabel>Frozen</masterLabel>
+        <translation><!-- Frozen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refrigerated</masterLabel>
+        <translation><!-- Refrigerated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>The  Chatter groups that will be mentioned on  the new Chatter post for every new Competitor Intelligence Record
+
+To get the ID of the Chatter Group, go to User menu-&gt; Developer Console -&gt; Query Editor tab -&gt; Enter &quot;SELECT id, name  FROM CollaborationGroup&quot; -&gt; Click Execute</description>
+    <enableFeeds>false</enableFeeds>
+    <label>ChatterPostGroupMention</label>
+    <visibility>Public</visibility>
+</CustomObject>

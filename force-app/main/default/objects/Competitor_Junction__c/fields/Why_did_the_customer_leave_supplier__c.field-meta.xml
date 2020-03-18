@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Why_did_the_customer_leave_supplier__c</fullName>
+    <externalId>false</externalId>
+    <label>Why Did the Customer Leave Supplier?</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Multi Source Supply</fullName>
+                <default>false</default>
+                <label>Multi Source Supply</label>
+            </value>
+            <value>
+                <fullName>Plant Location/Freight Advantage</fullName>
+                <default>false</default>
+                <label>Plant Location/Freight Advantage</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Product, Product Quality</fullName>
+                <default>false</default>
+                <label>Product, Product Quality</label>
+            </value>
+            <value>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+                <label>Relationship</label>
+            </value>
+            <value>
+                <fullName>Reputation/Credibility</fullName>
+                <default>false</default>
+                <label>Reputation/Credibility</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Supply Performance Problem</fullName>
+                <default>false</default>
+                <label>Supply Performance Problem</label>
+            </value>
+            <value>
+                <fullName>Other (Reason Required)</fullName>
+                <default>false</default>
+                <label>Other (Reason Required)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

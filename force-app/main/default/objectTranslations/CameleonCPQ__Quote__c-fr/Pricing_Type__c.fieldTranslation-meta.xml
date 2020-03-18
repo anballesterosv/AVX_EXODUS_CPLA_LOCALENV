@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pricing Type --></label>
+    <name>Pricing_Type__c</name>
+    <picklistValues>
+        <masterLabel>Fixed</masterLabel>
+        <translation><!-- Fixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Formula</masterLabel>
+        <translation><!-- Formula --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOF</masterLabel>
+        <translation><!-- NOF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPP</masterLabel>
+        <translation><!-- PPP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

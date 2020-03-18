@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Change_in_Behavior__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Change in Behavior</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Decrease in Orders/Volume</fullName>
+                <default>false</default>
+                <label>Decrease in Orders/Volume</label>
+            </value>
+            <value>
+                <fullName>Delayed Shipment</fullName>
+                <default>false</default>
+                <label>Delayed Shipment</label>
+            </value>
+            <value>
+                <fullName>Extra/added Shipments</fullName>
+                <default>false</default>
+                <label>Extra/added Shipments</label>
+            </value>
+            <value>
+                <fullName>Increase in Orders/Volume</fullName>
+                <default>false</default>
+                <label>Increase in Orders/Volume</label>
+            </value>
+            <value>
+                <fullName>Moved to Inviting to Collaborate</fullName>
+                <default>false</default>
+                <label>Moved to Inviting to Collaborate</label>
+            </value>
+            <value>
+                <fullName>Moved to Loyal</fullName>
+                <default>false</default>
+                <label>Moved to Loyal</label>
+            </value>
+            <value>
+                <fullName>Moved to RFP/Bidding</fullName>
+                <default>false</default>
+                <label>Moved to RFP/Bidding</label>
+            </value>
+            <value>
+                <fullName>Moved to Transactional</fullName>
+                <default>false</default>
+                <label>Moved to Transactional</label>
+            </value>
+            <value>
+                <fullName>Speed up Shipments</fullName>
+                <default>false</default>
+                <label>Speed up Shipments</label>
+            </value>
+            <value>
+                <fullName>Other (Reason Required)</fullName>
+                <default>false</default>
+                <label>Other (Reason Required)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

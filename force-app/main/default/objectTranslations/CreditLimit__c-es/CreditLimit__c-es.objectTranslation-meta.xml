@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Limite de Crédito</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Limites de Crédito</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Credit Limit Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Límite</label>
+            <section>Limit</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número del Limite de Crédito</nameFieldLabel>
+</CustomObjectTranslation>

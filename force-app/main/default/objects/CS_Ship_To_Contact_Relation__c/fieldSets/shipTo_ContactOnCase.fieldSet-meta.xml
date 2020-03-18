@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>shipTo_ContactOnCase</fullName>
+    <description>Used in the component CS_ShipTo_ContactOnCase inorder to display the ship-to&#39;s associated with the contact in Case Page Layout</description>
+    <displayedFields>
+        <field>CS_Ship_To__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>CS_Legacy_Id__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>CS_Legacy_System__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>shipTo_ContactOnCase</label>
+</FieldSet>

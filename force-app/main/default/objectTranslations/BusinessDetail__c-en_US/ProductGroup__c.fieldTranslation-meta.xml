@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Group --></label>
+    <name>ProductGroup__c</name>
+    <picklistValues>
+        <masterLabel>Cargill Cocoa &amp; Chocolate</masterLabel>
+        <translation><!-- Cargill Cocoa &amp; Chocolate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargill Industrial Specialties</masterLabel>
+        <translation><!-- Cargill Industrial Specialties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargill Texturizing Solutions</masterLabel>
+        <translation><!-- Cargill Texturizing Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cocoa &amp; Chocolate Brazil</masterLabel>
+        <translation><!-- Cocoa &amp; Chocolate Brazil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cocoa &amp; Chocolate North America</masterLabel>
+        <translation><!-- Cocoa &amp; Chocolate North America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foods Brazil</masterLabel>
+        <translation><!-- Foods Brazil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foods India</masterLabel>
+        <translation><!-- Foods India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foods Middle East, Turkey, and North Africa</masterLabel>
+        <translation><!-- Foods Middle East, Turkey, and North Africa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Edible Oil Solutions Asia Pacific</masterLabel>
+        <translation><!-- Global Edible Oil Solutions Asia Pacific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Edible Oil Solutions Europe</masterLabel>
+        <translation><!-- Global Edible Oil Solutions Europe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Edible Oil Solutions India</masterLabel>
+        <translation><!-- Global Edible Oil Solutions India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Edible Oil Solutions Mexico</masterLabel>
+        <translation><!-- Global Edible Oil Solutions Mexico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Edible Oil Solutions North America</masterLabel>
+        <translation><!-- Global Edible Oil Solutions North America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Edible Oil Solutions South America</masterLabel>
+        <translation><!-- Global Edible Oil Solutions South America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Edible Oil Solutions Venezuela</masterLabel>
+        <translation><!-- Global Edible Oil Solutions Venezuela --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Go To Market Corporate Accounts</masterLabel>
+        <translation><!-- Go To Market Corporate Accounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Go To Market Shared Sales North America</masterLabel>
+        <translation><!-- Go To Market Shared Sales North America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Go To Market Shared Shares EMEA</masterLabel>
+        <translation><!-- Go To Market Shared Shares EMEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malt</masterLabel>
+        <translation><!-- Malt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refined Oils Asia Pacific</masterLabel>
+        <translation><!-- Refined Oils Asia Pacific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starches &amp; Sweeteners China</masterLabel>
+        <translation><!-- Starches &amp; Sweeteners China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starches &amp; Sweeteners Europe</masterLabel>
+        <translation><!-- Starches &amp; Sweeteners Europe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starches &amp; Sweeteners North America</masterLabel>
+        <translation><!-- Starches &amp; Sweeteners North America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starches &amp; Sweeteners South America</masterLabel>
+        <translation><!-- Starches &amp; Sweeteners South America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starches &amp; Sweeteners Southeast Asia</masterLabel>
+        <translation><!-- Starches &amp; Sweeteners Southeast Asia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Toshoku</masterLabel>
+        <translation><!-- Toshoku --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

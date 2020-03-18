@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Competitor Change in Behavior Detail --></label>
+    <name>Competitor_Change_in_Behavior_Detail__c</name>
+</CustomFieldTranslation>

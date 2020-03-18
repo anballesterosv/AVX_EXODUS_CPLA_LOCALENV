@@ -1,0 +1,84 @@
+<apex:page standardController="CameleonCPQ__Quote__c" extensions="SmartCPQQuoteCustomCloner" showHeader="false" sidebar="false" docType="html-5.0">
+    <!--<apex:stylesheet value="{!URLFOR($Resource.SF1Resources,'custom/css/app.css')}"/>-->
+    <style type="text/css">
+        .forceGlobalModalIndicator .indicatorContainer .message {
+            background: #354452;
+            border: none;
+            color: #FFFFFF;
+        }
+        .apexMsg td {
+            font-size:16px;
+            font-weight:bold;
+            text-align:center;
+            color:red;
+        }
+    </style>
+    <script type="text/javascript">
+        function cloneQuote() {
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.SmartCPQQuoteCustomCloner.cloneQuoteAction}',
+                '{!CameleonCPQ__Quote__c.Id}',
+                '{!CameleonCPQ__Quote__c.OpportunityId__c}',
+                function(clonedQuoteId, event) {
+                    if(event.status) {
+                        if(clonedQuoteId!=null)
+                            cloneQuoteContent(clonedQuoteId);
+                        else {
+                            alert('clone operation has failed');
+                            if((typeof sforce != 'undefined') && (sforce != null)) {   
+                                sforce.one.navigateToSObject('{!CameleonCPQ__Quote__c.Id}');
+                            }
+                            else {
+                                top.location.href = '{!URLFOR($Action.CameleonCPQ__Quote__c.View, CameleonCPQ__Quote__c.Id)}';
+                            } 
+                        }
+                    }
+                    if(event.type=='exception') {
+                        alert(event.message);
+                        //top.location.href = '{!URLFOR($Action.CameleonCPQ__Quote__c.View, CameleonCPQ__Quote__c.Id)}';
+                        if((typeof sforce != 'undefined') && (sforce != null)) {   
+                            sforce.one.navigateToSObject('{!CameleonCPQ__Quote__c.Id}');
+                        }
+                        else {
+                            top.location.href = '{!URLFOR($Action.CameleonCPQ__Quote__c.View, CameleonCPQ__Quote__c.Id)}';
+                        } 
+                        return false;
+                    }
+                }
+            );
+        }
+        function cloneQuoteContent(clonedQuoteId) {
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.SmartCPQQuoteCustomCloner.cloneQuoteContentAction}',
+                '{!CameleonCPQ__Quote__c.Id}',
+                clonedQuoteId,
+                '{!CameleonCPQ__Quote__c.CameleonCPQ__ActiveRelease__c}',
+                false,
+                function(cpqInfo, event) {
+                    if(event.status) {
+                        top.location.href = cpqInfo.cpqUrl;
+                    }
+                    if(event.type=='exception') {
+                        alert(event.message);
+                        if((typeof sforce != 'undefined') && (sforce != null)) {   
+                            sforce.one.navigateToSObject('{!CameleonCPQ__Quote__c.Id}');
+                        }
+                        else {
+                            top.location.href = '{!URLFOR($Action.CameleonCPQ__Quote__c.View, CameleonCPQ__Quote__c.Id)}';
+                        } 
+                        return false;
+                    }
+                }
+            );
+        }
+        cloneQuote();
+    </script>
+    <apex:messages layout="table" styleClass="apexMsg"/>
+    <div id="loadingStatus" class="forceGlobalModalIndicator oneStyle oneOne">
+        <div class="modal-glass">&nbsp;</div>
+        <div class="indicatorContainer" role="alert">
+            <img class="spinnerIcon icon uiImage" alt="" src="/auraFW/resources/aura/s.gif"/>
+            <div class="message" id="_gModal_Message">In progress..</div>
+        </div>
+    </div>
+</apex:page>

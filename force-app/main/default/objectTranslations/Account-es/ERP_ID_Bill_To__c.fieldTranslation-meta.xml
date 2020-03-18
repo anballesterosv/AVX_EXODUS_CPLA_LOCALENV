@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ERP ID (Bill To) --></label>
+    <name>ERP_ID_Bill_To__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Task_Due_Date_Email_Alert</fullName>
+        <description>Task Due Date Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/Task_Due_Date_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Task_updated_by_someone_other_than_Task_Creator</fullName>
+        <description>Task updated by someone other than Task Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/Send_Email_to_Task_Creator</template>
+    </alerts>
+    <rules>
+        <fullName>7 Day Due Date Task Email Notification</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Status</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.No_of_Days_Due__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>7</value>
+        </criteriaItems>
+        <description>Send Email to Task Creator and Task Assigned To if a Task is NOT completed within 7 days of Due Date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Task_Due_Date_Email_Alert</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Task.Due_Date_Time__c</offsetFromField>
+            <timeLength>-6</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Email to Task Creator</fullName>
+        <actions>
+            <name>Task_updated_by_someone_other_than_Task_Creator</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Send email to Task Creator when the task is updated by someone other than the Task Creator</description>
+        <formula>CreatedById  &lt;&gt;  LastModifiedById</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

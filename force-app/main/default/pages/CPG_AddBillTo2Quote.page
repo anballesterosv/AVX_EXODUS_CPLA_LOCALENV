@@ -1,0 +1,27 @@
+<apex:page standardController="CameleonCPQ__Quote__c" extensions="AddBillTosToPROSQuoteExtension" showHeader="false" sidebar="false" cache="true">
+<apex:form >
+    <apex:pageBlock >
+    <apex:pageMessages />
+        <apex:pageBlockButtons >
+        <apex:commandButton value="Add Selected" action="{!addBillTos}" />
+        <apex:commandButton value="Select All" action="{!selectAllBillTos}"/>
+        <apex:commandButton value="Unselect All" action="{!unSelectAllBillTos}"/>    
+        <apex:commandButton value="Add All" action="{!addAllBillTos}"/>
+        <apex:commandButton value="Remove All" action="{!removeAllBillTos}"/>           
+        <apex:commandButton value="Back to Quote" action="{!backtoQuote}"/>
+        </apex:pageBlockButtons>       
+        <apex:pageBlockTable value="{!lstBillTos}" var="bt">
+            <apex:column headerValue="Select" style="width:5%">
+            <apex:inputCheckbox value="{!bt.selected}"/>
+            </apex:column>
+            <apex:column value="{!bt.billTo.Name}" style="width:20%"/>
+            <apex:column value="{!bt.billTo.Description__c}" style="width:30%"/>
+            <apex:column value="{!bt.billTo.Legacy_System__c}" />
+            <apex:column value="{!bt.billTo.ERP_Number__c}" />
+            <apex:column value="{!bt.billTo.Default_Currency__c}" />
+            <apex:column value="{!bt.billTo.City__c}" />
+            <apex:column value="{!bt.billTo.State__c}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

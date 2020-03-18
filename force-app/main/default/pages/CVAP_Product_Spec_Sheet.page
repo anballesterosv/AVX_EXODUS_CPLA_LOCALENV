@@ -1,0 +1,670 @@
+<apex:page standardController="Product_Specification__c" renderAs="pdf" showHeader="false" applyHtmlTag="false">
+<head>
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+b {
+    font-weight: bold;
+}
+strong {
+    font-weight: bold;
+}
+        
+        body {
+            font-family: sans-serif;
+
+        font-size: 10px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        h1, h2, h3, h4, h5 {
+            display: block;       
+        }
+        h3 {
+            font-weight: bold;
+        }
+        td {
+            vertical-align: top;
+        }
+        label {
+            padding-right: 6px;
+        }
+        .sup {
+            position: relative;
+            top: -3px;
+            font-size: 8px;
+        }
+#logo {
+    border-bottom: 1px solid black;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 10px;
+}
+       
+#summary {
+}
+        #summary h1 {
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #147730;
+        font-size: 18px;
+        }
+        
+        #summary p {
+            padding-bottom: 30px;
+        }
+
+table#main {
+        width: 100%;
+}
+        
+#product_info {   
+}
+        #product_info > h3 {
+            padding-bottom: 10px;
+            padding-left: 10px;            
+            display: block;
+            font-weight: normal;
+           color: #147730;
+        }
+        
+        #details {
+        /*
+            float: left;
+            width: 55%;        
+            */
+            margin: 0 15px 0 0;
+        }
+        
+        #details > div {
+            border: 1px solid black;
+            border-top: 0;
+        }
+        #details > div.first {
+            border-top: 1px solid black;
+        }
+        #details > div > label {
+            display: inline-block;
+            width: 55%;
+            text-align: left;
+            padding: 3px;
+        }
+        #details > div > span {
+            display: inline-block;
+            width: 38%;       
+            text-align: left;
+            padding: 3px;
+        }
+        
+        #ingredients {
+        /*
+            float: left;
+            width: 38%;        
+            */
+            
+        }
+        #ingredients h3 {
+            margin: 30px 0 20px 0;
+        }
+        #ingredients p {
+        }
+        
+.nutrition_facts {
+}
+        
+        .nutrition_facts > div {        
+            border: 1px solid black;
+            padding: 15px;
+            margin-right: 2px;
+        }
+        
+        .nutrition_facts h1 {
+        padding-top: 2px;
+        padding-bottom: 2px;            
+        font-size: 20px;
+        font-weight: bold;
+        
+        }
+        
+        .nutrition_facts h5.amount_per_serving {
+            padding-top: 2px;
+            padding-bottom: 2px;
+            font-size: 10px;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            border-top: 5px solid black;
+            margin-top: 10px;
+        }
+        
+        .daily-line {
+            padding: 2px 0 5px 0;
+            border-bottom: 1px solid black;
+        }       
+        
+        .daily-line.offset {            
+            margin-left: 10px;
+        }
+        .daily-line.offset2 {            
+            margin-left: 20px;
+        }                
+        .daily-line .percent {
+            float: right;
+        }
+        .daily-line.last {
+            border-bottom: none;
+        }        
+        .daily-line.header {
+            margin-top: 7px;
+        }
+        
+        .vitamins {
+            padding-top: 2px;
+            border-top: 5px solid black;
+        }        
+        .vitamin-line {        
+            border-bottom: 1px solid black;
+        }
+        .vitamin-line {
+            padding-top: 2px;
+            padding-bottom: 5px;
+            display: block;        
+        }
+        .vitamin-line .percent {
+            float: right; 
+            width: 20%;
+            text-align: right;
+        }
+        .disclaimer {
+            border-top: 2px solid black;
+            font-size: 8px;
+            padding-right: 20px;
+        }        
+        
+        footer {
+            position: fixed;
+            bottom: 10px;
+            left: 230px;  /* this is kinda sucky but I can't seem to be able to center it automatically */
+            text-align: center;
+            display: block;
+            clear: both;
+        }
+                
+        /* FDA specific (new label) */
+        .fda .usda-only {
+            display: none;
+        }
+        .fda .calories {
+            
+        }
+        .fda h1 {
+            border-bottom: 1px solid black;
+        }        
+        .fda .calories label {
+            font-size: 18px;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+        .fda .calories .value {
+            float: right;
+            width: 40%;
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: -5px;
+            text-align: right;
+        }    
+        .fda .serving-size {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .fda .serving-size .value {
+            float: right;
+            width: 50%;
+        text-align: right;
+        }
+        .fda .servings-per-container {
+            font-size: 13px;
+        }
+        .fda .servings-per-container {
+        }        
+        .fda .serving-size .value {
+            float: right;
+            width: 50%;
+        }        
+        .fda .diet-breakdown {
+            display: none;
+        }
+        .fda .daily-line.header {
+            border-top: 4px solid black;
+        }
+        
+        .fda h5.amount_per_serving {
+            border-bottom: none;
+        }
+        
+        /* USDA specific (original label) */
+        .usda .fda-only {
+            display: none;
+        }
+        .usda .calories {
+            display: inline-block;
+        }
+        .usda .calories label {
+            font-weight: bold;      
+        }
+        .usda .calories .value {
+            font-weight: normal;
+        }
+        .usda .calories-from-fat {
+            float: right;
+            width: 50%;
+        }
+        .usda .calories-from-fat .value {
+        }
+        .usda .daily-line.header {
+            border-top: 3px solid black;
+        }
+        
+        /* diet breakdown is only on USDA label */
+        .diet-breakdown {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .diet-breakdown tr:first-child td {
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+    
+    <div id="logo">
+        <apex:image id="theImage" value="{!JSENCODE($Resource.CKSLogoPDF)}" width="205" height="72" alt="Description of image"/>
+    </div>
+    
+        <div id="summary">
+            
+    <h1><apex:outputText Value="{!JSENCODE(Product_Specification__c.Product_Description__c)}" escape="true"/></h1>
+        <p>
+    <apex:outputText Value="{!JSENCODE(Product_Specification__c.Marketing_Phrase__c)}"/>
+            </p>
+        </div> <!-- end summary -->
+    
+    <table id="main">
+        <tr><td id="product_info" width="63%">
+    <h3>Product Information and Ingredient List</h3>
+   
+            <div id="details">
+                    
+       <div class="first">
+           <apex:outputLabel value="Product Code"/>
+           <apex:outputText value="{!JSENCODE(Product_Specification__c.Legacy_Product_Code__c)}"/>
+       </div>
+       <div>
+           <apex:outputLabel value="Item Number"/>
+           <apex:outputText value="{!JSENCODE(Product_Specification__c.SAP_Number__c)}"/>
+       </div>
+       <div>
+           <apex:outputLabel value="UPC Code"/>
+           <apex:outputText value="{!JSENCODE(Product_Specification__c.GTIN__c)}"/> 
+       </div>
+       <div>
+           <apex:outputLabel value="Pack Size"/>
+           <apex:outputText value="{!JSENCODE(Product_Specification__c.Case_Size__c)}"/>      
+        </div>
+        <div>
+           <apex:outputLabel value="Master Case Dimensions (inches)"/>
+          <!--  <span style="padding-left: -100px;">  -->
+           <apex:outputText value="{!Product_Specification__c.Length__c}L x
+           {!Product_Specification__c.Width__c}W x  {!Product_Specification__c.Height__c}H"/>      
+              <!--  </span>  -->
+        </div>
+        <div>
+            <label>
+                Master Case Cube (ft<span class='sup'>3</span>)
+            </label>
+            <apex:outputText value="{!JSENCODE(TEXT(Product_Specification__c.Mastercase_Cube_cubic_ft__c))}"/>      
+        </div>
+        <div>
+            <apex:outputLabel value="Master Case Net Wt"/>
+            <apex:outputText value="{0, number} (LBS)" styleClass="value" style="padding-left: 0px;">
+                 <apex:param value="{!Product_Specification__c.Net_Weight_Case_Lbs__c}"/>
+            </apex:outputText>
+        </div> 
+        <div>
+             <apex:outputLabel value="Master Case Gross Wt"/>            
+            <apex:outputText value="{0, number} (LBS)" styleClass="value" style="padding-left: 0px;">
+                 <apex:param value="{!Product_Specification__c.Gross_Weight_Case_Lbs__c}"/>
+            </apex:outputText>
+        </div>
+        <div>
+            <apex:outputLabel value="Pallet Ti x Hi"/><span style="padding-left: 0px;"><apex:outputText value="{0, number}" styleClass="value">
+                     <apex:param value="{!Product_Specification__c.Pallet_Tie__c}"/>
+                </apex:outputText>&nbsp;x&nbsp;<apex:outputText value="{0, number}" styleClass="value" style="padding-left: 0px;">
+                     <apex:param value="{!Product_Specification__c.Pallet_Hi__c}"/>
+                </apex:outputText>     
+            </span>
+        </div>
+        <div>
+            <apex:outputLabel value="Cases/Pallet"/>
+            <apex:outputText value="{!JSENCODE(TEXT(Product_Specification__c.Cases_Pallet__c))}"/>      
+        </div>
+        <div>
+            <apex:outputLabel value="Shelf Life (Days)"/>
+            <apex:outputText value="{!JSENCODE(TEXT(Product_Specification__c.Shelf_Life__c))}"/>      
+        </div>
+        <div>
+            <apex:outputLabel value="Frozen or Refrigerated"/>
+            <apex:outputText value="{!JSENCODE(Product_Specification__c.Frozen_or_Refridgerated__c)}"/>      
+        </div>
+        <div>
+            <apex:outputLabel value="Servings Per Case"/>
+            <apex:outputText value="{!JSENCODE(TEXT(Product_Specification__c.Servings_Per_Case__c))}"/>      
+        </div>
+        <div>
+            <apex:outputLabel value="Material Pack Type"/>
+            <apex:outputText value="{!JSENCODE(Product_Specification__c.Material_Pack_Type__c)}"/>      
+        </div>
+        <div>
+            <apex:outputLabel value="CN Labeled"/>
+            <apex:outputText value="{!JSENCODE(Product_Specification__c.CN__c)}"/>      
+        </div>
+        <div>
+            <apex:outputLabel value="Religious Designation"/>
+            <apex:outputText value="{!JSENCODE(Product_Specification__c.Religious_Designation__c)}"/>      
+        </div>      
+    </div> <!-- end details -->
+        
+    <div id="ingredients">
+        <h3>Ingredients :</h3>
+        <p>
+            <apex:outputText value="{!JSENCODE(Product_Specification__c.English_Ingredient_Statement__c)}"/>      
+            
+        </p>
+    </div> <!-- end ingredients -->
+            </td><!-- end product_info (left column) -->
+            
+            <td class="nutrition_facts">
+                <!-- this panel will get the "USDA" or "FDA" class according to the product settings -->
+    <apex:outputPanel layout="block" styleClass="{!JSENCODE( if(Product_Specification__c.Nutrition_Facts_Panel_Selection__c = 'NFP 2018', 'fda', 'usda'))}">
+        <h1>Nutrition Facts</h1>        
+        <div class="serving-per-container fda-only">
+            <apex:outputText value="{0,number}">
+                <apex:param value="{!Product_Specification__c.Servings_Per_Container__c}"/>
+            </apex:outputText>
+            serving{! if(and(not(isnull(Product_Specification__c.Servings_Per_Container__c)), Product_Specification__c.Servings_Per_Container__c > 1), 's', '') } 
+            per container
+        </div>
+        <div class="serving-size">
+            <label>Serving Size</label>
+            <span class="value">
+                <apex:outputText value="{0,number} {!JSENCODE(Product_Specification__c.Serving_Size_UOM__c)}">
+                    <apex:param value="{!Product_Specification__c.Serving_Size_g__c}" />
+                </apex:outputText>
+            </span>
+        </div>
+        <div class="serving-per-container usda-only">
+            Serving{! if(and(not(isnull(Product_Specification__c.Servings_Per_Container__c)), Product_Specification__c.Servings_Per_Container__c > 1), 's', '') } 
+            Per Container&nbsp;
+            <apex:outputText value="{0,number}">
+                <apex:param value="{!Product_Specification__c.Servings_Per_Container__c}"/>
+            </apex:outputText>
+        </div>
+        <h5 class="amount_per_serving">Amount Per Serving</h5>
+
+        <div>            
+            <div class="calories">
+                <label>Calories</label>                
+                <apex:outputText value="{0, number}" styleClass="value">
+                     <apex:param value="{!Product_Specification__c.Calories__c}"/>
+                </apex:outputText>
+            </div>            
+            <div class="usda-only calories-from-fat">
+                 <label>Calories From Fat          </label>
+                <apex:outputText value="{0, number}">
+                     <apex:param value="{!Product_Specification__c.Calories_from_Fat__c}"/>
+                </apex:outputText>
+            </div>            
+        </div>
+         
+        <div class="daily-values-container">
+            <div class="daily-line header">
+                &nbsp;
+                <div class="percent">
+                    % Daily Value*
+                </div>
+            </div>
+             <div class="daily-line">
+                 <label><strong>Total Fat</strong></label> 
+                 <apex:outputText value=" {0, number}g">
+                  <apex:param value="{!Product_Specification__c.Total_Fat_g__c}" /> 
+                  </apex:outputText>                 
+                 <div class="percent"><apex:outputText value="{0, number}%"> 
+                 <apex:param value="{!Product_Specification__c.Total_Fat_Percent__c}"/></apex:outputText></div>
+             </div>
+            <div class='daily-line offset'>
+                <label>Saturated Fat <apex:outputText value=" {0, number}g"> 
+                <apex:param value="{!Product_Specification__c.Saturated_Fat_g__c}"/> 
+                </apex:outputText></label>
+                <div class="percent"><apex:outputText value="{0, number}%"> 
+                <apex:param value="{!Product_Specification__c.Saturated_Fat_Percent__c}"/> 
+                </apex:outputText></div>    
+            </div> 
+            <div class='daily-line offset'>
+                <label><em>Trans</em> Fat <apex:outputText value=" {0, number}g">
+                 <apex:param value="{!Product_Specification__c.Trans_Fat_g__c}"/> 
+                 </apex:outputText></label>
+            </div>
+            <div class='daily-line'>
+                <label><strong>Cholesterol</strong> <apex:outputText value=" {0, number}g"> 
+                <apex:param value="{!Product_Specification__c.Cholesterol_mg__c}"/> 
+                </apex:outputText></label>
+                <div class="percent"><apex:outputText value="{0, number}%"> 
+                <apex:param value="{!Product_Specification__c.Cholesterol_Percent__c}"/></apex:outputText></div>   
+            </div>
+            <div class='daily-line'>
+                <label><strong>Sodium</strong> 
+                <apex:outputText value=" {0, number}g">
+                 <apex:param value="{!Product_Specification__c.Sodium_mg__c}"/></apex:outputText></label>
+                <div class="percent"><apex:outputText value="{0, number}%">
+                 <apex:param value="{!Product_Specification__c.Sodium_Percent__c}"/></apex:outputText></div>    
+            </div>
+            <div class='daily-line'>
+                <label><strong>Total Carbohydrate</strong> <apex:outputText value=" {0, number}g">
+                 <apex:param value="{!Product_Specification__c.Total_Carbs_g__c}"/></apex:outputText></label>
+                <div class="percent"><apex:outputText value="{0, number}%">
+                 <apex:param value="{!Product_Specification__c.Total_Carbohydates_Percent__c}"/> 
+                 </apex:outputText></div>
+            </div>
+            <div class='daily-line offset'>
+                <label>Dietary Fibers <apex:outputText value=" {0, number}g"> 
+                <apex:param value="{!Product_Specification__c.Dietary_Fiber_g__c}"/></apex:outputText></label>
+                <div class="percent"><apex:outputText value="{0, number}%"> 
+                <apex:param value="{!Product_Specification__c.Dietary_Fiber_Percent__c}"/> 
+                </apex:outputText></div>    
+            </div>
+            <div class="daily-line offset">
+                <label class="fda-only">Total Sugars</label>
+                <label class="usda-only">Sugars</label>                
+                <apex:outputText value="{0, number}g"> 
+                <apex:param value="{!Product_Specification__c.Total_Sugars_g__c}"/></apex:outputText>
+            </div>
+            <apex:outputPanel layout="block" styleClass="daily-line offset2 fda-only" rendered="{!not(isnull(Product_Specification__c.Added_Sugars__c))}">
+                <label>Includes <apex:outputText value=" {0, number}g"> 
+                <apex:param value="{!Product_Specification__c.Added_Sugars__c}"/> 
+                </apex:outputText> Added Sugars</label>
+                <div class="percent fda-only">
+                    <apex:outputText value="{0, number}%"> 
+                    <apex:param value="{!Product_Specification__c.Added_Sugars_Percent__c}"/></apex:outputText>
+                </div>   
+            </apex:outputPanel>
+            <div class='daily-line last'>
+                <label><strong>Protein</strong> <apex:outputText value=" {0, number}g"> 
+                <apex:param value="{!Product_Specification__c.Protein_g__c}"/></apex:outputText></label>
+            </div>
+        </div>
+            
+        <div class="vitamins">
+            <apex:outputPanel layout="block" rendered="{! NOT(ISNULL(Product_Specification__c.Vitamin_A_Percent__c))}" styleClass="vitamin-line usda-only">                
+                <label>Vitamin A
+                </label>
+                <div class="percent">
+                    <apex:outputText value="{0, number}%">
+                     <apex:param value="{!Product_Specification__c.Vitamin_A_Percent__c}" /> </apex:outputText>
+                </div>
+            </apex:outputPanel>
+                        
+            <apex:outputPanel layout="block" rendered="{! NOT(ISNULL(Product_Specification__c.Vitamin_C_Percent__c))}" styleClass="vitamin-line usda-only">                
+                <label>Vitamin C</label>
+                <div class="percent">
+                    <apex:outputText value="{0, number}%">
+                     <apex:param value="{!Product_Specification__c.Vitamin_C_Percent__c}" /> </apex:outputText>
+                </div>
+            </apex:outputPanel>
+            
+            <apex:outputPanel layout="block" rendered="{! NOT(ISNULL(Product_Specification__c.Vitamin_D_Percent__c))}" styleClass="vitamin-line fda-only">                
+                <label>Vitamin D
+                <apex:outputText rendered="{! NOT(ISNULL(Product_Specification__c.Vitamin_D_mcg__c))}"
+                                 styleClass="value fda-only" value=" {0, number, #0} mcg"> <apex:param value="{!Product_Specification__c.Vitamin_D_mcg__c}"/></apex:outputText>                            
+                </label>
+                <div class="percent">
+                    <apex:outputText value="{0, number}%">
+                     <apex:param value="{!Product_Specification__c.Vitamin_D_Percent__c}"/></apex:outputText>
+                </div>
+            </apex:outputPanel>
+            
+            <apex:outputPanel layout="block" rendered="{! NOT(ISNULL(Product_Specification__c.Calcium_percent__c))}" styleClass="vitamin-line">                
+                <label>Calcium
+                <apex:outputText rendered="{! NOT(ISNULL(Product_Specification__c.Calcium_mg__c))}"
+                                 styleClass="value fda-only" value=" {0, number, #0} mg"> <apex:param value="{!Product_Specification__c.Calcium_mg__c}"/></apex:outputText>                             
+                </label>
+                <div class="percent">
+                    <apex:outputText value="{0, number}%"> 
+                    <apex:param value="{!Product_Specification__c.Calcium_percent__c}" /> </apex:outputText>
+                </div>
+            </apex:outputPanel>
+            
+            <apex:outputPanel layout="block" rendered="{! NOT(ISNULL(Product_Specification__c.Iron_Percent__c))}" styleClass="vitamin-line">                
+                Iron
+                <apex:outputText rendered="{! NOT(ISNULL(Product_Specification__c.Amount_Per_Serving_Iron_mg__c))}"
+                                 styleClass="value fda-only" value=" {0, number, #0} mg"> <apex:param value="{!Product_Specification__c.Amount_Per_Serving_Iron_mg__c}"/></apex:outputText>                             
+                <div class="percent">
+                    <apex:outputText value="{0, number}%"> 
+                    <apex:param value="{!Product_Specification__c.Iron_Percent__c}" /> </apex:outputText>
+                </div>
+            </apex:outputPanel>
+            
+            <apex:outputPanel layout="block" rendered="{! NOT(ISNULL(Product_Specification__c.Potassium_Percent__c))}" styleClass="vitamin-line fda-only">                
+                <label>Potassium
+                <apex:outputText rendered="{! NOT(ISNULL(Product_Specification__c.Potassium__c))}"
+                                 styleClass="value fda-only" value=" {0, number, #0} mg"> <apex:param value="{!Product_Specification__c.Potassium__c}"/></apex:outputText>                             
+                </label>
+                <div class="percent">
+                    <apex:outputText value="{0, number}%">
+                     <apex:param value="{!Product_Specification__c.Potassium_Percent__c}" /> </apex:outputText>
+                </div>
+            </apex:outputPanel>
+        </div>
+        
+        <p class="disclaimer fda-only">
+            *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet.  2,000 calories a day is used for general nutrition advice.  This is a representation of the nutrition label. The actual nutrition label on the product may vary slightly.
+        </p>
+        <p class="disclaimer usda-only">
+            *Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs. This is a representation of the nutrition label. The actual nutrition label on the product may vary slightly.
+        </p>       
+        <!-- breakdown is shown only on the "original" label -->
+        <table class="diet-breakdown usda-only">
+            <tr>
+                <td></td>
+                <td>Calories:</td>
+                <td>2000</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <th>Total Fat</th>
+                <td>Less than</td>
+                <td>65g</td>
+                <td>80g</td>
+            </tr>
+            <tr>
+                <th>Sat Fat</th>
+                <td>Less than</td>
+                <td>20g</td>
+                <td>25g</td>
+            </tr>
+            <tr>
+                <th>Cholesterol</th>
+                <td>Less than</td>
+                <td>300mg</td>
+                <td>300mg</td>
+            </tr>
+            <tr>
+                <th>Sodium</th>
+                <td>Less than</td>
+                <td>2400mg</td>
+                <td>2400mg</td>
+            </tr>
+            <tr>
+                <th>Total Carbohydrate</th>
+                <td></td>
+                <td>300g</td>
+                <td>375g</td>
+            </tr>
+            <tr>
+                <th>Dietary Fiber</th>
+                <td></td>
+                <td>25g</td>
+                <td>30g</td>
+            </tr>
+        </table>
+                </apex:outputPanel>
+            </td> <!-- nutrition_facts -->
+        </tr>
+    </table>
+    
+    <footer>
+        206 West Fourth&nbsp;Street&nbsp;Monticello,&nbsp;MN&nbsp;55362<br/>
+        Phone:&nbsp;763-271-5600&nbsp;&nbsp;1-800-872-3447&nbsp;&nbsp;www.usaeggs.com
+    </footer>
+   
+</apex:page>

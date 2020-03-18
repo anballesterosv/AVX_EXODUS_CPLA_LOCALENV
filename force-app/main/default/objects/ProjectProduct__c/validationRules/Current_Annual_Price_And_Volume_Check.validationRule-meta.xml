@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Annual_Price_And_Volume_Check</fullName>
+    <active>true</active>
+    <description>Throws error when Current Annual Price and Current FY Annual Volume fields are empty and Project Type is D Support or D Problem or D Proactive or D Complaint/IMPASS</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Project__r.Type__c, &quot;D Support&quot;),
+ISPICKVAL(Project__r.Type__c, &quot;D Problem&quot;),
+ISPICKVAL(Project__r.Type__c, &quot;D Proactive&quot;),
+ISPICKVAL(Project__r.Type__c, &quot;D Complaint/IMPASS&quot;)),
+
+OR(ISBLANK( CurrentAnnualPrice__c),
+ ISBLANK( CurrentFYAnnualVolume__c),
+ ISBLANK( Current_Annual_Margin__c ) ), Trigger_workflow__c = False)</errorConditionFormula>
+    <errorMessage>Please ensure the following fields are provide for Defense type Project:  1) Current Annual Price 2) Current FY Annual Volume 3) Current Annual Margin</errorMessage>
+</ValidationRule>

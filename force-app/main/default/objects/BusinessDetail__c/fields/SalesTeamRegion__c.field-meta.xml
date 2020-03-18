@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesTeamRegion__c</fullName>
+    <description>This Sales team region picklist field has following values,
+BE / FR
+Bio-Energy
+Danone
+ES Team
+FS France
+Feed
+FS Iberia
+NL Team
+Pepsico
+PLM
+RFS Germany &amp; East EU
+RFS Key Account
+RFs West EU
+Team 21
+Technical Applications
+Uk / Ireland
+Unilever
+
+Created by EB on 4/10/2017 for GEOS Sprint1</description>
+    <externalId>false</externalId>
+    <label>Sales Team Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BE / FR</fullName>
+                <default>false</default>
+                <label>BE / FR</label>
+            </value>
+            <value>
+                <fullName>Bio-Energy</fullName>
+                <default>false</default>
+                <label>Bio-Energy</label>
+            </value>
+            <value>
+                <fullName>Danone</fullName>
+                <default>false</default>
+                <label>Danone</label>
+            </value>
+            <value>
+                <fullName>ES Team</fullName>
+                <default>false</default>
+                <label>ES Team</label>
+            </value>
+            <value>
+                <fullName>FS France</fullName>
+                <default>false</default>
+                <label>FS France</label>
+            </value>
+            <value>
+                <fullName>Feed</fullName>
+                <default>false</default>
+                <label>Feed</label>
+            </value>
+            <value>
+                <fullName>FS Iberia</fullName>
+                <default>false</default>
+                <label>FS Iberia</label>
+            </value>
+            <value>
+                <fullName>NL Team</fullName>
+                <default>false</default>
+                <label>NL Team</label>
+            </value>
+            <value>
+                <fullName>Pepsico</fullName>
+                <default>false</default>
+                <label>Pepsico</label>
+            </value>
+            <value>
+                <fullName>PLM</fullName>
+                <default>false</default>
+                <label>PLM</label>
+            </value>
+            <value>
+                <fullName>RFS Germany &amp; East EU</fullName>
+                <default>false</default>
+                <label>RFS Germany &amp; East EU</label>
+            </value>
+            <value>
+                <fullName>RFS Key Account</fullName>
+                <default>false</default>
+                <label>RFS Key Account</label>
+            </value>
+            <value>
+                <fullName>RFs West EU</fullName>
+                <default>false</default>
+                <label>RFs West EU</label>
+            </value>
+            <value>
+                <fullName>Team 21</fullName>
+                <default>false</default>
+                <label>Team 21</label>
+            </value>
+            <value>
+                <fullName>Technical Applications</fullName>
+                <default>false</default>
+                <label>Technical Applications</label>
+            </value>
+            <value>
+                <fullName>Uk / Ireland</fullName>
+                <default>false</default>
+                <label>Uk / Ireland</label>
+            </value>
+            <value>
+                <fullName>Unilever</fullName>
+                <default>false</default>
+                <label>Unilever</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

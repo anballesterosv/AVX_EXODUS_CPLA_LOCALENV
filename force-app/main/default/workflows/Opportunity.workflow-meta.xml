@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>NOF_PPP_Pricing_Alert</fullName>
+        <description>NOF PPP Pricing Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>Account Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Business Development Lead</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Business Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Executive Sponsor</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Lead Qualifier</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Marketing</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Price Consultant</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Project Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>R&amp;D</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Leader</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Rep</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/Quote_Priced_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Renewal_Notification_using_Email_alert</fullName>
+        <ccEmails>THITE_VAISHALI@CRGL-THIRDPARTY.COM</ccEmails>
+        <description>Opportunity Renewal Notification using Email alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/Opportunity_Renewal_Notification_Html_alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_Opportunity_Notification</fullName>
+        <description>Renewal Opportunity Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/Automated_Renewal_Opportunity_Notice</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Copy_CloseDate_to_Estimated_Close_Date</fullName>
+        <field>EstimatedCloseDate__c</field>
+        <formula>CloseDate</formula>
+        <name>Copy CloseDate to Estimated Close Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_Original_User_Input_Opp_Name</fullName>
+        <field>OriginalName__c</field>
+        <formula>Name</formula>
+        <name>Copy Original User Input Opp Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Next_Steps_Presence_check</fullName>
+        <field>Next_Steps_Presence__c</field>
+        <literalValue>1</literalValue>
+        <name>Next Steps Presence check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_InitialRevenueUpdate</fullName>
+        <field>Initial_Revenue__c</field>
+        <formula>Amount</formula>
+        <name>Opportunity InitialRevenueUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_InitialVolumeUpdate</fullName>
+        <description>Opportunity_InitialVolumeUpdate</description>
+        <field>Initial_Volume__c</field>
+        <formula>Volume__c</formula>
+        <name>Opportunity InitialVolumeUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Order_Of_workflow</fullName>
+        <field>WorkFlowOrder__c</field>
+        <formula>1</formula>
+        <name>Set Order Of workflow</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateOpportunityStageToExplore</fullName>
+        <field>StageName</field>
+        <literalValue>Explore</literalValue>
+        <name>Update Opportunity Stage To Explore</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Next_Steps_Presence</fullName>
+        <field>Next_Steps_Presence__c</field>
+        <literalValue>0</literalValue>
+        <name>Update Next Steps Presence</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Close_Date</fullName>
+        <description>Update opportunity close date when the stage is close lost.</description>
+        <field>CloseDate</field>
+        <formula>TODAY()</formula>
+        <name>Update Opportunity Close Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Name_1</fullName>
+        <field>Name</field>
+        <formula>IF(
+   ISNEW(),
+       BusinessAlias__c &amp; &quot; | &quot; &amp; Account.Name &amp; &quot; | &quot;&amp; CloseDateTEXT__c &amp;&quot; | &quot;&amp; Name,
+       IF(
+          ISCHANGED(Business__c),
+          SUBSTITUTE(Name, PRIORVALUE(BusinessAlias__c),BusinessAlias__c),
+          Name
+          )
+   )</formula>
+        <name>Update Opportunity Name 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Stage_To_Discovery</fullName>
+        <description>Update Opportunity stage to discovery for Distribution &amp; Trade</description>
+        <field>StageName</field>
+        <literalValue>Discovery</literalValue>
+        <name>Update Opportunity Stage To Discovery</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opporunity_Name</fullName>
+        <field>Name</field>
+        <formula>IF( 
+ISNEW(), 
+Account.Name &amp; &quot; | &quot;&amp; Name &amp;&quot; | &quot;&amp; CloseDateTEXT__c,  
+Account.Name &amp; &quot; | &quot;&amp; OriginalName__c &amp;&quot; | &quot;&amp; CloseDateTEXT__c
+)</formula>
+        <name>Update Opporunity Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>namedefault</fullName>
+        <field>Name</field>
+        <formula>IF( 
+ISNEW(), 
+BusinessAlias__c &amp; &quot; | &quot; &amp; Account.Name &amp; &quot; | &quot;&amp; CloseDateTEXT__c &amp;&quot; | &quot;&amp; Name, 
+IF( 
+ISCHANGED(CloseDate) || ISCHANGED(Business__c) , 
+BusinessAlias__c &amp; &quot; | &quot; &amp; Account.Name &amp; &quot; | &quot;&amp; CloseDateTEXT__c &amp;&quot; | &quot;&amp; OriginalName__c, 
+Name 
+) 
+)</formula>
+        <name>namedefault</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>nameforClone</fullName>
+        <field>Name</field>
+        <formula>IF( 
+ISNEW(), 
+Account.Name &amp; &quot; | &quot;&amp; OriginalName__c &amp;&quot; | &quot;&amp; CloseDateTEXT__c, 
+IF(
+          ISCHANGED(CloseDate) || ISCHANGED(Business__c) ,
+             Account.Name &amp; &quot; | &quot;&amp; OriginalName__c &amp;&quot; | &quot;&amp; CloseDateTEXT__c,Name
+          )
+)</formula>
+        <name>nameforClone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Next Steps Presence Update check</fullName>
+        <actions>
+            <name>Next_Steps_Presence_check</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Next_Step__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Next Steps Presence Update check</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Next Steps Presence check</fullName>
+        <actions>
+            <name>Update_Next_Steps_Presence</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Next_Step__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Next Steps Presence check</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Close Date Update</fullName>
+        <actions>
+            <name>Update_Opportunity_Close_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>Opportunity Close Date Update for Closed Won/Lost Opportunity.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Naming Convention</fullName>
+        <actions>
+            <name>Update_Opporunity_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Opportunity Name to Cargill Opportunity Naming Convention:
+Business Alias | Account Name | Close Date | User Provide Opportunity Name
+
+Update the Naming Convention if any of the component values change.</description>
+        <formula>(ISNEW() || ISCHANGED(AccountId) || ISCHANGED(CloseDate) || ISCHANGED( OriginalName__c ))&amp;&amp; NOT(AND(ISNEW(), IsApexCloned__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Naming Convention For Cloned Records</fullName>
+        <actions>
+            <name>nameforClone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This will Update the fields for cloned records this workflow will update the default value for opportunity</description>
+        <formula>AND(    RecordType.Name &lt;&gt; &quot;Project&quot;,    IsApexCloned__c  =  TRUE,    OR(       ISCHANGED(CloseDate),       ISCHANGED(AccountId),       ISCHANGED(BusinessAlias__c), ISNEW()       )     )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Renewal Opportunity Notification</fullName>
+        <actions>
+            <name>Renewal_Opportunity_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Sends the email notification to the owner when created by != owner of the record.</description>
+        <formula>AND(CreatedBy.Id != OwnerId, IsApexCloned__c = True)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Estimated Close Data on Create</fullName>
+        <actions>
+            <name>Copy_CloseDate_to_Estimated_Close_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Copy the originally estimated Close Date to Estimated Close Date on Create.</description>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>SetDefaultOpportunityStage</fullName>
+        <actions>
+            <name>UpdateOpportunityStageToExplore</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set Opportunity Stage default to &quot;Explore&quot; except Distribution &amp; Trade Record Types</description>
+        <formula>RecordType.DeveloperName =  &#39;Turkey&#39;   || RecordType.DeveloperName = &#39;Non_CPQ&#39;  || RecordType.DeveloperName = &#39;Egg&#39;  || RecordType.DeveloperName = &#39;Deli&#39;  || RecordType.DeveloperName = &#39;Boxed_Beef_Ground_Beef&#39;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>SetDefaultOpportunityStageForDistribution%26Trade</fullName>
+        <actions>
+            <name>Update_Opportunity_Stage_To_Discovery</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set Opportunity Stage default to &quot;Discovery&quot; for Distribution &amp; Trade Record Types</description>
+        <formula>RecordType.DeveloperName =  &#39;Distribution_Trade&#39;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdateOpportunityInitialRevenueandVolume</fullName>
+        <actions>
+            <name>Opportunity_InitialRevenueUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Opportunity_InitialVolumeUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Explore,Discover,Create</value>
+        </criteriaItems>
+        <description>Initial Volume field gets copied from Volume field till Opportunity is in stages: Explore, Discover and Create * Initial Revenue field gets copied from Revenue field till Opportunity is in stages: Explore, Discover and Create</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

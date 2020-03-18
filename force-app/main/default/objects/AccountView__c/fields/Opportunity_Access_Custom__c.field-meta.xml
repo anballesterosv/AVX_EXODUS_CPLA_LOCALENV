@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Access_Custom__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Opportunity_Access__c, &#39;Private&#39;, &#39;None&#39;,&#39;Read Only&#39;,&#39;Read&#39;,&#39;Read/Write&#39;,&#39;Edit&#39;,&#39;&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opportunity Access Custom</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

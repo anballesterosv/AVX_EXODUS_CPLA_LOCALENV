@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Vol_and_Distributions_must_match</fullName>
+    <active>true</active>
+    <description>The Annual Volume and the sum of all the Seasonal Distributions should be equal.</description>
+    <errorConditionFormula>IF(AND(NOT(ISBLANK(Annual_Volume__c)), OR(NOT(ISBLANK(January__c)), NOT(ISBLANK(February__c)), NOT(ISBLANK(March__c)), NOT(ISBLANK(April__c)), NOT(ISBLANK(May__c)), NOT(ISBLANK(June__c)), NOT(ISBLANK(July__c)), NOT(ISBLANK(August__c)), NOT(ISBLANK(September__c)), NOT(ISBLANK(October__c)), NOT(ISBLANK(November__c)), NOT(ISBLANK(December__c))), OR(NOT(January__c = 0), NOT(February__c = 0), NOT(March__c = 0), NOT(April__c = 0), NOT(May__c = 0), NOT(June__c = 0), NOT(July__c = 0), NOT(August__c = 0), NOT(September__c = 0), NOT(October__c = 0), NOT(November__c = 0), NOT(December__c = 0)
+)), 
+IF((Annual_Volume__c &lt;&gt; (
+IF( ISBLANK(January__c) , 0, January__c)+
+IF( ISBLANK(February__c) , 0, February__c)+
+IF( ISBLANK(March__c) , 0, March__c)+
+IF( ISBLANK(April__c) , 0, April__c)+
+IF( ISBLANK(May__c) , 0, May__c)+
+IF( ISBLANK(June__c) , 0, June__c)+
+IF( ISBLANK(July__c) , 0, July__c)+
+IF( ISBLANK(August__c) , 0, August__c)+
+IF( ISBLANK(September__c) , 0, September__c)+
+IF( ISBLANK(October__c) , 0, October__c)+
+IF( ISBLANK(November__c) , 0, November__c)+
+IF( ISBLANK(December__c) , 0, December__c))
+),true,false), 
+false)</errorConditionFormula>
+    <errorMessage>The Annual Volume and the sum of all the Seasonal Distributions should be equal. Please ensure that these values match.</errorMessage>
+</ValidationRule>

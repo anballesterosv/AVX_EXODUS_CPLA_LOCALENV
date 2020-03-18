@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Protein_Customer_Service_Knowledge</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>CS_Protein_Customer_Service_Compact_Layout</compactLayoutAssignment>
+    <description>This record type is used by Protein Customer Service Knowledge Article. All articles are Job Aid.</description>
+    <label>Protein Customer Service Knowledge</label>
+    <picklistValues>
+        <picklist>CS_Category__c</picklist>
+        <values>
+            <fullName>Fresh Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadership Presentations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Boarding Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Documentation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CS_Market_Channel__c</picklist>
+        <values>
+            <fullName>Food Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Protein Ingredients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

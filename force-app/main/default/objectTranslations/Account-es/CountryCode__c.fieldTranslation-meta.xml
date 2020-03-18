@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Código de País</label>
+    <name>CountryCode__c</name>
+    <picklistValues>
+        <masterLabel>CO</masterLabel>
+        <translation><!-- CO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR</masterLabel>
+        <translation><!-- CR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GT</masterLabel>
+        <translation><!-- GT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HN</masterLabel>
+        <translation><!-- HN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NI</masterLabel>
+        <translation><!-- NI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

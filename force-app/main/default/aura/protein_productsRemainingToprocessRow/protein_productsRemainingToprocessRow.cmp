@@ -1,0 +1,57 @@
+<!--Child-->
+<aura:component controller="Protein_SampleRequestFulfillmentCtlr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >   
+    <aura:attribute name="SampleProductChild" type="SampleRequestProduct__c"/>
+    <aura:attribute name="rowIndex" type="String"/>
+    <aura:attribute name="item" type="sObject" default="{}"/>
+    <aura:attribute name="DisclaimerValue" type="Boolean" default="true" />
+    <aura:attribute name="isChecked" type="boolean" default="false"/>
+    <aura:attribute name="sampleRequestProductWrapper" type="List" default="[]"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:handler name="componentEventFired" event="c:AddRowEvent1" action="{!c.handleEvent}"></aura:handler>
+    <aura:attribute name="listOfAllProducts" type="list"/> 
+    <aura:attribute name="IsSRFOnComplete" type="Boolean" default="false" /> 
+    
+    <aura:if isTrue="{!v.DisclaimerValue}">
+        <tr class="slds-text-title_caps">
+            <td>
+                <aura:if isTrue="{!v.IsSRFOnComplete==false}">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <label class="slds-checkbox">
+                                <ui:inputCheckbox text="{!v.item.prdId}" aura:id="checkProduct" change="{!c.checkboxSelect}" value="{!v.item.isChecked}"/>
+                                <span class="slds-checkbox_faux"></span>
+                                <span class="slds-form-element__label text"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                </aura:if> 
+            </td>
+            <td>
+                <ui:outputText class="field"  value="{!v.item.prdName}"/>
+            </td>
+            <td>
+                <ui:outputText value="{!v.item.prdProductDescription}"/>
+            </td>    
+            <td>
+                <ui:outputText value="{!v.item.prdJulianProductionDate}"/>
+            </td>     
+            <td>
+                <ui:outputText value="{!v.item.prdShippedWeight}"/>
+            </td>    
+            <td>
+                <ui:outputText value="{!v.item.prdProductCost}"/>
+            </td>   
+            <td>
+                <ui:outputText value="{!v.item.prdQuantity}"/>
+            </td>  
+            <td>
+                <ui:outputText value="{!v.item.prdType}"/>
+            </td>    
+            <td>
+                <ui:outputText value="{!v.item.prdOtherType}"/>
+            </td>    
+            
+        </tr>
+    </aura:if>
+</aura:component>

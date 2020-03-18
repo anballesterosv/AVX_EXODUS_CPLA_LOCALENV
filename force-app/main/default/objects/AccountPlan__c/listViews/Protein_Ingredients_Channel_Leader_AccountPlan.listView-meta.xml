@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protein_Ingredients_Channel_Leader_AccountPlan</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Protein Ingredients Channel Leader</label>
+    <queue>Protein_Ingredients_Channel_Leader</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CVAP_Shipping_Comp_Reqd_with_Tracking_No</fullName>
+    <active>true</active>
+    <description>CVAP Shipping Company is required when Tracking # entered</description>
+    <errorConditionFormula>ISBLANK(TEXT(Shipping_Company__c)) 
+&amp;&amp;
+NOT(ISBLANK(Tracking__c))</errorConditionFormula>
+    <errorMessage>Shipping Company is required when Tracking # entered</errorMessage>
+</ValidationRule>

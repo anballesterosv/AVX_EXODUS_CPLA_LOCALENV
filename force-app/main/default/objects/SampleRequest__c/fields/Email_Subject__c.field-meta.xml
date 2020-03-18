@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Subject__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(ISPICKVAL(Pull_Product_From_Distributor__c, &#39;Yes&#39;),
+&#39;A Distributor Pull Sample for &#39; &amp; SRCustomer_Name__r.Name &amp; &#39; &#39; &amp; Sample_Request_No__c &amp; &#39; has been processed&#39;,
+&#39;A Sample for &#39; &amp; SRCustomer_Name__r.Name &amp; &#39; &#39; &amp; Sample_Request_No__c &amp; &#39; has been requested for delivery on &#39; &amp; TEXT(MONTH(Requested_Delivery_Date__c)) &amp; &#39;-&#39; &amp; TEXT(DAY(Requested_Delivery_Date__c)) &amp; &#39;-&#39; &amp; TEXT(YEAR(Requested_Delivery_Date__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Email Subject</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

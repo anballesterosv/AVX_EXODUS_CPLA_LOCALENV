@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Primary Quote synchronized with Opportunity --></help>
+    <label><!-- Primary Quote --></label>
+    <name>Primary_Quote__c</name>
+</CustomFieldTranslation>

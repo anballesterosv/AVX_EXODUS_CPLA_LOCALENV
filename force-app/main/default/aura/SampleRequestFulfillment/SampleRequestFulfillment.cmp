@@ -1,0 +1,150 @@
+<aura:component controller="Protein_SampleRequestFulfillmentCtlr" implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="SampleFulfillment" type="Sample_Request_Fulfillment__c" default=""/>
+    <aura:attribute name="eventMessage" type="String"/> 
+    <aura:handler name="sampleCmpEvent" event="c:AddRowEvent" action="{!c.parentComponentEvent}"/>
+    <aura:attribute name="saved" type="Boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="sampleRequestProductWrapper" type="List" default="[]"/>
+    <aura:attribute name="sampleRequestSelectedProductWrap" type="List" default="[]"/>
+    <aura:attribute name="spinner" type="boolean" default="false"/>
+    <aura:attribute name="IsSRFOnComplete" type="Boolean" default="false" /> 
+    <aura:attribute name="showError" type="List" default=""/>
+    
+    <aura:if isTrue="{!v.spinner}">
+        <lightning:spinner aura:id="mySpinner" />
+    </aura:if>
+    
+    <div class="slds-box slds-theme_default ">  
+        <lightning:recordEditForm aura:id="FulViewForm" objectApiName="Sample_Request_Fulfillment__c" recordId="{!v.recordId}" onsubmit="{!c.onRecordSubmit}" onsuccess="{!c.onRecordSuccess}" onload="{!c.handleLoad}" onerror="{!c.onError}">
+            
+            <!--lightning:messages /-->
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <div class="slds-page-header">
+                        
+                        <br></br>
+                        <div class="slds-grid slds-size_12-of-12">    
+                            <div class="slds-col slds-size_5-of-12">
+                                <h1 class="slds-page-header__title slds-text-heading_medium"><B>Sample Request Fulfillment</B></h1> 
+                            </div>
+                            <div class="slds-col slds-size_7-of-12">   
+                                <lightning:button variant="brand" title="Brand action" type="submit" label="Save"/>   
+                                <lightning:button variant="brand" label="Cancel" onclick="{!c.redirect}"/>  
+                            </div> 
+                        </div> 
+                        <br></br>
+                        
+                        <div class="slds-page-header slds-align_absolute-Left colour1">
+                            <h1 class="slds-page-header__title "><B>Details</B></h1> 
+                        </div>
+                        
+                    </div>
+                
+                    <div class="slds-col slds-size_12-of-12">
+                        <aura:if isTrue="{!v.showError.length>0}">
+                            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert" >
+                                <aura:iteration items="{!v.showError}" var="err">
+                                    <aura:if isTrue="{!err!=''}">    
+                                        {!err}<br></br> 
+                                        
+                                    </aura:if>
+                                </aura:iteration>
+                                <div class="slds-notify__close">
+                                    <lightning:buttonIcon iconName="utility:close" variant="border-inverse" onclick="{!c.clearError}"/>
+                                </div>
+                            </div>
+                        </aura:if>
+                    </div> 
+                    
+                    <div class="container-fluid slds-grid slds-theme_default slds-p-left_xx-large">
+                        <div class="slds-col  slds-col--padded  slds-p-bottom_xxx-small slds-p-left_xx-large"> 
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Sample Fulfillment #</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Name" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Requested Delivery Date</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Requested_Delivery_Date__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Sample Ship Date</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Sample_Ship_Date__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Pack Date (CIC Requests Only)</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Production_Date__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>COA required (CIC Requests Only)	</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="COA_required_CIC_Requests_Only__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Plant</label></div>
+                                <div class="slds-col slds-size_3-of-12 hideDiv">
+                                    <lightning:inputField fieldName="Plant_Lookup__c" required="true" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-p-Right_xx-large ">
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Sample Request</label></div>
+                                <div class="slds-col slds-size_3-of-12 hideDiv">
+                                    <lightning:inputField fieldName="Sample_Request__c" variant="label-hidden" aura:id="sampleLK"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Shipping Company</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Shipping_Company__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Tracking #</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Tracking__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Total Supply Cost</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Total_Supply_Cost__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Total Freight Cost</label></div>
+                                <div class="slds-col slds-size_3-of-12 ">
+                                    <lightning:inputField fieldName="Total_Freight_Cost__c" variant="label-hidden"/>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_small ">  
+                                <div class="slds-col slds-size_3-of-12 "><label>Status</label></div>
+                                <div class="slds-col slds-size_3-of-12">
+                                    <lightning:inputField fieldName="Status__c" variant="label-hidden" aura:id="sampleStatus"/>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                </div> 
+            </div>   
+            
+        </lightning:recordEditForm>
+        <br></br>
+        <br></br>
+        
+        <c:Protein_ProductsAlreadySelectedTable  sampleRequestSelectedProductWrap="{!v.sampleRequestSelectedProductWrap}" recordId="{!v.recordId}" IsSRFOnComplete="{!v.IsSRFOnComplete}"/>
+        <c:protein_productsRemainingToprocessTable spinner="{!v.spinner}" sampleRequestProductWrapper="{!v.sampleRequestProductWrapper}" recordId="{!v.recordId}" IsSRFOnComplete="{!v.IsSRFOnComplete}"/>
+    </div>
+    
+</aura:component>

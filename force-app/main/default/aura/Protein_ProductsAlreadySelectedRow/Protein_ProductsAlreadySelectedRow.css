@@ -1,0 +1,6 @@
+.THIS.redOnYellow svg {
+    fill : red;
+}
+.THIS.redOnYellow {
+   background-color:yellow !important;
+}

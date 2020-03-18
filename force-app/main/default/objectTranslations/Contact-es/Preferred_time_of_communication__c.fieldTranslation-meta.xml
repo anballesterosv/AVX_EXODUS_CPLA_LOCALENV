@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Preferred time of communication --></label>
+    <name>Preferred_time_of_communication__c</name>
+</CustomFieldTranslation>

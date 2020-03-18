@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ShowName --></label>
+    <name>ShowName__c</name>
+    <picklistValues>
+        <masterLabel>Product Brand</masterLabel>
+        <translation><!-- Product Brand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Code</masterLabel>
+        <translation><!-- Product Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Family</masterLabel>
+        <translation><!-- Product Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Name</masterLabel>
+        <translation><!-- Product Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product SalesOrg</masterLabel>
+        <translation><!-- Product SalesOrg --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

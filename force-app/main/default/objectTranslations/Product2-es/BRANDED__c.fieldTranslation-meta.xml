@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- BRANDED --></label>
+    <name>BRANDED__c</name>
+    <picklistValues>
+        <masterLabel>BRANDED</masterLabel>
+        <translation><!-- BRANDED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONTROL BRAND</masterLabel>
+        <translation><!-- CONTROL BRAND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOUSE BRAND</masterLabel>
+        <translation><!-- HOUSE BRAND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRIVATE LABEL</masterLabel>
+        <translation><!-- PRIVATE LABEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNBRANDED</masterLabel>
+        <translation><!-- UNBRANDED --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

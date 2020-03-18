@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Food_Horizons</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Food Horizons</label>
+        <sharedTo>
+            <roleAndSubordinates>Food_Horizons_Leader</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Protein_Business_Leads</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Protein Business Leads</label>
+        <sharedTo>
+            <role>Protein_Ingredients_Business_Lead</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Retail_CDN_hierarchy</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Retail CDN hierarchy</label>
+        <sharedTo>
+            <roleAndSubordinates>Retail_CDN_Region_Sales_Lead</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Retail_Sales_Leader</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Retail Sales Leader</label>
+        <sharedTo>
+            <role>Retail_Sales_Leader</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Role_Retail_Regional_Sales_Manager_Canada</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Role_Retail Regional Sales Manager - Canada</label>
+        <sharedTo>
+            <roleAndSubordinates>Retail_Regional_Sales_Manager_Canada</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>notEqual</operation>
+            <value>Null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Opportunity_to_Trade_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Opportunity to Trade Sales</label>
+        <sharedTo>
+            <roleAndSubordinates>Retail_Trade_Sales_Leaders</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Opportunity_with_Growth_Venture_Roles</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Opportunity with Growth Venture Roles</label>
+        <sharedTo>
+            <roleAndSubordinates>Growth_Ventures_Leader</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>AccountId</field>
+            <operation>notEqual</operation>
+            <value>Null</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

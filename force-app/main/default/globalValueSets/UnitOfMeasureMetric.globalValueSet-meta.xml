@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Milligram (mg)</fullName>
+        <default>false</default>
+        <label>Milligram (mg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Gram (g)</fullName>
+        <default>false</default>
+        <label>Gram (g)</label>
+    </customValue>
+    <customValue>
+        <fullName>Kilogram (kg)</fullName>
+        <default>false</default>
+        <label>Kilogram (kg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Metric Ton (mt)</fullName>
+        <default>false</default>
+        <label>Metric Ton (mt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Milliliter (ml)</fullName>
+        <default>false</default>
+        <label>Milliliter (ml)</label>
+    </customValue>
+    <customValue>
+        <fullName>Liter (L)</fullName>
+        <default>false</default>
+        <label>Liter (L)</label>
+    </customValue>
+    <description>Units of Measure using the Metric System.</description>
+    <masterLabel>Unit of Measure (Metric)</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

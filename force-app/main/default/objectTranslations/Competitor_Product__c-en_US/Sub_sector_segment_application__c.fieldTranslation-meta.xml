@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What particular sub sector/segment/application are they focusing on? --></help>
+    <label><!-- Sub sector/segment/application --></label>
+    <name>Sub_sector_segment_application__c</name>
+    <picklistValues>
+        <masterLabel>Bakery</masterLabel>
+        <translation><!-- Bakery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beverages</masterLabel>
+        <translation><!-- Beverages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confection</masterLabel>
+        <translation><!-- Confection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Convenience Foods</masterLabel>
+        <translation><!-- Convenience Foods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dairy</masterLabel>
+        <translation><!-- Dairy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fruit</masterLabel>
+        <translation><!-- Fruit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infant and Baby Food</masterLabel>
+        <translation><!-- Infant and Baby Food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meat</masterLabel>
+        <translation><!-- Meat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Care</masterLabel>
+        <translation><!-- Personal Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pet Food</masterLabel>
+        <translation><!-- Pet Food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharma</masterLabel>
+        <translation><!-- Pharma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snacks &amp; cereals</masterLabel>
+        <translation><!-- Snacks &amp; cereals --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

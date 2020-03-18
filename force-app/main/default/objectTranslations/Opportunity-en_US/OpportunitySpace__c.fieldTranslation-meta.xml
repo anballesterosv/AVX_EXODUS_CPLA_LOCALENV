@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Opportunity Space --></label>
+    <name>OpportunitySpace__c</name>
+    <picklistValues>
+        <masterLabel>Antibiotic Free</masterLabel>
+        <translation><!-- Antibiotic Free --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food with a story</masterLabel>
+        <translation><!-- Food with a story --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sustainability</masterLabel>
+        <translation><!-- Sustainability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Added</masterLabel>
+        <translation><!-- Value Added --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

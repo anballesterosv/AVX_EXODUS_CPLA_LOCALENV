@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_BM_is_the_running_user__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Business_Manager__c = $User.Id,True,False)</formula>
+    <label>If BM is the running user?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

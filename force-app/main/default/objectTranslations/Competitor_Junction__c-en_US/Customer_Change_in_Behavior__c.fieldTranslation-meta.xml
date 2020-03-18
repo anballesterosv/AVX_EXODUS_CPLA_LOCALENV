@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Change in Behavior --></label>
+    <name>Customer_Change_in_Behavior__c</name>
+    <picklistValues>
+        <masterLabel>Decrease in Orders/Volume</masterLabel>
+        <translation><!-- Decrease in Orders/Volume --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delayed Shipment</masterLabel>
+        <translation><!-- Delayed Shipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extra/added Shipments</masterLabel>
+        <translation><!-- Extra/added Shipments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increase in Orders/Volume</masterLabel>
+        <translation><!-- Increase in Orders/Volume --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved to Inviting to Collaborate</masterLabel>
+        <translation><!-- Moved to Inviting to Collaborate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved to Loyal</masterLabel>
+        <translation><!-- Moved to Loyal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved to RFP/Bidding</masterLabel>
+        <translation><!-- Moved to RFP/Bidding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moved to Transactional</masterLabel>
+        <translation><!-- Moved to Transactional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Reason Required)</masterLabel>
+        <translation><!-- Other (Reason Required) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speed up Shipments</masterLabel>
+        <translation><!-- Speed up Shipments --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

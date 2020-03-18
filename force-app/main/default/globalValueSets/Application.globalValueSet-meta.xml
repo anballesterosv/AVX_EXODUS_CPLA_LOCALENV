@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bread/ Bread Products</fullName>
+        <default>false</default>
+        <label>Bread/Bread Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Sweet Biscuits/Cookies</fullName>
+        <default>false</default>
+        <label>Sweet Biscuits/Cookies</label>
+    </customValue>
+    <customValue>
+        <fullName>Savory Biscuits/Crackers</fullName>
+        <default>false</default>
+        <label>Savory Biscuits/Crackers</label>
+    </customValue>
+    <customValue>
+        <fullName>Pastries/Sweet Goods</fullName>
+        <default>false</default>
+        <label>Pastries/Sweet Goods</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixes &amp; Doughs</fullName>
+        <default>false</default>
+        <label>Mixes &amp; Doughs</label>
+    </customValue>
+    <customValue>
+        <fullName>Pasta</fullName>
+        <default>false</default>
+        <label>Pasta</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Mixes</fullName>
+        <default>false</default>
+        <label>Dry Mixes</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbonated Soft Drinks</fullName>
+        <default>false</default>
+        <label>Carbonated Soft Drinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Functional &amp; Flavored Water</fullName>
+        <default>false</default>
+        <label>Functional &amp; Flavored Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Juice, Juice Drinks, Nectars</fullName>
+        <default>false</default>
+        <label>Juice, Juice Drinks, Nectars</label>
+    </customValue>
+    <customValue>
+        <fullName>Sports/Energy</fullName>
+        <default>false</default>
+        <label>Sports/Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>RTD Tea/Coffee</fullName>
+        <default>false</default>
+        <label>RTD Tea/Coffee</label>
+    </customValue>
+    <customValue>
+        <fullName>Powdered /Dry Mixes</fullName>
+        <default>false</default>
+        <label>Powdered /Dry Mixes</label>
+    </customValue>
+    <customValue>
+        <fullName>Liquid Concentrates</fullName>
+        <default>false</default>
+        <label>Liquid Concentrates</label>
+    </customValue>
+    <customValue>
+        <fullName>Beer</fullName>
+        <default>false</default>
+        <label>Beer</label>
+    </customValue>
+    <customValue>
+        <fullName>Wine, Spirits and Alc flavored drinks</fullName>
+        <default>false</default>
+        <label>Wine, Spirits and Alc flavored drinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Sugar Confectionery</fullName>
+        <default>false</default>
+        <label>Sugar Confectionery</label>
+    </customValue>
+    <customValue>
+        <fullName>Chewing Gums</fullName>
+        <default>false</default>
+        <label>Chewing Gums</label>
+    </customValue>
+    <customValue>
+        <fullName>Chocolate</fullName>
+        <default>false</default>
+        <label>Chocolate</label>
+    </customValue>
+    <customValue>
+        <fullName>Fillings, Coatings, Toppings</fullName>
+        <default>false</default>
+        <label>Fillings, Coatings, Toppings</label>
+    </customValue>
+    <customValue>
+        <fullName>Ready Meals/Kits</fullName>
+        <default>false</default>
+        <label>Ready Meals/Kits</label>
+    </customValue>
+    <customValue>
+        <fullName>Soups</fullName>
+        <default>false</default>
+        <label>Soups</label>
+    </customValue>
+    <customValue>
+        <fullName>Sauces, Dressings &amp; Condiments</fullName>
+        <default>false</default>
+        <label>Sauces, Dressings &amp; Condiments</label>
+    </customValue>
+    <customValue>
+        <fullName>Oils, Fats &amp; Spreads</fullName>
+        <default>false</default>
+        <label>Oils, Fats &amp; Spreads</label>
+    </customValue>
+    <customValue>
+        <fullName>Egg Products</fullName>
+        <default>false</default>
+        <label>Egg Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheese</fullName>
+        <default>false</default>
+        <label>Cheese</label>
+    </customValue>
+    <customValue>
+        <fullName>Creams</fullName>
+        <default>false</default>
+        <label>Creams</label>
+    </customValue>
+    <customValue>
+        <fullName>Liquid Creamers</fullName>
+        <default>false</default>
+        <label>Liquid Creamers</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy Desserts</fullName>
+        <default>false</default>
+        <label>Dairy Desserts</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy Drinks</fullName>
+        <default>false</default>
+        <label>Dairy Drinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Yogurt &amp; Quark</fullName>
+        <default>false</default>
+        <label>Yogurt &amp; Quark</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Dairy &amp; Non-Dairy</fullName>
+        <default>false</default>
+        <label>Specialty Dairy &amp; Non-Dairy</label>
+    </customValue>
+    <customValue>
+        <fullName>Frozen Desserts</fullName>
+        <default>false</default>
+        <label>Frozen Desserts</label>
+    </customValue>
+    <customValue>
+        <fullName>Fillings &amp; Toppings</fullName>
+        <default>false</default>
+        <label>Fillings &amp; Toppings</label>
+    </customValue>
+    <customValue>
+        <fullName>Fruit Preparations</fullName>
+        <default>false</default>
+        <label>Fruit Preparations</label>
+    </customValue>
+    <customValue>
+        <fullName>Fruit Sauces</fullName>
+        <default>false</default>
+        <label>Fruit Sauces</label>
+    </customValue>
+    <customValue>
+        <fullName>Glazings, Icings &amp; Pipings</fullName>
+        <default>false</default>
+        <label>Glazings, Icings &amp; Pipings</label>
+    </customValue>
+    <customValue>
+        <fullName>Jams &amp; Jellies</fullName>
+        <default>false</default>
+        <label>Jams &amp; Jellies</label>
+    </customValue>
+    <customValue>
+        <fullName>Reformed Fruit &amp; Vegetables</fullName>
+        <default>false</default>
+        <label>Reformed Fruit &amp; Vegetables</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Jellies</fullName>
+        <default>false</default>
+        <label>Water Jellies</label>
+    </customValue>
+    <customValue>
+        <fullName>Fruit Desserts</fullName>
+        <default>false</default>
+        <label>Fruit Desserts</label>
+    </customValue>
+    <customValue>
+        <fullName>Syrups &amp; Ripples</fullName>
+        <default>false</default>
+        <label>Syrups &amp; Ripples</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid</fullName>
+        <default>false</default>
+        <label>Solid</label>
+    </customValue>
+    <customValue>
+        <fullName>Liquid</fullName>
+        <default>false</default>
+        <label>Liquid</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry</fullName>
+        <default>false</default>
+        <label>Dry</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty</fullName>
+        <default>false</default>
+        <label>Specialty</label>
+    </customValue>
+    <customValue>
+        <fullName>Cooked Meats</fullName>
+        <default>false</default>
+        <label>Cooked Meats</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Meats</fullName>
+        <default>false</default>
+        <label>Dry Meats</label>
+    </customValue>
+    <customValue>
+        <fullName>Fresh-frozen meats</fullName>
+        <default>false</default>
+        <label>Fresh-frozen meats</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty &amp; Meat Analogs</fullName>
+        <default>false</default>
+        <label>Specialty &amp; Meat Analogs</label>
+    </customValue>
+    <customValue>
+        <fullName>Oral Care</fullName>
+        <default>false</default>
+        <label>Oral Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Skin &amp; Sun Care</fullName>
+        <default>false</default>
+        <label>Skin &amp; Sun Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Hair Care</fullName>
+        <default>false</default>
+        <label>Hair Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Bath &amp; Body Care</fullName>
+        <default>false</default>
+        <label>Bath &amp; Body Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Color Cosmetics</fullName>
+        <default>false</default>
+        <label>Color Cosmetics</label>
+    </customValue>
+    <customValue>
+        <fullName>Wet Pet Food</fullName>
+        <default>false</default>
+        <label>Wet Pet Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Pet Food</fullName>
+        <default>false</default>
+        <label>Dry Pet Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Snack Pet Food</fullName>
+        <default>false</default>
+        <label>Snack Pet Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid Dosage Forms</fullName>
+        <default>false</default>
+        <label>Solid Dosage Forms</label>
+    </customValue>
+    <customValue>
+        <fullName>Liquid Dosage Forms</fullName>
+        <default>false</default>
+        <label>Liquid Dosage Forms</label>
+    </customValue>
+    <customValue>
+        <fullName>Nutritional Supplements</fullName>
+        <default>false</default>
+        <label>Nutritional Supplements</label>
+    </customValue>
+    <customValue>
+        <fullName>Medicated Confectionery</fullName>
+        <default>false</default>
+        <label>Medicated Confectionery</label>
+    </customValue>
+    <customValue>
+        <fullName>Parenteral Applications</fullName>
+        <default>false</default>
+        <label>Parenteral Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Chips/Crisps</fullName>
+        <default>false</default>
+        <label>Chips/Crisps</label>
+    </customValue>
+    <customValue>
+        <fullName>Extruded Snacks</fullName>
+        <default>false</default>
+        <label>Extruded Snacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Tortilla / Corn Chips</fullName>
+        <default>false</default>
+        <label>Tortilla / Corn Chips</label>
+    </customValue>
+    <customValue>
+        <fullName>RTE/Breakfast Cereals</fullName>
+        <default>false</default>
+        <label>RTE/Breakfast Cereals</label>
+    </customValue>
+    <customValue>
+        <fullName>Snack Bars</fullName>
+        <default>false</default>
+        <label>Snack Bars</label>
+    </customValue>
+    <customValue>
+        <fullName>Granola/Museli</fullName>
+        <default>false</default>
+        <label>Granola/Museli</label>
+    </customValue>
+    <customValue>
+        <fullName>Breakfast/Cereal</fullName>
+        <default>false</default>
+        <label>Breakfast/Cereal</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Snacks</fullName>
+        <default>false</default>
+        <label>Energy Snacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Fish</fullName>
+        <default>false</default>
+        <label>Fish</label>
+    </customValue>
+    <customValue>
+        <fullName>Feed</fullName>
+        <default>false</default>
+        <label>Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial</fullName>
+        <default>false</default>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Ingredients</fullName>
+        <default>false</default>
+        <label>Food Ingredients</label>
+    </customValue>
+    <masterLabel>Application</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Spread_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Price Spread Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Internal Estimate</fullName>
+                <default>false</default>
+                <label>Internal Estimate</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Retail/consumer</fullName>
+                <default>false</default>
+                <label>Retail/consumer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

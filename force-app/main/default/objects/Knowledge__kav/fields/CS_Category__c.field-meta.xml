@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Category__c</fullName>
+    <description>This field will define the category of the knowledge article.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Knowledge Category</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General Information</fullName>
+                <default>false</default>
+                <label>General Information</label>
+            </value>
+            <value>
+                <fullName>Job Aid</fullName>
+                <default>false</default>
+                <label>Job Aid</label>
+            </value>
+            <value>
+                <fullName>Leadership Presentations</fullName>
+                <default>false</default>
+                <label>Leadership Presentations</label>
+            </value>
+            <value>
+                <fullName>On Boarding Documents</fullName>
+                <default>false</default>
+                <label>On Boarding Documents</label>
+            </value>
+            <value>
+                <fullName>System Documentation</fullName>
+                <default>false</default>
+                <label>System Documentation</label>
+            </value>
+            <value>
+                <fullName>Fresh Orders</fullName>
+                <default>false</default>
+                <label>Fresh Orders</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fulfillment_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Fulfillment Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fulfilled</fullName>
+                <default>false</default>
+                <label>Fulfilled</label>
+            </value>
+            <value>
+                <fullName>Sample out of stock</fullName>
+                <default>false</default>
+                <label>Sample out of stock</label>
+            </value>
+            <value>
+                <fullName>Sample above business thresholds</fullName>
+                <default>false</default>
+                <label>Sample above business thresholds</label>
+            </value>
+            <value>
+                <fullName>Sample Product Code has been discontinued</fullName>
+                <default>false</default>
+                <label>Sample Product Code has been discontinued</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

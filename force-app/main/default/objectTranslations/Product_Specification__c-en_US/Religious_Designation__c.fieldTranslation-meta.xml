@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Religious Designation --></label>
+    <name>Religious_Designation__c</name>
+    <picklistValues>
+        <masterLabel>Halal</masterLabel>
+        <translation><!-- Halal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KosherCircleK</masterLabel>
+        <translation><!-- KosherCircleK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KosherCircleU</masterLabel>
+        <translation><!-- KosherCircleU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KosherD</masterLabel>
+        <translation><!-- KosherD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

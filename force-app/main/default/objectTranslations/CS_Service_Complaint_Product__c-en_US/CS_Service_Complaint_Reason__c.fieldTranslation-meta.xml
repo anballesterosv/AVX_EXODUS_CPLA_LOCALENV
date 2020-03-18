@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Complaint Reason --></label>
+    <name>CS_Service_Complaint_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Damaged</masterLabel>
+        <translation><!-- Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Handling</masterLabel>
+        <translation><!-- Order Handling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Handling</masterLabel>
+        <translation><!-- Product Handling --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

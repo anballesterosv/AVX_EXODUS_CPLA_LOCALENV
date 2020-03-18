@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Package Format --></label>
+    <name>Package_Format__c</name>
+    <picklistValues>
+        <masterLabel>Bag in Combo</masterLabel>
+        <translation><!-- Bag in Combo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bags in Box</masterLabel>
+        <translation><!-- Bags in Box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Box</masterLabel>
+        <translation><!-- Box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chub Clear</masterLabel>
+        <translation><!-- Chub Clear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chub Pre-Printed</masterLabel>
+        <translation><!-- Chub Pre-Printed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combo</masterLabel>
+        <translation><!-- Combo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kit (combination of different packaging formats per unit)</masterLabel>
+        <translation><!-- Kit (combination of different packaging formats per unit) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAP Tray Lid stock Hi Ox</masterLabel>
+        <translation><!-- MAP Tray Lid stock Hi Ox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAP Tray Low Ox</masterLabel>
+        <translation><!-- MAP Tray Low Ox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overwrap Hi Ox</masterLabel>
+        <translation><!-- Overwrap Hi Ox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overwrap Low Ox</masterLabel>
+        <translation><!-- Overwrap Low Ox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sliced Semi Rigid Tray</masterLabel>
+        <translation><!-- Sliced Semi Rigid Tray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tray Overwrap</masterLabel>
+        <translation><!-- Tray Overwrap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSP tray</masterLabel>
+        <translation><!-- VSP tray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacuum Clear Film</masterLabel>
+        <translation><!-- Vacuum Clear Film --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacuum Preprinted film</masterLabel>
+        <translation><!-- Vacuum Preprinted film --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

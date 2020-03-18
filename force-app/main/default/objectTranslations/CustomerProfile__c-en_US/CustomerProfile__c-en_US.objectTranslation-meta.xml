@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Profile</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Profile Layout</layout>
+        <sections>
+            <label><!-- Cargill Business Summary Information --></label>
+            <section>Cargill Business Summary Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Account Team --></label>
+        <name>Account_Team</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Customer Profile Name cannot be changed. --></errorMessage>
+        <name>RestrictCustomerProfileNameUpdate</name>
+    </validationRules>
+</CustomObjectTranslation>

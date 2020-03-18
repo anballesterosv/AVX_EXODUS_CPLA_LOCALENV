@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Segmentation --></label>
+    <name>AccountSegmentation__c</name>
+    <picklistValues>
+        <masterLabel>Business as usual</masterLabel>
+        <translation><!-- Business as usual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excellence</masterLabel>
+        <translation><!-- Excellence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plus</masterLabel>
+        <translation><!-- Plus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premium</masterLabel>
+        <translation><!-- Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic</masterLabel>
+        <translation><!-- Strategic --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

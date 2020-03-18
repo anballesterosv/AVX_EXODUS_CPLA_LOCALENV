@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TeamName__c</fullName>
+    <externalId>false</externalId>
+    <label>Team Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FIBI Applications</fullName>
+                <default>false</default>
+                <label>FIBI Applications</label>
+            </value>
+            <value>
+                <fullName>GFR</fullName>
+                <default>false</default>
+                <label>GFR</label>
+            </value>
+            <value>
+                <fullName>PPD</fullName>
+                <default>false</default>
+                <label>PPD</label>
+            </value>
+            <value>
+                <fullName>Tech Services</fullName>
+                <default>false</default>
+                <label>Tech Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

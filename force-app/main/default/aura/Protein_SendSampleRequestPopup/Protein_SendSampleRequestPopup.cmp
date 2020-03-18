@@ -1,0 +1,161 @@
+<aura:component controller="Protein_SampleRequestController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="isOpen" type="boolean" default="true"/>
+    <aura:attribute name="mailStatus" type="boolean" default="false"/>
+    <aura:attribute name="wrapper" type="sObject"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="excelData" type="string" />
+    <aura:attribute name="modifiedexcelData" type="string" />
+    <ltng:require scripts="{!$Resource.OpenXMLSDK}"/> 
+    <aura:attribute name="sampleRequestData" type="sObject"/>
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="sampleProdList" type="List" default="[]"/>
+    <aura:attribute name="isSamProductsAdded" type="boolean" default="false"/>
+    <force:recordData recordId="{!$SObjectType.CurrentUser.Id}"
+                      layoutType="FULL"
+                      targetFields="{!v.record}" />
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+  <!--  <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>-->
+    
+    <aura:if isTrue="{!v.Spinner}">
+        
+        <div class="slds-spinner slds-spinner_large slds-spinner_brand" aria-hidden="false" role="alert">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+        
+    </aura:if>
+    <aura:if isTrue="{!v.isOpen}">
+        
+       <!-- <div aura:id="thecontainer" class="thecontainer" id="thecontainer" >           
+            <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open" style="width: 12px;">
+                <div class="slds-modal__container" style="right: 130px;">
+                    
+                                     
+                    <div class="slds-modal__content slds-p-around medium slds-scrollable" style="height: 400px;width: 700px;">
+                        
+                        <div style="padding-left:125px;">
+                            <div class="slds-modal__footer">
+                                <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{!c.closeModel}"/>
+                            </div>
+                        </div>  
+                        Please add atleast one product to send sample request form
+                    </div>
+                </div>
+                
+            </div>
+        </div>   --> 
+        <aura:if isTrue="{!!v.Spinner}">
+            <div style="text-align:center">
+                <br/><b>Please add atleast one product to send sample request form	</b> 
+                
+            </div>
+        </aura:if>
+ <!--</aura:if>   
+ <aura:if isTrue="{!!v.isOpen}"> -->
+  <aura:set attribute="else">    
+    <div aura:id="thecontainer" class="thecontainer" id="thecontainer" >
+       
+        <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open" style="width: 22px;">
+        <div class="slds-modal__container" style="right: 130px;">
+          <!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+           
+          <!--aura:if isTrue="{!!v.isSamProductsAdded}">-->
+          <header class="slds-modal__header" style="width: 900px;">
+          <h2 id="modal-heading-01" class="slds-text-heading_small slds-hyphenate"><b>Send Sample Request Form</b></h2>
+          </header>
+                <!--###### MODAL BOX BODY Part Start From Here ######-->
+          <div class="slds-modal__content slds-p-around--medium slds-scrollable" style="height: 900px;width: 900px;">
+            <div class="slds-scrollable slds-size_12-of-12 slds-p-top_medium" style="">
+				
+                <c:Protein_SendSampleRequestForm recordId="{!v.recordId}" wrapper="{!v.wrapper}"/>				
+            </div><!-- modal -->
+              <div style="padding-left:125px;">
+                  <div class="slds-modal__footer">
+                      <lightning:button variant="brand" label="Send" title="Send" onclick="{!c.sendSampleRequestForm}"/>
+                      <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{!c.closeModel}"/>
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 15px;">
+                      Cargill Beef    
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 15px;">
+                      Allow 5-7 business for delivery. Some product samples such as Marbold will require 14 business days lead.    
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      CVAP-Beef (Burgers)   
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 3 days for frozen product delivery, 14 days for fresh product delivery.    
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      Turkey &amp; Cooked Meats   
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 14 business days for delivery.    
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      CVAP-Poultry (Eggs)  
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 3 days for delivery.    
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      Foodservice Oils  
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 7 business days for dry delivery, 10 business days for fresh delivery, and 15 business days for aerosols.    
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      Salt  
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 5 business days for delivery.  
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      Truvia  
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 7 days for delivery. 
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      Sugar  
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 5-7 business days for delivery. 
+                  </div>
+              </div>
+              <div class="slds-grid">
+                  <div class="slds-col slds-size_1-of-7" style="padding-top: 5px;">
+                      Cocoa &amp; Chocolate  
+                  </div>
+                  <div class="slds-col slds-size_6-of-7" style="padding-top: 5px;">
+                      Allow 5-7 business days for delivery. 
+                  </div>
+              </div>
+          </div>
+              <!--</aura:if>-->
+        </div>
+      </div>    	
+	</div>
+  </aura:set>    
+ </aura:if>   
+</aura:component>

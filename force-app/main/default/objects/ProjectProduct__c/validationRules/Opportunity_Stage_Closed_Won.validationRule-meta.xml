@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Stage_Closed_Won</fullName>
+    <active>false</active>
+    <description>If the related Opportunity is in Closed Won stage, then no update is allowed</description>
+    <errorConditionFormula>ISPICKVAL(Project__r.Opportunity__r.StageName, &#39;Closed Won&#39;)</errorConditionFormula>
+    <errorMessage>If the related Opportunity is in Closed Won stage, then no update is allowed</errorMessage>
+</ValidationRule>

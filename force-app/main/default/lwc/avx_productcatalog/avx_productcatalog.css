@@ -1,0 +1,19 @@
+.spinner{
+    position: relative;
+   display: inline-block;
+   width: 51px;
+   vertical-align: middle;
+   white-space: nowrap;
+}
+.columns_title{
+    /* font-size: 9px; */
+    min-width: min-content;
+    
+    text-transform: none !important;
+    padding: 2px 1px 2px 1px;
+    margin: auto;
+}
+.columns_info{
+    width: 5%; 
+    padding-right: 1px !important;
+}

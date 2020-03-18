@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>201</fullName>
+        <default>false</default>
+        <label>With Routing</label>
+    </customValue>
+    <customValue>
+        <fullName>202</fullName>
+        <default>false</default>
+        <label>Without Routing</label>
+    </customValue>
+    <customValue>
+        <fullName>203</fullName>
+        <default>false</default>
+        <label>Sales Room</label>
+    </customValue>
+    <customValue>
+        <fullName>204</fullName>
+        <default>false</default>
+        <label>Grocer&#39;s Shop</label>
+    </customValue>
+    <customValue>
+        <fullName>205</fullName>
+        <default>false</default>
+        <label>Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>206</fullName>
+        <default>false</default>
+        <label>Butcher Shop</label>
+    </customValue>
+    <customValue>
+        <fullName>207</fullName>
+        <default>false</default>
+        <label>Marketplace</label>
+    </customValue>
+    <customValue>
+        <fullName>208</fullName>
+        <default>false</default>
+        <label>Bakery</label>
+    </customValue>
+    <customValue>
+        <fullName>209</fullName>
+        <default>false</default>
+        <label>Supermarket Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>210</fullName>
+        <default>false</default>
+        <label>Small Supermarket</label>
+    </customValue>
+    <customValue>
+        <fullName>211</fullName>
+        <default>false</default>
+        <label>Convenience Supermarket</label>
+    </customValue>
+    <customValue>
+        <fullName>212</fullName>
+        <default>false</default>
+        <label>Mini Super</label>
+    </customValue>
+    <customValue>
+        <fullName>213</fullName>
+        <default>false</default>
+        <label>Pharmacy</label>
+    </customValue>
+    <customValue>
+        <fullName>214</fullName>
+        <default>false</default>
+        <label>Hotels</label>
+    </customValue>
+    <customValue>
+        <fullName>215</fullName>
+        <default>false</default>
+        <label>Restaurants and Sodas</label>
+    </customValue>
+    <customValue>
+        <fullName>216</fullName>
+        <default>false</default>
+        <label>Poulterer Chicken Shop</label>
+    </customValue>
+    <customValue>
+        <fullName>217</fullName>
+        <default>false</default>
+        <label>Convenience Store</label>
+    </customValue>
+    <customValue>
+        <fullName>218</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </customValue>
+    <customValue>
+        <fullName>219</fullName>
+        <default>false</default>
+        <label>ONG</label>
+    </customValue>
+    <customValue>
+        <fullName>220</fullName>
+        <default>false</default>
+        <label>Associate</label>
+    </customValue>
+    <customValue>
+        <fullName>221</fullName>
+        <default>false</default>
+        <label>Inter - Company</label>
+    </customValue>
+    <customValue>
+        <fullName>222</fullName>
+        <default>false</default>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>223</fullName>
+        <default>false</default>
+        <label>Exports</label>
+    </customValue>
+    <customValue>
+        <fullName>224</fullName>
+        <default>false</default>
+        <label>Labor</label>
+    </customValue>
+    <customValue>
+        <fullName>225</fullName>
+        <default>false</default>
+        <label>A</label>
+    </customValue>
+    <customValue>
+        <fullName>226</fullName>
+        <default>false</default>
+        <label>B</label>
+    </customValue>
+    <customValue>
+        <fullName>227</fullName>
+        <default>false</default>
+        <label>C</label>
+    </customValue>
+    <description>Used in the CPLA Project</description>
+    <masterLabel>Customer Sub Group</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

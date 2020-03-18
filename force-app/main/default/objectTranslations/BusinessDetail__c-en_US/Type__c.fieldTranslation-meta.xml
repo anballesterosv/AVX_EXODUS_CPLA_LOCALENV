@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Agent</masterLabel>
+        <translation><!-- Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker</masterLabel>
+        <translation><!-- Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buyer</masterLabel>
+        <translation><!-- Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Customer</masterLabel>
+        <translation><!-- Direct Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor</masterLabel>
+        <translation><!-- Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gourmet Distributor</masterLabel>
+        <translation><!-- Gourmet Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indirect Customer via Agent</masterLabel>
+        <translation><!-- Indirect Customer via Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inside Sales</masterLabel>
+        <translation><!-- Inside Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intercompany</masterLabel>
+        <translation><!-- Intercompany --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receiver</masterLabel>
+        <translation><!-- Receiver --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

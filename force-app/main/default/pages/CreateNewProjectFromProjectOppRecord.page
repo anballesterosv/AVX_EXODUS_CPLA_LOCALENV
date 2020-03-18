@@ -1,0 +1,17 @@
+<apex:page standardController="ProjectOpportunity__c" recordSetVar="project">
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+    <script>
+         var recordID= "{!$CurrentPage.parameters.id}";
+        $Lightning.use("c:CreateNewProjectApp", function() {
+          $Lightning.createComponent("c:CreateNewProjectComp",
+          {"opportunityId": recordID},
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+</apex:page>

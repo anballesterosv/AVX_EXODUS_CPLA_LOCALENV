@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Protein_Customer_Service_Compact_Layout</fullName>
+    <fields>Title</fields>
+    <fields>ArticleNumber</fields>
+    <fields>RecordTypeId</fields>
+    <fields>CS_Market_Channel__c</fields>
+    <fields>CS_Category__c</fields>
+    <fields>VersionNumber</fields>
+    <fields>PublishStatus</fields>
+    <fields>LastModifiedDate</fields>
+    <label>Protein Customer Service Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  StartDate__c &gt; TODAY(),
+       &quot;Pending&quot;,
+       IF(OR(EndDate__c &gt; TODAY(), ISNULL(EndDate__c),ISBLANK(EndDate__c)),
+       &quot;Active&quot;,
+       &quot;Expired&quot;
+  ))</formula>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

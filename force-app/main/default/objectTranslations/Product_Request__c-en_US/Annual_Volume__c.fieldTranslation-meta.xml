@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Annual Volume is a mandatory field. Users must either provide a valid value in Annual Volume field or in the Monthly Seasonal Distribution fields. Summation of the Monthly Seasonal Distribution is updated automatically by the system in Annual Volume. --></help>
+    <label><!-- * Annual Volume --></label>
+    <name>Annual_Volume__c</name>
+</CustomFieldTranslation>

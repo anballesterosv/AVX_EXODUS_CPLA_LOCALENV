@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Vol_is_required_if_SD_is_Blank</fullName>
+    <active>true</active>
+    <description>Annual Volume field is required, if the Seasonal Distributions are blank.</description>
+    <errorConditionFormula>IF(AND(OR(ISBLANK(Annual_Volume__c), Annual_Volume__c=0),
+OR(ISBLANK(January__c), January__c=0),
+OR(ISBLANK(February__c), February__c=0),
+OR(ISBLANK(March__c), March__c=0),
+OR(ISBLANK(April__c), April__c=0),
+OR(ISBLANK(May__c), May__c=0),
+OR(ISBLANK(June__c), June__c=0),
+OR(ISBLANK(July__c), July__c=0),
+OR(ISBLANK(August__c), August__c=0),
+OR(ISBLANK(September__c), September__c=0),
+OR(ISBLANK(October__c), October__c=0),
+OR(ISBLANK(November__c), November__c=0),
+OR(ISBLANK(December__c), December__c=0)
+), 
+True, False)</errorConditionFormula>
+    <errorDisplayField>Annual_Volume__c</errorDisplayField>
+    <errorMessage>Please enter a valid value either in the Annual Volume field or in the Monthly Seasonal Distribution fields below.</errorMessage>
+</ValidationRule>

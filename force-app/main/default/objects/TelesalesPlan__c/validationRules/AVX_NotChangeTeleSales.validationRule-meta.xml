@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVX_NotChangeTeleSales</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND(QuantityDetailLines__c &gt; 0, ISCHANGED( Telemarketer__c)), true, false)</errorConditionFormula>
+    <errorMessage>You cannot change the seller, because there are customers signed up for the same.</errorMessage>
+</ValidationRule>

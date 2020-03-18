@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Annual Volume - Product Rollup (3-Year) --></label>
+    <name>Annual_Volume_Product_Rollup_3_Year__c</name>
+</CustomFieldTranslation>

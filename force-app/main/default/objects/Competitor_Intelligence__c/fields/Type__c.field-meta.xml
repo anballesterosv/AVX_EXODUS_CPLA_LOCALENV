@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquisitions / Joint Ventures</fullName>
+                <default>false</default>
+                <label>Acquisitions / Joint Ventures</label>
+            </value>
+            <value>
+                <fullName>Hot Topic</fullName>
+                <default>false</default>
+                <label>Hot Topic</label>
+            </value>
+            <value>
+                <fullName>Intelligence</fullName>
+                <default>false</default>
+                <label>Intelligence</label>
+            </value>
+            <value>
+                <fullName>Org Resources Change</fullName>
+                <default>false</default>
+                <label>Org Resources Change</label>
+            </value>
+            <value>
+                <fullName>Rumor</fullName>
+                <default>false</default>
+                <label>Rumor</label>
+            </value>
+            <value>
+                <fullName>Technoology Trend / Capability</fullName>
+                <default>false</default>
+                <label>Technoology Trend / Capability</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

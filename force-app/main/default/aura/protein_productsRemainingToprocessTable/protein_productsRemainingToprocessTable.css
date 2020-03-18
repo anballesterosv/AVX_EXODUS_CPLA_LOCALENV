@@ -1,0 +1,16 @@
+.THIS .colour {
+    background-color:yellow;
+}
+
+.THIS .green {
+    background-color: green;
+}
+
+.THIS .backgcolors .slds-table .slds-table thead th {
+  background-color: red;
+}
+
+.THIS .headerstyle {
+    background-color : Red;
+    color : white;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doing Business with Competitor Reason --></label>
+    <name>Doing_Business_with_Competitor_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Multi Source Supply</masterLabel>
+        <translation><!-- Multi Source Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (dependent on Reason to complete for Other)</masterLabel>
+        <translation><!-- Other (dependent on Reason to complete for Other) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant Location/Freight Advantage</masterLabel>
+        <translation><!-- Plant Location/Freight Advantage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product</masterLabel>
+        <translation><!-- Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Quality</masterLabel>
+        <translation><!-- Product Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relationship</masterLabel>
+        <translation><!-- Relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reputation/Credibility</masterLabel>
+        <translation><!-- Reputation/Credibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

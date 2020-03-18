@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Religious or Label Claims Required (ie. --></label>
+    <name>Religious_or_Label_Claims_Required__c</name>
+</CustomFieldTranslation>

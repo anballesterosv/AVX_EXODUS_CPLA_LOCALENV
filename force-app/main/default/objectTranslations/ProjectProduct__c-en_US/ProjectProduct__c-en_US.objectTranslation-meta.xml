@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Products</value>
+    </caseValues>
+    <layouts>
+        <layout>Project Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Volume Projections &amp; Actuals --></label>
+            <section>Volume Projections &amp; Actuals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Product Layout With UoM</layout>
+        <sections>
+            <label><!-- Converted Volume &amp; Margin Projections --></label>
+            <section>Converted Volume &amp; Margin Projections</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Volume &amp; Margin Projections --></label>
+            <section>Initial Volume &amp; Margin Projections</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label><!-- Volume &amp; Margin Projections --></label>
+            <section>Volume &amp; Margin Projections</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please ensure the following fields are provide for Defense type Project:  1) Current Annual Price 2) Current FY Annual Volume 3) Current Annual Margin --></errorMessage>
+        <name>Current_Annual_Price_And_Volume_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the related Opportunity is in Closed Won stage, then no update is allowed --></errorMessage>
+        <name>Opportunity_Stage_Closed_Won</name>
+    </validationRules>
+</CustomObjectTranslation>

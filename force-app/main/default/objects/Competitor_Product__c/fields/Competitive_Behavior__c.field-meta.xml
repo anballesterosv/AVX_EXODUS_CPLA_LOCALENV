@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitive_Behavior__c</fullName>
+    <description>Captures the behavior of the competitor for this specific product</description>
+    <externalId>false</externalId>
+    <label>Competitive Behavior</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aggressive</fullName>
+                <default>false</default>
+                <label>Aggressive</label>
+            </value>
+            <value>
+                <fullName>Disciplined</fullName>
+                <default>false</default>
+                <label>Disciplined</label>
+            </value>
+            <value>
+                <fullName>Out of position</fullName>
+                <default>false</default>
+                <label>Out of position</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

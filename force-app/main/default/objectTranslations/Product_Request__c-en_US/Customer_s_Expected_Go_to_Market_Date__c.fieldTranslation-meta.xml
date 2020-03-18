@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer&apos;s Expected Go to Market Date --></label>
+    <name>Customer_s_Expected_Go_to_Market_Date__c</name>
+</CustomFieldTranslation>

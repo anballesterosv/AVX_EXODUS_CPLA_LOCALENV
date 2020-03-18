@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Brand --></label>
+    <name>Brand__c</name>
+    <picklistValues>
+        <masterLabel>7-ELEVEN</masterLabel>
+        <translation><!-- 7-ELEVEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advance Pierre</masterLabel>
+        <translation><!-- Advance Pierre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ahold</masterLabel>
+        <translation><!-- Ahold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aldi</masterLabel>
+        <translation><!-- Aldi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allen Brothers Angus</masterLabel>
+        <translation><!-- Allen Brothers Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Angus Pride</masterLabel>
+        <translation><!-- Angus Pride --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applebee&#39;s</masterLabel>
+        <translation><!-- Applebee&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arby&#39;s</masterLabel>
+        <translation><!-- Arby&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Archer Farms</masterLabel>
+        <translation><!-- Archer Farms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bachoco</masterLabel>
+        <translation><!-- Bachoco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bakers &amp; Chef</masterLabel>
+        <translation><!-- Bakers &amp; Chef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef O&#39; Brady</masterLabel>
+        <translation><!-- Beef O&apos; Brady --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Best Choice</masterLabel>
+        <translation><!-- Best Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blackwell Angus</masterLabel>
+        <translation><!-- Blackwell Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bob Evan&#39;s</masterLabel>
+        <translation><!-- Bob Evan&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boston Market</masterLabel>
+        <translation><!-- Boston Market --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breeder</masterLabel>
+        <translation><!-- Breeder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brinker</masterLabel>
+        <translation><!-- Brinker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brookshires Grocery</masterLabel>
+        <translation><!-- Brookshires Grocery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Butcher Block Reserve Ang</masterLabel>
+        <translation><!-- Butcher Block Reserve Ang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C/R INGREDIENTS FOR VA</masterLabel>
+        <translation><!-- C/R INGREDIENTS FOR VA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC</masterLabel>
+        <translation><!-- CC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CVAM</masterLabel>
+        <translation><!-- CVAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Campbell&#39;s</masterLabel>
+        <translation><!-- Campbell&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargill Premium Beef</masterLabel>
+        <translation><!-- Cargill Premium Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargill Value Added Meats</masterLabel>
+        <translation><!-- Cargill Value Added Meats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Ready Grind Patties</masterLabel>
+        <translation><!-- Case Ready Grind Patties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Castle Wood Reserve</masterLabel>
+        <translation><!-- Castle Wood Reserve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cert Angus Bf Path Proven</masterLabel>
+        <translation><!-- Cert Angus Bf Path Proven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Angus Beef</masterLabel>
+        <translation><!-- Certified Angus Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charter Reserve</masterLabel>
+        <translation><!-- Charter Reserve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Con Agra</masterLabel>
+        <translation><!-- Con Agra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer Pack Variety Mts</masterLabel>
+        <translation><!-- Consumer Pack Variety Mts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer Packaged Beef</masterLabel>
+        <translation><!-- Consumer Packaged Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Costco</masterLabel>
+        <translation><!-- Costco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cracker Barrel</masterLabel>
+        <translation><!-- Cracker Barrel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DNA Traceable</masterLabel>
+        <translation><!-- DNA Traceable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic</masterLabel>
+        <translation><!-- Domestic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emmber</masterLabel>
+        <translation><!-- Emmber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excel</masterLabel>
+        <translation><!-- Excel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excel Choice Market Style</masterLabel>
+        <translation><!-- Excel Choice Market Style --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excel Premium Beef</masterLabel>
+        <translation><!-- Excel Premium Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export &lt;20MO Japan</masterLabel>
+        <translation><!-- Export &lt;20MO Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export Beta Agonist Free</masterLabel>
+        <translation><!-- Export Beta Agonist Free --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fit and Active</masterLabel>
+        <translation><!-- Fit and Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Service of America</masterLabel>
+        <translation><!-- Food Service of America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Town</masterLabel>
+        <translation><!-- Food Town --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Four Winds Farm</masterLabel>
+        <translation><!-- Four Winds Farm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresh Thyme</masterLabel>
+        <translation><!-- Fresh Thyme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFS SE Private Label</masterLabel>
+        <translation><!-- GFS SE Private Label --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Mills</masterLabel>
+        <translation><!-- General Mills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Genuine Texas Beef</masterLabel>
+        <translation><!-- Genuine Texas Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Genuine Texas Beef Angus</masterLabel>
+        <translation><!-- Genuine Texas Beef Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Giant Eagle</masterLabel>
+        <translation><!-- Giant Eagle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Godshall&#39;s</masterLabel>
+        <translation><!-- Godshall&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gordon Food Service</masterLabel>
+        <translation><!-- Gordon Food Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Great Value</masterLabel>
+        <translation><!-- Great Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GreenWise</masterLabel>
+        <translation><!-- GreenWise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Groucho&#39;s Deli</masterLabel>
+        <translation><!-- Groucho&apos;s Deli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground Beef Private Label</masterLabel>
+        <translation><!-- Ground Beef Private Label --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H E Butt</masterLabel>
+        <translation><!-- H E Butt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEB</masterLabel>
+        <translation><!-- HEB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Halal Beef</masterLabel>
+        <translation><!-- Halal Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hannaford</masterLabel>
+        <translation><!-- Hannaford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harris Teeter</masterLabel>
+        <translation><!-- Harris Teeter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harvest Provisions</masterLabel>
+        <translation><!-- Harvest Provisions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heritage Farms</masterLabel>
+        <translation><!-- Heritage Farms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hill Country Fare</masterLabel>
+        <translation><!-- Hill Country Fare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honest Turkey</masterLabel>
+        <translation><!-- Honest Turkey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honeysuckle White</masterLabel>
+        <translation><!-- Honeysuckle White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hormel</masterLabel>
+        <translation><!-- Hormel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hy Vee</masterLabel>
+        <translation><!-- Hy Vee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jack In The Box</masterLabel>
+        <translation><!-- Jack In The Box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jason Deli</masterLabel>
+        <translation><!-- Jason Deli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Foods</masterLabel>
+        <translation><!-- Key Foods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>King Kullen</masterLabel>
+        <translation><!-- King Kullen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kirkland Signature</masterLabel>
+        <translation><!-- Kirkland Signature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kroger</masterLabel>
+        <translation><!-- Kroger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kroger Wholesome @ Home</masterLabel>
+        <translation><!-- Kroger Wholesome @ Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laura&#39;s Lean</masterLabel>
+        <translation><!-- Laura&apos;s Lean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leon&#39;s Texas Cuisine</masterLabel>
+        <translation><!-- Leon&apos;s Texas Cuisine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marble Rich</masterLabel>
+        <translation><!-- Marble Rich --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market Basket</masterLabel>
+        <translation><!-- Market Basket --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marval</masterLabel>
+        <translation><!-- Marval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meijer</masterLabel>
+        <translation><!-- Meijer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Member&#39;s Mark</masterLabel>
+        <translation><!-- Member&apos;s Mark --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morton&#39;s</masterLabel>
+        <translation><!-- Morton&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nature&#39;s Place</masterLabel>
+        <translation><!-- Nature&apos;s Place --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nestle</masterLabel>
+        <translation><!-- Nestle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Newk&#39;s Deli</masterLabel>
+        <translation><!-- Newk&apos;s Deli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northridge Farm Angus</masterLabel>
+        <translation><!-- Northridge Farm Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ontario Corn Fed AA</masterLabel>
+        <translation><!-- Ontario Corn Fed AA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ontario Corn Fed AAA</masterLabel>
+        <translation><!-- Ontario Corn Fed AAA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ontario Corn Fed Platinum</masterLabel>
+        <translation><!-- Ontario Corn Fed Platinum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outside Purchase</masterLabel>
+        <translation><!-- Outside Purchase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Panera</masterLabel>
+        <translation><!-- Panera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plantation</masterLabel>
+        <translation><!-- Plantation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pot Belly</masterLabel>
+        <translation><!-- Pot Belly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premium Signature Angus</masterLabel>
+        <translation><!-- Premium Signature Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pride of The Farm</masterLabel>
+        <translation><!-- Pride of The Farm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prima Della</masterLabel>
+        <translation><!-- Prima Della --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Selection</masterLabel>
+        <translation><!-- Private Selection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Selection Angus</masterLabel>
+        <translation><!-- Private Selection Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publix</masterLabel>
+        <translation><!-- Publix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quiznos</masterLabel>
+        <translation><!-- Quiznos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RUMBA Beef</masterLabel>
+        <translation><!-- RUMBA Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RUMBA Variety Meats</masterLabel>
+        <translation><!-- RUMBA Variety Meats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rancher&#39;s Reserve</masterLabel>
+        <translation><!-- Rancher&apos;s Reserve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranchers Reg Angus Choice</masterLabel>
+        <translation><!-- Ranchers Reg Angus Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranchers Reg Angus GB/TR</masterLabel>
+        <translation><!-- Ranchers Reg Angus GB/TR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranchers Reg Angus Select</masterLabel>
+        <translation><!-- Ranchers Reg Angus Select --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranchers Registry Choice</masterLabel>
+        <translation><!-- Ranchers Registry Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranchers Registry GB/TR</masterLabel>
+        <translation><!-- Ranchers Registry GB/TR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranchers Registry Select</masterLabel>
+        <translation><!-- Ranchers Registry Select --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Bird</masterLabel>
+        <translation><!-- Red Bird --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redi-Roast</masterLabel>
+        <translation><!-- Redi-Roast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside</masterLabel>
+        <translation><!-- Riverside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIMPLY ESSENTIALS</masterLabel>
+        <translation><!-- SIMPLY ESSENTIALS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPENCER Brand</masterLabel>
+        <translation><!-- SPENCER Brand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safeway</masterLabel>
+        <translation><!-- Safeway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sara Lee</masterLabel>
+        <translation><!-- Sara Lee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schnucks Meat-M</masterLabel>
+        <translation><!-- Schnucks Meat-M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schweigert</masterLabel>
+        <translation><!-- Schweigert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seconds</masterLabel>
+        <translation><!-- Seconds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shady Brook Farms</masterLabel>
+        <translation><!-- Shady Brook Farms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shop Rite</masterLabel>
+        <translation><!-- Shop Rite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shurfine</masterLabel>
+        <translation><!-- Shurfine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signature Cafe</masterLabel>
+        <translation><!-- Signature Cafe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signature Farms</masterLabel>
+        <translation><!-- Signature Farms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Simple Truth</masterLabel>
+        <translation><!-- Simple Truth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sodexo</masterLabel>
+        <translation><!-- Sodexo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sonic</masterLabel>
+        <translation><!-- Sonic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sprouts</masterLabel>
+        <translation><!-- Sprouts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sterling Silver</masterLabel>
+        <translation><!-- Sterling Silver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stew Leonard</masterLabel>
+        <translation><!-- Stew Leonard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stockyards Angus</masterLabel>
+        <translation><!-- Stockyards Angus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Superior Angus Beef</masterLabel>
+        <translation><!-- Superior Angus Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supremas</masterLabel>
+        <translation><!-- Supremas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sysco</masterLabel>
+        <translation><!-- Sysco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sysco Choice</masterLabel>
+        <translation><!-- Sysco Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sysco Select</masterLabel>
+        <translation><!-- Sysco Select --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TNT</masterLabel>
+        <translation><!-- TNT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TVN</masterLabel>
+        <translation><!-- TVN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taco Bell</masterLabel>
+        <translation><!-- Taco Bell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Target</masterLabel>
+        <translation><!-- Target --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Today&#39;s Kitchen</masterLabel>
+        <translation><!-- Today&apos;s Kitchen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Foods</masterLabel>
+        <translation><!-- US Foods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walnut Creek Foods</masterLabel>
+        <translation><!-- Walnut Creek Foods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weight Watchers</masterLabel>
+        <translation><!-- Weight Watchers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesome Pantry</masterLabel>
+        <translation><!-- Wholesome Pantry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wienerschnitzel</masterLabel>
+        <translation><!-- Wienerschnitzel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Willow Brook Farms</masterLabel>
+        <translation><!-- Willow Brook Farms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Willow Brook Foods</masterLabel>
+        <translation><!-- Willow Brook Foods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>World Classics</masterLabel>
+        <translation><!-- World Classics --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

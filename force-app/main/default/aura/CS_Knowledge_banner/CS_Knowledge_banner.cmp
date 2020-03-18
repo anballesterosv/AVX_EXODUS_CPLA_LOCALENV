@@ -1,0 +1,17 @@
+<aura:component controller="CS_OverrideCntrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="validated" type="Boolean"/>
+  <aura:handler event="force:refreshView" action="{!c.doInit}" />
+    
+    <div id="parentDIV" style="overflow:hidden">
+       <center> <p style="position:relative;" id="tofloat">
+            <b><span style="color:red">Important Note : </span>
+             <aura:if isTrue="{!(v.validated == true)}">{!$Label.c.CS_Knowledge_Banner_2}
+          </aura:if>    
+    <aura:if isTrue="{!(v.validated == false)}">{!$Label.c.CS_Knowledge_Banner_1}
+         </aura:if>  </b>
+        
+           </p></center>
+    </div>
+</aura:component>

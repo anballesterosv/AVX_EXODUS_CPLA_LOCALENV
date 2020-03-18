@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LimitIndicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( IsActive__c = false,
+IMAGE(&quot;/sfc/servlet.shepherd/version/download/&quot;&amp;$Label.AVX_IconInactive_NT,&quot;Inactive&quot;),
+IF(
+CurrentLimit__c&lt;=0,
+IMAGE(&quot;/sfc/servlet.shepherd/version/download/&quot;&amp;$Label.AVX_IconAttention_NT,&quot;Attention&quot;),
+IMAGE(&quot;/sfc/servlet.shepherd/version/download/&quot;&amp; $Label.AVX_IconSuccess_NT,&quot;Success&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Limit Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

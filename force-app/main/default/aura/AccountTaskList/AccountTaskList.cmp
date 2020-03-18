@@ -1,0 +1,102 @@
+<aura:component controller="AccountActivityListCompController" implements="flexipage:availableForAllPageTypes,force:appHostable,force:hasRecordId">
+    <aura:attribute name="TaskList" type="AccountActivityListCompController.taskWrapperWithMap[]"/>
+    <aura:attribute name="TaskListShow" type="Task[]"/>
+    <aura:attribute name="ObjectListDropdown" type="String[]"/>
+    <aura:attribute name="status" type="string"/>
+    <aura:attribute name="Taskid" type="Task"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="Taskname" type="String"/>
+    <aura:attribute name="profileSetting" type="Object" />
+    <aura:attribute name="columnList" type="string[]"/>
+    <aura:attribute name="isResponse" type="Boolean" default="false"/>
+    <aura:attribute name="isContact" type="Boolean" default="false"/>
+     <aura:attribute name="isNotContact" type="Boolean"/>
+    <aura:attribute name="isAll" type="Boolean" default="false"/> 
+    <aura:handler event="aura:Waiting" action="{!c.ShowSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}"/>
+    <div class="slds-align--absolute-center">
+        <lightning:spinner aura:id="spinner"
+                           variant="brand"
+                           size="large"
+                           class="slds-hide"/>
+    </div>
+    <div>
+    <ui:button aura:id="reloadBtn" buttonTitle="Refresh Tasks" class="button" label="Refresh Tasks" press="{!c.myAction}"/>
+    </div><br/>
+    <ui:inputSelect label="Select an object:" class="dynamic" value="{!v.status}" aura:id="ObjectDropDown" change="{!c.onObjectSelectChange}" />
+    <br/>
+    
+    <aura:if isTrue="{!v.isResponse}">
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer data_table">
+            <thead>
+                <th >
+                    <div class="slds-text-title--caps" title="Task Name">SUBJECT</div>
+                </th>
+                <th scope="col" >
+                    <div class="slds-truncate" title="activity type">DUE DATE</div>
+                </th>
+                <th scope="col" class = "col_1">
+                    <div class="slds-truncate" title="status">STATUS</div>
+                </th>
+                <th scope="col" class = "col_1">
+                    <div class="slds-truncate" title="Object Name">ASSIGNED TO</div>
+                </th>
+                <aura:if isTrue="{!v.isNotContact}">
+                <th scope="col" class = "col_1">
+                    <div class="slds-truncate" title="call type">RELATED TO</div>
+                </th>
+                </aura:if>
+                <aura:if isTrue="{!v.isAll}">
+                    <th scope="col" class = "col_1" >
+                        <div class="slds-truncate" title="call type">OBJECT</div>
+                    </th>
+                </aura:if>
+                <aura:if isTrue="{!v.isContact}">
+                <th scope="col" class = "col_1">
+                    <div class="slds-truncate" title="call type">Contact Name</div>
+                </th>
+                </aura:if>
+            </thead>
+            <tbody>
+                <aura:iteration var="a" items="{!v.TaskList}" >
+                    <tr class="slds-truncate">
+                        <td  class = "wrappable" scope="col">
+                            <a href="{!'/one/one.app?#/sObject/'+ a.taskList.Id+ '/view'}">{!a.taskList.Subject}</a>
+                        </td>
+                        <td  scope="col">
+                            {!a.taskList.ActivityDate}
+                        </td>
+                        <td   class = "col_1" scope="col">
+                            {!a.taskList.Status}
+                        </td>
+                        <td  class = "col_1" scope="col">
+                            <a href="{!'/one/one.app?#/sObject/'+ a.taskList.OwnerId + '/view'}"  >{!a.taskList.Owner.Name}</a>
+                        </td>
+                        <aura:if isTrue="{!v.isNotContact}">
+                        <td  class = "col_1 wrappable" scope="col">
+                            <a href="{!'/one/one.app?#/sObject/'+ a.taskList.WhatId + '/view'}" >{!a.taskList.What.Name}</a>
+                        </td> 
+                        </aura:if>
+                        <aura:if isTrue="{!v.isAll}">
+                        <td  class = "col_1" scope="col">
+                           {!a.objectLabel}
+                        </td>
+                        </aura:if>
+                        <aura:if isTrue="{!v.isContact}">
+                		<td scope="col" class = "col_1">
+                    		<a href="{!'/one/one.app?#/sObject/'+ a.taskList.WhoId+ '/view'}">{!a.taskList.Who.Name}</a>
+                		</td>
+               		    </aura:if>
+                    </tr>
+                </aura:iteration>  
+            </tbody>
+        </table>
+        <aura:set attribute="else">
+            <div class="slds-page-header" role="banner">
+                <h1 class="slds-page-header__title slds-m-right--small
+                           slds-truncate slds-align-left">No Tasks has been associated</h1>
+                <br/>
+            </div></aura:set>
+    </aura:if>          
+</aura:component>

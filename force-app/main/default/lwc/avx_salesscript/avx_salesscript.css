@@ -1,0 +1,7 @@
+.popOutButton{
+    display: none!important;
+}
+
+.slds-button .slds-button_icon .popOutButton .slds-m-left_xx-small .slds-p-around_xx-small .slds-button_icon-bare{
+    display: none!important;
+}

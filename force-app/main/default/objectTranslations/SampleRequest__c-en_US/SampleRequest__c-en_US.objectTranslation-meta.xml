@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Samples</value>
+    </caseValues>
+    <layouts>
+        <layout>Protein Sample Request</layout>
+        <sections>
+            <label><!-- Additional Notes --></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- End User Information --></label>
+            <section>End User Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sample Request Detail --></label>
+            <section>Sample Request Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record type for all Protein requests [Cargill Beef, Case Ready, CVAP-Beef (Burgers), CVAP-Poultry (Eggs),Turkey &amp; Cooked Meats] --></description>
+        <label><!-- Protein Sample Request --></label>
+        <name>Protein_Sample_Request</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If Other is picked for &quot;What was the Deciding Factor&quot;, then something needs to entered in the &quot;Other Deciding Factor&quot; field. --></errorMessage>
+        <name>CVAP_Poultry_Other_Deciding_Factor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Status to &quot;Ready for Further Processing&quot; or &quot;Complete&quot; or &quot;Partially Fufilled&quot; unless at least one product has been added. --></errorMessage>
+        <name>CVAP_Poultry_Require_Products_when_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Reason for Sample is &apos;CIC Request&apos;, then &apos;COA Required&apos; must be filled in. --></errorMessage>
+        <name>Protein_CICS_request_requires_entry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requested Delivery Date can&apos;t be on Monday. --></errorMessage>
+        <name>Protein_Dont_allow_delivery_on_Monday</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All Customer Contact and Address details are required when &apos;Is Product Being Pulled From Distributor?&apos; is marked No. Shipping Company, Attention, Street, City, State, Postal Code, Phone --></errorMessage>
+        <name>Protein_SampleRequest_Address_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Distributor information is required when &quot;Is Product Being Pulled From Distributor&quot; is marked Yes. 
+Distributor Name and Distributor Location are required. --></errorMessage>
+        <name>Protein_SampleRequest_Distributor_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End User information is required when &quot;Is Product Being Pulled From Distributor&quot; is marked Yes and Reason is not &apos;Customer Visit&apos; or &apos;Lead&apos;.
+End User Company Name, End User Contact and End User Location are required. --></errorMessage>
+        <name>Protein_SampleRequest_End_User_Req</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Script de Venta</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Script de Ventas</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Script Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Script de Ventas</label>
+            <section>Script</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Script de Venta</nameFieldLabel>
+    <recordTypes>
+        <label>Script de Ventas</label>
+        <name>SalesScript</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Script de Servicios</label>
+        <name>Service_Script</name>
+    </recordTypes>
+</CustomObjectTranslation>

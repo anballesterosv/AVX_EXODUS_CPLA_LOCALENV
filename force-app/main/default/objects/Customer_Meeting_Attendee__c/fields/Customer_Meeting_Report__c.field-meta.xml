@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Meeting_Report__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Meeting Report</label>
+    <referenceTo>CustomerMeetingReport__c</referenceTo>
+    <relationshipName>Cargill_Meeting_Attendees</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

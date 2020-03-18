@@ -1,0 +1,23 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-text-color_destructive">
+              <p>{validationMessage}</p>
+            </div>
+              <lightning-accordion class="example-accordion"
+                                   onsectiontoggle={handleToggleSection}
+                                   active-section-name={currentScript}>
+                  <template if:true={lstSalesScripts}>
+                    <template for:each={lstSalesScripts} for:item="s" for:index="index">
+                      <lightning-accordion-section key={s.keyForeach} name={s.CountyCode__c} label={s.Name}>
+                        <lightning-formatted-rich-text value={s.TelesalesScript__c}></lightning-formatted-rich-text>
+                      </lightning-accordion-section>
+                    </template>      
+                  </template>
+              </lightning-accordion>
+        </div>
+        
+    <!--spinner-->
+    <div if:true={showSpinner}><lightning-spinner alternative-text="Loading..."></lightning-spinner></div>
+      </article>
+</template>

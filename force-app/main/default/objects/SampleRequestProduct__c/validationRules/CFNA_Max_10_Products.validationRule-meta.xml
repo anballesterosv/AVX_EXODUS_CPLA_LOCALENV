@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFNA_Max_10_Products</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISNEW(), 
+RecordType.Name = &#39;CFNA Sample Request Product&#39;, 
+SampleRequest__r.Num_of_Products__c &gt;= 10)</errorConditionFormula>
+    <errorMessage>Cannot add more than 10 products to a Sample Request</errorMessage>
+</ValidationRule>

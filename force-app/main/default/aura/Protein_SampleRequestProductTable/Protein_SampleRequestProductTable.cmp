@@ -1,0 +1,56 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="lstProducts" type="SampleRequestProduct__c[]" />
+    <aura:attribute name="lstProductsWrapper" type="sobject[]"/>
+    <aura:attribute name="sampleBU" type="String"/>
+    <aura:attribute name="sampleRecType" type="String"/>
+    <aura:attribute name="srpBUs" type="List" default="[]"/>
+    <aura:attribute name="srpTypes" type="List" default="[]"/>
+    
+    <table class="slds-table slds-table_bordered">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col" class="slds-cell-buffer_left">
+                    <div class="slds-truncate" title="SR Product #"><aura:unescapedHtml value="SR Product #"/></div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Product"><aura:unescapedHtml value="Product"/><abbr class="slds-required" title="required">*</abbr></div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Description"><aura:unescapedHtml value="Description"/></div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Product Cost"> <aura:unescapedHtml value="Product Cost"/></div>
+                </th>
+                
+                <th scope="col">
+                    <div class="wrapper" title="Quantity"><aura:unescapedHtml value="Quantity"/><abbr class="slds-required" title="required">*</abbr></div>
+                </th>
+                <th scope="col">  
+                    <div class="slds-truncate" title="Business Unit"><aura:unescapedHtml value="Business Unit"/></div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Type"><aura:unescapedHtml value="Type"/><abbr class="slds-required" title="required">*</abbr></div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Other Type"><aura:unescapedHtml value="Other Type"/></div>
+                </th>
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:if isTrue="{!v.lstProductsWrapper.length != 0}">
+                <aura:iteration items="{!v.lstProductsWrapper}" var="prod" indexVar="index">
+                    <c:Protein_SampleRequestProductTableRow productWrapper="{!prod}" selectedProductLookUpRecord="{!prod.relatedProduct}" rowIndex="{!index}" sampleBU="{!v.sampleBU}" sampleRecType="{!v.sampleRecType}"/>
+                </aura:iteration>
+            </aura:if>
+            
+        </tbody>
+    </table>
+    <div class="slds-align_absolute-center">
+        <aura:if isTrue="{!v.lstProductsWrapper.length == 0}">
+            <br/><br/><br/>
+            <p>No records found. Please click on <b>Add Product</b> to add new Products.</p>
+        </aura:if>
+    </div>
+</aura:component>

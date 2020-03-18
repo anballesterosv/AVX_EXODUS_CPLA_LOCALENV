@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Business Details</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Demo field set --></label>
+        <name>Demo_field_set</name>
+    </fieldSets>
+    <layouts>
+        <layout>Business Detail Layout</layout>
+        <sections>
+            <label><!-- Credit &amp; Finance Rating --></label>
+            <section>Credit &amp; Finance Rating</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Detail --></label>
+            <section>Customer Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Overview --></label>
+            <section>Customer Overview</section>
+        </sections>
+        <sections>
+            <label><!-- SWOT --></label>
+            <section>SWOT</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Account Team --></label>
+        <name>Account_Team</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

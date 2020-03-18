@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region__c</fullName>
+    <description>To report on plant locations by region</description>
+    <externalId>false</externalId>
+    <label>Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Region A</fullName>
+                <default>false</default>
+                <label>Region A</label>
+            </value>
+            <value>
+                <fullName>Region B</fullName>
+                <default>false</default>
+                <label>Region B</label>
+            </value>
+            <value>
+                <fullName>Region C</fullName>
+                <default>false</default>
+                <label>Region C</label>
+            </value>
+            <value>
+                <fullName>Region D</fullName>
+                <default>false</default>
+                <label>Region D</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

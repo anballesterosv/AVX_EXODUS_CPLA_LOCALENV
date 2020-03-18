@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Competitor Type --></label>
+    <name>Competitor_Type__c</name>
+    <picklistValues>
+        <masterLabel>Distributor Broker</masterLabel>
+        <translation><!-- Distributor Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Producer</masterLabel>
+        <translation><!-- Producer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

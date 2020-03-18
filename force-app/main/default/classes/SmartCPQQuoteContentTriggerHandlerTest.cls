@@ -1,0 +1,161 @@
+@isTest
+private class SmartCPQQuoteContentTriggerHandlerTest {
+	// Example of cart XML sent from CPQ to Salesforce when closing CPQ - contains <NUMBER_OF_CART_LINES> Cart Lines  
+	private static final String CART_XML_CONTENT = '<cartSessionResults><cart domain="00Dc0000003w5Z2EAI" id="a0mc0000003kal2AAA" release="1" type="C">  <modelPK id="CPQModel_Cargill" release="1" />  <createInfo userID="005c0000003ILFpAAO" groupID="Beef System Administrator" userName="Romain Derval" date="20170925 203337" />  <updateInfo userID="005c0000003ILFpAAO" groupID="Beef System Administrator" userName="Romain Derval" date="20171017 152120" />  <ownerInfo userID="005c0000003ILFpAAO" groupID="System Administrator" userName="Romain Derval" date="20170925 203337" />  <activeInfo active="off" date="null" />  <statusInfo status="Draft" date="20171013 191425" />  <fields>    <ParameterTab.DomainId>00Dc0000003w5Z2EAI</ParameterTab.DomainId>    <ParameterTab.ReleaseNumber>1</ParameterTab.ReleaseNumber>    <ParameterTab.QuoteId>a0mc0000003kal2AAA</ParameterTab.QuoteId>    <ParameterTab.CustomerId></ParameterTab.CustomerId>    <ParameterTab.Language>US</ParameterTab.Language>    <ParameterTab.Currency>USD</ParameterTab.Currency>    <ParameterTab.QuoteDescription>Sam&apos;s club new beef quote 1 RDE</ParameterTab.QuoteDescription>    <ParameterTab.ApplicationDate></ParameterTab.ApplicationDate>    <ParameterTab.PriceList></ParameterTab.PriceList>    <ParameterTab.AdvPriceList></ParameterTab.AdvPriceList>    <ParameterTab.PartnerCode>B2CPartner</ParameterTab.PartnerCode>    <ParameterTab.UserCode></ParameterTab.UserCode>    <ParameterTab.LeadId></ParameterTab.LeadId>    <ParameterTab.ParentAccountId></ParameterTab.ParentAccountId>    <ParameterTab.ExternalId></ParameterTab.ExternalId>    <AddressTab.SoldTo.CustomerId></AddressTab.SoldTo.CustomerId>    <AddressTab.SoldTo.CustomerName>SAM&apos;S WHOLESALE (BOXED BEEF)</AddressTab.SoldTo.CustomerName>    <AddressTab.SoldTo.Street></AddressTab.SoldTo.Street>    <AddressTab.SoldTo.ContactName></AddressTab.SoldTo.ContactName>    <AddressTab.SoldTo.City></AddressTab.SoldTo.City>    <AddressTab.SoldTo.ZipCode></AddressTab.SoldTo.ZipCode>    <AddressTab.SoldTo.State></AddressTab.SoldTo.State>    <AddressTab.SoldTo.Country></AddressTab.SoldTo.Country>    <AddressTab.BillTo.CustomerId></AddressTab.BillTo.CustomerId>    <AddressTab.BillTo.CustomerName>SAM&apos;S WHOLESALE (BOXED BEEF)</AddressTab.BillTo.CustomerName>    <AddressTab.BillTo.Street></AddressTab.BillTo.Street>    <AddressTab.BillTo.ContactName></AddressTab.BillTo.ContactName>    <AddressTab.BillTo.City></AddressTab.BillTo.City>    <AddressTab.BillTo.ZipCode></AddressTab.BillTo.ZipCode>    <AddressTab.BillTo.State></AddressTab.BillTo.State>    <AddressTab.BillTo.Country></AddressTab.BillTo.Country>    <AddressTab.ShipTo.CustomerId></AddressTab.ShipTo.CustomerId>    <AddressTab.ShipTo.CustomerName>SAM&apos;S WHOLESALE (BOXED BEEF)</AddressTab.ShipTo.CustomerName>    <AddressTab.ShipTo.Street></AddressTab.ShipTo.Street>    <AddressTab.ShipTo.ContactName></AddressTab.ShipTo.ContactName>    <AddressTab.ShipTo.City></AddressTab.ShipTo.City>    <AddressTab.ShipTo.ZipCode></AddressTab.ShipTo.ZipCode>    <AddressTab.ShipTo.State></AddressTab.ShipTo.State>    <AddressTab.ShipTo.Country></AddressTab.ShipTo.Country>    <CartInfoTab.TotalQuote></CartInfoTab.TotalQuote>    <CartInfoTab.OwnerIdNotTouch>Rose Gonzalez</CartInfoTab.OwnerIdNotTouch>    <CartInfoTab.OwnerAddress>4270 Tuscany Street  Corona, CA 92881, États-Unis (951) 284-1050</CartInfoTab.OwnerAddress>    <CartInfoTab.OwnerLogo></CartInfoTab.OwnerLogo>    <CartInfoTab.UserFirstName>Rose</CartInfoTab.UserFirstName>    <CartInfoTab.ContractType>1</CartInfoTab.ContractType>    <CartInfoTab.ContractStartDate>20170925 000000</CartInfoTab.ContractStartDate>    <CartInfoTab.ContractEndDate>20180930 000000</CartInfoTab.ContractEndDate>    <CartInfoTab.ContractDuration></CartInfoTab.ContractDuration>    <CartInfoTab.UserMail>rderval@pros.com</CartInfoTab.UserMail>    <CartInfoTab.UserLastName>Gonzalez</CartInfoTab.UserLastName>    <CartInfoTab.UserPhone></CartInfoTab.UserPhone>    <CartInfoTab.OriginalContractPK></CartInfoTab.OriginalContractPK>    <CartInfoTab.AccountManagerName></CartInfoTab.AccountManagerName>    <CartInfoTab.AccountManagerEmail></CartInfoTab.AccountManagerEmail>    <CartInfoTab.FreightTable>SAMSWAR002SAMSCCA001~0.2|SAMSWAR002SAMSCCA005~0.06|SAMSWAR002SAMSCFL004~0.12|SAMSWAR002SAMSCFL005~0.12|SAMSWAR002SAMSCIN001~0.074</CartInfoTab.FreightTable>    <CartInfoTab.HeaderPriceOverageLB>0.2912</CartInfoTab.HeaderPriceOverageLB>    <CartInfoTab.HeaderTotalLB>151</CartInfoTab.HeaderTotalLB>    <CartInfoTab.HeaderTotalOverage>43.971</CartInfoTab.HeaderTotalOverage>    <CartInfoTab.HeaderTotalProgram>0</CartInfoTab.HeaderTotalProgram>    <CartInfoTab.AdvertisingFundProgram></CartInfoTab.AdvertisingFundProgram>    <CartInfoTab.SlottingFeesProgram></CartInfoTab.SlottingFeesProgram>    <CartInfoTab.FoodShowFundProgram></CartInfoTab.FoodShowFundProgram>    <CartInfoTab.BrokerNames></CartInfoTab.BrokerNames>    <CartInfoTab.HeaderTotalDealScore>59.684</CartInfoTab.HeaderTotalDealScore>    <CartInfoTab.HeaderTotalMargin>0</CartInfoTab.HeaderTotalMargin>    <CartInfoTab.HeaderTotalExpense>0</CartInfoTab.HeaderTotalExpense>    <CartInfoTab.GolfOutingsExpense></CartInfoTab.GolfOutingsExpense>    <CartInfoTab.CharityEventsExpense>0</CartInfoTab.CharityEventsExpense>    <CartInfoTab.HeaderTotalProgramLB>151</CartInfoTab.HeaderTotalProgramLB>    <CartInfoTab.DealSize>LARGE</CartInfoTab.DealSize>    <CartInfoTab.AgreementNb>A-0000000352</CartInfoTab.AgreementNb>    <CartInfoTab.AcceptedDate></CartInfoTab.AcceptedDate>    <OrderInfoTab.OrderId></OrderInfoTab.OrderId>    <ChangeAndControlTab.ActiveRelease>0</ChangeAndControlTab.ActiveRelease>    <ChangeAndControlTab.ActiveReleaseDate>20171004 224550</ChangeAndControlTab.ActiveReleaseDate>    <ChangeAndControlTab.CurrentStatus>Draft</ChangeAndControlTab.CurrentStatus>    <ChangeAndControlTab.StatusDate>20171013 191425</ChangeAndControlTab.StatusDate>    <ChangeAndControlTab.CurrentOwnerId>005c0000003ILFpAAO</ChangeAndControlTab.CurrentOwnerId>    <ChangeAndControlTab.CurrentOwnerName>Romain Derval</ChangeAndControlTab.CurrentOwnerName>    <ChangeAndControlTab.CurrentOwnerGroup>System Administrator</ChangeAndControlTab.CurrentOwnerGroup>    <ChangeAndControlTab.OwnerDate>20170925 203337</ChangeAndControlTab.OwnerDate>    <ChangeAndControlTab.CreateUserId>005c0000003ILFpAAO</ChangeAndControlTab.CreateUserId>    <ChangeAndControlTab.CreateUserName>Romain Derval</ChangeAndControlTab.CreateUserName>    <ChangeAndControlTab.CreateUserGroup>Beef System Administrator</ChangeAndControlTab.CreateUserGroup>    <ChangeAndControlTab.CreateDate>20170925 203337</ChangeAndControlTab.CreateDate>    <ChangeAndControlTab.LastUpdateUserId>005c0000003ILFpAAO</ChangeAndControlTab.LastUpdateUserId>    <ChangeAndControlTab.LastUpdateUserName>Romain Derval</ChangeAndControlTab.LastUpdateUserName>    <ChangeAndControlTab.LastUpdateUserGroup>Beef System Administrator</ChangeAndControlTab.LastUpdateUserGroup>    <ChangeAndControlTab.LastUpdateDate>20171017 152120</ChangeAndControlTab.LastUpdateDate>  </fields>  <totalCells>    <PriceOverageLB>0.2912</PriceOverageLB>    <TotalOverage>43.971</TotalOverage>    <TotalLB>151</TotalLB>    <TotalMargin>0</TotalMargin>    <TotalMarginLB>0</TotalMarginLB>    <TotalDealScore>59.684</TotalDealScore>    <TotalProgram>0</TotalProgram>    <TotalExpense>0</TotalExpense>    <DealSize>Light</DealSize>    <NoGuidanceFlag>1</NoGuidanceFlag>    <SpecialSKUFlag>0</SpecialSKUFlag>    <Approval_Zone>RED</Approval_Zone>  </totalCells>  <cartLines>    <cartLine id="2" type="CP7" subline="no" service="CAT_CAR" parent="0" seqNum="1" datecreate="20171009 152139" dateupdate="20171017 152119">      <ItemSheet></ItemSheet>      <ProductCode>389</ProductCode>      <Description>[389] GRND NF BF 90 FIN CLR 80</Description>      <FormulaType>USDA</FormulaType>      <BaseCode>393</BaseCode>      <IMPSUSDAReport>Ground Beef 93% - (LM_XB459)</IMPSUSDAReport>      <NSPFloorPrice>0.368</NSPFloorPrice>      <NSPTargetPrice>0.368</NSPTargetPrice>      <NSPExpertPrice>0.368</NSPExpertPrice>      <NSPMaxPrice>0.368</NSPMaxPrice>      <RealNetSalesPrice>0.22</RealNetSalesPrice>      <NetSalesPrice>0.294</NetSalesPrice>      <OnSalePrice>0</OnSalePrice>      <PctTimeOnSale>0</PctTimeOnSale>      <FloorPrice>0.294</FloorPrice>      <TargetPrice>0.294</TargetPrice>      <ExpertPrice>0.294</ExpertPrice>      <MaxPrice>0.294</MaxPrice>      <QuotedFOB>0.2924</QuotedFOB>      <ExpectedOverageLB>0</ExpectedOverageLB>      <CaseWeight>0</CaseWeight>      <BlendedPrice>0.294</BlendedPrice>      <DealScore>59.6735</DealScore>      <SalesMultiplier>0</SalesMultiplier>      <Quantity>150</Quantity>      <UOM>lb</UOM>      <Weeks>1</Weeks>      <ProductTotalLB>150</ProductTotalLB>      <ActualTotalLB>150</ActualTotalLB>      <ShipTo>SAMSWAR002SAMSCIN001</ShipTo>      <BilledFreight>0.074</BilledFreight>      <QuotedFOBLB>0.22</QuotedFOBLB>      <ProgramTF>Yes</ProgramTF>      <ProgramLB>0</ProgramLB>      <DiscountAccrual>0</DiscountAccrual>      <CorporateAccrual>0</CorporateAccrual>      <DemoRateAccrual>0</DemoRateAccrual>      <VolumeRebateAccrual>0</VolumeRebateAccrual>      <AccrualLB>0</AccrualLB>      <BrokerLB>0</BrokerLB>      <ExpenseLB>0</ExpenseLB>      <SFDCCLM_TotalPrice2>0</SFDCCLM_TotalPrice2>      <ContractSyncID>CPE.wksCargill/CP/cp_Product_Configuration.gp.wksCargill/SBL/sblTotal//CPE.wksCargill/SI/389/20171009152139</ContractSyncID>      <ContractLineType>0</ContractLineType>      <RenewalType>0</RenewalType>      <LegacySystem>XLGO</LegacySystem>      <ProductCostLB>0</ProductCostLB>      <MarginLB>0</MarginLB>      <SpecialSKU>0</SpecialSKU>      <Result>NA</Result>    </cartLine>    <cartLine id="3" type="CP7" subline="no" service="CAT_CAR" parent="0" seqNum="2" datecreate="20171016 163217" dateupdate="20171017 153012">      <ItemSheet></ItemSheet>      <ProductCode>2239</ProductCode>      <Description>[2239] GRND NF CHX 81 FIN CLR 80</Description>      <FormulaType>USDA</FormulaType>      <BaseCode>240</BaseCode>      <IMPSUSDAReport>N/A - (LM_XB459)</IMPSUSDAReport>      <NSPFloorPrice>0.1719</NSPFloorPrice>      <NSPTargetPrice>0.1778</NSPTargetPrice>      <NSPExpertPrice>0.1853</NSPExpertPrice>      <NSPMaxPrice>0.2054</NSPMaxPrice>      <RealNetSalesPrice>-0.074</RealNetSalesPrice>      <NetSalesPrice>0</NetSalesPrice>      <OnSalePrice>0</OnSalePrice>      <PctTimeOnSale>0</PctTimeOnSale>      <FloorPrice>0.0979</FloorPrice>      <TargetPrice>0.1038</TargetPrice>      <ExpertPrice>0.1113</ExpertPrice>      <MaxPrice>0.1314</MaxPrice>      <QuotedFOB>0.111</QuotedFOB>      <ExpectedOverageLB>0</ExpectedOverageLB>      <CaseWeight>0</CaseWeight>      <BlendedPrice>0</BlendedPrice>      <DealScore>99.2</DealScore>      <SalesMultiplier>0</SalesMultiplier>      <Quantity>1</Quantity>      <UOM>lb</UOM>      <Weeks>1</Weeks>      <ProductTotalLB>1</ProductTotalLB>      <ActualTotalLB>1</ActualTotalLB>      <ShipTo>SAMSWAR002SAMSCIN001</ShipTo>      <BilledFreight>0.074</BilledFreight>      <QuotedFOBLB>-0.074</QuotedFOBLB>      <ProgramTF>Yes</ProgramTF>      <ProgramLB>0</ProgramLB>      <DiscountAccrual>0</DiscountAccrual>      <CorporateAccrual>0</CorporateAccrual>      <DemoRateAccrual>0</DemoRateAccrual>      <VolumeRebateAccrual>0</VolumeRebateAccrual>      <AccrualLB>0</AccrualLB>      <BrokerLB>0</BrokerLB>      <ExpenseLB>0</ExpenseLB>      <SFDCCLM_TotalPrice2>0</SFDCCLM_TotalPrice2>      <ContractSyncID>CPE.wksCargill/CP/cp_Product_Configuration.gp.wksCargill/SBL/sblTotal//CPE.wksCargill/SI/2239/20171016163217</ContractSyncID>      <ContractLineType>0</ContractLineType>      <RenewalType>0</RenewalType>      <LegacySystem>XLGO</LegacySystem>      <ProductCostLB>0</ProductCostLB>      <MarginLB>0</MarginLB> <SpecialSKU>0</SpecialSKU><Result>NA</Result></cartLine></cartLines><cartAdjustments></cartAdjustments></cart></cartSessionResults>';
+    private static final String CART_XML_CONTENT_UPDATED = '<cartSessionResults><cart domain="00Dc0000003w5Z2EAI" id="a0mc0000003kal2AAA" release="1" type="C">  <modelPK id="CPQModel_Cargill" release="1" />  <createInfo userID="005c0000003ILFpAAO" groupID="Beef System Administrator" userName="Romain Derval" date="20170925 203337" />  <updateInfo userID="005c0000003ILFpAAO" groupID="Beef System Administrator" userName="Romain Derval" date="20171017 152120" />  <ownerInfo userID="005c0000003ILFpAAO" groupID="System Administrator" userName="Romain Derval" date="20170925 203337" />  <activeInfo active="off" date="null" />  <statusInfo status="Draft" date="20171013 191425" />  <fields>    <ParameterTab.DomainId>00Dc0000003w5Z2EAI</ParameterTab.DomainId>    <ParameterTab.ReleaseNumber>1</ParameterTab.ReleaseNumber>    <ParameterTab.QuoteId>a0mc0000003kal2AAA</ParameterTab.QuoteId>    <ParameterTab.CustomerId></ParameterTab.CustomerId>    <ParameterTab.Language>US</ParameterTab.Language>    <ParameterTab.Currency>USD</ParameterTab.Currency>    <ParameterTab.QuoteDescription>Sam&apos;s club new beef quote 1 RDE</ParameterTab.QuoteDescription>    <ParameterTab.ApplicationDate></ParameterTab.ApplicationDate>    <ParameterTab.PriceList></ParameterTab.PriceList>    <ParameterTab.AdvPriceList></ParameterTab.AdvPriceList>    <ParameterTab.PartnerCode>B2CPartner</ParameterTab.PartnerCode>    <ParameterTab.UserCode></ParameterTab.UserCode>    <ParameterTab.LeadId></ParameterTab.LeadId>    <ParameterTab.ParentAccountId></ParameterTab.ParentAccountId>    <ParameterTab.ExternalId></ParameterTab.ExternalId>    <AddressTab.SoldTo.CustomerId></AddressTab.SoldTo.CustomerId>    <AddressTab.SoldTo.CustomerName>SAM&apos;S WHOLESALE (BOXED BEEF)</AddressTab.SoldTo.CustomerName>    <AddressTab.SoldTo.Street></AddressTab.SoldTo.Street>    <AddressTab.SoldTo.ContactName></AddressTab.SoldTo.ContactName>    <AddressTab.SoldTo.City></AddressTab.SoldTo.City>    <AddressTab.SoldTo.ZipCode></AddressTab.SoldTo.ZipCode>    <AddressTab.SoldTo.State></AddressTab.SoldTo.State>    <AddressTab.SoldTo.Country></AddressTab.SoldTo.Country>    <AddressTab.BillTo.CustomerId></AddressTab.BillTo.CustomerId>    <AddressTab.BillTo.CustomerName>SAM&apos;S WHOLESALE (BOXED BEEF)</AddressTab.BillTo.CustomerName>    <AddressTab.BillTo.Street></AddressTab.BillTo.Street>    <AddressTab.BillTo.ContactName></AddressTab.BillTo.ContactName>    <AddressTab.BillTo.City></AddressTab.BillTo.City>    <AddressTab.BillTo.ZipCode></AddressTab.BillTo.ZipCode>    <AddressTab.BillTo.State></AddressTab.BillTo.State>    <AddressTab.BillTo.Country></AddressTab.BillTo.Country>    <AddressTab.ShipTo.CustomerId></AddressTab.ShipTo.CustomerId>    <AddressTab.ShipTo.CustomerName>SAM&apos;S WHOLESALE (BOXED BEEF)</AddressTab.ShipTo.CustomerName>    <AddressTab.ShipTo.Street></AddressTab.ShipTo.Street>    <AddressTab.ShipTo.ContactName></AddressTab.ShipTo.ContactName>    <AddressTab.ShipTo.City></AddressTab.ShipTo.City>    <AddressTab.ShipTo.ZipCode></AddressTab.ShipTo.ZipCode>    <AddressTab.ShipTo.State></AddressTab.ShipTo.State>    <AddressTab.ShipTo.Country></AddressTab.ShipTo.Country>    <CartInfoTab.TotalQuote></CartInfoTab.TotalQuote>    <CartInfoTab.OwnerIdNotTouch>Rose Gonzalez</CartInfoTab.OwnerIdNotTouch>    <CartInfoTab.OwnerAddress>4270 Tuscany Street  Corona, CA 92881, États-Unis (951) 284-1050</CartInfoTab.OwnerAddress>    <CartInfoTab.OwnerLogo></CartInfoTab.OwnerLogo>    <CartInfoTab.UserFirstName>Rose</CartInfoTab.UserFirstName>    <CartInfoTab.ContractType>1</CartInfoTab.ContractType>    <CartInfoTab.ContractStartDate>20170925 000000</CartInfoTab.ContractStartDate>    <CartInfoTab.ContractEndDate>20180930 000000</CartInfoTab.ContractEndDate>    <CartInfoTab.ContractDuration></CartInfoTab.ContractDuration>    <CartInfoTab.UserMail>rderval@pros.com</CartInfoTab.UserMail>    <CartInfoTab.UserLastName>Gonzalez</CartInfoTab.UserLastName>    <CartInfoTab.UserPhone></CartInfoTab.UserPhone>    <CartInfoTab.OriginalContractPK></CartInfoTab.OriginalContractPK>    <CartInfoTab.AccountManagerName></CartInfoTab.AccountManagerName>    <CartInfoTab.AccountManagerEmail></CartInfoTab.AccountManagerEmail>    <CartInfoTab.FreightTable>SAMSWAR002SAMSCCA001~0.2|SAMSWAR002SAMSCCA005~0.06|SAMSWAR002SAMSCFL004~0.12|SAMSWAR002SAMSCFL005~0.12|SAMSWAR002SAMSCIN001~0.074</CartInfoTab.FreightTable>    <CartInfoTab.HeaderPriceOverageLB>0.2912</CartInfoTab.HeaderPriceOverageLB>    <CartInfoTab.HeaderTotalLB>151</CartInfoTab.HeaderTotalLB>    <CartInfoTab.HeaderTotalOverage>43.971</CartInfoTab.HeaderTotalOverage>    <CartInfoTab.HeaderTotalProgram>0</CartInfoTab.HeaderTotalProgram>    <CartInfoTab.AdvertisingFundProgram></CartInfoTab.AdvertisingFundProgram>    <CartInfoTab.SlottingFeesProgram></CartInfoTab.SlottingFeesProgram>    <CartInfoTab.FoodShowFundProgram></CartInfoTab.FoodShowFundProgram>    <CartInfoTab.BrokerNames></CartInfoTab.BrokerNames>    <CartInfoTab.HeaderTotalDealScore>59.684</CartInfoTab.HeaderTotalDealScore>    <CartInfoTab.HeaderTotalMargin>0</CartInfoTab.HeaderTotalMargin>    <CartInfoTab.HeaderTotalExpense>0</CartInfoTab.HeaderTotalExpense>    <CartInfoTab.GolfOutingsExpense></CartInfoTab.GolfOutingsExpense>    <CartInfoTab.CharityEventsExpense>0</CartInfoTab.CharityEventsExpense>    <CartInfoTab.HeaderTotalProgramLB>151</CartInfoTab.HeaderTotalProgramLB>    <CartInfoTab.DealSize>LARGE</CartInfoTab.DealSize>    <CartInfoTab.AgreementNb>A-0000000352</CartInfoTab.AgreementNb>    <CartInfoTab.AcceptedDate></CartInfoTab.AcceptedDate>    <OrderInfoTab.OrderId></OrderInfoTab.OrderId>    <ChangeAndControlTab.ActiveRelease>0</ChangeAndControlTab.ActiveRelease>    <ChangeAndControlTab.ActiveReleaseDate>20171004 224550</ChangeAndControlTab.ActiveReleaseDate>    <ChangeAndControlTab.CurrentStatus>Draft</ChangeAndControlTab.CurrentStatus>    <ChangeAndControlTab.StatusDate>20171013 191425</ChangeAndControlTab.StatusDate>    <ChangeAndControlTab.CurrentOwnerId>005c0000003ILFpAAO</ChangeAndControlTab.CurrentOwnerId>    <ChangeAndControlTab.CurrentOwnerName>Romain Derval</ChangeAndControlTab.CurrentOwnerName>    <ChangeAndControlTab.CurrentOwnerGroup>System Administrator</ChangeAndControlTab.CurrentOwnerGroup>    <ChangeAndControlTab.OwnerDate>20170925 203337</ChangeAndControlTab.OwnerDate>    <ChangeAndControlTab.CreateUserId>005c0000003ILFpAAO</ChangeAndControlTab.CreateUserId>    <ChangeAndControlTab.CreateUserName>Romain Derval</ChangeAndControlTab.CreateUserName>    <ChangeAndControlTab.CreateUserGroup>Beef System Administrator</ChangeAndControlTab.CreateUserGroup>    <ChangeAndControlTab.CreateDate>20170925 203337</ChangeAndControlTab.CreateDate>    <ChangeAndControlTab.LastUpdateUserId>005c0000003ILFpAAO</ChangeAndControlTab.LastUpdateUserId>    <ChangeAndControlTab.LastUpdateUserName>Romain Derval</ChangeAndControlTab.LastUpdateUserName>    <ChangeAndControlTab.LastUpdateUserGroup>Beef System Administrator</ChangeAndControlTab.LastUpdateUserGroup>    <ChangeAndControlTab.LastUpdateDate>20171017 152120</ChangeAndControlTab.LastUpdateDate>  </fields>  <totalCells>    <PriceOverageLB>0.2912</PriceOverageLB>    <TotalOverage>43.971</TotalOverage>    <TotalLB>151</TotalLB>    <TotalMargin>0</TotalMargin>    <TotalMarginLB>0</TotalMarginLB>    <TotalDealScore>59.684</TotalDealScore>    <TotalProgram>0</TotalProgram>    <TotalExpense>0</TotalExpense>    <DealSize>Light</DealSize>    <NoGuidanceFlag>1</NoGuidanceFlag>    <SpecialSKUFlag>0</SpecialSKUFlag>    <Approval_Zone>RED</Approval_Zone>  </totalCells>  <cartLines>    <cartLine id="2" type="CP7" subline="no" service="CAT_CAR" parent="0" seqNum="1" datecreate="20171009 152139" dateupdate="20171017 152119">      <ItemSheet></ItemSheet>      <ProductCode>389</ProductCode>      <Description>[389] GRND NF BF 90 FIN CLR 80</Description>      <FormulaType>USDA</FormulaType>      <BaseCode>393</BaseCode>      <IMPSUSDAReport>Ground Beef 93% - (LM_XB459)</IMPSUSDAReport>      <NSPFloorPrice>0.368</NSPFloorPrice>      <NSPTargetPrice>0.368</NSPTargetPrice>      <NSPExpertPrice>0.368</NSPExpertPrice>      <NSPMaxPrice>0.368</NSPMaxPrice>      <RealNetSalesPrice>0.22</RealNetSalesPrice>      <NetSalesPrice>0.294</NetSalesPrice>      <OnSalePrice>0</OnSalePrice>      <PctTimeOnSale>0</PctTimeOnSale>      <FloorPrice>0.294</FloorPrice>      <TargetPrice>0.294</TargetPrice>      <ExpertPrice>0.294</ExpertPrice>      <MaxPrice>0.294</MaxPrice>      <QuotedFOB>0.2924</QuotedFOB>      <ExpectedOverageLB>0</ExpectedOverageLB>      <CaseWeight>0</CaseWeight>      <BlendedPrice>0.294</BlendedPrice>      <DealScore>59.6735</DealScore>      <SalesMultiplier>0</SalesMultiplier>      <Quantity>150</Quantity>      <UOM>lb</UOM>      <Weeks>1</Weeks>      <ProductTotalLB>150</ProductTotalLB>      <ActualTotalLB>150</ActualTotalLB>      <ShipTo>SAMSWAR002SAMSCIN001</ShipTo>      <BilledFreight>0.074</BilledFreight>      <QuotedFOBLB>0.22</QuotedFOBLB>      <ProgramTF>Yes</ProgramTF>      <ProgramLB>0</ProgramLB>      <DiscountAccrual>0</DiscountAccrual>      <CorporateAccrual>0</CorporateAccrual>      <DemoRateAccrual>0</DemoRateAccrual>      <VolumeRebateAccrual>0</VolumeRebateAccrual>      <AccrualLB>0</AccrualLB>      <BrokerLB>0</BrokerLB>      <ExpenseLB>0</ExpenseLB>      <SFDCCLM_TotalPrice2>0</SFDCCLM_TotalPrice2>      <ContractSyncID>CPE.wksCargill/CP/cp_Product_Configuration.gp.wksCargill/SBL/sblTotal//CPE.wksCargill/SI/389/20171009152139</ContractSyncID>      <ContractLineType>0</ContractLineType>      <RenewalType>0</RenewalType>      <LegacySystem>XLGO</LegacySystem>      <ProductCostLB>0</ProductCostLB>      <MarginLB>0</MarginLB>      <SpecialSKU>0</SpecialSKU>      <Result>Won</Result>    </cartLine>    <cartLine id="3" type="CP7" subline="no" service="CAT_CAR" parent="0" seqNum="2" datecreate="20171016 163217" dateupdate="20171017 153012">      <ItemSheet></ItemSheet>      <ProductCode>2239</ProductCode>      <Description>[2239] GRND NF CHX 81 FIN CLR 80</Description>      <FormulaType>USDA</FormulaType>      <BaseCode>240</BaseCode>      <IMPSUSDAReport>N/A - (LM_XB459)</IMPSUSDAReport>      <NSPFloorPrice>0.1719</NSPFloorPrice>      <NSPTargetPrice>0.1778</NSPTargetPrice>      <NSPExpertPrice>0.1853</NSPExpertPrice>      <NSPMaxPrice>0.2054</NSPMaxPrice>      <RealNetSalesPrice>-0.074</RealNetSalesPrice>      <NetSalesPrice>0</NetSalesPrice>      <OnSalePrice>0</OnSalePrice>      <PctTimeOnSale>0</PctTimeOnSale>      <FloorPrice>0.0979</FloorPrice>      <TargetPrice>0.1038</TargetPrice>      <ExpertPrice>0.1113</ExpertPrice>      <MaxPrice>0.1314</MaxPrice>      <QuotedFOB>0.111</QuotedFOB>      <ExpectedOverageLB>0</ExpectedOverageLB>      <CaseWeight>0</CaseWeight>      <BlendedPrice>0</BlendedPrice>      <DealScore>99.2</DealScore>      <SalesMultiplier>0</SalesMultiplier>      <Quantity>1</Quantity>      <UOM>lb</UOM>      <Weeks>1</Weeks>      <ProductTotalLB>1</ProductTotalLB>      <ActualTotalLB>1</ActualTotalLB>      <ShipTo>SAMSWAR002SAMSCIN001</ShipTo>      <BilledFreight>0.074</BilledFreight>      <QuotedFOBLB>-0.074</QuotedFOBLB>      <ProgramTF>Yes</ProgramTF>      <ProgramLB>0</ProgramLB>      <DiscountAccrual>0</DiscountAccrual>      <CorporateAccrual>0</CorporateAccrual>      <DemoRateAccrual>0</DemoRateAccrual>      <VolumeRebateAccrual>0</VolumeRebateAccrual>      <AccrualLB>0</AccrualLB>      <BrokerLB>0</BrokerLB>      <ExpenseLB>0</ExpenseLB>      <SFDCCLM_TotalPrice2>0</SFDCCLM_TotalPrice2>      <ContractSyncID>CPE.wksCargill/CP/cp_Product_Configuration.gp.wksCargill/SBL/sblTotal//CPE.wksCargill/SI/2239/20171016163217</ContractSyncID>      <ContractLineType>0</ContractLineType>      <RenewalType>0</RenewalType>      <LegacySystem>XLGO</LegacySystem>      <ProductCostLB>0</ProductCostLB>      <MarginLB>0</MarginLB> <SpecialSKU>0</SpecialSKU><Result>NA</Result></cartLine></cartLines><cartAdjustments></cartAdjustments></cart></cartSessionResults>';
+
+    // Number of Cart Lines in Cart XML
+	public static final Integer NUMBER_OF_CART_LINES = 2;
+    
+    private static CameleonCPQ__QuoteContent__c quoteContent1;
+    private static Attachment attachment1;
+    private static Account account1;
+    private static CameleonCPQ__Quote__c quote1;
+    private static Opportunity opp1;
+    private static Ship_To__c shipTo1;
+    private static Ship_To__c shipTo2;
+    private static Ship_To__c shipTo3;
+	private static SmartCPQQuoteContentTriggerHandler handler;
+    private static Bill_To__c billTo1;
+    
+    private static void init(){
+		//Intiate Handler
+		handler = new SmartCPQQuoteContentTriggerHandler();
+        
+       	//Get Prospect Account Record Type Id
+       	Id prospectRecTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Prospect').getRecordTypeId();       
+        
+        //Account
+        List<Account> accounts = new List<Account>();
+        account1 = new Account(Name='Test Sold To Account',Market_Channel__c='Retail Channel', RecordTypeId=prospectRecTypeId);
+        accounts.add(account1);
+        insert accounts;
+        
+        Account payer = new Account(Name='Payer Account',Market_Channel__c='Retail Channel',parentId=account1.Id, RecordTypeId=prospectRecTypeId);
+        insert payer;
+        
+        //Opportunities        
+        List<Opportunity> opps = new List<Opportunity>();
+        opp1 = new Opportunity(Name='Opp1',Pricebook2Id = Test.getStandardPricebookId(),Unit_Of_Measure__c='Pound',AccountId=account1.Id,StageName='Explore',Volume__c=100000,CloseDate=Date.newInstance(Date.today().year(), Date.today().month() + 2, 1));
+        opps.add(opp1);
+        insert opps;
+        
+        //BIll To
+        List<Bill_To__c> billTos = new List<Bill_To__c>();
+        billTo1 = new Bill_To__c(Name='BillTo1',Payer__c=account1.Id);
+        billTos.add(billTo1);
+        insert billTos;
+        
+        //ShipTos
+        List<Ship_To__c> shipTos = new List<Ship_To__c>();
+    	shipTo1 = new Ship_To__c(Name='ShipTo1',Legacy_System__c='XLGO', ERP_Number__c='ERPNB0000001',Payer__c=payer.Id,Sold_To__c=billTo1.Id);
+        shipTo2 = new Ship_To__c(Name='ShipTo2',Legacy_System__c='PROTEAN', ERP_Number__c='ERPNB0000002',Payer__c=payer.Id,Sold_To__c=billTo1.Id);
+        shipTo3 = new Ship_To__c(Name='ShipTo3',Legacy_System__c='XLDM', ERP_Number__c='ERPNB0000003',Payer__c=payer.Id,Sold_To__c=billTo1.Id);
+        shipTos.add(shipTo1);
+        shipTos.add(shipTo2);
+        shipTos.add(shipTo3);
+        insert shipTos;        
+        
+        // Quotes
+        List<CameleonCPQ__Quote__c> quotes = new List<CameleonCPQ__Quote__c>();
+    	quote1 = new CameleonCPQ__Quote__c(Name='TEST QUOTE',OpportunityId__c=opp1.Id,Pricing_Type__c='Formula', Formula_Type__c='USDA',Pricing_Start_Date__c=Date.newInstance(Date.today().year(), 1, 1),Pricing_End_Date__c=Date.newInstance(Date.today().year(), 12, 31),FOBDelivered__c='FOB');
+        quotes.add(quote1);
+        insert quotes;
+        
+        //Insert 2 ShipTos for the quote (ShipTo1 & ShipTo3) to add to original 3 Ships-tos automatically added
+        List<Quote_Ship_To__c> quoteShipTos = new List<Quote_Ship_To__c>();
+        Quote_Ship_To__c  qst1 = new Quote_Ship_To__c(PROS_Quote__c=quote1.Id,Ship_To__c=shipTo1.Id);
+        Quote_Ship_To__c  qst2 = new Quote_Ship_To__c(PROS_Quote__c=quote1.Id,Ship_To__c=shipTo3.Id);
+        quoteShipTos.add(qst1);
+        quoteShipTos.add(qst2);
+        insert quoteShipTos;
+        
+        //Create Quote Content
+		List<CameleonCPQ__QuoteContent__c> quoteContents = new List<CameleonCPQ__QuoteContent__c>();
+		quoteContent1 = new CameleonCPQ__QuoteContent__c(Name = 'Quote Content 1', CameleonCPQ__QuoteId__c = quote1.Id);
+        quoteContents.add(quoteContent1);
+        insert quoteContents;
+        
+        //Create Attachment (Qute Content/Cart Info)
+        List<Attachment> attachments = new List<Attachment>();
+		attachment1 = new Attachment(Name = quote1.Id + '_content', ParentId = quoteContent1.Id);
+        attachment1.Body = Blob.valueOf(CART_XML_CONTENT);
+        attachments.add(attachment1);
+        insert attachments;
+    }
+    
+    static TestMethod void check_QLIInsertion1(){
+        
+        init();
+        Test.startTest();
+        
+        //Create Quote Content
+		List<CameleonCPQ__QuoteContent__c> quoteContents = new List<CameleonCPQ__QuoteContent__c>();
+		quoteContents.add(quoteContent1);
+        
+        List<CPQQuoteLineItem__c> qlis = [SELECT Id FROM CPQQuoteLineItem__c WHERE PROS_Quote__c =: quote1.Id];
+        System.assertEquals(0, qlis.size(), 'No Quote Line Items should initially be created');
+		handler.handleAfterUpdate(quoteContents, null);
+        qlis = [SELECT Id,Name,Product_Code__c,Quantity__c,Result__c,Ship_To__c,Legacy_System__c FROM CPQQuoteLineItem__c WHERE PROS_Quote__c =: quote1.Id];
+        System.assertEquals(NUMBER_OF_CART_LINES, qlis.size(), 'Wrong Number of Quote Line Items was created');
+        System.assertEquals('389', qlis[0].Product_Code__c, 'Wrong field value for current QLI');
+        System.assertEquals(150, qlis[0].Quantity__c, 'Wrong field value for current QLI');
+        System.assertEquals('NA', qlis[0].Result__c, 'Wrong field value for current QLI');
+        System.assertEquals('SAMSWAR002SAMSCIN001', qlis[1].Ship_To__c, 'Wrong field value for current QLI');
+        System.assertEquals('XLGO', qlis[1].Legacy_System__c, 'Wrong field value for current QLI');
+        
+        
+        Test.stopTest();
+    }
+
+    static TestMethod void check_QLIUpdate1(){
+        
+        init();
+        Test.startTest();
+        
+        //Create Quote Content
+		List<CameleonCPQ__QuoteContent__c> quoteContents = new List<CameleonCPQ__QuoteContent__c>();
+		quoteContents.add(quoteContent1);
+        
+
+		handler.handleAfterUpdate(quoteContents, null);
+        List<CPQQuoteLineItem__c> qlis = [SELECT Id,Name,Product_Code__c,Quantity__c,Result__c,Ship_To__c,Legacy_System__c FROM CPQQuoteLineItem__c WHERE PROS_Quote__c =: quote1.Id];
+        System.assertEquals(NUMBER_OF_CART_LINES, qlis.size(), 'Wrong Number of Quote Line Items was created');
+        System.assertEquals('389', qlis[0].Product_Code__c, 'Wrong field value for current QLI');
+        System.assertEquals(150, qlis[0].Quantity__c, 'Wrong field value for current QLI');
+        System.assertEquals('NA', qlis[0].Result__c, 'Wrong field value for current QLI');
+        System.assertEquals('SAMSWAR002SAMSCIN001', qlis[1].Ship_To__c, 'Wrong field value for current QLI');
+        System.assertEquals('XLGO', qlis[1].Legacy_System__c, 'Wrong field value for current QLI');
+        
+        //Create New Quote Content List
+		List<CameleonCPQ__QuoteContent__c> newQuoteContents = new List<CameleonCPQ__QuoteContent__c>();
+        //1st QLI set to 'Won' result
+        attachment1.Body = Blob.valueOf(CART_XML_CONTENT_UPDATED);
+        update attachment1;
+        newQuoteContents.add(quoteContent1);
+        handler.handleAfterUpdate(newQuoteContents, quoteContents);
+       	qlis = [SELECT Id,Name,Product_Code__c,Quantity__c,Result__c,Ship_To__c,Legacy_System__c FROM CPQQuoteLineItem__c WHERE PROS_Quote__c =: quote1.Id];
+        System.assertEquals(NUMBER_OF_CART_LINES, qlis.size(), 'Wrong Number of Quote Line Items was created');
+        System.assertEquals('389', qlis[0].Product_Code__c, 'Wrong field value for current QLI');
+        System.assertEquals(150, qlis[0].Quantity__c, 'Wrong field value for current QLI');
+        System.assertEquals('Won', qlis[0].Result__c, 'Wrong field value for current QLI');
+        System.assertEquals('SAMSWAR002SAMSCIN001', qlis[1].Ship_To__c, 'Wrong field value for current QLI');
+        System.assertEquals('XLGO', qlis[1].Legacy_System__c, 'Wrong field value for current QLI');
+        
+        
+        Test.stopTest();
+    }
+
+
+    static TestMethod void check_QLIUpdate2(){
+        
+        init();
+        Test.startTest();
+        
+        quoteContent1.Name = 'New Name';
+        update quoteContent1;
+        
+        Test.stopTest();
+    }
+
+}

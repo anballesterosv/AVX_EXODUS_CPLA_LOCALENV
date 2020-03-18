@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Close Reason --></label>
+    <name>ClosedReason__c</name>
+    <picklistValues>
+        <masterLabel>Business declined to pursue the project</masterLabel>
+        <translation><!-- Business declined to pursue the project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Lost- Abandoned</masterLabel>
+        <translation><!-- Closed Lost- Abandoned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer declined to pursue the project</masterLabel>
+        <translation><!-- Customer declined to pursue the project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost to Competitor</masterLabel>
+        <translation><!-- Lost to Competitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Match not approved</masterLabel>
+        <translation><!-- Match not approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Decision / Non-Responsive</masterLabel>
+        <translation><!-- No Decision / Non-Responsive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No capacity to sell</masterLabel>
+        <translation><!-- No capacity to sell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Distributor</masterLabel>
+        <translation><!-- Referred to Distributor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

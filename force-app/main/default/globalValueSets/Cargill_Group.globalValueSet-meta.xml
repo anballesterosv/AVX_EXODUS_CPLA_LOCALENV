@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Protein</fullName>
+        <default>false</default>
+        <label>Protein</label>
+    </customValue>
+    <customValue>
+        <fullName>GlobalEdibleOilSolutionsGEOS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Global Edible Oil Solutions (GEOS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Starches &amp; Sweeteners (SS)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Starches &amp; Sweeteners (SS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia Pacific &amp; Malt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Asia Pacific &amp; Malt</label>
+    </customValue>
+    <customValue>
+        <fullName>Salt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Salt</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>GoToMarket (GTM)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GoToMarket (GTM)</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa &amp; Chocolate (CC)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cocoa &amp; Chocolate (CC)</label>
+    </customValue>
+    <masterLabel>Cargill Group</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

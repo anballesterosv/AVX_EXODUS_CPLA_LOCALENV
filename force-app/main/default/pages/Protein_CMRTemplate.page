@@ -1,0 +1,80 @@
+<apex:page standardController="CustomerMeetingReport__c" extensions="Protein_CMRdocController" showHeader="false" sidebar="false" standardStylesheets="false"
+           applyBodyTag="false" applyHtmlTag="true" contentType="application/msWord#{!JSENCODE(CustomerMeetingReport__c.Name)}.doc">
+    
+    <apex:form >
+        <p style="margin-right: 1%;font-family: Arial;font-size:11pt;">
+            {!meetingDate}
+        </p> <br/><br/>
+        
+        <div>
+            <table>
+                <tr>
+                    <td style="width:20%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">To:</td>
+                    <td style="width:80%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">
+                        <apex:repeat value="{!lstCustAttendees}" var="ca">
+                            <apex:outputText value="{!JSENCODE(ca)}" escape="false"/> <br/>
+                        </apex:repeat>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p style="margin-right: 1%;font-family: Arial;font-size:11pt;">
+            Thank you for giving us the opportunity to meet with you regarding {!CustomerMeetingReport__c.Descriptive_Name__c}.
+        </p>
+        <div>
+            <table width="100%">
+                <tr>
+                    <td style="width:45%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">
+                        As you may recall our agenda covered:</td>
+                    <td style="width:55%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">
+                        <apex:outputText value="{!CustomerMeetingReport__c.Agenda__c}" escape="false"/>
+                    </td>
+                </tr><br/>
+                <tr>
+                    <td style="width:45%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">Meeting Notes:</td>
+                    <td style="width:55%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">
+                        <apex:outputText value="{!CustomerMeetingReport__c.Key_Topics_Discussed__c}" escape="false"/>
+                    </td>
+                </tr><br/>
+                <tr>
+                    <td style="width:45%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">Meeting Follow Ups:</td>
+                    <td style="width:55%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">
+                        <apex:outputText value="{!CustomerMeetingReport__c.Next_Steps__c}" escape="false"/>
+                    </td>
+                </tr><br/>
+                <tr>
+                    <td style="width:20%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">Open Tasks:</td>
+                    <td style="width:80%;"></td>
+                </tr>
+                <tr>
+                    <td style="width:20%;"></td>
+                    <td style="width:80%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;">
+                        <apex:outputPanel rendered="{!lstTaskWrappers.size != 0}">
+                            <table width="90%" style="background-color: #ffffff; filter: alpha(opacity=400); opacity: 0.95;border-spacing: 1px;border: 1px solid black;border-collapse:collapse;">
+                                <tr>
+                                    <td style="vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;
+                                    border: 1px solid black;padding-top: 3px; padding-bottom: 3px;padding-left: 3px;">Subject</td>
+                                    <td style="vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;
+                                    border: 1px solid black;padding-top: 3px; padding-bottom: 3px;padding-left: 3px;">Assigned To</td>
+                                    <td style="vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;
+                                    border: 1px solid black;padding-top: 3px; padding-bottom: 3px;padding-left: 3px;">Due Date</td>
+                                </tr>
+                                <apex:repeat value="{!lstTaskWrappers}" var="tskWrp">
+                                    <tr>
+                                        <td style="width:34%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;
+                                        border: 1px solid black;padding-top: 3px; padding-bottom: 3px;padding-left: 3px;">{!tskWrp.tsk.Subject}</td>
+                                        <td style="width:33%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;
+                                        border: 1px solid black;padding-top: 3px; padding-bottom: 3px;padding-left: 3px;">{!tskWrp.tsk.Owner.Name}</td>
+                                        <td style="width:33%; vertical-align:top;margin-right: 1%;font-family: Arial;font-size:11pt;
+                                        border: 1px solid black;padding-top: 3px; padding-bottom: 3px;padding-left: 3px;">{!tskWrp.dueDate}</td>
+                                    </tr>
+                                </apex:repeat>
+                            </table>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+            </table>
+        </div>
+                
+    </apex:form>
+</apex:page>

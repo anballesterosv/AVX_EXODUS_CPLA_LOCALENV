@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Drivers --></label>
+    <name>Drivers__c</name>
+    <picklistValues>
+        <masterLabel>Better With</masterLabel>
+        <translation><!-- Better With --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Better Without</masterLabel>
+        <translation><!-- Better Without --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaner Label</masterLabel>
+        <translation><!-- Cleaner Label --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Differentiated Performance</masterLabel>
+        <translation><!-- Differentiated Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lean &amp; Green</masterLabel>
+        <translation><!-- Lean &amp; Green --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier/Service Performance</masterLabel>
+        <translation><!-- Supplier/Service Performance --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

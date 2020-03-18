@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Team Role --></label>
+    <name>Account_Team_Role__c</name>
+    <picklistValues>
+        <masterLabel>Account Manager</masterLabel>
+        <translation><!-- Account Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Manager</masterLabel>
+        <translation><!-- Channel Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Account Lead</masterLabel>
+        <translation><!-- Corporate Account Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Sponsor</masterLabel>
+        <translation><!-- Executive Sponsor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Qualifier</masterLabel>
+        <translation><!-- Lead Qualifier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Sales Consultant</masterLabel>
+        <translation><!-- Pre-Sales Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Manager</masterLabel>
+        <translation><!-- Project Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Manager</masterLabel>
+        <translation><!-- Sales Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Rep</masterLabel>
+        <translation><!-- Sales Rep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Service Lead</masterLabel>
+        <translation><!-- Technical Service Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Services Engineer</masterLabel>
+        <translation><!-- Technical Services Engineer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

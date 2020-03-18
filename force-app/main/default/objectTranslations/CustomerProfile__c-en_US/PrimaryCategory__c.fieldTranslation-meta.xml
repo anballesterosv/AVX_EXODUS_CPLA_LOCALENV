@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Category --></label>
+    <name>PrimaryCategory__c</name>
+    <picklistValues>
+        <masterLabel>F1 Product Experience &amp; Value Differentiation/B2C – Scratch</masterLabel>
+        <translation><!-- F1 Product Experience &amp; Value Differentiation/B2C – Scratch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F2 Product Experience /B2C – Assembly &amp; B2C – Heat and Serve</masterLabel>
+        <translation><!-- F2 Product Experience /B2C – Assembly &amp; B2C – Heat and Serve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F3 Value Differentiation/ B2C – Assembly &amp; B2C – Heat and Serve</masterLabel>
+        <translation><!-- F3 Value Differentiation/ B2C – Assembly &amp; B2C – Heat and Serve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F4 Product Experience/B2B – Move Product</masterLabel>
+        <translation><!-- F4 Product Experience/B2B – Move Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F5 Value Differentiation/ B2B – Move Product</masterLabel>
+        <translation><!-- F5 Value Differentiation/ B2B – Move Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F6 Product Experience &amp; Value Differentiation/B2B – Manage Product</masterLabel>
+        <translation><!-- F6 Product Experience &amp; Value Differentiation/B2B – Manage Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F7 Product Experience &amp; Value Differentiation/Institution</masterLabel>
+        <translation><!-- F7 Product Experience &amp; Value Differentiation/Institution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M1 Product experience/High Vertical Integration</masterLabel>
+        <translation><!-- M1 Product experience/High Vertical Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M2 Value – Product Innovation &amp; Supply Chain/ High Vertical Integration</masterLabel>
+        <translation><!-- M2 Value – Product Innovation &amp; Supply Chain/ High Vertical Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M3 Low vertical B2C</masterLabel>
+        <translation><!-- M3 Low vertical B2C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M4 Low Vertical integration B2B</masterLabel>
+        <translation><!-- M4 Low Vertical integration B2B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R1  Product experience/High &amp; Medium In-house</masterLabel>
+        <translation><!-- R1  Product experience/High &amp; Medium In-house --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R2 Value – Product Innovation/High In-House</masterLabel>
+        <translation><!-- R2 Value – Product Innovation/High In-House --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R3 Value – Product Innovation/Medium In-House</masterLabel>
+        <translation><!-- R3 Value – Product Innovation/Medium In-House --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R4 Product experience &amp; Value – Product Innovation/Low In-House</masterLabel>
+        <translation><!-- R4 Product experience &amp; Value – Product Innovation/Low In-House --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R5 Value – Supply Chain Innovation</masterLabel>
+        <translation><!-- R5 Value – Supply Chain Innovation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T Trade</masterLabel>
+        <translation><!-- T Trade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

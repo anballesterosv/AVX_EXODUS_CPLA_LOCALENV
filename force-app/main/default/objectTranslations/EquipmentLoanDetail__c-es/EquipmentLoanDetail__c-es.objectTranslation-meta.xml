@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Préstamo de Equipo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Préstamo de Equipos</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Equipment Loan Detail Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Límite de préstamo</label>
+            <section>Loan Detail</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número del Detalle de Préstamo</nameFieldLabel>
+</CustomObjectTranslation>

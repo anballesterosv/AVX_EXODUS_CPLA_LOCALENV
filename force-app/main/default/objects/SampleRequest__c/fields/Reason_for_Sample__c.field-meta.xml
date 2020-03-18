@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Sample__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Sample</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competitive Cutting</fullName>
+                <default>false</default>
+                <label>Competitive Cutting</label>
+            </value>
+            <value>
+                <fullName>Customer Visit</fullName>
+                <default>false</default>
+                <label>Customer Visit</label>
+            </value>
+            <value>
+                <fullName>Donation</fullName>
+                <default>false</default>
+                <label>Donation</label>
+            </value>
+            <value>
+                <fullName>Food/Trade Show</fullName>
+                <default>false</default>
+                <label>Food/Trade Show</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>R&amp;D</fullName>
+                <default>false</default>
+                <label>R&amp;D</label>
+            </value>
+            <value>
+                <fullName>Sales Training</fullName>
+                <default>false</default>
+                <label>Sales Training</label>
+            </value>
+            <value>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+                <label>Web Inquiry</label>
+            </value>
+            <value>
+                <fullName>CIC Request</fullName>
+                <default>false</default>
+                <label>CIC Request</label>
+            </value>
+            <value>
+                <fullName>Broker Inventory</fullName>
+                <default>false</default>
+                <label>Broker Inventory</label>
+            </value>
+            <value>
+                <fullName>Marketing Purposes</fullName>
+                <default>false</default>
+                <label>Marketing Purposes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

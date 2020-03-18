@@ -1,0 +1,41 @@
+:host {
+    display: table-row;
+}
+.data_value{
+    text-align: center;
+    vertical-align: middle;
+}
+.data_info{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+td{
+    vertical-align: middle;
+}
+.data_name{
+    padding-left: 1%;
+    text-align: left;
+}
+
+@media (max-width: 48em) {
+    .data_value{ 
+        text-align: right !important; 
+    }
+    .data_name{ 
+        text-align: right !important; 
+    }
+    .data_info{
+        display: block;
+    }
+    .THIS .tableMobileFunction{
+        width: 100px;
+        float: right;
+    }
+    .THIS .tableDesktopFunction{
+        zoom: 100%;
+ }
+  }

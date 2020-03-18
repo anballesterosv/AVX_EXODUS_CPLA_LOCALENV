@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profile_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Profile Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>All Proteins</fullName>
+                <default>false</default>
+                <label>All Proteins</label>
+            </value>
+            <value>
+                <fullName>Beef</fullName>
+                <default>false</default>
+                <label>Beef</label>
+            </value>
+            <value>
+                <fullName>Case Ready</fullName>
+                <default>false</default>
+                <label>Case Ready</label>
+            </value>
+            <value>
+                <fullName>Continuous Cooked</fullName>
+                <default>false</default>
+                <label>Continuous Cooked</label>
+            </value>
+            <value>
+                <fullName>Deli / Diced</fullName>
+                <default>false</default>
+                <label>Deli / Diced</label>
+            </value>
+            <value>
+                <fullName>Deli / Prepared Foods</fullName>
+                <default>false</default>
+                <label>Deli / Prepared Foods</label>
+            </value>
+            <value>
+                <fullName>Eggs</fullName>
+                <default>false</default>
+                <label>Eggs</label>
+            </value>
+            <value>
+                <fullName>Extruded / Kettles</fullName>
+                <default>false</default>
+                <label>Extruded / Kettles</label>
+            </value>
+            <value>
+                <fullName>Frozen Breakfast</fullName>
+                <default>false</default>
+                <label>Frozen Breakfast</label>
+            </value>
+            <value>
+                <fullName>Fry Line</fullName>
+                <default>false</default>
+                <label>Fry Line</label>
+            </value>
+            <value>
+                <fullName>Hot Dogs</fullName>
+                <default>false</default>
+                <label>Hot Dogs</label>
+            </value>
+            <value>
+                <fullName>Pepperoni</fullName>
+                <default>false</default>
+                <label>Pepperoni</label>
+            </value>
+            <value>
+                <fullName>Raw</fullName>
+                <default>false</default>
+                <label>Raw</label>
+            </value>
+            <value>
+                <fullName>Snacking</fullName>
+                <default>false</default>
+                <label>Snacking</label>
+            </value>
+            <value>
+                <fullName>Turkey</fullName>
+                <default>false</default>
+                <label>Turkey</label>
+            </value>
+            <value>
+                <fullName>Value Added Raw</fullName>
+                <default>false</default>
+                <label>Value Added Raw</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

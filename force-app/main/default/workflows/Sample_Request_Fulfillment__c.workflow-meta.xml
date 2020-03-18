@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CFNA_Sample_Request_Fulfillment_Distributor_Pull_Alert</fullName>
+        <description>CFNA Sample Request Fulfillment Distributor Pull Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/CFNA_Sample_Request_Fulfillment_Distributor_Pull</template>
+    </alerts>
+    <alerts>
+        <fullName>CVAP_Poultry_Sample_Request_Fulfillment_Alert_Requester</fullName>
+        <description>CVAP Poultry Sample Request Fulfillment: Alert Requester</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Confirmation_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/CVAP_Poultry_SR_Fulfillment_Processed_VF</template>
+    </alerts>
+    <alerts>
+        <fullName>CVAP_Poultry_Sample_Request_Fulfillment_Send_Confirmation_Email</fullName>
+        <description>CVAP Poultry Sample Request Fulfillment: Send Confirmation Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Confirmation_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/CVAP_Poultry_SR_Fulfillment_Processed_VF</template>
+    </alerts>
+    <alerts>
+        <fullName>Non_Protein_Sample_Request_Fulfillment_Send_Confirmation_Email</fullName>
+        <description>Non-Protein Sample Request Fulfillment: Send Confirmation Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Confirmation_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cargill_Protein_Email_Templates/CVAP_Poultry_Sample_Request_Fulfillment_Processed</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CFNA_Sample_Request_Fulfilled_By</fullName>
+        <description>Set field to Created By for initial Fulfillment (CFNA)</description>
+        <field>Sample_Request_Fulfilled_By__c</field>
+        <formula>IF(ISBLANK(Sample_Request__r.Sample_Request_Fulfilled_By__c), 
+CreatedBy.FirstName &amp; &quot; &quot; &amp; CreatedBy.LastName,
+Sample_Request__r.Sample_Request_Fulfilled_By__c)</formula>
+        <name>CFNA Sample Request Fulfilled By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Sample_Request__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CKS_Sample_Request_Fulfilled_By</fullName>
+        <description>Set field Sample Request: Sample Request Fulfilled By to Created By for initial Fulfillment (CVAP)</description>
+        <field>Sample_Request_Fulfilled_By__c</field>
+        <formula>IF(ISBLANK(Sample_Request__r.Sample_Request_Fulfilled_By__c), 
+CreatedBy.FirstName &amp; &quot; &quot; &amp; CreatedBy.LastName,
+Sample_Request__r.Sample_Request_Fulfilled_By__c)</formula>
+        <name>CKS Sample Request Fulfilled By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Sample_Request__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CKS_Sample_Request_Fulfilled_By1</fullName>
+        <description>Set field Sample Request: Sample Request Fulfilled By to Created By for initial Fulfillment (CVAP)</description>
+        <field>Sample_Request_Fulfilled_By__c</field>
+        <formula>IF(ISBLANK(Sample_Request__r.Sample_Request_Fulfilled_By__c), 
+CreatedBy.FirstName &amp; &quot; &quot; &amp; CreatedBy.LastName,
+Sample_Request__r.Sample_Request_Fulfilled_By__c)</formula>
+        <name>CKS Sample Request Fulfilled By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Sample_Request__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CKS_Sample_Request_Fulfilled_By2</fullName>
+        <description>Set field Sample Request: Sample Request Fulfilled By to Created By for initial Fulfillment (CVAP)</description>
+        <field>Sample_Request_Fulfilled_By__c</field>
+        <formula>IF(ISBLANK(Sample_Request__r.Sample_Request_Fulfilled_By__c), 
+CreatedBy.FirstName &amp; &quot; &quot; &amp; CreatedBy.LastName,
+Sample_Request__r.Sample_Request_Fulfilled_By__c)</formula>
+        <name>CKS Sample Request Fulfilled By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Sample_Request__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IsFulfilledUpdate</fullName>
+        <field>IsFulfilled__c</field>
+        <literalValue>0</literalValue>
+        <name>IsFulfilledUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Confirmation_Email</fullName>
+        <description>Set Confirmation Email to value in Sample Request when shipped.</description>
+        <field>Confirmation_Email__c</field>
+        <formula>Sample_Request__r.Confirmation_Email__c</formula>
+        <name>Set Confirmation Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Sample_Fulfillment_Status_Complete</fullName>
+        <description>Set Sample Request Fulfillment Status = Complete
+(CVAP)</description>
+        <field>Status__c</field>
+        <literalValue>Complete</literalValue>
+        <name>Set Sample Fulfillment Status = Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Sample_Req_Stat_Complete</fullName>
+        <field>Status__c</field>
+        <literalValue>Complete</literalValue>
+        <name>Set Sample Req Stat = Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Sample_Request__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Sample_Req_Stat_Partially_Fulfill</fullName>
+        <field>Status__c</field>
+        <literalValue>Partially Fulfilled</literalValue>
+        <name>Set Sample Req Stat = Partially Fulfill</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Sample_Request__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>CFNA Sample Request Fulfillment Distributor Pull</fullName>
+        <actions>
+            <name>CFNA_Sample_Request_Fulfillment_Distributor_Pull_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>CFNA_Sample_Request_Fulfilled_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.Is_Product_being_pulled_from_distributio__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <description>When sample is distributor pull, notify requesterBy and updated fulfilled by. 
+Org Wide</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CVAP Poultry Sample Request Fulfillment Delivered%3A Notify Requester</fullName>
+        <actions>
+            <name>CVAP_Poultry_Sample_Request_Fulfillment_Alert_Requester</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>IsFulfilledUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <field>SampleRequest__c.Fulfillment_Back_to_Requester__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Protein Sample Request Fulfillment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.IsFulfilled__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When sample is shipped, notify requester. 
+Org Wide.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CVAP Poultry Sample Request Fulfillment Delivered%3A Send Confirmation Email</fullName>
+        <actions>
+            <name>CVAP_Poultry_Sample_Request_Fulfillment_Send_Confirmation_Email</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>IsFulfilledUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>SampleRequest__c.Confirmation_Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Protein Sample Request Fulfillment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.IsFulfilled__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When sample is shipped, send confirmation email.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CVAP Set Sample Fulfillment Status to Complete</fullName>
+        <actions>
+            <name>CKS_Sample_Request_Fulfilled_By1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Sample_Req_Stat_Complete</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Protein Sample Request Fulfillment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SampleRequest__c.Products_Not_Fulfilled1__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>When fulfillment is complete and all products fulfilled:
+- Set sample request status to Complete. 
+- Set Fulfilled by value
+Protein Only.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CVAP Set Sample Fulfillment Status to Partially Fulfilled</fullName>
+        <actions>
+            <name>CKS_Sample_Request_Fulfilled_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Sample_Req_Stat_Partially_Fulfill</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Protein Sample Request Fulfillment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SampleRequest__c.Products_Not_Fulfilled1__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>When shipment info is entered:
+- Set status to Partially Fulfilled immediately.
+- Set Fulfilled by value
+Protein Only</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CVAP Set Sample Fulfillment Status to Shipped</fullName>
+        <actions>
+            <name>CKS_Sample_Request_Fulfilled_By2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Confirmation_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Sample_Request_Fulfillment__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

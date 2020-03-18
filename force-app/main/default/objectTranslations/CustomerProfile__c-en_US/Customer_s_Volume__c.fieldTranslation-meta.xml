@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Customer’s Annual Transaction Amount in pounds --></help>
+    <label><!-- Customer’s Volume --></label>
+    <name>Customer_s_Volume__c</name>
+</CustomFieldTranslation>

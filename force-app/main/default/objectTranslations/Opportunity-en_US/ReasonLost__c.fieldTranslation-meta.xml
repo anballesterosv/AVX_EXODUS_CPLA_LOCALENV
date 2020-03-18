@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Lost --></label>
+    <name>ReasonLost__c</name>
+    <picklistValues>
+        <masterLabel>Cannot meet distributor minimums</masterLabel>
+        <translation><!-- Cannot meet distributor minimums --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer wants to expand number of suppliers</masterLabel>
+        <translation><!-- Customer wants to expand number of suppliers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due to Price (gross)</masterLabel>
+        <translation><!-- Due to Price (gross) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due to Price (net)</masterLabel>
+        <translation><!-- Due to Price (net) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due to Product Quality</masterLabel>
+        <translation><!-- Due to Product Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Distribution (area)</masterLabel>
+        <translation><!-- Lack of Distribution (area) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Capacity to Sell (volume)</masterLabel>
+        <translation><!-- No Capacity to Sell (volume) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested in the Business</masterLabel>
+        <translation><!-- Not interested in the Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product not a match</masterLabel>
+        <translation><!-- Product not a match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relationship</masterLabel>
+        <translation><!-- Relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Execution Challenges</masterLabel>
+        <translation><!-- Service Execution Challenges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stronger relationship with the competitor</masterLabel>
+        <translation><!-- Stronger relationship with the competitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Service</masterLabel>
+        <translation><!-- Technical Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We were not price competitive</masterLabel>
+        <translation><!-- We were not price competitive --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

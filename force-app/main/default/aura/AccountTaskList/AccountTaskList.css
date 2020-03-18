@@ -1,0 +1,27 @@
+@media all and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .THIS td.col_1{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+        
+    } 
+    .THIS th.col_1{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;       
+    }
+    
+}
+.THIS.container{
+    display:block;
+   overflow-y :auto; 
+}
+.THIS td.wrappable,
+.THIS table.data_table td.wrappable {
+    white-space: normal;
+}

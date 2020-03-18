@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Market_Channel__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Baked Egg Patty</fullName>
+                <default>false</default>
+                <label>Baked Egg Patty</label>
+            </value>
+            <value>
+                <fullName>BTFT</fullName>
+                <default>false</default>
+                <label>BTFT</label>
+            </value>
+            <value>
+                <fullName>Continuous Cooked Meatballs</fullName>
+                <default>false</default>
+                <label>Continuous Cooked Meatballs</label>
+            </value>
+            <value>
+                <fullName>Continuous Cooked Patties/Other</fullName>
+                <default>false</default>
+                <label>Continuous Cooked Patties/Other</label>
+            </value>
+            <value>
+                <fullName>Diced Eggs</fullName>
+                <default>false</default>
+                <label>Diced Eggs</label>
+            </value>
+            <value>
+                <fullName>Diced Meat</fullName>
+                <default>false</default>
+                <label>Diced Meat</label>
+            </value>
+            <value>
+                <fullName>Egg Wrap</fullName>
+                <default>false</default>
+                <label>Egg Wrap</label>
+            </value>
+            <value>
+                <fullName>Extruded</fullName>
+                <default>false</default>
+                <label>Extruded</label>
+            </value>
+            <value>
+                <fullName>French Toast</fullName>
+                <default>false</default>
+                <label>French Toast</label>
+            </value>
+            <value>
+                <fullName>Frittata</fullName>
+                <default>false</default>
+                <label>Frittata</label>
+            </value>
+            <value>
+                <fullName>Fry Line</fullName>
+                <default>false</default>
+                <label>Fry Line</label>
+            </value>
+            <value>
+                <fullName>FTB</fullName>
+                <default>false</default>
+                <label>FTB</label>
+            </value>
+            <value>
+                <fullName>Grilled Egg Patty</fullName>
+                <default>false</default>
+                <label>Grilled Egg Patty</label>
+            </value>
+            <value>
+                <fullName>Ground Beef</fullName>
+                <default>false</default>
+                <label>Ground Beef</label>
+            </value>
+            <value>
+                <fullName>GTFC</fullName>
+                <default>false</default>
+                <label>GTFC</label>
+            </value>
+            <value>
+                <fullName>GTFP</fullName>
+                <default>false</default>
+                <label>GTFP</label>
+            </value>
+            <value>
+                <fullName>Hard Cooked Eggs</fullName>
+                <default>false</default>
+                <label>Hard Cooked Eggs</label>
+            </value>
+            <value>
+                <fullName>Hot Dogs (PI)</fullName>
+                <default>false</default>
+                <label>Hot Dogs (PI)</label>
+            </value>
+            <value>
+                <fullName>Kettles</fullName>
+                <default>false</default>
+                <label>Kettles</label>
+            </value>
+            <value>
+                <fullName>Liquid Eggs</fullName>
+                <default>false</default>
+                <label>Liquid Eggs</label>
+            </value>
+            <value>
+                <fullName>Logs (PI)</fullName>
+                <default>false</default>
+                <label>Logs (PI)</label>
+            </value>
+            <value>
+                <fullName>MST</fullName>
+                <default>false</default>
+                <label>MST</label>
+            </value>
+            <value>
+                <fullName>Omelets</fullName>
+                <default>false</default>
+                <label>Omelets</label>
+            </value>
+            <value>
+                <fullName>Pepperoni/Dry-Cured Sausage</fullName>
+                <default>false</default>
+                <label>Pepperoni/Dry-Cured Sausage</label>
+            </value>
+            <value>
+                <fullName>Precooked Scrambled Eggs</fullName>
+                <default>false</default>
+                <label>Precooked Scrambled Eggs</label>
+            </value>
+            <value>
+                <fullName>Primary Beef</fullName>
+                <default>false</default>
+                <label>Primary Beef</label>
+            </value>
+            <value>
+                <fullName>Sliced (PI)</fullName>
+                <default>false</default>
+                <label>Sliced (PI)</label>
+            </value>
+            <value>
+                <fullName>Squared Eggs</fullName>
+                <default>false</default>
+                <label>Squared Eggs</label>
+            </value>
+            <value>
+                <fullName>Wings</fullName>
+                <default>false</default>
+                <label>Wings</label>
+            </value>
+            <value>
+                <fullName>Bacon wrapped</fullName>
+                <default>false</default>
+                <label>Bacon wrapped</label>
+            </value>
+            <value>
+                <fullName>Beef Inclusion Patties</fullName>
+                <default>false</default>
+                <label>Beef Inclusion Patties</label>
+            </value>
+            <value>
+                <fullName>Beef Meatballs</fullName>
+                <default>false</default>
+                <label>Beef Meatballs</label>
+            </value>
+            <value>
+                <fullName>Fresh Beef Patties</fullName>
+                <default>false</default>
+                <label>Fresh Beef Patties</label>
+            </value>
+            <value>
+                <fullName>Bulk Deli</fullName>
+                <default>false</default>
+                <label>Bulk Deli</label>
+            </value>
+            <value>
+                <fullName>Case Ready Grind</fullName>
+                <default>false</default>
+                <label>Case Ready Grind</label>
+            </value>
+            <value>
+                <fullName>Case Ready Muscle</fullName>
+                <default>false</default>
+                <label>Case Ready Muscle</label>
+            </value>
+            <value>
+                <fullName>Chicken Tenders</fullName>
+                <default>false</default>
+                <label>Chicken Tenders</label>
+            </value>
+            <value>
+                <fullName>Chicken Wings</fullName>
+                <default>false</default>
+                <label>Chicken Wings</label>
+            </value>
+            <value>
+                <fullName>Commodity Grind</fullName>
+                <default>false</default>
+                <label>Commodity Grind</label>
+            </value>
+            <value>
+                <fullName>Corned Beef Raw</fullName>
+                <default>false</default>
+                <label>Corned Beef Raw</label>
+            </value>
+            <value>
+                <fullName>Turkey Meatballs Fully Cooked</fullName>
+                <default>false</default>
+                <label>Turkey Meatballs Fully Cooked</label>
+            </value>
+            <value>
+                <fullName>Hot dogs (RE)</fullName>
+                <default>false</default>
+                <label>Hot dogs (RE)</label>
+            </value>
+            <value>
+                <fullName>IQF Patties</fullName>
+                <default>false</default>
+                <label>IQF Patties</label>
+            </value>
+            <value>
+                <fullName>Kit</fullName>
+                <default>false</default>
+                <label>Kit</label>
+            </value>
+            <value>
+                <fullName>Logs (RE)</fullName>
+                <default>false</default>
+                <label>Logs (RE)</label>
+            </value>
+            <value>
+                <fullName>Pot Roast</fullName>
+                <default>false</default>
+                <label>Pot Roast</label>
+            </value>
+            <value>
+                <fullName>Breaded Raw</fullName>
+                <default>false</default>
+                <label>Breaded Raw</label>
+            </value>
+            <value>
+                <fullName>Marinated Raw</fullName>
+                <default>false</default>
+                <label>Marinated Raw</label>
+            </value>
+            <value>
+                <fullName>Turkey Value Added Raw</fullName>
+                <default>false</default>
+                <label>Turkey Value Added Raw</label>
+            </value>
+            <value>
+                <fullName>Ready to Cook Bone-In</fullName>
+                <default>false</default>
+                <label>Ready to Cook Bone-In</label>
+            </value>
+            <value>
+                <fullName>Ready to Cook Boneless</fullName>
+                <default>false</default>
+                <label>Ready to Cook Boneless</label>
+            </value>
+            <value>
+                <fullName>Sausage</fullName>
+                <default>false</default>
+                <label>Sausage</label>
+            </value>
+            <value>
+                <fullName>Sliced (RE)</fullName>
+                <default>false</default>
+                <label>Sliced (RE)</label>
+            </value>
+            <value>
+                <fullName>Slice in-tact</fullName>
+                <default>false</default>
+                <label>Slice in-tact</label>
+            </value>
+            <value>
+                <fullName>Snacking</fullName>
+                <default>false</default>
+                <label>Snacking</label>
+            </value>
+            <value>
+                <fullName>Stuffed</fullName>
+                <default>false</default>
+                <label>Stuffed</label>
+            </value>
+            <value>
+                <fullName>Turkey Bacon</fullName>
+                <default>false</default>
+                <label>Turkey Bacon</label>
+            </value>
+            <value>
+                <fullName>Value Added Grind</fullName>
+                <default>false</default>
+                <label>Value Added Grind</label>
+            </value>
+            <value>
+                <fullName>Hard Cooked Egg</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hard Cooked Egg</label>
+            </value>
+            <value>
+                <fullName>Hot Dogs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hot Dogs</label>
+            </value>
+            <value>
+                <fullName>Logs/Bulk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Logs/Bulk</label>
+            </value>
+            <value>
+                <fullName>Sliced Deli</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sliced Deli</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Baked Egg Patty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>BTFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Continuous Cooked Meatballs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Continuous Cooked Patties/Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Diced Eggs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Diced Meat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Egg Wrap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Extruded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>French Toast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Frittata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Fry Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>FTB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Grilled Egg Patty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Ground Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>GTFC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>GTFP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Hard Cooked Eggs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Hot Dogs (PI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Kettles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Liquid Eggs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Logs (PI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>MST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Omelets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Pepperoni/Dry-Cured Sausage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Precooked Scrambled Eggs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Primary Beef</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Sliced (PI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Squared Eggs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Protein Ingredient</controllingFieldValue>
+            <valueName>Wings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Bacon wrapped</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Beef Inclusion Patties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Beef Meatballs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Fresh Beef Patties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Bulk Deli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Case Ready Grind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Case Ready Muscle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Chicken Tenders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Chicken Wings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Commodity Grind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Corned Beef Raw</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Turkey Meatballs Fully Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Hot dogs (RE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>IQF Patties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Logs (RE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Pot Roast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Breaded Raw</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Marinated Raw</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Turkey Value Added Raw</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Ready to Cook Bone-In</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Ready to Cook Boneless</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Sausage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Sliced (RE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Slice in-tact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Snacking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Stuffed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Turkey Bacon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Value Added Grind</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

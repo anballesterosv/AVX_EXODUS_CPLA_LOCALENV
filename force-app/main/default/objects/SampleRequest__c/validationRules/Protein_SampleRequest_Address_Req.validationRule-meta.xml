@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protein_SampleRequest_Address_Req</fullName>
+    <active>true</active>
+    <description>Shipping Address fields become required when &quot;Is the product being pulled from a distributor?&quot; is marked No</description>
+    <errorConditionFormula>ISPICKVAL(Pull_Product_From_Distributor__c,&#39;No&#39;)
+&amp;&amp;
+(ISBLANK(Ship_to_Company__c)
+||
+ISBLANK(Customer_Contact__c)
+||
+ISBLANK(Street__c)
+||
+ISBLANK(City__c)
+||
+ISBLANK(TEXT(StatePicklist__c))
+||
+ISBLANK( Postal_Code__c )
+||
+ISBLANK( Phone__c ))
+&amp;&amp;
+$Setup.Bus_Logic_Settings__c.Run_Validation__c</errorConditionFormula>
+    <errorDisplayField>Customer_Contact__c</errorDisplayField>
+    <errorMessage>All Customer Contact and Address details are required when &#39;Is Product Being Pulled From Distributor?&#39; is marked No. Shipping Company, Attention, Street, City, State, Postal Code, Phone</errorMessage>
+</ValidationRule>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distributor_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Distributor Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ben E. Keith</fullName>
+                <default>false</default>
+                <label>Ben E. Keith</label>
+            </value>
+            <value>
+                <fullName>Dot</fullName>
+                <default>false</default>
+                <label>Dot</label>
+            </value>
+            <value>
+                <fullName>GFS</fullName>
+                <default>false</default>
+                <label>GFS</label>
+            </value>
+            <value>
+                <fullName>PFG</fullName>
+                <default>false</default>
+                <label>PFG</label>
+            </value>
+            <value>
+                <fullName>Sysco</fullName>
+                <default>false</default>
+                <label>Sysco</label>
+            </value>
+            <value>
+                <fullName>US Foods</fullName>
+                <default>false</default>
+                <label>US Foods</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

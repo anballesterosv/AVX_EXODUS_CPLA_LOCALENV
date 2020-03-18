@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Protein --></label>
+    <name>Sub_Protein__c</name>
+    <picklistValues>
+        <masterLabel>Beef-Case Ready</masterLabel>
+        <translation><!-- Beef-Case Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Grinds</masterLabel>
+        <translation><!-- Beef-Grinds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Primary Beef</masterLabel>
+        <translation><!-- Beef-Primary Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Secondary Other</masterLabel>
+        <translation><!-- Beef-Secondary Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Specialty</masterLabel>
+        <translation><!-- Beef-Specialty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Value Added</masterLabel>
+        <translation><!-- Beef-Value Added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef-Value Added Cooked</masterLabel>
+        <translation><!-- Beef-Value Added Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CFD - All-Distribution</masterLabel>
+        <translation><!-- CFD - All-Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Case Ready</masterLabel>
+        <translation><!-- Chicken-Case Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Primary</masterLabel>
+        <translation><!-- Chicken-Primary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Specialty</masterLabel>
+        <translation><!-- Chicken-Specialty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken-Value Added Cooked</masterLabel>
+        <translation><!-- Chicken-Value Added Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg-Secondary Other</masterLabel>
+        <translation><!-- Egg-Secondary Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg-Value Added</masterLabel>
+        <translation><!-- Egg-Value Added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg-Value Added Cooked</masterLabel>
+        <translation><!-- Egg-Value Added Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Dairy</masterLabel>
+        <translation><!-- Other-Dairy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Lamb</masterLabel>
+        <translation><!-- Other-Lamb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Mixed</masterLabel>
+        <translation><!-- Other-Mixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Other</masterLabel>
+        <translation><!-- Other-Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Seafood</masterLabel>
+        <translation><!-- Other-Seafood --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Veal</masterLabel>
+        <translation><!-- Other-Veal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Case Ready</masterLabel>
+        <translation><!-- Pork-Case Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Specialty</masterLabel>
+        <translation><!-- Pork-Specialty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pork-Value Added Cooked</masterLabel>
+        <translation><!-- Pork-Value Added Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Case Ready</masterLabel>
+        <translation><!-- Turkey-Case Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Grinds</masterLabel>
+        <translation><!-- Turkey-Grinds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Primary Turkey</masterLabel>
+        <translation><!-- Turkey-Primary Turkey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Specialty</masterLabel>
+        <translation><!-- Turkey-Specialty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Value Added</masterLabel>
+        <translation><!-- Turkey-Value Added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey-Value Added Cooked</masterLabel>
+        <translation><!-- Turkey-Value Added Cooked --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

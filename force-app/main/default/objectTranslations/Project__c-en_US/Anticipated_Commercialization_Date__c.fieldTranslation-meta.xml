@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date anticipated to move to Measure and have a contract --></help>
+    <label><!-- Anticipated Commercialization Date --></label>
+    <name>Anticipated_Commercialization_Date__c</name>
+</CustomFieldTranslation>

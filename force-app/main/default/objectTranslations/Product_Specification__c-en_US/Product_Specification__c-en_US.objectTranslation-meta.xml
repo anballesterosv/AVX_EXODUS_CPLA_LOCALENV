@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Specification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Specifications</value>
+    </caseValues>
+    <layouts>
+        <layout>Product Spec Sheet Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ingredient Statements --></label>
+            <section>Ingredient Statements</section>
+        </sections>
+        <sections>
+            <label><!-- Mastercase/Pallet Info --></label>
+            <section>Mastercase/Pallet Info</section>
+        </sections>
+        <sections>
+            <label><!-- Nutrition Facts --></label>
+            <section>Nutrition Facts</section>
+        </sections>
+        <sections>
+            <label><!-- Packaging/Serving Section --></label>
+            <section>Packaging/Serving Section</section>
+        </sections>
+        <sections>
+            <label><!-- Product Classification --></label>
+            <section>Product Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Shelf Life/Storage Temperature Information --></label>
+            <section>Shelf Life/Storage Temperature Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Product_Spec_Sheet --></label>
+        <name>Product_Spec_Sheet</name>
+    </webLinks>
+</CustomObjectTranslation>

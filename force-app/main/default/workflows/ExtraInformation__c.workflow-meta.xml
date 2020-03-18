@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>AVX_FillKeyExtraInfo</fullName>
+        <field>Key__c</field>
+        <formula>ShipTo__c</formula>
+        <name>AVX_FillKeyExtraInfo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

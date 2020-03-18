@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Checked if at least one product did not return guidance --></help>
+    <label><!-- No Guidance --></label>
+    <name>NoGuidanceFlag__c</name>
+</CustomFieldTranslation>

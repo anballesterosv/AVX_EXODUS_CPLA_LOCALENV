@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projected_Volume_KG_3_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Unit_of_Measure__c, 
+&quot;Pound (lb)&quot;, Projected_Volume_3_Year__c * 2.20462, 
+&quot;Kilogram (kg)&quot;, Projected_Volume_3_Year__c, 
+&quot;Hundred Weight (CWT)&quot;, Projected_Volume_3_Year__c * 50.8023, 
+&quot;Metric Ton (MT)&quot;, Projected_Volume_3_Year__c * 2205, 
+&quot;Each (EA)&quot;, Projected_Volume_3_Year__c * Product__r.EAtoKGConversionRate__c, 
+&quot;Gallon (GAL)&quot;, Projected_Volume_3_Year__c * Product__r.GALtoKGConversionRate__c, 
+&quot;Case&quot;, Projected_Volume_3_Year__c * Product__r.CASEtoKGConversionRate__c, 
+&quot;Liter&quot;, Projected_Volume_3_Year__c * Product__r.LITERtoKGConversionRate__c, 
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Projected Volume KG (3-Year)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

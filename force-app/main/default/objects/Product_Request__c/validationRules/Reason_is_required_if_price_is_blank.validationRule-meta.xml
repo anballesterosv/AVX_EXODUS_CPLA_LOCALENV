@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_is_required_if_price_is_blank</fullName>
+    <active>true</active>
+    <description>Reason for No price field should be filled, if either of the fields &#39;Price Range Maximum&#39; or
+&#39;Price Range Minimum&#39; is blank or if &#39;Suggested Retail Price&#39; is blank.</description>
+    <errorConditionFormula>IF(AND(OR(ISBLANK(Reason_for_No_Price__c), Reason_for_No_Price__c=null),
+		OR(ISBLANK(Suggested_Retail_Price__c), Suggested_Retail_Price__c=0),
+		OR(OR(ISBLANK(Price_Range_Maximum__c), Price_Range_Maximum__c=0),
+			OR(ISBLANK(Price_Range_Minimum__c), Price_Range_Minimum__c=0))
+
+), true, false)</errorConditionFormula>
+    <errorDisplayField>Reason_for_No_Price__c</errorDisplayField>
+    <errorMessage>Please enter a valid reason in case either &#39;Price Range Maximum&#39; or
+&#39;Price Range Minimum&#39; doesn&#39;t have a valid price or if &#39;Suggested Retail Price&#39; is invalid.</errorMessage>
+</ValidationRule>

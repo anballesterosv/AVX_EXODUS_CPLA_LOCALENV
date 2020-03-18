@@ -1,0 +1,80 @@
+<!--Parent-->
+<aura:component controller="Protein_SampleRequestFulfillmentCtlr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="AddRowEvent" event="c:AddRowEvent" action="{!c.addRow}"/>
+    <aura:attribute name="SampleProductParent" type="SampleRequestProduct__c[]" default="[{Name:'Yasa',AccountNumber:'Yasa',Product__c:'Yasa',Product_Description__c:'Yasa',Julian_Date__c:'Yasa',Shipped_Weight__c:'Yasa',Product_Cost__c:'Yasa',Sequence_Number__c:'Yasa',CFNA_Other_Type__c:'Yasa',CFNA_Type__c:'Test',Fulfillment_Status__c:'Test'}]"/> 
+    <aura:attribute name="sampleRequestProductWrapper" type="List" default="[]"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="sampleRequestSelectedProductWrap" type="List" default="[]"/>
+    <aura:attribute name="spinner" type="boolean" default="false"/>
+    <aura:attribute name="srpBUs" type="List" default="[]"/>
+    <aura:attribute name="IsSRFOnComplete" type="Boolean" default="false" /> 
+     
+    <div class="slds-page-header slds-align_absolute-Left ">      
+        <h1 class="slds-page-header__title"><b>Products Already Selected:</b></h1>
+    </div>
+    
+
+    <div class="slds-scrollable" style="height:100%;">
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-max-medium-table--stacked-horizontal" role="grid"> 
+        
+        <thead>
+            <tr class="slds-text-title_caps ">
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Select">Remove &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Product">Product &nbsp;</div> 
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Product Description">Product Description &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Julian/Production Date">Julian/Production Date &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Shipped Weight">Shipped Weight &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Product Cost">Product Cost &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Sequence #">Sequence # &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Quantity">Quantity &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Type"> &nbsp;&nbsp;&nbsp;&nbsp; Type &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </div>
+                </th>
+                
+                <th scope="col" class="headerstyle">
+                    <div class="slds-truncate slds-border_right" title="Other Type">Other Type &nbsp;</div>
+                </th>
+                
+                <th scope="col" class="headerstyle"> 
+                    <div class="slds-truncate" title="Fulfillment Status">Fulfillment Status &nbsp;</div>
+                </th>
+                
+            </tr>
+        </thead> 
+        
+        <tbody>
+            <aura:iteration items="{!v.sampleRequestSelectedProductWrap}" var="item" indexVar="index">
+               <c:Protein_ProductsAlreadySelectedRow item="{!item}" rowIndex="{!index}" recordId="{!v.recordId}" srpBUs="{!v.srpBUs}" IsSRFOnComplete="{!v.IsSRFOnComplete}"/>
+            </aura:iteration>
+        </tbody>
+        
+    </table>
+  </div>  
+    <br/>
+    
+</aura:component>

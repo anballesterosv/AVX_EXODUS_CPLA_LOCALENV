@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <layouts>
+        <layout>Protein Knowledge Layout</layout>
+        <sections>
+            <label><!-- Articles Details --></label>
+            <section>Articles Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Information --></label>
+            <section>Other Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- This record type is used by Protein Customer Service Knowledge Article. All articles are Job Aid. --></description>
+        <label><!-- Protein Customer Service Knowledge --></label>
+        <name>CS_Protein_Customer_Service_Knowledge</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ship To Contact Relation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ship To Contact Relation</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- contacts_shiptoOnCase --></label>
+        <name>contacts_shiptoOnCase</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- shipTo_ContactOnCase --></label>
+        <name>shipTo_ContactOnCase</name>
+    </fieldSets>
+    <layouts>
+        <layout>Ship To Contact Relation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

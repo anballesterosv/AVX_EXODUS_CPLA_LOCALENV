@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>This Type picklist field consists of following picklist values,
+==&gt;CCC
+Agent
+Direct Customer
+Distributor
+Gourmet Distributor
+Indirect Customer via Agent
+Inside Sales
+Intercompany
+==&gt;GEOS
+Agent
+Broker
+Buyer
+Direct Customer
+Distributor
+Receiver
+
+Created by EB on 4/10/2017 for GEOS Sprint1
+Created by EB on 4/10/2017 for CCC Sprint1</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent</fullName>
+                <default>false</default>
+                <label>Agent</label>
+            </value>
+            <value>
+                <fullName>Direct Customer</fullName>
+                <default>false</default>
+                <label>Direct Customer</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Gourmet Distributor</fullName>
+                <default>false</default>
+                <label>Gourmet Distributor</label>
+            </value>
+            <value>
+                <fullName>Indirect Customer via Agent</fullName>
+                <default>false</default>
+                <label>Indirect Customer via Agent</label>
+            </value>
+            <value>
+                <fullName>Inside Sales</fullName>
+                <default>false</default>
+                <label>Inside Sales</label>
+            </value>
+            <value>
+                <fullName>Intercompany</fullName>
+                <default>false</default>
+                <label>Intercompany</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+                <label>Buyer</label>
+            </value>
+            <value>
+                <fullName>Receiver</fullName>
+                <default>false</default>
+                <label>Receiver</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

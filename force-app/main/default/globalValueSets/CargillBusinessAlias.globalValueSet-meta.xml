@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>GTM Corp Accts</fullName>
+        <default>false</default>
+        <label>GTM Corp Accts</label>
+    </customValue>
+    <customValue>
+        <fullName>GTM SS NA</fullName>
+        <default>false</default>
+        <label>GTM SS NA</label>
+    </customValue>
+    <customValue>
+        <fullName>GTM SS EMEA</fullName>
+        <default>false</default>
+        <label>GTM SS EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>GEOS NA</fullName>
+        <default>false</default>
+        <label>GEOS NA</label>
+    </customValue>
+    <customValue>
+        <fullName>GEOS Europe</fullName>
+        <default>false</default>
+        <label>GEOS Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>CIS</fullName>
+        <default>false</default>
+        <label>CIS</label>
+    </customValue>
+    <customValue>
+        <fullName>GEOS Mexico</fullName>
+        <default>false</default>
+        <label>GEOS Mexico</label>
+    </customValue>
+    <customValue>
+        <fullName>GEOS SA</fullName>
+        <default>false</default>
+        <label>GEOS SA</label>
+    </customValue>
+    <customValue>
+        <fullName>GEOS Venezuela</fullName>
+        <default>false</default>
+        <label>GEOS Venezuela</label>
+    </customValue>
+    <customValue>
+        <fullName>GEOS India</fullName>
+        <default>false</default>
+        <label>GEOS India</label>
+    </customValue>
+    <customValue>
+        <fullName>GEOS AP</fullName>
+        <default>false</default>
+        <label>GEOS AP</label>
+    </customValue>
+    <customValue>
+        <fullName>Foods Brazil</fullName>
+        <default>false</default>
+        <label>Foods Brazil</label>
+    </customValue>
+    <customValue>
+        <fullName>SSNA</fullName>
+        <default>false</default>
+        <label>SSNA</label>
+    </customValue>
+    <customValue>
+        <fullName>SSE</fullName>
+        <default>false</default>
+        <label>SSE</label>
+    </customValue>
+    <customValue>
+        <fullName>CTS</fullName>
+        <default>false</default>
+        <label>CTS</label>
+    </customValue>
+    <customValue>
+        <fullName>SSSA</fullName>
+        <default>false</default>
+        <label>SSSA</label>
+    </customValue>
+    <customValue>
+        <fullName>CF METNA</fullName>
+        <default>false</default>
+        <label>CF METNA</label>
+    </customValue>
+    <customValue>
+        <fullName>CCC</fullName>
+        <default>false</default>
+        <label>CCC</label>
+    </customValue>
+    <customValue>
+        <fullName>CCCNA</fullName>
+        <default>false</default>
+        <label>CCCNA</label>
+    </customValue>
+    <customValue>
+        <fullName>CCC Brazil</fullName>
+        <default>false</default>
+        <label>CCC Brazil</label>
+    </customValue>
+    <customValue>
+        <fullName>ROAP</fullName>
+        <default>false</default>
+        <label>ROAP</label>
+    </customValue>
+    <customValue>
+        <fullName>S&amp;S China</fullName>
+        <default>false</default>
+        <label>S&amp;S China</label>
+    </customValue>
+    <customValue>
+        <fullName>S&amp;S SE Asia</fullName>
+        <default>false</default>
+        <label>S&amp;S SE Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Toshoku</fullName>
+        <default>false</default>
+        <label>Toshoku</label>
+    </customValue>
+    <customValue>
+        <fullName>Foods India</fullName>
+        <default>false</default>
+        <label>Foods India</label>
+    </customValue>
+    <customValue>
+        <fullName>Malt</fullName>
+        <default>false</default>
+        <label>Malt</label>
+    </customValue>
+    <customValue>
+        <fullName>CDT</fullName>
+        <default>false</default>
+        <label>CDT</label>
+    </customValue>
+    <customValue>
+        <fullName>Foods Argentina</fullName>
+        <default>false</default>
+        <label>Foods Argentina</label>
+    </customValue>
+    <customValue>
+        <fullName>CE NA</fullName>
+        <default>false</default>
+        <label>CE NA</label>
+    </customValue>
+    <customValue>
+        <fullName>CE NA SS</fullName>
+        <default>false</default>
+        <label>CE NA SS</label>
+    </customValue>
+    <customValue>
+        <fullName>CE EMEA</fullName>
+        <default>false</default>
+        <label>CE EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>CE EMEA IS</fullName>
+        <default>false</default>
+        <label>CE EMEA IS</label>
+    </customValue>
+    <customValue>
+        <fullName>Salt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Salt</label>
+    </customValue>
+    <description>Acronym or Abbreviation of Business Name</description>
+    <masterLabel>Cargill Business Alias</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

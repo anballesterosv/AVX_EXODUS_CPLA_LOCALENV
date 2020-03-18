@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Relates to Competitor --></label>
+    <name>RelatesToCompetitor__c</name>
+    <relationshipLabel><!-- Business Details (Relates to Competitor) --></relationshipLabel>
+</CustomFieldTranslation>

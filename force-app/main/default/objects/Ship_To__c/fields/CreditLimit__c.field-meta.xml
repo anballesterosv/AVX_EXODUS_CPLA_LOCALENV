@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreditLimit__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Credit Limit</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Commercial_Account__c</field>
+            <operation>equals</operation>
+            <valueField>CreditLimit__c.CommercialAccount__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>CreditLimit__c</referenceTo>
+    <relationshipLabel>Ship To&#39;s</relationshipLabel>
+    <relationshipName>Ship_To_s</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

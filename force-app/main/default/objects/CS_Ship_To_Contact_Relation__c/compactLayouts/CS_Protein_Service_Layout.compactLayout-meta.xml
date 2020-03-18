@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Protein_Service_Layout</fullName>
+    <fields>CS_Contact__c</fields>
+    <fields>CS_Ship_To__c</fields>
+    <label>Protein Service Layout</label>
+</CompactLayout>

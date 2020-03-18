@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CVAP_Poultry_Require_Products_when_Ready</fullName>
+    <active>true</active>
+    <description>Make sure products have been entered prior to setting status to &quot;Ready for Further Processing&quot;</description>
+    <errorConditionFormula>NOT(ISPICKVAL(Status__c, &quot;Draft&quot;))
+&amp;&amp;
+Product_Count__c = 0
+&amp;&amp;
+$Setup.Bus_Logic_Settings__c.Run_Validation__c</errorConditionFormula>
+    <errorMessage>You cannot change the Status to &quot;Ready for Further Processing&quot; or &quot;Complete&quot; or &quot;Partially Fufilled&quot; unless at least one product has been added.</errorMessage>
+</ValidationRule>

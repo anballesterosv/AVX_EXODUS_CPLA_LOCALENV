@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Segment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corporate Account</fullName>
+                <default>false</default>
+                <label>Corporate Account</label>
+            </value>
+            <value>
+                <fullName>Key Account</fullName>
+                <default>false</default>
+                <label>Key Account</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Distribution</fullName>
+                <default>false</default>
+                <label>Distribution</label>
+            </value>
+            <value>
+                <fullName>Inside</fullName>
+                <default>false</default>
+                <label>Inside</label>
+            </value>
+            <value>
+                <fullName>Strategic Few</fullName>
+                <default>false</default>
+                <label>Strategic Few</label>
+            </value>
+            <value>
+                <fullName>Critical Core</fullName>
+                <default>false</default>
+                <label>Critical Core</label>
+            </value>
+            <value>
+                <fullName>Core</fullName>
+                <default>false</default>
+                <label>Core</label>
+            </value>
+            <value>
+                <fullName>Limited</fullName>
+                <default>false</default>
+                <label>Limited</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

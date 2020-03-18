@@ -1,0 +1,41 @@
+<aura:component controller="Protein_SampleRequestProductController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="lstProducts" type="SampleRequestProduct__c[]"/>
+    <aura:attribute name="lstProductsWrapper" type="sobject[]"/>
+    <aura:attribute name="sampleBU" type="String"/>
+    <aura:attribute name="sampleRecType" type="String"/>
+    <aura:attribute name="isContactValidationError" type="boolean" default="false"/>
+    <aura:attribute name="DisplayMsg" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="deleteEvent" event="c:rowEvent" action="{!c.deleteSRProduct}"/>
+    
+    <aura:method name="updateSRProductsTable" action="{!c.doInit}" description="Method for rendered list after saving SRPs "/>
+    
+    <div>
+        <aura:if isTrue="{!v.isContactValidationError}">
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                <h2>
+                    {!v.DisplayMsg}
+                </h2>
+                <div class="slds-notify__close">
+                <lightning:buttonIcon iconName="utility:close" variant="border-inverse" onclick="{!c.clearError}"/>
+            </div>
+            </div>
+            
+        </aura:if>
+        <lightning:spinner alternativeText="Loading" size="medium" aura:id="Spinner"/>
+        <div class="slds-grid slds-wrap slds-float_right">
+            <lightning:button label="Add Product" title="Add Product" onclick="{!c.addProductRow}"/>
+            <lightning:button variant="brand" label="Save" title="Save" onclick="{!c.saveSRProducts}" disabled="{!if(!v.lstProductsWrapper.length>0, true, false)}"/>
+        </div>
+        <div>
+            <br/><br/><br/><br/>
+        </div>
+        <div class="slds-grid slds-wrap">      
+            <lightning:messages />
+            <div class="slds-size_12-of-12">
+                <c:Protein_SampleRequestProductTable lstProductsWrapper = "{!v.lstProductsWrapper}" sampleBU = "{!v.sampleBU}" sampleRecType="{!v.sampleRecType}"/>
+            </div>            
+        </div>
+    </div>
+</aura:component>

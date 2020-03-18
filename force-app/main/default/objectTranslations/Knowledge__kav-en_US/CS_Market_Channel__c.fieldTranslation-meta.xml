@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Market Channel of Knowledge Article --></help>
+    <label><!-- Market Channel --></label>
+    <name>CS_Market_Channel__c</name>
+    <picklistValues>
+        <masterLabel>Food Service</masterLabel>
+        <translation><!-- Food Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General</masterLabel>
+        <translation><!-- General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Protein Ingredients</masterLabel>
+        <translation><!-- Protein Ingredients --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

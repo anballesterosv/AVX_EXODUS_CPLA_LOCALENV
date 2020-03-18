@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Telesales Plan Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Telesales Plan Details</value>
+    </caseValues>
+    <layouts>
+        <layout>TelesalesPlanDetail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Validity --></label>
+            <section>Validity</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Telesales Plan Detail --></label>
+        <name>TelesalesPlanDetail</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

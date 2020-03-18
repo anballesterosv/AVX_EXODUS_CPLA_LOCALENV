@@ -1,0 +1,13 @@
+<aura:component controller="CS_CloseCAseLDSApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<lightning:workspaceAPI aura:id="workspace"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <force:recordData aura:id="forceRecord"
+    recordId="{!v.recordId}" 
+    layoutType="FULL"
+    targetRecord="{!v._record}"
+    targetFields="{!v.simpleRecord}"
+    targetError="{!v._error}"
+    recordUpdated="{!c.recordUpdated}" />
+
+</aura:component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer key buy factor --></label>
+    <name>Customer_key_buy_factor__c</name>
+    <picklistValues>
+        <masterLabel>Food Safety</masterLabel>
+        <translation><!-- Food Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portfolio of products</masterLabel>
+        <translation><!-- Portfolio of products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product specifications</masterLabel>
+        <translation><!-- Product specifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply assurances &amp; Execution</masterLabel>
+        <translation><!-- Supply assurances &amp; Execution --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

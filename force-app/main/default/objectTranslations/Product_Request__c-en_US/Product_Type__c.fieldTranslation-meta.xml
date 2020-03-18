@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>BTFT</masterLabel>
+        <translation><!-- BTFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bacon wrapped</masterLabel>
+        <translation><!-- Bacon wrapped --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baked Egg Patty</masterLabel>
+        <translation><!-- Baked Egg Patty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef Inclusion Patties</masterLabel>
+        <translation><!-- Beef Inclusion Patties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef Meatballs</masterLabel>
+        <translation><!-- Beef Meatballs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breaded Raw</masterLabel>
+        <translation><!-- Breaded Raw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bulk Deli</masterLabel>
+        <translation><!-- Bulk Deli --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Ready Grind</masterLabel>
+        <translation><!-- Case Ready Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Ready Muscle</masterLabel>
+        <translation><!-- Case Ready Muscle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken Tenders</masterLabel>
+        <translation><!-- Chicken Tenders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicken Wings</masterLabel>
+        <translation><!-- Chicken Wings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commodity Grind</masterLabel>
+        <translation><!-- Commodity Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuous Cooked Meatballs</masterLabel>
+        <translation><!-- Continuous Cooked Meatballs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuous Cooked Patties/Other</masterLabel>
+        <translation><!-- Continuous Cooked Patties/Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corned Beef Raw</masterLabel>
+        <translation><!-- Corned Beef Raw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diced Eggs</masterLabel>
+        <translation><!-- Diced Eggs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diced Meat</masterLabel>
+        <translation><!-- Diced Meat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg Wrap</masterLabel>
+        <translation><!-- Egg Wrap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extruded</masterLabel>
+        <translation><!-- Extruded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FTB</masterLabel>
+        <translation><!-- FTB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>French Toast</masterLabel>
+        <translation><!-- French Toast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresh Beef Patties</masterLabel>
+        <translation><!-- Fresh Beef Patties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frittata</masterLabel>
+        <translation><!-- Frittata --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fry Line</masterLabel>
+        <translation><!-- Fry Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTFC</masterLabel>
+        <translation><!-- GTFC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTFP</masterLabel>
+        <translation><!-- GTFP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grilled Egg Patty</masterLabel>
+        <translation><!-- Grilled Egg Patty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground Beef</masterLabel>
+        <translation><!-- Ground Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hard Cooked Eggs</masterLabel>
+        <translation><!-- Hard Cooked Eggs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Dogs (PI)</masterLabel>
+        <translation><!-- Hot Dogs (PI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot dogs (RE)</masterLabel>
+        <translation><!-- Hot dogs (RE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IQF Patties</masterLabel>
+        <translation><!-- IQF Patties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kettles</masterLabel>
+        <translation><!-- Kettles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kit</masterLabel>
+        <translation><!-- Kit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquid Eggs</masterLabel>
+        <translation><!-- Liquid Eggs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logs (PI)</masterLabel>
+        <translation><!-- Logs (PI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logs (RE)</masterLabel>
+        <translation><!-- Logs (RE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MST</masterLabel>
+        <translation><!-- MST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marinated Raw</masterLabel>
+        <translation><!-- Marinated Raw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Omelets</masterLabel>
+        <translation><!-- Omelets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pepperoni/Dry-Cured Sausage</masterLabel>
+        <translation><!-- Pepperoni/Dry-Cured Sausage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pot Roast</masterLabel>
+        <translation><!-- Pot Roast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Precooked Scrambled Eggs</masterLabel>
+        <translation><!-- Precooked Scrambled Eggs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Beef</masterLabel>
+        <translation><!-- Primary Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready to Cook Bone-In</masterLabel>
+        <translation><!-- Ready to Cook Bone-In --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready to Cook Boneless</masterLabel>
+        <translation><!-- Ready to Cook Boneless --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sausage</masterLabel>
+        <translation><!-- Sausage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slice in-tact</masterLabel>
+        <translation><!-- Slice in-tact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sliced (PI)</masterLabel>
+        <translation><!-- Sliced (PI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sliced (RE)</masterLabel>
+        <translation><!-- Sliced (RE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snacking</masterLabel>
+        <translation><!-- Snacking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Squared Eggs</masterLabel>
+        <translation><!-- Squared Eggs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stuffed</masterLabel>
+        <translation><!-- Stuffed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey Bacon</masterLabel>
+        <translation><!-- Turkey Bacon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey Meatballs Fully Cooked</masterLabel>
+        <translation><!-- Turkey Meatballs Fully Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey Value Added Raw</masterLabel>
+        <translation><!-- Turkey Value Added Raw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Added Grind</masterLabel>
+        <translation><!-- Value Added Grind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wings</masterLabel>
+        <translation><!-- Wings --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

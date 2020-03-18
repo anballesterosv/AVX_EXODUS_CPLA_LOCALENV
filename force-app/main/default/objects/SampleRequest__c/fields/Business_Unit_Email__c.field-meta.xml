@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit_Email__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(CFNA_Business_Unit__c, 
+&#39;Cargill Beef&#39;, 
+IF(Owner:User.Alias = &#39;rbrit&#39; || Owner:User.Alias = &#39;T720884&#39;, &#39;Rob_Urie@cargill.com;&#39;, &#39;Vonda_Behrens@cargill.com;Destiny_Benson@cargill.com;&#39;), 
+&#39;CVAP-Beef (Burgers)&#39;, &#39;samples@midwestrefrigerated.com;&#39;, 
+&#39;Case Ready&#39;, &#39;-CASEREADY-SAMPLE-REQUESTS@exch.cargill.com;&#39;, 
+&#39;CVAP-Poultry (Eggs)&#39;, &#39;rita_stang@cargill.com;&#39;, 
+&#39;Turkey &amp; Cooked Meats&#39;, &#39;&#39;, 
+&#39;Cocoa &amp; Chocolate&#39;, &#39;Natalie_Ipekci@cargill.com;Regina_Lewis@cargill.com;Laura_Kyle@cargill.com;&#39;, 
+&#39;DSM&#39;, &#39;dso_samples@cargill.com;&#39;, 
+&#39;Foodservice Oils&#39;, &#39;dso_samples@cargill.com;&#39;, 
+&#39;Salt&#39;, &#39;salt_cargill_samples@cargill.com;&#39;, 
+&#39;Sugar&#39;, &#39;SUGAR-SALES-MINNEAPOLIS@exch.cargill.com;Robbyn_Macedo@cargill.com;Jyl_Burnstedt@cargill.com;&#39;, 
+&#39;Truvia&#39;, &#39;Chn_CustomerService@cargill.com;&#39;, &#39;&#39; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Business Unit Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

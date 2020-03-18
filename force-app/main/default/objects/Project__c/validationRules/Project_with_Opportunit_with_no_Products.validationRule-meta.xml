@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_with_Opportunit_with_no_Products</fullName>
+    <active>true</active>
+    <description>Throw an error on Project if the related Opportunity does not have any Products associated</description>
+    <errorConditionFormula>Opportunity__r.NumberOfProducts__c = 0</errorConditionFormula>
+    <errorDisplayField>Opportunity__c</errorDisplayField>
+    <errorMessage>Please select the opportunity which has products associated with it.</errorMessage>
+</ValidationRule>

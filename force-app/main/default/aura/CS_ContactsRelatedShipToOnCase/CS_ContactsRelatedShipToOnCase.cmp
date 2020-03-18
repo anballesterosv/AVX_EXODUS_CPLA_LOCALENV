@@ -1,0 +1,59 @@
+<aura:component controller="CS_ContactsRelShipToOnCaseApexController"
+	implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+	access="global">
+	<aura:attribute name="mydata" type="Object" />
+	<aura:attribute name="atOnce" type="boolean" default="false" />
+	<aura:attribute name="tempMydata" type="Object" />
+	<aura:attribute name="mycolumns" type="List" />
+	<aura:attribute name="IsSpinner" type="Boolean" />
+	<aura:attribute name="preventRecurssion" type="Boolean" default="true" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:attribute name="selectedContactId" type="string" />
+	<aura:attribute name="selectedSearchField" type="string"
+		description="selected field to be searched" default="Contact" />
+	<aura:attribute name="searchFieldList" type="List"
+		description="list of fields to be searched" />
+	<aura:attribute name="searchKey" type="string"
+        description="value to be searched" />
+    <aura:attribute name="width" type="String"/>
+	<lightning:flexipageRegionInfo width="{!v.width}"/>
+	
+	<aura:dependency resource="markup://force:editRecord" type="EVENT" />
+	<aura:handler event="force:refreshView" action="{!c.doInit}" />
+	
+
+	<div class="{! 'container' + (v.width=='Medium'?' narrowRegion':'')}">
+		<div class="slds-grid">
+			<div class="slds-col slds-size_1-of-2 ">
+				<div class="slds-grid slds-float_left">
+
+					<lightning:select name="select" aura:id="selectfield"
+						label="Select Search Field " value="{!v.selectedSearchField}">
+						<aura:iteration items="{!v.mycolumns}" var="field">
+							<option text="{!field.label}" value="{!field.label}" />
+						</aura:iteration>
+					</lightning:select>
+				</div>
+			</div>
+			<div class="slds-col slds-size_1-of-2 ">
+				<div class="slds-button-group  slds-float_right " role="group">
+					<button onclick="{!c.refreshPage}">Refresh</button>
+				</div>
+			</div>
+
+		</div>
+		<br />
+				<lightning:input label="Search Key" name="SearchKey"
+					value="{!v.searchKey}" onchange="{!c.searchByField}" />
+		<br/>
+		<div class="{! 'container' + (v.width=='Medium'?' narrowRegion':'')}">
+			<aura:if isTrue="{!v.IsSpinner}">
+				<lightning:spinner variant="brand" size="large" />
+			</aura:if>
+			<lightning:datatable aura:id="contactTable" data="{! v.mydata }"
+				columns="{! v.mycolumns }" keyField="Id" maxRowSelection="1"
+				onrowselection="{!c.onSelectingContact}" />
+		</div>
+
+	</div>
+</aura:component>

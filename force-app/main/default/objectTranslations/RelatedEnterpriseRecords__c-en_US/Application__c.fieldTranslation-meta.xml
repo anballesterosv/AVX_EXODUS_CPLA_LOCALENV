@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application --></label>
+    <name>Application__c</name>
+    <picklistValues>
+        <masterLabel>AForce</masterLabel>
+        <translation><!-- AForce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adage</masterLabel>
+        <translation><!-- Adage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CMMP</masterLabel>
+        <translation><!-- CMMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTS SAP</masterLabel>
+        <translation><!-- CTS SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Class</masterLabel>
+        <translation><!-- Class --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GEOS SAP</masterLabel>
+        <translation><!-- GEOS SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP TC1</masterLabel>
+        <translation><!-- SAP TC1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP TCC</masterLabel>
+        <translation><!-- SAP TCC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

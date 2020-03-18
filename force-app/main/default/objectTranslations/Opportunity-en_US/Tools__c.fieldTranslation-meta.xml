@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tools --></label>
+    <name>Tools__c</name>
+    <picklistValues>
+        <masterLabel>Tool A</masterLabel>
+        <translation><!-- Tool A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tool B</masterLabel>
+        <translation><!-- Tool B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tool C</masterLabel>
+        <translation><!-- Tool C --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

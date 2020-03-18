@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_System__c</fullName>
+    <externalId>false</externalId>
+    <label>Legacy System</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>XLGO</fullName>
+                <default>false</default>
+                <label>XLGO</label>
+            </value>
+            <value>
+                <fullName>XLDM</fullName>
+                <default>false</default>
+                <label>XLDM</label>
+            </value>
+            <value>
+                <fullName>CBS</fullName>
+                <default>false</default>
+                <label>CBS</label>
+            </value>
+            <value>
+                <fullName>CTCM</fullName>
+                <default>false</default>
+                <label>CTCM</label>
+            </value>
+            <value>
+                <fullName>PROTEAN</fullName>
+                <default>false</default>
+                <label>PROTEAN</label>
+            </value>
+            <value>
+                <fullName>FIVE STAR</fullName>
+                <default>false</default>
+                <label>FIVE STAR</label>
+            </value>
+            <value>
+                <fullName>CFD</fullName>
+                <default>false</default>
+                <label>CFD</label>
+            </value>
+            <value>
+                <fullName>SAP</fullName>
+                <default>false</default>
+                <label>SAP</label>
+            </value>
+            <value>
+                <fullName>CVAP EGG</fullName>
+                <default>false</default>
+                <label>CVAP EGG</label>
+            </value>
+            <value>
+                <fullName>JDE</fullName>
+                <default>false</default>
+                <label>JDE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Market_Channel__c</fullName>
+    <description>This field will define the market channel that article belongs to. There will be 4 options available Food Service, Protein Ingredients, Retail &amp; General.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Market Channel of Knowledge Article</inlineHelpText>
+    <label>Market Channel</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Food Service</fullName>
+                <default>false</default>
+                <label>Food Service</label>
+            </value>
+            <value>
+                <fullName>Protein Ingredients</fullName>
+                <default>false</default>
+                <label>Protein Ingredients</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

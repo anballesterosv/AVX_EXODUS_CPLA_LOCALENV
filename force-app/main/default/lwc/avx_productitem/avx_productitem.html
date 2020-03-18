@@ -1,0 +1,34 @@
+<template>    
+    <template if:true={showimage}>
+        <td role="gridcell" class="slds-truncate tableMobileFunction data_info" style="height:6em;">
+            <div class="slds-avatar slds-avatar--large slds-truncate " >                   
+                <img src={itemproduct.urlImage} alt={itemproduct.name} height="50" width="50"/>                    
+            </div>
+        </td>
+    </template>
+    <td role="gridcell" data-label={label.AVX_ProductDetails}>
+        <a href={productTargeting} target="_blank"><div class="slds-truncate data_name" title={itemproduct.name}>{itemproduct.name}</div></a>
+    </td>
+    <td role="gridcell" data-label={label.AVX_ProductCode}>
+        <div class="slds-truncate tableMobileFunction data_value" title={itemproduct.productCode}>{itemproduct.productCode}</div>
+    </td>
+    
+    <td role="gridcell" data-label={label.AVX_Brand}>
+        <div class="slds-truncate tableMobileFunction data_value" title={itemproduct.brand}>{itemproduct.brand}</div>
+    </td>
+    <td role="gridcell" data-label={label.AVX_Family}>
+        <div class="slds-truncate tableMobileFunction data_value" title={itemproduct.family}>{itemproduct.family}</div>
+    </td>
+    <td role="gridcell" data-label={label.AVX_SalesOrg}>
+        <div class="slds-truncate tableMobileFunction data_value" title={itemproduct.salesOrg}>{itemproduct.salesOrg}</div>
+    </td>
+    <td role="gridcell" data-label={label.AVX_DefaultPricingUOM}>
+        <div class="slds-truncate tableMobileFunction data_value" title={itemproduct.defaultPricingUom}>{itemproduct.defaultPricingUom}</div>
+    </td>
+    <td role="gridcell" data-label={label.AVX_DefaultUom}>
+        <div class="slds-truncate tableMobileFunction data_value" title={itemproduct.defaultUom}>{itemproduct.defaultUom}</div>
+    </td>
+    <td role="gridcell" data-label="INFO">
+        <lightning-icon class="slds-truncate tableMobileFunction data_value data_info" icon-name="utility:info_alt" title={label.AVX_ProductDetails} onclick={openModal} currentobject={oncurrentitem}></lightning-icon>        
+    </td>
+</template>

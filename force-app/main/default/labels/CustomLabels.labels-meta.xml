@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AVX_Brand</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Brand</shortDescription>
+        <value>Brand</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Business</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Business</shortDescription>
+        <value>Business</value>
+    </labels>
+    <labels>
+        <fullName>AVX_CallTo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX CallTo</shortDescription>
+        <value>Call to</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Catalog</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_Catalog</shortDescription>
+        <value>Catalog</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Close</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>AVX_CloseTaskReasonComments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_CloseTaskReasonComments</shortDescription>
+        <value>Task closed automatically.</value>
+    </labels>
+    <labels>
+        <fullName>AVX_CloseTaskReason_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_CloseTaskReason_NT</shortDescription>
+        <value>Automatic</value>
+    </labels>
+    <labels>
+        <fullName>AVX_CloseTaskStatus_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_CloseTaskStatus_NT</shortDescription>
+        <value>NotAnswer</value>
+    </labels>
+    <labels>
+        <fullName>AVX_DefaultPricingUOM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Default Pricing UOM</shortDescription>
+        <value>Default Pricing UOM</value>
+    </labels>
+    <labels>
+        <fullName>AVX_DefaultUom</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Default UOM</shortDescription>
+        <value>Default UOM</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Detail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_Detail</shortDescription>
+        <value>Detail</value>
+    </labels>
+    <labels>
+        <fullName>AVX_DontShowImage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_DontShowImage</shortDescription>
+        <value>Dont Show Images</value>
+    </labels>
+    <labels>
+        <fullName>AVX_DurationOfConservation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Duration of Conservation</shortDescription>
+        <value>Duration of Conservation</value>
+    </labels>
+    <labels>
+        <fullName>AVX_EnterSearch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX EnterSearch</shortDescription>
+        <value>Enter Search for Product Catalog</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Family</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Family</shortDescription>
+        <value>Product Family</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Family2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Family 2</shortDescription>
+        <value>Sub Familia</value>
+    </labels>
+    <labels>
+        <fullName>AVX_FirstPage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_FirstPage</shortDescription>
+        <value>First page</value>
+    </labels>
+    <labels>
+        <fullName>AVX_GrossWeight</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Gross Weight</shortDescription>
+        <value>Gross Weight</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconAttention_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconAttention_NT</shortDescription>
+        <value>0680j000000xtTqAAI</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconBlue_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconBlue_NT</shortDescription>
+        <value>0680j000000xtTvAAI</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconGreen_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconGreen_NT</shortDescription>
+        <value>0680j000000xtU0AAI</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconGrey_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconGrey_NT</shortDescription>
+        <value>0680j000000xtU5AAI</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconInactive_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconInactive_NT</shortDescription>
+        <value>0683C000000Po34QAC</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconOrange_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconOrange_NT</shortDescription>
+        <value>0680j000000xtTwAAI</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconPurple_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconPurple_NT</shortDescription>
+        <value>0680j000000xtUAAAY</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconRed_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconRed_NT</shortDescription>
+        <value>0680j000000xtU6AAI</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconSales_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconSales_NT</shortDescription>
+        <value>0680j000000xtTxAAI</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconService_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconService_NT</shortDescription>
+        <value>0680j000000xtUFAAY</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconSuccess_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconSuccess_NT</shortDescription>
+        <value>0680j000000xtUKAAY</value>
+    </labels>
+    <labels>
+        <fullName>AVX_IconYellow_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_IconYellow_NT</shortDescription>
+        <value>0683C000000RdMiQAK</value>
+    </labels>
+    <labels>
+        <fullName>AVX_LastPage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_LastPage</shortDescription>
+        <value>Last page</value>
+    </labels>
+    <labels>
+        <fullName>AVX_MaterialType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Material Type</shortDescription>
+        <value>Material Type</value>
+    </labels>
+    <labels>
+        <fullName>AVX_NetWeight</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Net Weight</shortDescription>
+        <value>Net Weight</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Next</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>AVX_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>AVX_NoRecordsFound</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX NoRecordsFound</shortDescription>
+        <value>No records found</value>
+    </labels>
+    <labels>
+        <fullName>AVX_PackType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX PackType</shortDescription>
+        <value>Pack Type</value>
+    </labels>
+    <labels>
+        <fullName>AVX_PageSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_PageSize</shortDescription>
+        <value>Page size</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Previous</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ProductCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX ProductCode</shortDescription>
+        <value>Product Code</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ProductDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Product Details</shortDescription>
+        <value>Product Details</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ProductName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_ProductName</shortDescription>
+        <value>Product name</value>
+    </labels>
+    <labels>
+        <fullName>AVX_SalesOrg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX SalesOrg</shortDescription>
+        <value>Sales Org</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>AVX_SearchFilters</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_SearchFilters</shortDescription>
+        <value>Search Filters</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ServletShepherd</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_ServletShepherd</shortDescription>
+        <value>/sfc/servlet.shepherd/version/download/</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ShowImage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_ShowImage</shortDescription>
+        <value>Show Images</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ShowImageOrNot</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX ShowImagerOrNot</shortDescription>
+        <value>Show Image on Product Catalog</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ShowLess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_ShowLess</shortDescription>
+        <value>Show Less</value>
+    </labels>
+    <labels>
+        <fullName>AVX_ShowMore</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_ShowMore</shortDescription>
+        <value>Show More</value>
+    </labels>
+    <labels>
+        <fullName>AVX_SomethingToSearch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX SomethingToSearch</shortDescription>
+        <value>Please enter something to search.</value>
+    </labels>
+    <labels>
+        <fullName>AVX_StorageCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Storage Code</shortDescription>
+        <value>Storage Code</value>
+    </labels>
+    <labels>
+        <fullName>AVX_TaskScheduled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_TaskScheduled</shortDescription>
+        <value>[Scheduled]</value>
+    </labels>
+    <labels>
+        <fullName>AVX_TaskStatus_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_TaskStatus_NT</shortDescription>
+        <value>Open;InProgress;CallBack</value>
+    </labels>
+    <labels>
+        <fullName>AVX_TaskType_NT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX_TaskType_NT</shortDescription>
+        <value>WorkPlan;ContingencyPlan</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Taxed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Taxed</shortDescription>
+        <value>Taxed</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Actions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Actions</shortDescription>
+        <value>Actions</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Add</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Add_Edit_Client_to_Telesales_Plan</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Add/Edit Client to Telesales Plan</shortDescription>
+        <value>Add/Edit Client to Telesales Plan</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Added</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Added</shortDescription>
+        <value>Added</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales All</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Client_no_country</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Client no country</shortDescription>
+        <value>The client has no assigned country.</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Clients_no_selected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Clients no selected</shortDescription>
+        <value>To continue it is necessary to select at least one client</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Clients_to_assign</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Clients to assign</shortDescription>
+        <value>Clients to assign</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Close</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Day</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Day</shortDescription>
+        <value>Day</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_ERP_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales ERP Number</shortDescription>
+        <value>ERP Number</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_ERP_Number_asc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales ERP Number asc</shortDescription>
+        <value>ERP number/Ascending</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_ERP_Number_desc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales ERP Number desc</shortDescription>
+        <value>ERP number/Descending</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Error_same_client_day_hour</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Error same client/day/hour</shortDescription>
+        <value>There is already a record with the same time and date for this customer. Please check!</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Filter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Filter_By_day</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Filter By day</shortDescription>
+        <value>Filter by day</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Hour</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Hour</shortDescription>
+        <value>Hour</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Hour_asc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Hour asc</shortDescription>
+        <value>Hour/Ascending</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Hour_desc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Hour desc</shortDescription>
+        <value>Hour/Descending</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Identification_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Identification Number</shortDescription>
+        <value>Identification Number</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Items_to_show</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Items to show</shortDescription>
+        <value>Items to show</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Message_confirm_delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Message confirm delete</shortDescription>
+        <value>Are you sure to continue with the operation? Remove:</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Name_asc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Name asc</shortDescription>
+        <value>Name/Ascending</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Name_desc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Name desc</shortDescription>
+        <value>Name/Descending</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_No_records_found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales No records found</shortDescription>
+        <value>No records were found with the captured criteria</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_No_sales_script</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales No sales script</shortDescription>
+        <value>There is no script registered for this client. Please contact the responsible area</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Non_added</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Non added</shortDescription>
+        <value>Non added</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Order_by</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Order by</shortDescription>
+        <value>Order by</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Plan</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Plan</shortDescription>
+        <value>Plan</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Priority</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Priority</shortDescription>
+        <value>Priority</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Record_updated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Record updated</shortDescription>
+        <value>Record updated successfully</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Records_added</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Records added</shortDescription>
+        <value>Records added successfully</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Records_deleted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Records deleted</shortDescription>
+        <value>Records deleted successfully</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Restart_values</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Restart values</shortDescription>
+        <value>Restart values</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Select</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Select</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Select_all</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Select all</shortDescription>
+        <value>Select all</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Telemerketer_no_selected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Telemerketer no selected</shortDescription>
+        <value>The telemarketer field is required</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Validation_error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Validation error</shortDescription>
+        <value>Day, Hour and Priority are required</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_Yes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_telemarketer_witout_workplan</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales telemarketer witout workplan</shortDescription>
+        <value>This user does not have a registered Work Plan.</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Telesales_there_is_a_plan_active</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Telesales there is a plan active</shortDescription>
+        <value>An active plan already exists for the selected telemarketer</value>
+    </labels>
+    <labels>
+        <fullName>AVX_Yes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>AVX_telesales_Telemarketer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVX telesales Telemarketer</shortDescription>
+        <value>Telemarketer</value>
+    </labels>
+    <labels>
+        <fullName>Account_Team_Param</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Team Param</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>CS_AgentResponseTimeMilestoneId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS_AgentResponseTimeMilestoneId</shortDescription>
+        <value>5571B000000GnINQA0</value>
+    </labels>
+    <labels>
+        <fullName>CS_BlueJayApp</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS_BlueJayApp</shortDescription>
+        <value>https://kewilltransport.net/tms/servlet/Login</value>
+    </labels>
+    <labels>
+        <fullName>CS_ByPass_Domains_For_NoContactQueue</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For Domain Bypassing For External &amp; NoContactQueue usecase</shortDescription>
+        <value>.gov,k12.,usda.org,armada.net,havi.com,havigs.com,earpdistribution.com,martin-brower.com,mbcan.com,reyesholdings.com,vsifax@gwrpt04.gendash.net,cognizant.com</value>
+    </labels>
+    <labels>
+        <fullName>CS_C5_Products</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Products</shortDescription>
+        <value>http://domino.meat.cargill.com/ProdSpec/SpecHome.nsf</value>
+    </labels>
+    <labels>
+        <fullName>CS_DeletedEmailList</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS_DeletedEmailList</shortDescription>
+        <value>techsvs_requests@cargill.com;poconfirmation@mclanefs.com</value>
+    </labels>
+    <labels>
+        <fullName>CS_Holiday_Label</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Holiday Label</shortDescription>
+        <value>&amp;nbsp;</value>
+    </labels>
+    <labels>
+        <fullName>CS_Is_Execute_Trigger</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value &#39;true&#39; is used to bypass certain logics in trigger dynamically</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>CS_Knowledge_Banner_1</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Knowledge Banner 1</shortDescription>
+        <value>This Knowledge Article can be published directly for the category selected.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Knowledge_Banner_2</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Knowledge Banner 2</shortDescription>
+        <value>This Knowledge Article needs to be submitted for approval for the category selected.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Knowledge_Publish_After_Submit</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Knowledge Publish After Submit</shortDescription>
+        <value>Knowledge Article published successfully.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Knowledge_Publish_Before_Submit</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Knowledge Publish Before Submit</shortDescription>
+        <value>Knowledge Article needs to be submitted for approval before publishing.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Knowledge_Publish_Record_Lock</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Knowledge Publish Record Lock</shortDescription>
+        <value>The action cannot be completed as the record is locked</value>
+    </labels>
+    <labels>
+        <fullName>CS_Knowledge_Publish_already_Submit</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Knowledge Publish already Submit</shortDescription>
+        <value>Knowledge Article is already published.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Protein_Custom_service_Queue_Id</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Protein Custom service Queue Id</shortDescription>
+        <value>00G1B000003qnPi</value>
+    </labels>
+    <labels>
+        <fullName>CS_Protein_Customer_Service_Lightning_URL</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Protein Customer Service Lightning URL</shortDescription>
+        <value>https://cargillprotein.lightning.force.com</value>
+    </labels>
+    <labels>
+        <fullName>CS_Protein_service_Queue_Id</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Protein service Queue Id</shortDescription>
+        <value>00G1B000003qnPiUAI</value>
+    </labels>
+    <labels>
+        <fullName>CS_ShipToHeaders</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used to display the Column Headers of Ship to in Case Page</shortDescription>
+        <value>Name,ERP_Number__c,Legacy_Id__c</value>
+    </labels>
+    <labels>
+        <fullName>CS_Ship_To_Contact_Relation_Error_Message</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ship To Contact Relation Error Message</shortDescription>
+        <value>Contact is not associated with Ship To.</value>
+    </labels>
+    <labels>
+        <fullName>CS_batchClassResultsReceivedEmailID</fullName>
+        <categories>Protein Customer Service Console</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS_batchClassResultsReceivedEmailID</shortDescription>
+        <value>Ramesh_yenugula@crgl-thirdparty.com</value>
+    </labels>
+    <labels>
+        <fullName>Is_Cloned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Is Cloned</shortDescription>
+        <value>IS Cloned</value>
+    </labels>
+    <labels>
+        <fullName>NewOppName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewOppName</shortDescription>
+        <value>|</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityStage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityStage</shortDescription>
+        <value>Explore</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityTypeRenewal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityTypeRenewal</shortDescription>
+        <value>Renewal</value>
+    </labels>
+    <labels>
+        <fullName>Protein_SentPricerStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Protein_SentPricerStatus</shortDescription>
+        <value>Accepted by BM</value>
+    </labels>
+    <labels>
+        <fullName>Protein_Standard_Price_Book_Entry_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Protein_ Standard Price Book Entry ID</shortDescription>
+        <value>01s0P000001Ijzl</value>
+    </labels>
+    <labels>
+        <fullName>Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Query</shortDescription>
+        <value>select id,name,Budget_Confirmed__c,Accountid,Account.name,Amount,External_ID__c,Business__c,BusinessAlias__c,CloseDate,CloseReason__c,CustomerMeetingReport__c, Discovery_Completed__c ,EstimatedCloseDate__c, EstimatedShipDate__c,LeadSource__c,RelatedToRFP__c,RenewalDate__c,SourceOpportunity__c,OriginalName__c,OwnerId,Description,ExpectedRevenue,ForecastCategoryName,LeadSource,NextStep,RecordTypeid,Pricebook2id,Campaignid,IsPrivate,Probability,TotalOpportunityQuantity,StageName,SyncedQuoteid,Type from opportunity where external_id__c !=:isCloned AND RenewalDate__c =today AND StageName= &#39;Closed Won&#39;</value>
+    </labels>
+    <labels>
+        <fullName>SyncProjectMem1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SyncProjectMem1</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>SyncProjectMem2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SyncProjectMem2</shortDescription>
+        <value>Project_Team_Member__c</value>
+    </labels>
+    <labels>
+        <fullName>SyncProjectMem3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SyncProjectMem3</shortDescription>
+        <value>Opportunity_Team_Member__c</value>
+    </labels>
+    <labels>
+        <fullName>Trade_Sales_Roles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Trade Sales Roles Opp Exception</shortDescription>
+        <value>Food Horizons Leader, Food Horizons Product Owner,Growth Ventures Leader;Emerging Customers Leader;Retail Regional Sales Manager - Canada;Retail Regional Sales Rep – Canada;Retail Regional Account Manager - Canada; Trd NE Gen Sales Mgr; Trd SE Acct Mgr Atl; Trd SE Sales Mgr MIA; Trd SE Cruise Acct Mgr MIA; Trd SE Intl Sales Mgr MIA; Trd MdW Fd Serv Acct Mgr; Trd MdW Retl Acct Mgr; Trd MdW Sales Mgr St Louis; Trd DFW Acct Mgr; Trd SE Acct Mgr MIA; Trd SE Cruise Sales Mgr MIA; Trd SE Intl Acct Mgr MIA; Trd S Cal Acct Mgr; Trd NE Gen Acct Mgr; Trd MdW Acct Mgr St Louis; Trd S Cal Sr Acct Mgr; Retail Sales Leader;Protein Ingredients Business Lead</value>
+    </labels>
+    <labels>
+        <fullName>Trade_Sales_Roles2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Trade Sales Roles2</shortDescription>
+        <value>Retail CDN Sales Lead; Trd East Sales Ldr; Trd West Sales Ldr; Trd Key Accts Sales Ldr; Trd DFW Sales Ldr; Trd Denver Sales Ldr; Trd N Cal Sales Ldr; Trd NE Sales Ldr; Trd SE Sales Ldr; Trd MdW Sales Ldr; Retail CDN Bus Dev Sales Mgr; Retail CDN East Sales Mgr; Retail CDN Key Accts Sales Mgr; Retail CDN Trading Sales Mgr; Retail CDN West Sales Mgr; Trd Key Accts Fd Serv Sales Mgr; Trd Key Accts Retl Acct Mgr; Retail CDN Bus Dev Acct Mgr; Retail CDN East Acct Mgr; Retail CDN Key Accts Acct Mgr; Retail CDN  Trading Acct Mgr; Retail CDN West Acct Mgr; Trd S Cal Sales Ldr; Trd DFW Sales Mgr; Trd Englewood Sales Mgr; Trd Denver Sales Mgr; Trd N Cal Sales Mgr; Trd NE Sales Mgr; Trd NE Gen Mgr; Trd SE Sales Mgr Atl; Trd SE Sales Ld MIA; Trd MdW Fd Serv Sales Mgr; Trd MdW Retl Sales Mgr; Trd MdW Sales Ld St Louis; Trd Key Acnts Fd Serv Acct Mgr; Trd Key Accts Retl Sales Mgr; Trd S Cal Sales Mgr; Trd DFW Gen Mgr; Trd Englewood Acct Mgr; Trd Denver Acct Mgr; Trd N Cal Acct Mgr; Trd NE Acct Mgr;</value>
+    </labels>
+</CustomLabels>

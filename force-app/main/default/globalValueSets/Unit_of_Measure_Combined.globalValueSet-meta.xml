@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pound (lb)</fullName>
+        <default>false</default>
+        <label>Pound (lb)</label>
+    </customValue>
+    <customValue>
+        <fullName>Case</fullName>
+        <default>false</default>
+        <label>Case</label>
+    </customValue>
+    <customValue>
+        <fullName>load</fullName>
+        <default>false</default>
+        <label>load</label>
+    </customValue>
+    <customValue>
+        <fullName>Each (EA)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Each (EA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Liter</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Liter</label>
+    </customValue>
+    <customValue>
+        <fullName>Metric Ton (MT)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Metric Ton (MT)</label>
+    </customValue>
+    <customValue>
+        <fullName>Hundred Weight (CWT)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hundred Weight (CWT)</label>
+    </customValue>
+    <customValue>
+        <fullName>Kilogram (kg)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Kilogram (kg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Gallon (GAL)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gallon (GAL)</label>
+    </customValue>
+    <masterLabel>Unit of Measure (Combined)</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,46 @@
+<aura:component controller="Protein_SendToPricerController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="isEmailSuccess" type="boolean" default="false"/>
+    <aura:attribute name="RecordTypeCheck" type="boolean" default="false"/>
+    <aura:attribute name="PricingFieldCheck" type="boolean" default="false"/>
+    <aura:attribute name="PricingDateAndTime" type="boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+     
+    <aura:if isTrue="{!v.PricingFieldCheck}">
+        <div class="slds-align_absolute-center" >
+            <br></br><br></br><br></br><br></br><br></br>
+               <label>Email Notification has already been sent to the Pricing Team once</label>
+        </div>
+    </aura:if>
+        
+    <aura:if isTrue="{!v.RecordTypeCheck}">
+        <div class="slds-align_absolute-center" >
+            <br></br><br></br><br></br><br></br><br></br>
+                <label>This Opportunity (Protein) is not eligible for an Indicative Price Request </label>
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.PricingDateAndTime}">
+        <div class="slds-align_absolute-center" >
+            <label>In order to send notification for an Indicative Price Request, the following conditions should match: 
+                <br></br>
+                Status should be ‘Accepted by BM’ 
+                <br></br>
+                Pricing Due Date must be provided
+                <br></br>
+                Pricing Timeframe must be provided 
+            </label>
+        </div>
+    </aura:if>
+    
+    
+    <aura:if isTrue="{!v.isEmailSuccess}">
+        <div class="slds-align_absolute-center" >
+            <label>
+                <br/><br/>
+                Email Notification sent to the Pricing Team</label>
+        </div>
+    </aura:if>
+    
+</aura:component>

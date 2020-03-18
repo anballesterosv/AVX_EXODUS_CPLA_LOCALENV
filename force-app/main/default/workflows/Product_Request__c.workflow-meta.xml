@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Assignment_notification_to_Business_Manager</fullName>
+        <description>Assignment notification to Business Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>Business_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Product_Collection_Form_New_assignment_notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Annual_Vol_field_with_sum_of_SDs</fullName>
+        <description>It updates the Annual Volume field with the Summation of all the Seasonal Distribution values available.</description>
+        <field>Annual_Volume__c</field>
+        <formula>IF( ISBLANK(January__c) , 0, January__c)+
+IF( ISBLANK(February__c) , 0, February__c)+
+IF( ISBLANK(March__c) , 0, March__c)+
+IF( ISBLANK(April__c) , 0, April__c)+
+IF( ISBLANK(May__c) , 0, May__c)+
+IF( ISBLANK(June__c) , 0, June__c)+
+IF( ISBLANK(July__c) , 0, July__c)+
+IF( ISBLANK(August__c) , 0, August__c)+
+IF( ISBLANK(September__c) , 0, September__c)+
+IF( ISBLANK(October__c) , 0, October__c)+
+IF( ISBLANK(November__c) , 0, November__c)+
+IF( ISBLANK(December__c) , 0, December__c)</formula>
+        <name>Update Annual Vol field with sum of SDs</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Populate Annual Volume when null and sum of Seasonal Distributions available</fullName>
+        <actions>
+            <name>Update_Annual_Vol_field_with_sum_of_SDs</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If any of the Seasonal Distributions is available and Annual Volume is Blank, then this workflow populates the Annual Volume field with the sum of all these Seasonal Distributions.</description>
+        <formula>AND(ISBLANK(Annual_Volume__c),  OR(NOT(ISBLANK(January__c)), NOT(ISBLANK(February__c)), NOT(ISBLANK(March__c)), NOT(ISBLANK(April__c)), NOT(ISBLANK(May__c)), NOT(ISBLANK(June__c)), NOT(ISBLANK(July__c)), NOT(ISBLANK(August__c)), NOT(ISBLANK(September__c)), NOT(ISBLANK(October__c)), NOT(ISBLANK(November__c)), NOT(ISBLANK(December__c)) ))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Trigger an email to Business Manager</fullName>
+        <actions>
+            <name>Assignment_notification_to_Business_Manager</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Product_Request__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Draft</value>
+        </criteriaItems>
+        <description>This workflow is used to trigger an email to the Business Manager of Product Request.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

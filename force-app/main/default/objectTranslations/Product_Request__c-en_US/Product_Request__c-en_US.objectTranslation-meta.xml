@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>New Product Collection Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>New Product Collection Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>Product Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Packaging Requirement --></label>
+            <section>Packaging Requirement</section>
+        </sections>
+        <sections>
+            <label><!-- Product Development Concept --></label>
+            <section>Product Development Concept</section>
+        </sections>
+        <sections>
+            <label><!-- Product Quantities --></label>
+            <section>Product Quantities</section>
+        </sections>
+        <sections>
+            <label><!-- Product Requirement --></label>
+            <section>Product Requirement</section>
+        </sections>
+        <sections>
+            <label><!-- Project Timeline --></label>
+            <section>Project Timeline</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Annual Volume and the sum of all the Seasonal Distributions should be equal. Please ensure that these values match. --></errorMessage>
+        <name>Annual_Vol_and_Distributions_must_match</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid value either in the Annual Volume field or in the Monthly Seasonal Distribution fields below. --></errorMessage>
+        <name>Annual_Vol_is_required_if_SD_is_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid reason in case either &apos;Price Range Maximum&apos; or
+&apos;Price Range Minimum&apos; doesn&apos;t have a valid price or if &apos;Suggested Retail Price&apos; is invalid. --></errorMessage>
+        <name>Reason_is_required_if_price_is_blank</name>
+    </validationRules>
+</CustomObjectTranslation>

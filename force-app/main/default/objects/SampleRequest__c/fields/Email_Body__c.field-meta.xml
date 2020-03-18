@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Body__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(ISPICKVAL(Pull_Product_From_Distributor__c, &#39;No&#39;), 
+
+&#39;A Sample for &#39; &amp; SRCustomer_Name__r.Name &amp; &#39; has been requested for delivery on &#39; &amp; TEXT(MONTH(Requested_Delivery_Date__c)) &amp; &#39;-&#39; &amp; TEXT(DAY(Requested_Delivery_Date__c)) &amp; &#39;-&#39; &amp; TEXT(YEAR(Requested_Delivery_Date__c)) &amp; &#39;. Below you will find a link to the sample request. Please login and complete the fulfillment information.&#39; &amp; IF( RecordType.DeveloperName = &#39;Protein_Sample_Request&#39;, &#39; Attached you will find the sample request form for reference.&#39;, &#39;&#39;), 
+
+&#39;A Distributor Pull Sample for &#39; &amp; SRCustomer_Name__r.Name &amp; &#39; has been processed. The approval number is &#39; &amp; Sample_Request_No__c &amp; &#39;.&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Email Body</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

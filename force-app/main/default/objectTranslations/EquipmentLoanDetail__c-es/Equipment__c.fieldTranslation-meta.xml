@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Equipo</label>
+    <lookupFilter>
+        <errorMessage><!-- This equipment is not active. --></errorMessage>
+    </lookupFilter>
+    <name>Equipment__c</name>
+    <relationshipLabel>Detalle de préstamo de equipo</relationshipLabel>
+</CustomFieldTranslation>

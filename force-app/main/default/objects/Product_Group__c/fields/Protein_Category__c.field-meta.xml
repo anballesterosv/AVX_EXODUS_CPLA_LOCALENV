@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protein_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Protein Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sub_Protein__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beef-Case Ready Grinds</fullName>
+                <default>false</default>
+                <label>Beef-Case Ready Grinds</label>
+            </value>
+            <value>
+                <fullName>Beef-Case Ready Muscle</fullName>
+                <default>false</default>
+                <label>Beef-Case Ready Muscle</label>
+            </value>
+            <value>
+                <fullName>Beef-Case Ready Sausage</fullName>
+                <default>false</default>
+                <label>Beef-Case Ready Sausage</label>
+            </value>
+            <value>
+                <fullName>Beef-Commodity Grind</fullName>
+                <default>false</default>
+                <label>Beef-Commodity Grind</label>
+            </value>
+            <value>
+                <fullName>Beef-Continuous Cooked</fullName>
+                <default>false</default>
+                <label>Beef-Continuous Cooked</label>
+            </value>
+            <value>
+                <fullName>Beef-Cooked Batch</fullName>
+                <default>false</default>
+                <label>Beef-Cooked Batch</label>
+            </value>
+            <value>
+                <fullName>Beef-FP Roast</fullName>
+                <default>false</default>
+                <label>Beef-FP Roast</label>
+            </value>
+            <value>
+                <fullName>Beef-FTB</fullName>
+                <default>false</default>
+                <label>Beef-FTB</label>
+            </value>
+            <value>
+                <fullName>Beef-Hides</fullName>
+                <default>false</default>
+                <label>Beef-Hides</label>
+            </value>
+            <value>
+                <fullName>Beef-Muscle Meat</fullName>
+                <default>false</default>
+                <label>Beef-Muscle Meat</label>
+            </value>
+            <value>
+                <fullName>Beef-Other</fullName>
+                <default>false</default>
+                <label>Beef-Other</label>
+            </value>
+            <value>
+                <fullName>Beef-Rendered</fullName>
+                <default>false</default>
+                <label>Beef-Rendered</label>
+            </value>
+            <value>
+                <fullName>Beef-Trim</fullName>
+                <default>false</default>
+                <label>Beef-Trim</label>
+            </value>
+            <value>
+                <fullName>Beef-Value Added Muscle</fullName>
+                <default>false</default>
+                <label>Beef-Value Added Muscle</label>
+            </value>
+            <value>
+                <fullName>Beef-Value Add Grind</fullName>
+                <default>false</default>
+                <label>Beef-Value Add Grind</label>
+            </value>
+            <value>
+                <fullName>Beef-Variety Meat</fullName>
+                <default>false</default>
+                <label>Beef-Variety Meat</label>
+            </value>
+            <value>
+                <fullName>Chicken-Canadian Poultry</fullName>
+                <default>false</default>
+                <label>Chicken-Canadian Poultry</label>
+            </value>
+            <value>
+                <fullName>Chicken-Case Ready Grind</fullName>
+                <default>false</default>
+                <label>Chicken-Case Ready Grind</label>
+            </value>
+            <value>
+                <fullName>Chicken-Case Ready Muscle</fullName>
+                <default>false</default>
+                <label>Chicken-Case Ready Muscle</label>
+            </value>
+            <value>
+                <fullName>Chicken-Continuous Cooked</fullName>
+                <default>false</default>
+                <label>Chicken-Continuous Cooked</label>
+            </value>
+            <value>
+                <fullName>Chicken-Cooked Batch</fullName>
+                <default>false</default>
+                <label>Chicken-Cooked Batch</label>
+            </value>
+            <value>
+                <fullName>Chicken-Mechanically Separated</fullName>
+                <default>false</default>
+                <label>Chicken-Mechanically Separated</label>
+            </value>
+            <value>
+                <fullName>Chicken-Other</fullName>
+                <default>false</default>
+                <label>Chicken-Other</label>
+            </value>
+            <value>
+                <fullName>Egg-Secondary Other-Egg Processed</fullName>
+                <default>false</default>
+                <label>Egg-Secondary Other-Egg Processed</label>
+            </value>
+            <value>
+                <fullName>Egg-Value Added Cooked-Egg Processed</fullName>
+                <default>false</default>
+                <label>Egg-Value Added Cooked-Egg Processed</label>
+            </value>
+            <value>
+                <fullName>Egg-Value Added-Egg Processed</fullName>
+                <default>false</default>
+                <label>Egg-Value Added-Egg Processed</label>
+            </value>
+            <value>
+                <fullName>Other-Case Ready</fullName>
+                <default>false</default>
+                <label>Other-Case Ready</label>
+            </value>
+            <value>
+                <fullName>Other-Services</fullName>
+                <default>false</default>
+                <label>Other-Services</label>
+            </value>
+            <value>
+                <fullName>Other-Specialty</fullName>
+                <default>false</default>
+                <label>Other-Specialty</label>
+            </value>
+            <value>
+                <fullName>Other-Value Added</fullName>
+                <default>false</default>
+                <label>Other-Value Added</label>
+            </value>
+            <value>
+                <fullName>Pork-Case Ready Grind</fullName>
+                <default>false</default>
+                <label>Pork-Case Ready Grind</label>
+            </value>
+            <value>
+                <fullName>Pork-Case Ready Muscle</fullName>
+                <default>false</default>
+                <label>Pork-Case Ready Muscle</label>
+            </value>
+            <value>
+                <fullName>Pork-Case Ready Sausage</fullName>
+                <default>false</default>
+                <label>Pork-Case Ready Sausage</label>
+            </value>
+            <value>
+                <fullName>Pork-Continuous Cooked</fullName>
+                <default>false</default>
+                <label>Pork-Continuous Cooked</label>
+            </value>
+            <value>
+                <fullName>Pork-Cooked Batch</fullName>
+                <default>false</default>
+                <label>Pork-Cooked Batch</label>
+            </value>
+            <value>
+                <fullName>Pork-Other</fullName>
+                <default>false</default>
+                <label>Pork-Other</label>
+            </value>
+            <value>
+                <fullName>Turkey-</fullName>
+                <default>false</default>
+                <label>Turkey-</label>
+            </value>
+            <value>
+                <fullName>Turkey-Bone in Breast</fullName>
+                <default>false</default>
+                <label>Turkey-Bone in Breast</label>
+            </value>
+            <value>
+                <fullName>Turkey-Case Ready Grind</fullName>
+                <default>false</default>
+                <label>Turkey-Case Ready Grind</label>
+            </value>
+            <value>
+                <fullName>Turkey-Case Ready Muscle</fullName>
+                <default>false</default>
+                <label>Turkey-Case Ready Muscle</label>
+            </value>
+            <value>
+                <fullName>Turkey-Case Ready Sausage</fullName>
+                <default>false</default>
+                <label>Turkey-Case Ready Sausage</label>
+            </value>
+            <value>
+                <fullName>Turkey-Commodity</fullName>
+                <default>false</default>
+                <label>Turkey-Commodity</label>
+            </value>
+            <value>
+                <fullName>Turkey-Continuous</fullName>
+                <default>false</default>
+                <label>Turkey-Continuous</label>
+            </value>
+            <value>
+                <fullName>Turkey-Cooked Batch</fullName>
+                <default>false</default>
+                <label>Turkey-Cooked Batch</label>
+            </value>
+            <value>
+                <fullName>Turkey-FP Raw</fullName>
+                <default>false</default>
+                <label>Turkey-FP Raw</label>
+            </value>
+            <value>
+                <fullName>Turkey-Other</fullName>
+                <default>false</default>
+                <label>Turkey-Other</label>
+            </value>
+            <value>
+                <fullName>Turkey-Pet Products</fullName>
+                <default>false</default>
+                <label>Turkey-Pet Products</label>
+            </value>
+            <value>
+                <fullName>Turkey-Whole Bird</fullName>
+                <default>false</default>
+                <label>Turkey-Whole Bird</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready</controllingFieldValue>
+            <valueName>Pork-Case Ready Grind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready</controllingFieldValue>
+            <valueName>Pork-Case Ready Muscle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Case Ready</controllingFieldValue>
+            <valueName>Pork-Case Ready Sausage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Specialty</controllingFieldValue>
+            <valueName>Pork-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Value Added Cooked</controllingFieldValue>
+            <valueName>Pork-Continuous Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pork-Value Added Cooked</controllingFieldValue>
+            <valueName>Pork-Cooked Batch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Case Ready</controllingFieldValue>
+            <valueName>Turkey-Case Ready Grind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Case Ready</controllingFieldValue>
+            <valueName>Turkey-Case Ready Muscle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Case Ready</controllingFieldValue>
+            <valueName>Turkey-Case Ready Sausage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Grinds</controllingFieldValue>
+            <controllingFieldValue>Turkey-Primary Turkey</controllingFieldValue>
+            <valueName>Turkey-Commodity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Primary Turkey</controllingFieldValue>
+            <valueName>Turkey-Bone in Breast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Primary Turkey</controllingFieldValue>
+            <valueName>Turkey-Whole Bird</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Specialty</controllingFieldValue>
+            <valueName>Turkey-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Specialty</controllingFieldValue>
+            <valueName>Turkey-Pet Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Value Added</controllingFieldValue>
+            <valueName>Turkey-FP Raw</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Value Added Cooked</controllingFieldValue>
+            <valueName>Turkey-Continuous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Turkey-Value Added Cooked</controllingFieldValue>
+            <valueName>Turkey-Cooked Batch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Case Ready</controllingFieldValue>
+            <valueName>Chicken-Case Ready Grind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Case Ready</controllingFieldValue>
+            <valueName>Chicken-Case Ready Muscle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Value Added Cooked</controllingFieldValue>
+            <valueName>Chicken-Continuous Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Value Added Cooked</controllingFieldValue>
+            <valueName>Chicken-Cooked Batch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Specialty</controllingFieldValue>
+            <valueName>Chicken-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Egg-Secondary Other</controllingFieldValue>
+            <valueName>Egg-Secondary Other-Egg Processed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Egg-Value Added</controllingFieldValue>
+            <valueName>Egg-Value Added-Egg Processed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Egg-Value Added Cooked</controllingFieldValue>
+            <valueName>Egg-Value Added Cooked-Egg Processed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Seafood</controllingFieldValue>
+            <controllingFieldValue>Other-Dairy</controllingFieldValue>
+            <valueName>Other-Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Lamb</controllingFieldValue>
+            <controllingFieldValue>Other-Veal</controllingFieldValue>
+            <valueName>Other-Case Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Lamb</controllingFieldValue>
+            <controllingFieldValue>Other-Mixed</controllingFieldValue>
+            <controllingFieldValue>Other-Veal</controllingFieldValue>
+            <valueName>Other-Value Added</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready</controllingFieldValue>
+            <valueName>Beef-Case Ready Grinds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready</controllingFieldValue>
+            <valueName>Beef-Case Ready Muscle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Case Ready</controllingFieldValue>
+            <valueName>Beef-Case Ready Sausage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Grinds</controllingFieldValue>
+            <valueName>Beef-Commodity Grind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Primary Beef</controllingFieldValue>
+            <valueName>Beef-Hides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Primary Beef</controllingFieldValue>
+            <valueName>Beef-Muscle Meat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Primary Beef</controllingFieldValue>
+            <valueName>Beef-Rendered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Primary Beef</controllingFieldValue>
+            <valueName>Beef-Trim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Primary Beef</controllingFieldValue>
+            <valueName>Beef-Variety Meat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Secondary Other</controllingFieldValue>
+            <valueName>Beef-FTB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Specialty</controllingFieldValue>
+            <valueName>Beef-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added</controllingFieldValue>
+            <valueName>Beef-FP Roast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added</controllingFieldValue>
+            <valueName>Beef-Value Added Muscle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added</controllingFieldValue>
+            <valueName>Beef-Value Add Grind</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added Cooked</controllingFieldValue>
+            <valueName>Beef-Continuous Cooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beef-Value Added Cooked</controllingFieldValue>
+            <valueName>Beef-Cooked Batch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Primary</controllingFieldValue>
+            <valueName>Chicken-Canadian Poultry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chicken-Primary</controllingFieldValue>
+            <valueName>Chicken-Mechanically Separated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other-Other</controllingFieldValue>
+            <valueName>Other-Services</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Distribution Trade Opportunity Layout</layout>
+        <sections>
+            <label><!-- Distribution Customer Attribute Details --></label>
+            <section>Distribution Customer Attribute Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Create --></label>
+            <section>Create</section>
+        </sections>
+        <sections>
+            <label><!-- Discover --></label>
+            <section>Discover</section>
+        </sections>
+        <sections>
+            <label><!-- Explore --></label>
+            <section>Explore</section>
+        </sections>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+        <sections>
+            <label><!-- Present --></label>
+            <section>Present</section>
+        </sections>
+        <sections>
+            <label><!-- Revenue and Renewal Details --></label>
+            <section>Revenue and Renewal Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pricing Opportunity Layout</layout>
+        <sections>
+            <label><!-- Create --></label>
+            <section>Create</section>
+        </sections>
+        <sections>
+            <label><!-- Discover --></label>
+            <section>Discover</section>
+        </sections>
+        <sections>
+            <label><!-- Explore --></label>
+            <section>Explore</section>
+        </sections>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+        <sections>
+            <label><!-- Present --></label>
+            <section>Present</section>
+        </sections>
+        <sections>
+            <label><!-- Revenue and Renewal Details --></label>
+            <section>Revenue and Renewal Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Boxed Beef/Ground Beef --></label>
+        <name>Boxed_Beef_Ground_Beef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Deli/Cooked Meat --></label>
+        <name>Deli</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Distribution &amp; Trade --></label>
+        <name>Distribution_Trade</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Egg --></label>
+        <name>Egg</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>Non_CPQ</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Turkey --></label>
+        <name>Turkey</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Opportunities cannot be marked as &quot;Closed Won&quot; for Prospect Accounts. --></errorMessage>
+        <name>Block_Closed_Won_Opps_for_Prospect_Accs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Validation Error:  Cannot update Stage to &quot;Closed Won
+ if there are INACTIVE Products associated with the Opportunity. --></errorMessage>
+        <name>Block_Closed_Won_with_Inactive_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Stage cannot be changed to an earlier stage. --></errorMessage>
+        <name>CFDOpportunityStageProcessValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Close Lost - Lost Reason required. --></errorMessage>
+        <name>ClosedLostReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the stage of a Closed Opportunity --></errorMessage>
+        <name>ClosedOpportunityvalidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the stage of a Closed Opportunity --></errorMessage>
+        <name>ClosedWonOpportunityvalidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Identify the Quantity of the deal that was Won/Lost. --></errorMessage>
+        <name>IdentifyQuantityOfDealThatWasWonLost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity can be associated to an active strategic objective only. --></errorMessage>
+        <name>IsActiveStrategicObjective</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Validation Error: Previously CLOSED Opportunities are LOCKED from further Edit.  You may wish to Clone the Opportunity. --></errorMessage>
+        <name>Lock_Closed_Opps_from_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Product Validation Error:  Opportunity Products are LOCKED from edit on Closed Won Opportunities. --></errorMessage>
+        <name>Lock_Products_Closed_Won_Opps</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity can be associated to Payer Account only. --></errorMessage>
+        <name>OpportunityRestrictionToPayer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Stage cannot be changed to an earlier stage. --></errorMessage>
+        <name>OpportunityStageProcessValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required Fields to proceed to next stage: 
+1.Opportunity Spaces 
+2.Pricing Start Date 
+3.Pricing End Date 
+4.Product Selection 
+5.Customer key buy factor . --></errorMessage>
+        <name>RestrictOppStageCreateToPresent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required Fields to proceed to next stage:  
+1.Pricing Start Date 
+2.Pricing End Date 
+3.Product Selection --></errorMessage>
+        <name>RestrictOppStageCreateToPresentSimple</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required Fields to proceed to next stage: 
+1.Next Step 
+2.Customer Need/Solution Identified 
+3.Customer Validated Need/Solution --></errorMessage>
+        <name>RestrictOppStageDiscoverToCreate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required Fields to proceed to next stage:
+1.Key Customer Contact Identified
+2.Appointment Set
+3.Opportunity Category (Retail &amp; PI) --></errorMessage>
+        <name>RestrictOppStageExploreToDiscover</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required Fields to proceed to next stage:
+1.Meeting or Call set to present 
+2.Product Selection 
+3.Agreement on next steps from customer --></errorMessage>
+        <name>RestrictOppStagePresentToClosed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead cannot be converted to Opportunity. Please keep opportunity selection blank. --></errorMessage>
+        <name>RestrictOpportunityCreationFromLead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Name cannot be changed. --></errorMessage>
+        <name>RestrictOpportunityNameUpdate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot update Stage if there are Inactive Products associated with the Opportunity. --></errorMessage>
+        <name>RestrictStageUpdatewithInactiveProducts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Update Pricing Start Date and Pricing End Date when Quotes exists on Opportunity. --></errorMessage>
+        <name>RestrictUpdateonPricingDates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Type and Contract Number can only be specified for PPP pricing type. --></errorMessage>
+        <name>Restrict_Contract_Type_for_PPP_Quotes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Close Opportunity with open Primary Quote Status. --></errorMessage>
+        <name>Restrict_Opp_Closure_for_Open_Quotes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Account for Opportunity &amp; Strategic objective should be same --></errorMessage>
+        <name>ValidateParentAccountStrategicObjective</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be created for an inactive Customer. --></errorMessage>
+        <name>Validate_Active_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be created for an internal Customer. --></errorMessage>
+        <name>Validate_Internal_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Closed Date and Renewal Date should be always greater than Opportunity Created Date --></errorMessage>
+        <name>Validate_OpportunityClosedandRenewalDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Type and Contract Number are mandatory for closing PPP Opportunities. --></errorMessage>
+        <name>Validate_PPP_Contract_Type_and_Number</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Users preferred System of Measure. Values input in Metric will be automatically converted to Imperial.  Values input in Imperial will be automatically converted to Metric. --></help>
+    <label><!-- System of Measure Input --></label>
+    <name>SystemOfMeasureInput__c</name>
+    <picklistValues>
+        <masterLabel>Imperial</masterLabel>
+        <translation><!-- Imperial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metric</masterLabel>
+        <translation><!-- Metric --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

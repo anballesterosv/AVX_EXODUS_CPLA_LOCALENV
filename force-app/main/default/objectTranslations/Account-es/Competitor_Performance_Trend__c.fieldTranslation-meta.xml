@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Aggregate trend of all competitor&apos;s relationships with customers. Calculated form competitor-customer relationship records. --></help>
+    <label><!-- Competitor Performance Trend --></label>
+    <name>Competitor_Performance_Trend__c</name>
+</CustomFieldTranslation>

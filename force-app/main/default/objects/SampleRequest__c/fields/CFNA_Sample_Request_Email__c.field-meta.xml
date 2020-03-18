@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFNA_Sample_Request_Email__c</fullName>
+    <description>Determine email address to print on Sample Request Form</description>
+    <externalId>false</externalId>
+    <formula>/*(SUBSTITUTE(
+If(ISPICKVAL(Pull_Product_From_Distributor__c, &#39;Yes&#39;)
+  &amp;&amp; NOT(ISPICKVAL(CFNA_Business_Unit__c, &#39;Cargill Beef&#39;) || ISPICKVAL(CFNA_Business_Unit__c, &#39;Case Ready&#39;)),
+Channel_Email__c,
+Business_Unit_Email__c &amp; Channel_Email__c),
+&quot;;;&quot;, &quot;;&quot;))*/
+(SUBSTITUTE( 
+IF( RecordType.DeveloperName = &#39;Protein_Sample_Request&#39;, 
+If(ISPICKVAL(Pull_Product_From_Distributor__c, &#39;Yes&#39;) 
+&amp;&amp; NOT(ISPICKVAL(CFNA_Business_Unit__c, &#39;Cargill Beef&#39;) || ISPICKVAL(CFNA_Business_Unit__c, &#39;Case Ready&#39;)), 
+Channel_Email__c, 
+Business_Unit_Email__c &amp; Channel_Email__c), 
+Business_Unit_Email__c), 
+&quot;;;&quot;, &quot;;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CFNA Sample Request Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

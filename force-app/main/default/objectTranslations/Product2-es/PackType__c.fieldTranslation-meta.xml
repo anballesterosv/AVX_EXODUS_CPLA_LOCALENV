@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Embalaje del Producto</label>
+    <name>PackType__c</name>
+    <picklistValues>
+        <masterLabel>BAG BOX 1000 KG</masterLabel>
+        <translation><!-- BAG BOX 1000 KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BALDE</masterLabel>
+        <translation><!-- BALDE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BALDE 14,5 kg</masterLabel>
+        <translation><!-- BALDE 14,5 kg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BALDE 15,0 kg</masterLabel>
+        <translation><!-- BALDE 15,0 kg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BALDE 20 KG</masterLabel>
+        <translation><!-- BALDE 20 KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BALDE 4,0 KG</masterLabel>
+        <translation><!-- BALDE 4,0 KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BARRICA</masterLabel>
+        <translation><!-- BARRICA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIB BAG 900KG</masterLabel>
+        <translation><!-- BIB BAG 900KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bag</masterLabel>
+        <translation>Bolsa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Basket</masterLabel>
+        <translation>Cesta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Box</masterLabel>
+        <translation>Caja</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAIXA 18 kg(6x3kg)</masterLabel>
+        <translation><!-- CAIXA 18 kg(6x3kg) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAIXA 20KG</masterLabel>
+        <translation><!-- CAIXA 20KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAIXA 24 KG</masterLabel>
+        <translation><!-- CAIXA 24 KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAIXA COM 6 UNIDADES</masterLabel>
+        <translation><!-- CAIXA COM 6 UNIDADES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONTAINER 1000KG</masterLabel>
+        <translation><!-- CONTAINER 1000KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRANEL</masterLabel>
+        <translation><!-- GRANEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jib</masterLabel>
+        <translation><!-- Jib --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacks</masterLabel>
+        <translation><!-- Sacks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAMBOR 180KG</masterLabel>
+        <translation><!-- TAMBOR 180KG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tote</masterLabel>
+        <translation><!-- Tote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tray</masterLabel>
+        <translation>Bandeja</translation>
+    </picklistValues>
+</CustomFieldTranslation>

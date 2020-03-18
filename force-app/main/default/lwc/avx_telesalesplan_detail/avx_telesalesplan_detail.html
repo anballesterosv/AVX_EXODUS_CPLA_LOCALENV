@@ -1,0 +1,166 @@
+<template>
+    <lightning-card>
+        <div class="slds-grid slds-wrap ">
+            <div class="slds-col slds-size_3-of-12 slds-var-p-horizontal_small">
+                <lightning-combobox name="comboDays" label={label.AVX_Telesales_Filter_By_day} 
+                        value={daySelected} placeholder="Select" options={lstDays} onchange={handleDaySelected}>
+                </lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_3-of-12  slds-var-p-horizontal_small">
+                <lightning-combobox name="selectshowimage" label={label.AVX_Telesales_Order_by} value={orderByDetailSelected} 
+                placeholder="Select" options={orderPlanDetailByOptions} onchange={handleOrderByDetailSelected}>
+                </lightning-combobox>
+            </div>
+        </div>
+        <br/>
+        <div class="slds-grid slds-wrap">
+                <div class="slds-grid slds-wrap  slds-var-p-horizontal_medium">
+                    <table class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <template if:true={isContingency}>
+                                    <th style="width:20%;" >{label.AVX_telesales_Telemarketer}</th>
+                                    <th style="width:20%;" >{label.AVX_Telesales_Name}</th>
+                                    <th style="width:15%;">{label.AVX_Telesales_ERP_Number}</th>
+                                    <th style="width:15%;">{label.AVX_Telesales_Day}</th>
+                                    <th style="width:10%;">{label.AVX_Telesales_Hour}</th>
+                                    <template if:true={canEdit}>
+                                        <th style="width:20%">{label.AVX_Telesales_Actions}</th> 
+                                    </template>
+                                </template>
+                                <template if:true={isWorkPlan}>
+                                    <th style="width:18%;" >{label.AVX_Telesales_Name}</th>
+                                    <th style="width:11%;">{label.AVX_Telesales_ERP_Number}</th>
+                                    <th style="width:10%;">{label.AVX_Telesales_Status}</th>
+                                    <th style="width:16%;">{label.AVX_Telesales_Identification_Number}</th>
+                                    <th style="width:10%;">{label.AVX_Telesales_Day}</th>
+                                    <th style="width:14%;">{label.AVX_Telesales_Hour}</th>
+                                    <template if:true={canEdit}>
+                                        <th style="width:16%">{label.AVX_Telesales_Actions}</th> 
+                                    </template>
+                                </template>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="slds-grid slds-wrap  slds-var-p-horizontal_medium" style="max-height: 300px;overflow: auto;">
+                    <table class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols">
+                        <thead>
+                            <tr>
+                                <template if:true={isContingency}>
+                                    <th style="width:20%;" ></th>
+                                    <th style="width:20%;"></th>
+                                    <th style="width:15%;"></th>
+                                    <th style="width:15%;"></th>
+                                    <th style="width:10%;"></th>
+                                    <template if:true={canEdit}>
+                                        <th class="slds-align_absolute-center" style="width:20%"></th> 
+                                    </template>
+                                </template>
+                                <template if:true={isWorkPlan}>
+                                    <th style="width:18%;" ></th>
+                                    <th style="width:11%;"></th>
+                                    <th style="width:10%;"></th>
+                                    <th style="width:16%;"></th>
+                                    <th style="width:10%;"></th>
+                                    <th style="width:14%;"></th>
+                                    <template if:true={canEdit}>
+                                        <th style="width:16%"></th> 
+                                    </template>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template if:true={lstPlanDetails}>
+                                <template for:each={lstPlanDetails} for:item="p">
+                                    <tr key={p.Id}>
+                                        <template if:true={isContingency}>
+                                            <td>
+                                                <template if:true={p.telesalesPlanDetail.Telemarketer__r}>
+                                                    <p title={p.telesalesPlanDetail.Telemarketer__r.Name} class="slds-truncate">{p.telesalesPlanDetail.Telemarketer__r.Name}</p>
+                                                </template>
+                                            </td>
+                                            <td><p title={p.telesalesPlanDetail.Ship_To__r.Name} class="slds-truncate">{p.telesalesPlanDetail.Ship_To__r.Name}</p></td>
+                                            <td><p title={p.telesalesPlanDetail.Ship_To__r.ERP_Number__c}  class="slds-truncate">{p.telesalesPlanDetail.Ship_To__r.ERP_Number__c}</p></td>
+                                            <td><p class="slds-truncate">{p.dayTraslated}</p></td>
+                                            <td><p class="slds-truncate">{p.hour}</p></td>
+                                            <template if:true={canEdit}>
+                                                <td class="slds-align_absolute-center">
+                                                    <lightning-button-group>
+                                                        <lightning-button id={p.telesalesPlanDetail.Id} onclick={handleEditPlanDetail}  label={label.AVX_Telesales_Edit} title={label.AVX_Telesales_Edit}></lightning-button>
+                                                        <lightning-button id={p.telesalesPlanDetail.Id} onclick={handleRemovePlanDetail} label={label.AVX_Telesales_Delete} title={label.AVX_Telesales_Delete} ></lightning-button>
+                                                    </lightning-button-group>
+                                                </td>
+                                            </template>
+                                        </template>
+                                        <template if:true={isWorkPlan}>
+                                            <td><p title={p.telesalesPlanDetail.Ship_To__r.Name} class="slds-truncate">{p.telesalesPlanDetail.Ship_To__r.Name}</p></td>
+                                            <td><p title={p.telesalesPlanDetail.Ship_To__r.ERP_Number__c} class="slds-truncate">{p.telesalesPlanDetail.Ship_To__r.ERP_Number__c}</p></td>
+                                            <td><p class="slds-truncate">{p.statusTraslated}</p></td>
+                                            <td><p class="slds-truncate">{p.telesalesPlanDetail.Ship_To__r.IdentificationNumber__c}</p></td>
+                                            <td><p class="slds-truncate">{p.dayTraslated}</p></td>
+                                            <td><p class="slds-truncate">{p.hour}</p></td>
+                                            <template if:true={canEdit}>
+                                                <td class="slds-align_absolute-center">
+                                                    <lightning-button-group>
+                                                        <lightning-button id={p.telesalesPlanDetail.Id} onclick={handleEditPlanDetail}  label={label.AVX_Telesales_Edit} title={label.AVX_Telesales_Edit}></lightning-button>
+                                                        <lightning-button id={p.telesalesPlanDetail.Id} onclick={handleRemovePlanDetail} label={label.AVX_Telesales_Delete} title={label.AVX_Telesales_Delete} ></lightning-button>
+                                                    </lightning-button-group>
+                                                </td>
+                                            </template>
+                                        </template>
+                                    </tr>
+                                </template>
+                            </template>
+                        </tbody>
+                    </table>    
+                </div>
+
+
+        </div>
+        
+        
+
+    </lightning-card>
+
+
+    
+        <!--delete confirm modal-->
+        <template if:true={showModalConfirm}>
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <!-- if:true={showModel}-->
+                        <lightning-button-icon icon-name="utility:close" class="slds-float_right" onclick={handleConfirmNo} alternative-text="close"></lightning-button-icon>
+                        <h3 id="modal-heading-01121" class="slds-modal__title slds-hyphenate">{modalHeading}</h3>
+                    </header>
+                    <div class=" slds-modal__content slds-var-p-around_medium" id="modal-content-id-1211">
+                        <div class="slds-grid slds-wrap ">
+                            <div class="slds-col slds-size_12-of-12 slds-var-p-horizontal_small">
+                                <div class=" slds-align_absolute-center">
+                                    <p>{message}</p>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_12-of-12 slds-var-p-horizontal_small slds-align_absolute-center">
+                                <p>
+                                    <strong>{label.AVX_Telesales_Name} : </strong> {fullObjectToDelete.telesalesPlanDetail.Ship_To__r.Name}
+                                    &nbsp; | &nbsp; <strong>{label.AVX_Telesales_Day}: </strong> {fullObjectToDelete.dayTraslated}
+                                    &nbsp; | &nbsp; <strong>{label.AVX_Telesales_Hour}: </strong> {fullObjectToDelete.hour}
+                                </p>
+                            </div>
+                        </div>
+                  </div>
+                  <footer class="slds-modal__footer">
+                    <lightning-button variant="brand" label={label.AVX_Telesales_Yes} title={label.AVX_Telesales_Yes}  onclick={handleConfirmYes}
+                      ></lightning-button>&nbsp;&nbsp;
+                      <lightning-button variant="neutral" label={label.AVX_Telesales_No} title={label.AVX_Telesales_No} onclick={handleConfirmNo}
+                      ></lightning-button>
+                  </footer>
+                </div>
+              </section>
+              <div class="slds-backdrop slds-backdrop_open"></div>
+            </template>
+
+    <!--spinner-->
+    <div if:true={showSpinner}><lightning-spinner alternative-text="Loading..."></lightning-spinner></div>
+</template>

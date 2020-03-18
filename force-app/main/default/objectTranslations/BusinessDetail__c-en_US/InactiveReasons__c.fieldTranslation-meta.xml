@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inactive Reasons --></label>
+    <name>InactiveReasons__c</name>
+    <picklistValues>
+        <masterLabel>Backlisted</masterLabel>
+        <translation><!-- Backlisted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Issues</masterLabel>
+        <translation><!-- Credit Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Using Another Supplier</masterLabel>
+        <translation><!-- Customer Using Another Supplier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Longer In Business</masterLabel>
+        <translation><!-- No Longer In Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

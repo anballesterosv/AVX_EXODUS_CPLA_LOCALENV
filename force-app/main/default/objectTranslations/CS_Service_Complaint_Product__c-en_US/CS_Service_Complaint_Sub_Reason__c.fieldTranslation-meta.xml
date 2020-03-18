@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Complaint Sub-Reason --></label>
+    <name>CS_Service_Complaint_Sub_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Adjusted At Time Of Shipment</masterLabel>
+        <translation><!-- Adjusted At Time Of Shipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>As Loading</masterLabel>
+        <translation><!-- As Loading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>As Unloading</masterLabel>
+        <translation><!-- As Unloading --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beyond Cargill Control</masterLabel>
+        <translation><!-- Beyond Cargill Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Decision</masterLabel>
+        <translation><!-- Business Decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COA Service Complaint</masterLabel>
+        <translation><!-- COA Service Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Co Pack Issues</masterLabel>
+        <translation><!-- Co Pack Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crushed</masterLabel>
+        <translation><!-- Crushed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forked</masterLabel>
+        <translation><!-- Forked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Transit</masterLabel>
+        <translation><!-- In Transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Inv/Inv Error</masterLabel>
+        <translation><!-- Insufficient Inv/Inv Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Inv/Not Produced</masterLabel>
+        <translation><!-- Insufficient Inv/Not Produced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Inv/Not Released</masterLabel>
+        <translation><!-- Insufficient Inv/Not Released --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Inv/Packaging/Ingredients/Raw Material</masterLabel>
+        <translation><!-- Insufficient Inv/Packaging/Ingredients/Raw Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Inv/Planning/Scheduling</masterLabel>
+        <translation><!-- Insufficient Inv/Planning/Scheduling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Inv/Qa Delay</masterLabel>
+        <translation><!-- Insufficient Inv/Qa Delay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Delivery Cargill-Non Op</masterLabel>
+        <translation><!-- Late Delivery Cargill-Non Op --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Delivery Carrier</masterLabel>
+        <translation><!-- Late Delivery Carrier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Delivery Customer</masterLabel>
+        <translation><!-- Late Delivery Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Delivery Operations</masterLabel>
+        <translation><!-- Late Delivery Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Delivery Weather</masterLabel>
+        <translation><!-- Late Delivery Weather --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaker</masterLabel>
+        <translation><!-- Leaker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Line Capacity</masterLabel>
+        <translation><!-- Line Capacity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Load Shifted Rework</masterLabel>
+        <translation><!-- Load Shifted Rework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost - Not Delivered</masterLabel>
+        <translation><!-- Lost - Not Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miskey Cargill</masterLabel>
+        <translation><!-- Miskey Cargill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miskey Non Cargill</masterLabel>
+        <translation><!-- Miskey Non Cargill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mispick</masterLabel>
+        <translation><!-- Mispick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out Of Date</masterLabel>
+        <translation><!-- Out Of Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out Of Spec</masterLabel>
+        <translation><!-- Out Of Spec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overage</masterLabel>
+        <translation><!-- Overage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overweight</masterLabel>
+        <translation><!-- Overweight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pallets</masterLabel>
+        <translation><!-- Pallets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seal Problem</masterLabel>
+        <translation><!-- Seal Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shortage</masterLabel>
+        <translation><!-- Shortage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Issue Cargill</masterLabel>
+        <translation><!-- System Issue Cargill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Issue Non Carg</masterLabel>
+        <translation><!-- System Issue Non Carg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temperature Abuse</masterLabel>
+        <translation><!-- Temperature Abuse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Torn</masterLabel>
+        <translation><!-- Torn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Problem</masterLabel>
+        <translation><!-- Transfer Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unclear Cause</masterLabel>
+        <translation><!-- Unclear Cause --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

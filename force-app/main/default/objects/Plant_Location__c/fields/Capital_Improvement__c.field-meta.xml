@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capital_Improvement__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please include a Date when updating this field with new information on Plant capital improvements.</inlineHelpText>
+    <label>Capital Improvement</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EstimatedResourceCost__c</fullName>
+    <externalId>false</externalId>
+    <label>Estimated Resource Cost</label>
+    <summarizedField>ResourceTeam__c.EstimatedCost__c</summarizedField>
+    <summaryForeignKey>ResourceTeam__c.Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

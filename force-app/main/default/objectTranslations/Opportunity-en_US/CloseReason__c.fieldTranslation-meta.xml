@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Close Reason --></label>
+    <name>CloseReason__c</name>
+    <picklistValues>
+        <masterLabel>Business declined to pursue the project</masterLabel>
+        <translation><!-- Business declined to pursue the project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Currency Rate</masterLabel>
+        <translation><!-- Currency Rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer declined to pursue the project</masterLabel>
+        <translation><!-- Customer declined to pursue the project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freight Rate</masterLabel>
+        <translation><!-- Freight Rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Functionality</masterLabel>
+        <translation><!-- Functionality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Match not approved</masterLabel>
+        <translation><!-- Match not approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No capacity to sell</masterLabel>
+        <translation><!-- No capacity to sell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not actively pursuing - documentation only</masterLabel>
+        <translation><!-- Not actively pursuing - documentation only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price not competitive</masterLabel>
+        <translation><!-- Price not competitive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing</masterLabel>
+        <translation><!-- Pricing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proprietary Product</masterLabel>
+        <translation><!-- Proprietary Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Distributor</masterLabel>
+        <translation><!-- Referred to Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relationship</masterLabel>
+        <translation><!-- Relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sample Failed</masterLabel>
+        <translation><!-- Sample Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strong relationship with competition</masterLabel>
+        <translation><!-- Strong relationship with competition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

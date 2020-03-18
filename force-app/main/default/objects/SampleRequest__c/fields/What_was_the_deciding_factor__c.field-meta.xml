@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_was_the_deciding_factor__c</fullName>
+    <externalId>false</externalId>
+    <label>What was the deciding factor?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pack Size</fullName>
+                <default>false</default>
+                <label>Pack Size</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Taste</fullName>
+                <default>false</default>
+                <label>Taste</label>
+            </value>
+            <value>
+                <fullName>Texture</fullName>
+                <default>false</default>
+                <label>Texture</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

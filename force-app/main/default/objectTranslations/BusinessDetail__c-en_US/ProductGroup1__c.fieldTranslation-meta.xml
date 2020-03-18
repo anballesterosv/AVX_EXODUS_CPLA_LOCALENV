@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Group 1 --></label>
+    <name>ProductGroup1__c</name>
+    <picklistValues>
+        <masterLabel>Bottled Oil</masterLabel>
+        <translation><!-- Bottled Oil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commodity Tropical Oils</masterLabel>
+        <translation><!-- Commodity Tropical Oils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corn gluten Meal</masterLabel>
+        <translation><!-- Corn gluten Meal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HORECA oils</masterLabel>
+        <translation><!-- HORECA oils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrocolloids</masterLabel>
+        <translation><!-- Hydrocolloids --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malt</masterLabel>
+        <translation><!-- Malt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modified Starch</masterLabel>
+        <translation><!-- Modified Starch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Native Starch</masterLabel>
+        <translation><!-- Native Starch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other PFLs</masterLabel>
+        <translation><!-- Other PFLs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sunflower Oil</masterLabel>
+        <translation><!-- Sunflower Oil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Syrups</masterLabel>
+        <translation><!-- Syrups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value-Added Functional Fats</masterLabel>
+        <translation><!-- Value-Added Functional Fats --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vital wheat gluten</masterLabel>
+        <translation><!-- Vital wheat gluten --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>polyols</masterLabel>
+        <translation><!-- polyols --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

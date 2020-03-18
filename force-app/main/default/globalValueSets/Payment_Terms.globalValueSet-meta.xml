@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NET 15</fullName>
+        <default>false</default>
+        <label>NET 15</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 20</fullName>
+        <default>false</default>
+        <label>NET 20</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 30</fullName>
+        <default>false</default>
+        <label>NET 30</label>
+    </customValue>
+    <customValue>
+        <fullName>CIA</fullName>
+        <default>false</default>
+        <label>CIA</label>
+    </customValue>
+    <customValue>
+        <fullName>PREPAYMENT</fullName>
+        <default>false</default>
+        <label>PREPAYMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>PAY IMMEDIATELY WITHOUT DEDUCTION</fullName>
+        <default>false</default>
+        <label>PAY IMMEDIATELY WITHOUT DEDUCTION</label>
+    </customValue>
+    <customValue>
+        <fullName>CASH AGAINST DOCUMENTS</fullName>
+        <default>false</default>
+        <label>CASH AGAINST DOCUMENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>LETTER OF CREDIT SIGHT CONFIRMED</fullName>
+        <default>false</default>
+        <label>LETTER OF CREDIT SIGHT CONFIRMED</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 7 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 7 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 8 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 8 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 10 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 10 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 14 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 14 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 15 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 15 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 21 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 21 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 30 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 30 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>1% DISCOUNT IN 10 DAYS NET 30 DAYS</fullName>
+        <default>false</default>
+        <label>1% DISCOUNT IN 10 DAYS NET 30 DAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>2% DISCOUNT IN 10 DAYS NET 30 DAYS</fullName>
+        <default>false</default>
+        <label>2% DISCOUNT IN 10 DAYS NET 30 DAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 40 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 40 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 45 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 45 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>NET 60 DAYS FROM DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>NET 60 DAYS FROM DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>DUE 5TH OF MONTH FOLLOWING DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>DUE 5TH OF MONTH FOLLOWING DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>DUE 30TH OF MONTH FOLLOWING DATE OF INVOICE</fullName>
+        <default>false</default>
+        <label>DUE 30TH OF MONTH FOLLOWING DATE OF INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>DUE 60TH DAY AFTER END OF INVOICE MONTH</fullName>
+        <default>false</default>
+        <label>DUE 60TH DAY AFTER END OF INVOICE MONTH</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>OTHER</label>
+    </customValue>
+    <masterLabel>Payment Terms</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

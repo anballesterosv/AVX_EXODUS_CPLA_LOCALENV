@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Profile Category --></label>
+    <name>Profile_Category__c</name>
+    <picklistValues>
+        <masterLabel>All Proteins</masterLabel>
+        <translation><!-- All Proteins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beef</masterLabel>
+        <translation><!-- Beef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Ready</masterLabel>
+        <translation><!-- Case Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuous Cooked</masterLabel>
+        <translation><!-- Continuous Cooked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deli / Diced</masterLabel>
+        <translation><!-- Deli / Diced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deli / Prepared Foods</masterLabel>
+        <translation><!-- Deli / Prepared Foods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eggs</masterLabel>
+        <translation><!-- Eggs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extruded / Kettles</masterLabel>
+        <translation><!-- Extruded / Kettles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frozen Breakfast</masterLabel>
+        <translation><!-- Frozen Breakfast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fry Line</masterLabel>
+        <translation><!-- Fry Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Dogs</masterLabel>
+        <translation><!-- Hot Dogs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pepperoni</masterLabel>
+        <translation><!-- Pepperoni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw</masterLabel>
+        <translation><!-- Raw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snacking</masterLabel>
+        <translation><!-- Snacking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkey</masterLabel>
+        <translation><!-- Turkey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Added Raw</masterLabel>
+        <translation><!-- Value Added Raw --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Ounce (oz)</fullName>
+        <default>false</default>
+        <label>Ounce (oz)</label>
+    </customValue>
+    <customValue>
+        <fullName>Pound (lb)</fullName>
+        <default>false</default>
+        <label>Pound (lb)</label>
+    </customValue>
+    <customValue>
+        <fullName>Ton (t)</fullName>
+        <default>false</default>
+        <label>Ton (t)</label>
+    </customValue>
+    <customValue>
+        <fullName>Fluid Ounce (fl oz)</fullName>
+        <default>false</default>
+        <label>Fluid Ounce (fl oz)</label>
+    </customValue>
+    <customValue>
+        <fullName>Gallon (G)</fullName>
+        <default>false</default>
+        <label>Gallon (G)</label>
+    </customValue>
+    <description>Units of Measure for Imperial measurement system.</description>
+    <masterLabel>Unit of Measure (Imperial)</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

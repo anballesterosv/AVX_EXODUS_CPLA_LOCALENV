@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pound</fullName>
+        <default>false</default>
+        <label>Pound (lb)</label>
+    </customValue>
+    <customValue>
+        <fullName>Metric Ton (mt)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Metric Ton (mt)</label>
+    </customValue>
+    <customValue>
+        <fullName>Kilogram (kg)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Kilogram (kg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Metric Ton</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Metric Ton</label>
+    </customValue>
+    <customValue>
+        <fullName>Pounds (lbs)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pounds (lbs)</label>
+    </customValue>
+    <customValue>
+        <fullName>Ton</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ton (t)</label>
+    </customValue>
+    <customValue>
+        <fullName>Ounce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ounce (oz)</label>
+    </customValue>
+    <masterLabel>Unit of Measure</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Center__c</fullName>
+    <externalId>false</externalId>
+    <label>Cost Center</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sales_Channel__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>610911 - Engineering</fullName>
+                <default>false</default>
+                <label>610911 - Engineering</label>
+            </value>
+            <value>
+                <fullName>611609 - CIC Retail</fullName>
+                <default>false</default>
+                <label>611609 - CIC Retail</label>
+            </value>
+            <value>
+                <fullName>611676 – Retail</fullName>
+                <default>false</default>
+                <label>611676 – Retail</label>
+            </value>
+            <value>
+                <fullName>612609 - CIC Foodservice</fullName>
+                <default>false</default>
+                <label>612609 - CIC Foodservice</label>
+            </value>
+            <value>
+                <fullName>612676 – Foodservice</fullName>
+                <default>false</default>
+                <label>612676 – Foodservice</label>
+            </value>
+            <value>
+                <fullName>613609 - CIC Protein Ingredients</fullName>
+                <default>false</default>
+                <label>613609 - CIC Protein Ingredients</label>
+            </value>
+            <value>
+                <fullName>613676 – Protein Ingredients</fullName>
+                <default>false</default>
+                <label>613676 – Protein Ingredients</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Foodservice</controllingFieldValue>
+            <valueName>612609 - CIC Foodservice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Foodservice</controllingFieldValue>
+            <valueName>612676 – Foodservice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>610911 - Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>611609 - CIC Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>611676 – Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingredient</controllingFieldValue>
+            <valueName>613609 - CIC Protein Ingredients</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingredient</controllingFieldValue>
+            <valueName>613676 – Protein Ingredients</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

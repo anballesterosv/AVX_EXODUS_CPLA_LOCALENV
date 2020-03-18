@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>CONFIG</masterLabel>
+        <translation><!-- CONFIG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ERROR</masterLabel>
+        <translation><!-- ERROR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FATAL</masterLabel>
+        <translation><!-- FATAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INFORMATION</masterLabel>
+        <translation><!-- INFORMATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RECORD</masterLabel>
+        <translation><!-- RECORD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WARNING</masterLabel>
+        <translation><!-- WARNING --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

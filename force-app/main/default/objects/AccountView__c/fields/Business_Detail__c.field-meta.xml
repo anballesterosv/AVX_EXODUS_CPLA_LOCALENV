@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Detail__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>NOT CURRENTLY USED</description>
+    <externalId>false</externalId>
+    <label>Business Detail</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Account__c</field>
+            <operation>equals</operation>
+            <valueField>BusinessDetail__c.Account__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>BusinessDetail__c</referenceTo>
+    <relationshipLabel>Account Team View</relationshipLabel>
+    <relationshipName>Account_Team_View</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

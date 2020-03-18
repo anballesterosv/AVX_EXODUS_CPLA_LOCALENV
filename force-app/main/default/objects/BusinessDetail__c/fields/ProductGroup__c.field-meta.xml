@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductGroup__c</fullName>
+    <description>Created by Heena on 4/11/2017 for GEOS Sprint1
+Replaced for BUProductLine__c. Moved from Account to Business details</description>
+    <externalId>false</externalId>
+    <label>Product Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Go To Market Corporate Accounts</fullName>
+                <default>false</default>
+                <label>Go To Market Corporate Accounts</label>
+            </value>
+            <value>
+                <fullName>Go To Market Shared Sales North America</fullName>
+                <default>false</default>
+                <label>Go To Market Shared Sales North America</label>
+            </value>
+            <value>
+                <fullName>Go To Market Shared Shares EMEA</fullName>
+                <default>false</default>
+                <label>Go To Market Shared Shares EMEA</label>
+            </value>
+            <value>
+                <fullName>Global Edible Oil Solutions North America</fullName>
+                <default>false</default>
+                <label>Global Edible Oil Solutions North America</label>
+            </value>
+            <value>
+                <fullName>Global Edible Oil Solutions Europe</fullName>
+                <default>false</default>
+                <label>Global Edible Oil Solutions Europe</label>
+            </value>
+            <value>
+                <fullName>Global Edible Oil Solutions Mexico</fullName>
+                <default>false</default>
+                <label>Global Edible Oil Solutions Mexico</label>
+            </value>
+            <value>
+                <fullName>Global Edible Oil Solutions South America</fullName>
+                <default>false</default>
+                <label>Global Edible Oil Solutions South America</label>
+            </value>
+            <value>
+                <fullName>Global Edible Oil Solutions Venezuela</fullName>
+                <default>false</default>
+                <label>Global Edible Oil Solutions Venezuela</label>
+            </value>
+            <value>
+                <fullName>Global Edible Oil Solutions Asia Pacific</fullName>
+                <default>false</default>
+                <label>Global Edible Oil Solutions Asia Pacific</label>
+            </value>
+            <value>
+                <fullName>Global Edible Oil Solutions India</fullName>
+                <default>false</default>
+                <label>Global Edible Oil Solutions India</label>
+            </value>
+            <value>
+                <fullName>Cargill Industrial Specialties</fullName>
+                <default>false</default>
+                <label>Cargill Industrial Specialties</label>
+            </value>
+            <value>
+                <fullName>Foods Brazil</fullName>
+                <default>false</default>
+                <label>Foods Brazil</label>
+            </value>
+            <value>
+                <fullName>Starches &amp; Sweeteners North America</fullName>
+                <default>false</default>
+                <label>Starches &amp; Sweeteners North America</label>
+            </value>
+            <value>
+                <fullName>Starches &amp; Sweeteners Europe</fullName>
+                <default>false</default>
+                <label>Starches &amp; Sweeteners Europe</label>
+            </value>
+            <value>
+                <fullName>Starches &amp; Sweeteners South America</fullName>
+                <default>false</default>
+                <label>Starches &amp; Sweeteners South America</label>
+            </value>
+            <value>
+                <fullName>Cargill Texturizing Solutions</fullName>
+                <default>false</default>
+                <label>Cargill Texturizing Solutions</label>
+            </value>
+            <value>
+                <fullName>Foods Middle East, Turkey, and North Africa</fullName>
+                <default>false</default>
+                <label>Foods Middle East, Turkey, and North Africa</label>
+            </value>
+            <value>
+                <fullName>Cargill Cocoa &amp; Chocolate</fullName>
+                <default>false</default>
+                <label>Cargill Cocoa &amp; Chocolate</label>
+            </value>
+            <value>
+                <fullName>Cocoa &amp; Chocolate North America</fullName>
+                <default>false</default>
+                <label>Cocoa &amp; Chocolate North America</label>
+            </value>
+            <value>
+                <fullName>Cocoa &amp; Chocolate Brazil</fullName>
+                <default>false</default>
+                <label>Cocoa &amp; Chocolate Brazil</label>
+            </value>
+            <value>
+                <fullName>Refined Oils Asia Pacific</fullName>
+                <default>false</default>
+                <label>Refined Oils Asia Pacific</label>
+            </value>
+            <value>
+                <fullName>Starches &amp; Sweeteners China</fullName>
+                <default>false</default>
+                <label>Starches &amp; Sweeteners China</label>
+            </value>
+            <value>
+                <fullName>Starches &amp; Sweeteners Southeast Asia</fullName>
+                <default>false</default>
+                <label>Starches &amp; Sweeteners Southeast Asia</label>
+            </value>
+            <value>
+                <fullName>Toshoku</fullName>
+                <default>false</default>
+                <label>Toshoku</label>
+            </value>
+            <value>
+                <fullName>Foods India</fullName>
+                <default>false</default>
+                <label>Foods India</label>
+            </value>
+            <value>
+                <fullName>Malt</fullName>
+                <default>false</default>
+                <label>Malt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

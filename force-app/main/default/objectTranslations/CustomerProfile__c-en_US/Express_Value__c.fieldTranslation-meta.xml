@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The values the customer states and try’s to align their products and services to such as Healthy food, Leader in Innovation,
+ Best in class style. --></help>
+    <label><!-- Express Value --></label>
+    <name>Express_Value__c</name>
+</CustomFieldTranslation>

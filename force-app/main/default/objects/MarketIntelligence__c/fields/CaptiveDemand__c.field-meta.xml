@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaptiveDemand__c</fullName>
+    <description>Created by EB for CCC &amp; GEOS as on 19-Apr-17</description>
+    <externalId>false</externalId>
+    <label>Captive Demand</label>
+    <summarizedField>MarketIntelligenceDetail__c.CaptiveDemand__c</summarizedField>
+    <summaryForeignKey>MarketIntelligenceDetail__c.MarketIntelligence__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

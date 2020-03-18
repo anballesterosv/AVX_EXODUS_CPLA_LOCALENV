@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Line Interest --></label>
+    <name>ProductLineInterest__c</name>
+    <picklistValues>
+        <masterLabel>Blends</masterLabel>
+        <translation><!-- Blends --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chocolate</masterLabel>
+        <translation><!-- Chocolate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coatings &amp; Fillings</masterLabel>
+        <translation><!-- Coatings &amp; Fillings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cocoa Butter</masterLabel>
+        <translation><!-- Cocoa Butter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cocoa Liquor</masterLabel>
+        <translation><!-- Cocoa Liquor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cocoa Powder</masterLabel>
+        <translation><!-- Cocoa Powder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hosun</masterLabel>
+        <translation><!-- Hosun --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydro</masterLabel>
+        <translation><!-- Hydro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ines</masterLabel>
+        <translation><!-- Ines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laurics</masterLabel>
+        <translation><!-- Laurics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palm</masterLabel>
+        <translation><!-- Palm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palm Fractions</masterLabel>
+        <translation><!-- Palm Fractions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rape</masterLabel>
+        <translation><!-- Rape --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soy</masterLabel>
+        <translation><!-- Soy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialities</masterLabel>
+        <translation><!-- Specialities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sun</masterLabel>
+        <translation><!-- Sun --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>other</masterLabel>
+        <translation><!-- other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

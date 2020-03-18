@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Why Did the Customer Leave Supplier? --></label>
+    <name>Why_did_the_customer_leave_supplier__c</name>
+    <picklistValues>
+        <masterLabel>Multi Source Supply</masterLabel>
+        <translation><!-- Multi Source Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Reason Required)</masterLabel>
+        <translation><!-- Other (Reason Required) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant Location/Freight Advantage</masterLabel>
+        <translation><!-- Plant Location/Freight Advantage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price</masterLabel>
+        <translation><!-- Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product, Product Quality</masterLabel>
+        <translation><!-- Product, Product Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relationship</masterLabel>
+        <translation><!-- Relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reputation/Credibility</masterLabel>
+        <translation><!-- Reputation/Credibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supply Performance Problem</masterLabel>
+        <translation><!-- Supply Performance Problem --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
